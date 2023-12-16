@@ -6,11 +6,30 @@
 1. 跟李沐学AI的b站教程（推荐）:https://www.bilibili.com/video/BV1if4y147hS 以及配套的课程网站：https://courses.d2l.ai/zh-v2/
 2. Pytorch的官方教程（英文）：https://pytorch.org/tutorials/
 
+## 数据集下载
+下载群文件里的IMDB数据集，词表文件可以用自己的也可以用数据集自带的  
+数据集包含一个json文件和一个vocab文件  
+json文件的格式为  
+```json
+{
+    'train': [
+        'seq': ...
+        'label': '0'/'1'
+    ]
+    'test': [
+        'seq': ...
+        'label': '0'/'1'
+    ]
+}
+```
+其中0为负面评论，1为正面评论
+
 ## 具体要求
 1. 自主完成IMDB数据集的正负语义判断，可以用RNN的各种模型和自己从写的各类Transformer模型，或者可以试试MLP和CNN以及杂糅的模型
 2. 用matplotlib画训练集的精确度(train_acc)和损失(train_loss)曲线
-3. 不能直接用李沐老师教程里的d2l库，不能直接copy代码
-4. 不能用预训练模型超近路
+3. 从群文件下载数据后，自行完成数据集的处理，并实例化成pytorch的一个dataset类，代码放在utils.py里
+4. 不能直接用李沐老师教程里的d2l库，不能直接copy代码
+5. 不能用预训练模型超近路
 
 ## 提交内容
 -------
