@@ -2,11 +2,10 @@
 ## 前言
 首先恭喜各位完成上一轮考核
 
-本轮我们的任务是写一个自然语言处理（NLP）模型，基本上能够理解中文语义并生成中文句子，AKA 弱化版 ChatGPT
+本轮我们的任务是写一个自然语言处理（NLP）模型，基本上能够理解中文语义
 
 ## 具体要求
-1. 基于 Attention 机制搭建一个 Transformer 模型，模型可以参考 pytorch 的教程、参考开源
-模型如 Bert、GPT 等
+1. 基于 Attention 机制搭建一个 Transformer 模型，模型可以参考 pytorch 的教程、参考开源模型如 Bert、GPT 等
 2. 本轮要求完成的任务是MLM(Masked Language Modeling)，就是遮蔽一些字然后模型能还原被\<mask\>的字  
 训练时采用无监督学习，预测掩蔽字的方法训练，  
 > 输入输出样例：  
@@ -15,6 +14,14 @@
 > 其中\<S\>、\<mask\>、\<T\>都是特殊标识符，类似的还有\<UNK\>等。
 3. 不能用预训练模型超近路，所以权重必须从随机训练至收敛,但是可以改进其结构然后自己训练
 4. 训练集得自己用爬虫爬，大小参考去年用的数据集约60mb
+
+## 训练完成后，使用3个数据集进行模型评估benchmark
+1. 中文语言理解测评基准我们采用CLUE benchmark，它分为多个测试数据集，最终的测试成绩为所有数据集上成绩的算数平均，本轮各位需要运行的数据集有：[AFQMC' 蚂蚁语义相似度](https://storage.googleapis.com/cluebenchmark/tasks/afqmc_public.zip)、[IFLYTEK' 长文本分类](https://storage.googleapis.com/cluebenchmark/tasks/iflytek_public.zip)、[TNEWS' 今日头条中文新闻（短文本）分类](https://storage.googleapis.com/cluebenchmark/tasks/tnews_public.zip)三个数据集，其他数据集如果有余力可以自行测试并一起提交，其他数据集的下载以及微调时的参数可以参照[CLUE benchmark](https://github.com/CLUEbenchmark/CLUE)的GitHub地址。
+2. 一个数据集下载下来包含3个json文件，分别是训练集开发集和测试集，用训练集对模型进行微调，后再跑测试集来看正确率
+### 资料
+1. https://www.jianshu.com/p/037b81989d74
+2. https://huggingface.co/docs/transformers/tasks/sequence_classification
+3. https://zhuanlan.zhihu.com/p/609328862
 
 ## 参考建议
 1. 如果自己电脑跑不了可以晚上十二点去阿里云租搭载 V100 的抢占式服务器，夜间小时
