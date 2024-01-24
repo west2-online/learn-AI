@@ -4,7 +4,7 @@
 ## 考核任务
 * 模型需要使用类Transformer机制或FCN机制，可以参考Vit模型
 * 不允许使用任何从诸如torchvision这种地方导出来的模型，更不允许pretrained=True
-* 使用ImageNet数据集
+* 使用Caltech 101数据集
 * 可视化操作：使用热力图可视化vit输出
 
 ## 算力补贴
