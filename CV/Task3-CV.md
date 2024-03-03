@@ -5,7 +5,7 @@
 考核任务
 - 模型需要使用类Transformer机制或FCN机制，可以参考yolo模型
 - 不允许使用任何从诸如torchvision这种地方导出来的模型，更不允许pretrained=True
-- 使用Pascal VOC 2012 数据集，提供一个下载数据集的镜像地址
+- 使用Pascal VOC 2012 数据集，提供一个下载数据集的镜像地址[镜像地址](https://pjreddie.com/projects/pascal-voc-dataset-mirror/)
 
 附加信息
 - 希望各位可以多看看英文论文以及多交流问题
