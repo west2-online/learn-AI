@@ -1,4 +1,7 @@
-from __future__ import annotations  # 推迟类型注解
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from pokemon import Pokemon
 
 
 class Effect:
@@ -8,7 +11,7 @@ class Effect:
         # 初始化效果持续时间
         self.duration = duration
 
-    def apply(self, pokemon: Pokemon) -> None:
+    def apply(self, pokemon: "Pokemon") -> None:
         # 应用效果的抽象方法，子类需要实现
         raise NotImplementedError
 
@@ -25,7 +28,7 @@ class PoisonEffect(Effect):
         super().__init__(duration)
         self.damage = damage
 
-    def apply(self, pokemon: Pokemon) -> None:
+    def apply(self, pokemon: "Pokemon") -> None:
         pokemon.receive_damage(self.damage)
         print(f"{pokemon.name} takes {self.damage} poison damage!")
 
@@ -37,6 +40,6 @@ class HealEffect(Effect):
         super().__init__(duration)
         self.amount = amount
 
-    def apply(self, pokemon: Pokemon) -> None:
+    def apply(self, pokemon: "Pokemon") -> None:
         pokemon.heal_self(self.amount)
         print(f"{pokemon.name} heals {self.amount} HP!")

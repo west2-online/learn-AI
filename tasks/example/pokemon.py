@@ -1,5 +1,7 @@
 from __future__ import annotations
-from skills import *
+import skills
+from skills import Skill
+from effects import Effect
 
 
 class Pokemon:
@@ -118,4 +120,4 @@ class Bulbasaur(GlassPokemon):
 
     def initialize_skills(self):
         # 初始化技能，具体技能是 SeedBomb 和 ParasiticSeeds
-        return [SeedBomb(damage=50), ParasiticSeeds(amount=10)]
+        return [skills.SeedBomb(damage=50), skills.ParasiticSeeds(amount=10)]

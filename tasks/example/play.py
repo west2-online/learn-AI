@@ -33,7 +33,7 @@ class Play:
                 index += 1
             else:
                 print("Invalid choice, please select a valid Pokemon")
-        print(f"Here is your pokemon team:")
+        print("Here is your pokemon team:")
         self.print_pokemon_list(self.player_team)
 
     def computer_choose_pokemon_team(self, pokemon_to_choose: list, num=1):
@@ -53,7 +53,7 @@ class Play:
         print("Your Team:")
         self.print_pokemon_list(self.player_team)
         while True:
-            choice = input(f"Select your pokemon to battle by number:")
+            choice = input("Select your pokemon to battle by number:")
             if valid_choice(choice, len(self.player_team)):
                 chosen_pokemon = self.player_team[int(choice) - 1]
                 if chosen_pokemon.alive is True:
@@ -98,11 +98,11 @@ class Play:
 
     def player_use_skills(self):
         # 玩家选择技能
-        print(f"Choose the skill your pokemon to use")
+        print("Choose the skill your pokemon to use")
         skills = self.current_player_pokemon.skills
         for i, skill in enumerate(skills, 1):
             print(f"{i}: {skill}")
-        choice = input(f"Select the skill you want to use by number:")
+        choice = input("Select the skill you want to use by number:")
         if valid_choice(choice, len(skills)):
             player_skill = self.current_player_pokemon.skills[int(choice) - 1]
             self.current_player_pokemon.use_skill(
