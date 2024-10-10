@@ -179,7 +179,7 @@ Python基础语法、认识生成式AI
 ### 作业提交方式
 
 1. 你需要学习github的使用，创建一个你自己的仓库用来存放你的代码实现
-2. 接着你需要如何使用git进行pr操作，在[solutions](./solutions.md)中填写你的仓库地址，这样便于你对你的实现进行更新
+2. 接着你需要如何使用git进行pr操作，在[solutions](https://github.com/west2-online-reserve/collection-ai/task1/solutions.md)中填写你的仓库地址，这样便于你对你的实现进行更新
 
 ### Bonus
 
