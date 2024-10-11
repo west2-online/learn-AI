@@ -183,7 +183,7 @@ Python基础语法、认识生成式AI
 
 相关教程
 
-https://github.com/west2-online-reserve/collection-ai里面有git使用和西二作业提交教程
+https://github.com/west2-online-reserve/collection-ai 里面有git使用和西二作业提交教程
 
 [Git工作流和核心原理 | GitHub基本操作 | VS Code里使用Git和关联GitHub](https://www.bilibili.com/video/BV1r3411F7kn/?share_source=copy_web&vd_source=31019e44b62a4369d4eab7afea0fcfdf)
 
