@@ -181,6 +181,12 @@ Python基础语法、认识生成式AI
 1. 你需要学习github的使用，创建一个你自己的仓库用来存放你的代码实现
 2. 接着你需要如何使用git进行pr操作，在[solutions](https://github.com/west2-online-reserve/collection-ai/blob/main/task1/solutions.md)中填写你的仓库地址，这样便于你对你的实现进行更新
 
+相关教程
+
+https://github.com/west2-online-reserve/collection-ai里面有git使用和西二作业提交教程
+
+[Git工作流和核心原理 | GitHub基本操作 | VS Code里使用Git和关联GitHub](https://www.bilibili.com/video/BV1r3411F7kn/?share_source=copy_web&vd_source=31019e44b62a4369d4eab7afea0fcfdf)
+
 ### Bonus
 
 完成CS61A的学习，完成相应的作业和lab（不要畏惧全英文的学习，你完全可以使用各类翻译软件帮助你学习(包括gpt)）,如果能啃下这门课那么你的编程水平将会超过绝大多数毕业生
