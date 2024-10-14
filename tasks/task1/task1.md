@@ -171,7 +171,7 @@ Python基础语法、认识生成式AI
 ### 作业要求
 
 1. 不要抄袭
-2. 遇到不会可以多使用搜索引擎，实在没有找到解决方法可以来群里提问
+2. 遇到不会可以多使用搜索引擎，实在没有找到解决方法可以来群里提问，作为一个CSer学习问问题的方式也非常重要，强烈建议阅读[别像弱智一样提问](https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways/blob/master/README.md)这篇文章
 3. 不限制使用chatgpt等大语言模型工具，但你需要确保你了解模型生成的内容的每一个细节，最好你可以在使用大语言模型生成的代码部分注释上reference from chatgpt这样的内容
 4. 你还需要学习基本的git的使用，所有考核都采用git的方式进行上传
 5. 作业内容可能会进行更新，请保持关注
@@ -183,7 +183,7 @@ Python基础语法、认识生成式AI
 
 相关教程
 
-https://github.com/west2-online-reserve/collection-ai 里面有git使用和西二作业提交教程
+<https://github.com/west2-online-reserve/collection-ai> 里面有git使用和西二作业提交教程
 
 [Git工作流和核心原理 | GitHub基本操作 | VS Code里使用Git和关联GitHub](https://www.bilibili.com/video/BV1r3411F7kn/?share_source=copy_web&vd_source=31019e44b62a4369d4eab7afea0fcfdf)
 
