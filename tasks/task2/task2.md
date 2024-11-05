@@ -84,21 +84,6 @@
 
 <br>
 
-### Matplotlib
-
-#### 作业4 使用matplotlib绘制logistic函数
-
-[logistic函数](https://zh.wikipedia.org/wiki/%E9%80%BB%E8%BE%91%E6%96%AF%E8%B0%9B%E5%87%BD%E6%95%B0)
-公式：
-
-$$
-f(x)={\frac {L}{1+e^{-k(x-x\_{0})}}}
-$$
-
-Logistic 函数在深度学习中主要作为激活函数和损失函数的组成部分，也称为 Sigmoid 函数，可将将输入压缩到 (0, 1) 之间，非常适合用于二分类问题，输出可以被解释为概率
-
-本次作业要求使用matplotlib绘制logistic函数
-
 ##### 要求
 
 1. 绘制logistic函数，其中L=1, k=1, x0=0
