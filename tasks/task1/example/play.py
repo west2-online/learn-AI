@@ -1,5 +1,5 @@
 from __future__ import annotations
-import copy
+
 import random
 import sys
 
@@ -20,10 +20,10 @@ class Play:
         self.current_computer_pokemon = None
         self.turn = 0
 
-    def player_choose_pokemon_team(self, pokemon_to_choose: list, num=1):
+    def player_choose_pokemon_team(self, pokemon_to_choose: list, num=3):
         # 玩家选择队伍中的Pokemon
         print(f"Choose {num} pokemon for your team:")
-        pokemon_to_choose = copy.copy(pokemon_to_choose)
+        # pokemon_to_choose = copy.copy(pokemon_to_choose)#使用 copy.copy() 函数复制 pokemon_to_choose 列表，以避免修改原始列表
         index = 0
         while len(self.player_team) < num:
             self.print_pokemon_list(pokemon_to_choose)
@@ -36,7 +36,7 @@ class Play:
         print("Here is your pokemon team:")
         self.print_pokemon_list(self.player_team)
 
-    def computer_choose_pokemon_team(self, pokemon_to_choose: list, num=1):
+    def computer_choose_pokemon_team(self, pokemon_to_choose: list, num=3):
         # 电脑选择对战的队伍
         print(f"Your opponent is choosing {num} pokemon")
         self.computer_team.extend(random.sample(pokemon_to_choose, num))
@@ -119,9 +119,10 @@ class Play:
         )
 
     def battle_round_begin(self):
-        # 回合开始
-        self.current_player_pokemon.begin()
-        self.current_computer_pokemon.begin()
+        # 回合开始  #被动属性
+        print(f" {"被动属性开启"} " )
+        self.current_player_pokemon.begin()# 被动属性
+        self.current_computer_pokemon.begin()# 被动属性
         self.check_game_status()
 
     def battle_round(self):
@@ -129,26 +130,52 @@ class Play:
         print(
             f"\n{self.current_player_pokemon.name} vs {self.current_computer_pokemon.name}"
         )
+        # self.current_player_pokemon.judge_protecct()# 判断是否具有护盾状态
+        # self.current_computer_pokemon.judge_protecct()
         self.player_use_skills()
         self.computer_use_skills()
+
+        #回合结束清零状态（部分）
+        self.current_player_pokemon.apply_status_effect()
+        self.current_computer_pokemon.apply_status_effect()
+        print("\n")
+        print(f" {"Round Summary"} "  + " " * 30)
+        print(f"{self.current_player_pokemon.name} remaining HP: {self.current_player_pokemon.hp}/{self.current_player_pokemon.max_hp}")
+        print(f"{self.current_computer_pokemon.name} remaining HP: {self.current_computer_pokemon.hp}/{self.current_computer_pokemon.max_hp}")
+
+        #死亡判断
         self.check_game_status()
+        #print("#" * 50)
 
     def run(self):
         # 游戏主循环
         self.player_choose_pokemon_team(self.all_pokemon)
         self.computer_choose_pokemon_team(self.all_pokemon)
-
+        print("-" * 50)
+        print("-" * 50)
         print("Choose Your First Pokemon to battle")
         self.current_player_pokemon = self.player_choose_pokemon()
         self.current_computer_pokemon = self.computer_choose_pokemon()
 
         while True:
+
+            print("=" * 30 + f" {"New Round"} "  + "=" * 30)
+
             self.battle_round_begin()
             self.battle_round()
 
 
 if __name__ == "__main__":
-    pokemon1 = pokemon.Bulbasaur()
-    all_pokemon = [pokemon1]
+    # pokemon1 = pokemon.Bulbasaur()
+    # pokemon2 = pokemon.Squirtle()
+    #pokemon3 = pokemon.PikaChu()
+    all_pokemon = []
+    for i in range(10):
+        value = random.randint(1, 3)
+        if value == 1:all_pokemon.append(pokemon.Bulbasaur())
+        elif value == 2:all_pokemon.append(pokemon.Squirtle())
+        else:
+            all_pokemon.append(pokemon.PikaChu())
+    #all_pokemon = [pokemon1,pokemon2]
     play = Play(all_pokemon)
     play.run()
