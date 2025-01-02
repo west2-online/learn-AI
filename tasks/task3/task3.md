@@ -1,37 +1,29 @@
-# task3
+# Task 3 4 5
 
-## 学习内容
+## 学习任务
 
-- numpy基础
-- pytorch基础
-- 线性神经网络
-- 多层感知机
+接下来的三轮考核（总共三个月的时间），你需要完成[stanford cs231n](https://csdiy.wiki/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/CS231/)的三个assignments
 
-## 推荐教程
+- 为什么选择公开课作为考核？
 
-1. Numpy学习
+在以往的考核中，我发现自己和同学们花费了大量的时间在学习如何使用pytorch或者说如何调包上。这些技能固然重要，但它们更像是工具的使用技巧，相较于机器学习的理论基础，这部分内容显得有些表面。事实上大部分非计算机专业（如生化环材）的研究生也能够完成这类任务。
 
-- [官方文档](https://numpy.org/doc/stable/)
-- [菜鸟教程](https://www.runoob.com/numpy/numpy-tutorial.html)
+然而，作为计算机专业的学生，我们的责任不仅仅是掌握如何使用现有工具，更应当深入理解机器学习的基本原理，掌握从零实现算法、调试和优化模型的能力。CS231n 的三个作业正是围绕这一点展开，强调通过从头开始实现模型、训练与调试，以及对神经网络架构的深入理解，帮助我们真正掌握机器学习的内核。
 
-2. Pytorch学习
+## 一个可能的学习方式
 
-- [官方文档](https://pytorch.org/docs/stable/index.html)
-- 李宏毅tutorial [youtube](https://www.youtube.com/watch?v=85uJ9hSaXig) [bilibili](https://www.bilibili.com/video/BV1Wv411h7kN?spm_id_from=333.788.videopod.episodes&vd_source=e3594664d709db7578f4b2e76329df18&p=6)
-- [pytorch入门教程小土堆](https://www.bilibili.com/video/BV1hE411t7RN/?spm_id_from=333.337.search-card.all.click&vd_source=e3594664d709db7578f4b2e76329df18)
+1. 首先不要害怕全英文的学习，并且要能积极的去适应英文环境，大量官方文档都只有英文，具有英文文档阅读能力才能使你在工作时能快速掌握最新技术，个人建议不要使用浏览器的自动翻译，可以使用一些划词翻译插件以及ai的辅助
 
-3. 深度学习基础（全部必学）
+2. 由于第一个assignments需要大量的numpy知识，可以先在b站上找些网课进行初步学习，或者说做一下[cs231n numpy tutorial](https://cs231n.github.io/python-numpy-tutorial/)，对于numpy这样庞大的库，有太多api我们不可能完全记住，建议多使用ai来辅助
 
-- [李宏毅21/22](https://www.bilibili.com/video/BV1Wv411h7kN/?spm_id_from=333.337.search-card.all.click&vd_source=e3594664d709db7578f4b2e76329df18), 要求听到CNN之前
-- [李沐d2l](https://zh.d2l.ai/chapter_linear-networks/index.html), 要求学完线性神经网络和多层感知机
-- (optional) [吴恩达机器学习](https://www.bilibili.com/video/BV1Bq421A74G/?spm_id_from=333.337.search-card.all.click&vd_source=e3594664d709db7578f4b2e76329df18)，可选学习
+3. 第一个assignment需要矩阵求偏导的数学知识，数学不好的也不需要担心，毕竟学习教的内容根本不涉及这些而且只需要学校教的求偏导的最基础内容就可以学会，可以通过[b站视频](https://www.bilibili.com/video/BV1av4y1b7MM/?spm_id_from=333.337.search-card.all.click&vd_source=e3594664d709db7578f4b2e76329df18)或[知乎文章](https://zhuanlan.zhihu.com/p/273729929)进行初步学习，后面多加练习就可以
 
-## 作业
+4. cs231n的学习过程分为三个: 1.课程视频 2.notes 3. assignment 课程notes一定要花时间去读，其中的内容都是完成assignment所需的知识，有能力的可以去阅读[英文原版](https://cs231n.github.io/)，或者可以阅读[中文翻译](https://zhuanlan.zhihu.com/p/21930884)
 
-#### 作业1 Numpy实现双层神经网络
+5. 可以多交流，我希望把我们考核群打造成一个刷课社区，尤其是许多数学方面的内容建议多交流，但是不建议直接分享代码
 
-#### 作业2 线性神经网络从零实现
+6. 课程视频不一定要看，我个人更建议去看[李宏毅2122](https://www.bilibili.com/video/BV1Wv411h7kN/?spm_id_from=333.337.search-card.all.click&vd_source=e3594664d709db7578f4b2e76329df18)，可以学习更多从直观上的理解而不仅仅是数学上的推导
 
-#### 作业3 多层感知机从零实现
+## 考核计划
 
-> 2、3作业我打算上传一个jupyter notebook文件，大家根据jupyter的要求完成代码实现并记录你的理解
+每个assignment都计划一个月的时间为deadline，第四五轮可能会添加一部分内容以便大家熟悉kaggle和huggingface的使用
