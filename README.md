@@ -30,4 +30,4 @@
 
 欢迎进群了解更多内容
 
-## <img src="./README.assets/west2-AI-qrcode.jpeg" alt="west2-AI-qrcode" style="zoom:50%;" />
+## <img src="./README.assets/west2-AI-qrcode-2025.jpg" alt="west2-AI-qrcode-2025" style="zoom:50%;" />
