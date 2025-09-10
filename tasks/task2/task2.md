@@ -26,8 +26,7 @@
 爬虫推荐的教程包含内容较多，大家根据考核需求自行选择，对于numpy和pandas个人没有找到太好的教程视频还多希望大家自行探索当然读文档学习也是非常好的方式、互联网上还要更多更好更适合你的学习方式供你探索、此外对于学有余力想要深入学习numpy和pandas的同学可以去学习[UC Berkeley Data 8](https://www.data8.org/)和[Data 100](https://ds100.org/)这两门课
 
 - 爬虫
-
-  - [b站视频](https://www.bilibili.com/video/BV1Yh411o7Sz)
+  - [50分钟超快速入门Python爬虫](https://www.bilibili.com/video/BV1EHdUYEEEj)
   - [Python3网络爬虫开发实战教程](https://cuiqingcai.com/5052.html)
   - [xpath教程](https://www.runoob.com/xpath/xpath-syntax.html)
   - [selenium教程](https://www.selenium.dev/documentation/)
@@ -48,7 +47,7 @@
 
 #### 作业1 爬取福大教务通知
 
-网址：<https://jwch.fzu.edu.cn/jxtz.htm>
+网址：[https://jwch.fzu.edu.cn/jxtz.htm](https://jwch.fzu.edu.cn/jxtz.htm)
 
 ##### 要求
 
@@ -60,7 +59,7 @@
 
 #### 作业2 使用selenium爬取知乎话题
 
-网址：<https://www.zhihu.com/topic/19554298/top-answers>
+网址：[https://www.zhihu.com/topic/19554298/top-answers](https://www.zhihu.com/topic/19554298/top-answers)
 
 ##### 要求
 
@@ -69,9 +68,24 @@
 
 <br>
 
+#### 作业3 通过抓取接口爬取开源之夏2025项目列表
+
+有些网页使用了前后端分离的技术，直接使用requests等库是无法获取到网页内容的，而使用selenium等浏览器模拟工具又显得过于重型。
+
+幸运的是，这类网站一般会通过接口与后端进行数据交互，我们可以通过在浏览器控制台的network中找到这些接口并进行请求，从而获取到我们想要的数据。
+
+##### 要求
+
+1. 通过浏览器抓包工具找到开源之夏项目列表的接口，并使用requests等库进行请求，获取到项目列表
+2. 获得每个项目的 项目名 项目难度 技术领域标签
+3. 获取每个项目的 具体信息,包括 项目简述 项目产出要求
+4. (进阶) 下载项目申请书的pdf
+
+网址：[https://summer-ospp.ac.cn/org/projectlist](https://summer-ospp.ac.cn/org/projectlist)
+
 ### Pandas
 
-#### 作业3 对作业1爬取的福大教务处信息进行数据分析
+#### 作业4 对作业1爬取的福大教务处信息进行数据分析
 
 ##### 要求
 
