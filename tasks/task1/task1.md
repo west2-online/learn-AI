@@ -98,7 +98,8 @@ Python基础语法、认识生成式AI
 
 你的任务，就是为长门大人编写战斗的核心逻辑，帮助她赶跑偷吃的娜比娅！
 
-请下载task1文件夹下的压缩文件`Nabia_Snack_Incident`，解压后阅读`README.md`，根据指引完成8个函数的编写。
+请下载[Nabia_Snack_Incident](https://github.com/ShaddockNH3/learn-AI/releases/download/task1/Nabia_Snack_Incident/Nabia_Snack_Incident.rar
+)，解压后阅读`README.md`，根据指引完成8个函数的编写。
 
 这份作业并不难，只涉及到`if`,`else`,`while`，所以请不要看`Nabia_Snack_Incident`下的`answer.py`
 
@@ -114,8 +115,17 @@ TomoriNaoiy是一个死宅，他憎恨所有的现充，但是弱小的他无法
 
 **“一个死宅到底是怎么想的啊？!”**
 
-那么你可以点开“校园·if恋answer.py” 来窥视他梦境的一角...
+那么你可以点开[校园·if恋answer.py](https://github.com/ShaddockNH3/learn-AI/tasks/task1/Campus_IF_Love/校园·if恋.py)来窥视他梦境的一角...
 
+---
+
+作业引导-new folder
+
+---
+
+> ShaddockNH3决定在他梦境的基础上加上一些神秘的小料，于是写了一个Campus_Love作为练手（95%都是AI写的，展现一下AI的生产力，目前有一些bug，且没有将story与代码分离）
+
+> 在AI时代，使用AI编写代码是很常见的事情。但作为程序员，需要保持主观能动性，应该确保整个设计逻辑都是自己想的，自己可以理清逻辑，并且确保可以复现。
 
 #### 作业三 宝可梦对战
 
