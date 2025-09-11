@@ -26,57 +26,57 @@ Python基础语法、认识生成式AI
 
 ### 1. 配置环境
 
-- 魔(ti)法(zhi)的使用
+- 科学上网工具的使用
 
 - 安装IDE集成开发环境
 
-初学者可以选择使用[PyCharm](https://www.jetbrains.com.cn/pycharm/), 可以[申请学生免费许可证](https://blog.jetbrains.com/zh-hans/blog/2022/08/24/2022-jetbrains-student-program/)以使用专业版
+初学者可以选择使用[PyCharm](https://www.jetbrains.com.cn/pycharm/)，可以[申请学生免费许可证](https://blog.jetbrains.com/zh-hans/blog/2022/08/24/2022-jetbrains-student-program/)以使用专业版。
 
-个人更建议使用[VSCode](https://code.visualstudio.com/)（主要是PyCharm的Jupyter notebook太过难用， 建议初学者可以多使用Jupyter来编写程序）
+个人更建议使用[VSCode](https://code.visualstudio.com/)（主要是PyCharm的Jupyter notebook太过难用，建议初学者可以多使用Jupyter来编写程序）。
 
 - 安装Conda环境
 
-使用[miniconda](https://docs.anaconda.com/miniconda/)就可以了,当然如果你不喜欢conda这样会污染命令窗口，使用pyenv或venv也都是可以的
+使用[miniconda](https://docs.anaconda.com/miniconda/)就可以了，当然如果你不喜欢conda这样会污染命令窗口，使用pyenv或venv也都是可以的。
 
-- 学习python虚拟环境的配置
+- 学习Python虚拟环境的配置
 
-初学者一定要注意这个问题，从一开始就养成好的习惯
+初学者一定要注意这个问题，从一开始就养成好的习惯。
 
 ### 2. 推荐教程
 
-- python基础：
+- Python基础：
 
-1. Crossin编程教室 [Python 入门指南 (python666.cn)](https://python666.cn/cls/lesson/list/)
-2. Python - 100天从新手到大师的前10节课 [jackfrued/Python-100-Days: Python - 100天从新手到大师 (github.com)](https://github.com/jackfrued/Python-100-Days)
-3. Python官方文档 [3.10.7 Documentation (python.org)](https://docs.python.org/zh-cn/3/)
-4. 菜鸟教程 [Python3 教程 | 菜鸟教程 (runoob.com)](https://www.runoob.com/python3/python3-tutorial.html)
-5. 廖雪峰的官⽅教程 [Python教程 - 廖雪峰的官方网站 (liaoxuefeng.com)](https://www.liaoxuefeng.com/wiki/1016959663602400)
-6. B站上有大量的入门基础课程，大家可以自行探索，找到适合自己的是最好的
-7. 如果你想要系统的学习的话，强烈推荐来自UCB的神课[CS61A](https://csdiy.wiki/%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8/Python/CS61A/)（课程难度较大，建议可以先选择一个更为友好的入门编程课程入门， 需要学习相关学习资料的话可以来群里问）
+1. Crossin编程教室 [Python 入门指南](https://python666.cn/cls/lesson/list/)
+2. Python - 100天从新手到大师的前10节课 [jackfrued/Python-100-Days](https://github.com/jackfrued/Python-100-Days)
+3. Python官方文档 [3.10.7 Documentation](https://docs.python.org/zh-cn/3/)
+4. 菜鸟教程 [Python3 教程](https://www.runoob.com/python3/python3-tutorial.html)
+5. 廖雪峰的官方教程 [Python教程](https://www.liaoxuefeng.com/wiki/1016959663602400)
+6. B站上有大量的入门基础课程，大家可以自行探索，找到适合自己的是最好的。
+7. 如果你想要系统的学习的话，强烈推荐来自UCB的神课[CS61A](https://csdiy.wiki/%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8/Python/CS61A/)（课程难度较大，建议可以先选择一个更为友好的入门编程课程入门，需要学习相关学习资料的话可以来群里问）。
 
 - 生成式AI认识：
 
 [李宏毅2024 B站](https://www.bilibili.com/video/BV1BJ4m1e7g8/?spm_id_from=333.337.search-card.all.click&vd_source=e3594664d709db7578f4b2e76329df18)
 
-[李宏毅2024 油管](https://www.youtube.com/watch?v=AVIKFXLCPY8&t=1s)
+[李宏毅2024 YouTube](https://www.youtube.com/watch?v=AVIKFXLCPY8&t=1s)
 
 ### 3. 检验学习内容
 
-在你完成python基础的知识学习后，你需要确保你对以下知识点能正确回答（如果不能你仍可以通过b站视频以及网上文档的方式进行弥补）
+在你完成Python基础的知识学习后，你需要确保你对以下知识点能正确回答（如果不能，你仍可以通过B站视频以及网上文档的方式进行弥补）：
 
-- 数据结构List,Dict的使用
+- 数据结构List、Dict的使用
 - Lambda匿名函数
 - Decorator装饰器
-- 类Class，Magic Methods的使用
+- 类Class、Magic Methods的使用
 - re正则表达式的使用
 - 列表推导式
 - generator生成器（yield关键字）
 - OOP面向对象编程思想
-- Type Hint 类型注释
+- Type Hint类型注释
 
-你可以写一个文档详细解释这些内容以加深印象（可以使用markdown/jupyter的形式编写）
+你可以写一个文档详细解释这些内容以加深印象（可以使用markdown/jupyter的形式编写）。
 
-在完成生成式AI认识的学习后，你可以写一个文档介绍一下一个大型语言模型训练的基本步骤
+在完成生成式AI认识的学习后，你可以写一个文档介绍一下一个大型语言模型训练的基本步骤。
 
 ### 4. 完成作业
 
@@ -117,7 +117,7 @@ TomoriNaoiy是一个死宅，他憎恨所有的现充，但是弱小的他无法
 那么你可以点开“校园·if恋answer.py” 来窥视他梦境的一角...
 
 
-#### 作业三 宝可梦对战！
+#### 作业三 宝可梦对战
 
 wjord2023是一个cool guy，他最近沉迷上了宝可梦游戏。可是有一天他的Switch坏掉了，为了在等待维修的过程中还能玩宝可梦游戏，他向你提出了以下的程序设计要求————
 
@@ -143,9 +143,9 @@ wjord2023是一个cool guy，他最近沉迷上了宝可梦游戏。可是有一
 
 这是wjord2023设计的4个宝可梦：
 
-1. **皮卡丘（PikaChu)**
+1. **皮卡丘 (PikaChu)**
 
-![](./阶段1.assets/BE1707F2-C858-4085-8A9C-1C282825D0D1.jpeg)
+![皮卡丘](./阶段1.assets/BE1707F2-C858-4085-8A9C-1C282825D0D1.jpeg)
 
 **HP**: 80 **攻击力**: 35 **防御力**: 5 **属性**: 电 **躲闪率**: 30%
 
@@ -155,7 +155,7 @@ wjord2023是一个cool guy，他最近沉迷上了宝可梦游戏。可是有一
 
 2. **妙蛙种子 (Bulbasaur)**
 
-![](./阶段1.assets/3A370008-CF12-4404-B088-634C466404AA.jpeg)
+![妙蛙种子](./阶段1.assets/3A370008-CF12-4404-B088-634C466404AA.jpeg)
 
 **HP**: 100 **攻击力**: 35 **防御力**: 10 **属性**: 草 **躲闪率**: 10%
 
@@ -165,7 +165,7 @@ wjord2023是一个cool guy，他最近沉迷上了宝可梦游戏。可是有一
 
 3. **杰尼龟（Squirtle）**
 
-![傑尼龜| 寶可夢圖鑑| The official Pokémon Website in Taiwan](./阶段1.assets/D9506539-335B-4856-9768-27203069DE8C.jpeg)
+![杰尼龟](./阶段1.assets/D9506539-335B-4856-9768-27203069DE8C.jpeg)
 
 **HP**: 80 **攻击力**: 25 **防御力**: 20 **属性**: 水 **躲闪率**: 20%
 
@@ -173,9 +173,9 @@ wjord2023是一个cool guy，他最近沉迷上了宝可梦游戏。可是有一
 
 **护盾 (Shield)：** 杰尼龟使用水流形成保护盾，减少下一回合受到的伤害50%
 
-4. **小火龙（Charmander）**
+4. **小火龙 (Charmander)**
 
-![](./阶段1.assets/A46CDBFA-F132-4DC0-BCCE-4506CB07B905.jpeg)
+![小火龙](./阶段1.assets/A46CDBFA-F132-4DC0-BCCE-4506CB07B905.jpeg)
 
 **HP**: 80 **攻击力**: 35 **防御力**: 15 **属性**: 火 **躲闪率**: 10%
 
@@ -187,7 +187,7 @@ wjord2023是一个cool guy，他最近沉迷上了宝可梦游戏。可是有一
 
 你需要实现类似这样命令行输出用于游玩该游戏：
 
-```
+``` log
 请选择3个宝可梦用于组成你的队伍：
 1.皮卡丘(电属性) 2.妙蛙种子(草属性) 3.杰尼龟(水属性) 4.小火龙(火属性)
 输入数字选择你的宝可梦: 1 2 4
@@ -222,24 +222,22 @@ wjord2023是一个cool guy，他最近沉迷上了宝可梦游戏。可是有一
 ## 作业要求
 
 1. 不要抄袭
-2. 遇到不会可以多使用搜索引擎，实在没有找到解决方法可以来群里提问，作为一个CSer学习问问题的方式也非常重要，强烈建议阅读[别像弱智一样提问](https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways/blob/master/README.md)这篇文章
-3. 不限制使用chatgpt等大语言模型工具，但你需要确保你了解模型生成的内容的每一个细节，最好你可以在使用大语言模型生成的代码部分注释上reference from chatgpt这样的内容
-4. 你还需要学习基本的git的使用，所有考核都采用git的方式进行上传
+2. 遇到不会可以多使用搜索引擎，实在没有找到解决方法可以来群里提问，作为一个CSer学习提问的方式也非常重要，强烈建议阅读[别像弱智一样提问](https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways/blob/master/README.md)这篇文章
+3. 不限制使用ChatGPT等大语言模型工具，但你需要确保你了解模型生成的内容的每一个细节，最好你可以在使用大语言模型生成的代码部分注释上"reference from ChatGPT"这样的内容
+4. 你还需要学习基本的Git的使用，所有考核都采用Git的方式进行上传
 5. 作业内容可能会进行更新，请保持关注
 
 ## 作业提交方式
 
-1. 你需要学习github的使用，创建一个你自己的仓库用来存放你的代码实现
-2. 接着你需要如何使用git进行pr操作，在[solutions](https://github.com/west2-online-reserve/collection-ai/blob/main/task1/solutions.md)中填写你的仓库地址，这样便于你对你的实现进行更新
+1. 你需要学习GitHub的使用，创建一个你自己的仓库用来存放你的代码实现
+2. 接着你需要学习如何使用Git进行PR操作，在[solutions](https://github.com/west2-online-reserve/collection-ai/blob/main/task1/solutions.md)中填写你的仓库地址，这样便于你对你的实现进行更新
 
-相关教程
+相关教程：
 
-<https://github.com/west2-online-reserve/collection-ai> 里面有git使用和西二作业提交教程
+[https://github.com/west2-online-reserve/collection-ai](https://github.com/west2-online-reserve/collection-ai) 里面有Git使用和西二作业提交教程
 
 [Git工作流和核心原理 | GitHub基本操作 | VS Code里使用Git和关联GitHub](https://www.bilibili.com/video/BV1r3411F7kn/?share_source=copy_web&vd_source=31019e44b62a4369d4eab7afea0fcfdf)
 
 ## Bonus
 
-完成CS61A的学习，完成相应的作业和lab（不要畏惧全英文的学习，你完全可以使用各类翻译软件帮助你学习(包括gpt)）,如果能啃下这门课那么你的编程水平将会超过绝大多数毕业生
-
-
+完成CS61A的学习，完成相应的作业和lab（不要畏惧全英文的学习，你完全可以使用各类翻译软件帮助你学习(包括GPT)），如果能啃下这门课那么你的编程水平将会超过绝大多数毕业生。
