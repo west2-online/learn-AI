@@ -2,7 +2,11 @@
 
 ## 学习目的
 
-到这里为止，你已经基本完成了最难的一部分内容，提前祝贺你能够坚持下来！
+正如前文所言，AI的方向大体分为计算机视觉（CV）以及自然语言处理（NLP），当然也有更多的方向。然而每个人的时间和精力有限， 在完成了上一轮对神经网络底层原理的艰苦探索后，你已经站在了通往各个专业领域的岔路口。
+
+此时，试图“广撒网”去同时涉猎所有方向，往往会导致每个领域都浅尝辄止，无法形成真正的核心竞争力。因此，从本轮考核开始，我们要求你做出一个重要的决定：选择一条你最感兴趣的航线，并一往无前地深潜下去。
+
+不过到这里为止，你已经基本完成了最难的一部分内容，提前祝贺你能够坚持下来！
 
 本轮就是让你 应用 (Apply)、整合 (Integrate) 并 创造 (Create)。
 
@@ -12,15 +16,13 @@
 
 请选择你的航向，开启这场属于你的、最后的、也最精彩的挑战吧！
 
-[new folder]
-
 ## 学习内容
 
 对于选择CV方向的同学，请点击[这里](https://github.com/ShaddockNH3/learn-AI/tree/main/tasks/task6/task_cs231n.md)
 
-对于选择NLP方向的同学，[new folder]
+对于选择NLP方向的同学，请点击[这里](https://github.com/ShaddockNH3/learn-AI/tree/main/tasks/task6/task_cs224n.md)
 
-想实现项目的，请接着往下看，本轮内容将继续实现[new folder]
+想实现一个AI项目的，请接着往下看，本轮内容将带你实现一个[new folder](https://github.com/ShaddockNH3/learn-AI/tree/main/tasks/task6/task_new_folder.md)
 
 ## 学习要求
 

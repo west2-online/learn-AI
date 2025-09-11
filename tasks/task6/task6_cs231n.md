@@ -74,6 +74,13 @@
 
 5. [自监督式学习](https://www.bilibili.com/video/BV1m3411p7wD?spm_id_from=333.788.videopod.episodes&vd_source=0272bb7dd0d8d9302c55fc082442b9e3&p=46)
 
+6. [【Transformer 其实是个简单到令人困惑的模型【白话DeepSeek06】](https://www.bilibili.com/video/BV1C3dqYxE3q/?share_source=copy_web&vd_source=3fbbb3c2ad24817002f9c39fad247a3b)
+
+7. [68 Transformer【动手学深度学习v2】]( https://www.bilibili.com/video/BV1Kq4y1H7FL/?p=2&share_source=copy_web&vd_source=3fbbb3c2ad24817002f9c39fad247a3b)
+
+8. [【68 Transformer【动手学深度学习 v2】](https://www.bilibili.com/video/BV1Kq4y1H7FL/?p=2&share_source=copy_web&vd_source=3fbbb3c2ad24817002f9c39fad247a3b)
+
+
 ---
 
 ## 作业要求

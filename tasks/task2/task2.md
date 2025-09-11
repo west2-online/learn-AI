@@ -13,21 +13,13 @@ AI的训练来源是大量的数据，获取数据有两种方式，第一种是
   - 数据的提取（xpath(推荐)、bs4、···）
   - selenium的使用
 
-- 数据科学基本工具学习
-  - Pandas的学习
-    - 数据读取与写入
-    - 数据清洗
-    - 数据筛选与索引
-    - 数据的处理与变换
-  - 数据可视化（matplotlib、plotly、pyecharts、···）
-
 ## 学习要求
 
-本轮学习内容较多也较杂，所以不会有太高的要求（毕竟我们不是搞AI的吗），爬虫只要求掌握最基础的使用requests进行请求和使用xpath等工具进行数据提取以及使用selenium进行爬取（selenium使用简单还不容易被反爬），而对于pandas也只要求有基础了解，并具有在需要时可通过查阅手册（当然AI对于写pandas特别厉害）的方式解决问题，numpy也是数据科学中常用的工具，下一轮才进行考核，大家也可以先行开始学习
+本轮学习内容不会有太高的要求（毕竟我们不是搞AI的吗），爬虫只要求掌握最基础的使用requests进行请求和使用xpath等工具进行数据提取以及使用selenium进行爬取（selenium使用简单还不容易被反爬）
 
 ## 推荐教程
 
-爬虫推荐的教程包含内容较多，大家根据考核需求自行选择，对于numpy和pandas个人没有找到太好的教程视频还多希望大家自行探索当然读文档学习也是非常好的方式、互联网上还要更多更好更适合你的学习方式供你探索、此外对于学有余力想要深入学习numpy和pandas的同学可以去学习[UC Berkeley Data 8](https://www.data8.org/)和[Data 100](https://ds100.org/)这两门课
+爬虫推荐的教程包含内容较多，大家根据考核需求自行选择。
 
 - 爬虫
   - [50分钟超快速入门Python爬虫](https://www.bilibili.com/video/BV1EHdUYEEEj)
@@ -36,24 +28,13 @@ AI的训练来源是大量的数据，获取数据有两种方式，第一种是
   - [selenium教程](https://www.selenium.dev/documentation/)
   - devtools的使用（[edge](https://learn.microsoft.com/zh-cn/microsoft-edge/devtools-guide-chromium/elements-tool/elements-tool)、[chrome](https://developer.chrome.com/docs/devtools?hl=zh-cn)）
 
-- Pandas
-
-  - [官方文档](https://pandas.pydata.org/docs/)
-  - [菜鸟教程](https://www.runoob.com/pandas/pandas-tutorial.html)
-
-- Numpy
-  - [官方文档](https://numpy.org/doc/stable/)
-  - [菜鸟教程](https://www.runoob.com/numpy/numpy-tutorial.html)
-
 ## 作业
 
-### 爬虫
-
-#### 作业1 爬取福大教务通知
+### 作业1 爬取福大教务通知
 
 网址：[https://jwch.fzu.edu.cn/jxtz.htm](https://jwch.fzu.edu.cn/jxtz.htm)
 
-##### 要求
+#### 要求
 
 1. 获取教务通知(至少500条，我们要进行数据分析所以越多越好 :smirk: )
 2. 提取通知信息中的“通知人”(如：质量办、计划科)、标题、日期、详情链接。
@@ -61,20 +42,20 @@ AI的训练来源是大量的数据，获取数据有两种方式，第一种是
 4. 上述内容一律要去除回车、括号等无用符号
 5. 将爬去内容存储到csv文件中
 
-##### 提示
+#### 提示
 
 1. 使用校园网爬取不会遭到任何反爬机制
 
-#### 作业2 使用selenium爬取知乎话题
+### 作业2 使用selenium爬取知乎话题
 
 网址：[https://www.zhihu.com/topic/19554298/top-answers](https://www.zhihu.com/topic/19554298/top-answers)
 
-##### 要求
+#### 要求
 
 1. 考核仅要求对一个话题进行爬取(爬取20条问题，每个问题爬取10条回答即可(只爬问答就可以，其他类型如文章要爬也行))，学有余力的可以从[话题广场](https://www.zhihu.com/topics)开始爬
 2. 将爬取内容存储到csv文件中，格式为：问题名、问题具体内容、回答信息（只需要留下纯文字），学有余力的可以把评论也保留下来
 
-#### 作业3 通过抓取接口爬取开源之夏2025项目列表
+### 作业3 通过抓取接口爬取开源之夏2025项目列表
 
 weijianxian是一只可爱的猫娘，她对bs4的不优雅颇有微词。碰巧她曾经写过开源之夏，所以她知道，直接去解析那个网页的HTML，就像在一大团乱糟糟的毛线球里找线头一样，真是太麻烦了喵！才不要用那种笨办法呢！(｡･`ω´･｡) 她记得很清楚，开源之夏的网站前端背后，藏着一个可以直接返回项目列表的整洁接口。我们只要找到那个接口，就能拿到干干净净、排排坐好的JSON数据，这才是最聪明的做法呀~♪
 
@@ -82,7 +63,7 @@ weijianxian是一只可爱的猫娘，她对bs4的不优雅颇有微词。碰巧
 
 幸运的是，这类网站一般会通过接口与后端进行数据交互，我们可以通过在浏览器控制台的network中找到这些接口并进行请求，从而获取到我们想要的数据。
 
-##### 要求
+#### 要求
 
 1. 通过浏览器抓包工具找到开源之夏项目列表的接口，并使用requests等库进行请求，获取到项目列表
 2. 获得每个项目的 项目名 项目难度 技术领域标签
@@ -90,32 +71,6 @@ weijianxian是一只可爱的猫娘，她对bs4的不优雅颇有微词。碰巧
 4. (进阶) 下载项目申请书的pdf
 
 网址：[https://summer-ospp.ac.cn/org/projectlist](https://summer-ospp.ac.cn/org/projectlist)
-
-### Pandas
-
-#### 作业4 对作业1爬取的福大教务处信息进行数据分析
-
-##### 要求
-
-1. 使用jupyter notebook的形式完成代码以及分析报告
-2. 统计“通知人”都有哪些，各占比例多少？
-3. 分析附件下载次数与通知人是否关系，若有，有什么联系？
-4. 统计每天的通知数，分析哪段时间通知比较密集？
-5. 自行思考一个感兴趣的问题，并进行数据分析
-6. 尝试使用数据可视化工具对3、4问题进行可视化呈现
-
-### Matplotlib
-
-#### 作业5 logistic函数的绘制
-
-最近ShaddockNH3怀念起了高中生活，其中生物必修二里有一张种群分析的S形曲线图令他记忆深刻，可惜他已经在高考结束的第二天就把所有的课本都卖掉了！
-
-所以他拜托你重现当时的记忆。
-
-##### 要求
-
-1. 绘制logistic函数，其中L=1, k=1, x0=0
-2. 尝试绘制不同的L、k、x0的logistic函数，观察函数的变化
 
 ## 作业要求
 
