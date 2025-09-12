@@ -1,0 +1,97 @@
+# Task 6
+
+## 学习目的
+
+恭喜你，坚持到这里的勇士。你已经走过了漫长而艰难的道路：在Task 4中，你亲手铸造了反向传播的引擎；在Task 5中，你用模块化的思想构建起了现代卷积神经网络的骨架。你不再是一个只能调用API的旁观者，而是一个真正理解神经网络内部运作机制的构建者。
+
+现在，欢迎来到CS231n三部曲的终章，也是你基础阶段的“毕业之战”。
+
+在本轮考核中，我们将把目光从单一的 **“判别式”** 图像分类任务中移开，踏入更广阔、更激动人心的领域。你将探索如何让模型\*\*“生成”**全新的数据，如何让模型结合视觉与语言进行**“创作”**，甚至是如何在没有人工标注的情况下进行**“自学”\*\*。
+
+这次任务将是你从理解经典模型到接触前沿研究的桥梁。完成它，意味着你将具备初步阅读顶会论文、理解并实现复杂AI系统的核心能力。
+
+## 学习内容
+
+本轮你将接触到一系列定义了现代AI研究方向的里程碑式模型与思想：
+
+* **序列模型**: 循环神经网络 (RNN) 与长短期记忆网络 (LSTM)，及其在图文生成任务中的应用。
+* **注意力机制与Transformer**: 理解驱动了当今大语言模型革命的核心——自注意力机制 (Self-Attention)，并将其应用于计算机视觉任务。
+* **生成式模型**: 学习并实现生成对抗网络 (GANs)，训练一个能“创造”以假乱真图像的模型。
+* **自监督学习**:  初探前沿的自监督学习范式 (SimCLR)，了解如何在没有标签的数据上训练强大的表征模型。
+
+## 学习要求
+
+与前两次作业相比，本轮任务在代码实现上的“体力劳动”可能会有所减少，但对 **概念理解和系统整合能力** 的要求达到了顶峰。
+
+1. **跨领域思维**: 你需要将Task 5中训练的CNN作为“眼睛”（特征提取器），与本轮学习的RNN/Transformer等“大脑”（序列处理器）结合起来，共同完成图文生成这一多模态任务。
+2. **理解前沿思想**: GAN的博弈论思想、Transformer的自注意力机制、SimCLR的对比学习范式，这些都是近十年来AI领域的重大突破。你需要花费大量时间阅读课程笔记，甚至尝试去阅读相关的经典论文（如 "Attention Is All You Need"），才能真正理解其精髓。
+3. **系统级调试**: 你将要构建的是一个包含多个复杂组件的系统，调试的难度会指数级上升。你需要更有耐心，并学会如何分模块进行测试和验证。
+
+## 作业
+
+**核心任务：完成 [CS231n Assignment 3](https://cs231n.github.io/assignments2025/assignment3/)**
+
+本次毕业设计将包含多个模块，你可以根据自己的兴趣和精力选择完成的深度。
+
+### 第一部分：图文生成 - RNN / LSTM
+
+在这一部分，你将构建一个能“看图说话”的模型。它会接收一张图片，并生成一段描述图片内容的文字。你需要：
+
+* 使用一个预训练好的CNN模型来提取图像的特征向量。
+* 实现一个基于**循环神经网络 (RNN)** 的解码器，它会接收图像特征，并逐词生成描述语句。
+* 为了解决RNN的长期依赖问题，你将进一步实现一个基于**长短期记忆网络 (LSTM)** 的解码器，并观察其性能提升。
+
+### 第二部分：图文生成 - Transformer
+
+在体验了RNN处理序列的模式后，你将接触到当今AI世界真正的“版本答案”——Transformer。你需要：
+
+* 学习并实现**自注意力机制 (Self-Attention)** 和**多头注意力 (Multi-Head Attention)**。
+* 将RNN解码器替换为一个基于**Transformer**的解码器，再次完成图文生成任务，并与LSTM的结果进行比较。
+
+### 第三部分：图像生成 - 生成对抗网络 (GANs)
+
+在这一部分，你将从“理解内容”转向“创造内容”。你将实现一个GAN，从随机噪声中生成逼真的手写数字图像。你需要：
+
+* 分别实现一个**生成器 (Generator)** 和一个**判别器 (Discriminator)** 网络。
+* 理解并实现GAN的交替训练过程，在生成器和判别器的“对抗”与“博弈”中，让模型学会生成越来越真实的图像。
+
+### 第四部分：自监督学习 - SimCLR
+
+这是为学有余力的同学准备的前沿探索任务。你将接触到一种强大的无监督学习方法，它使得在海量无标签数据上预训练模型成为可能。你需要：
+
+* 理解**对比学习 (Contrastive Learning)** 的核心思想。
+* 实现SimCLR的关键组件，如数据增强、投影头和NT-Xent损失函数。
+
+### 作业参考资料
+
+1. [跟李沐学AI 54 循环神经网络 RNN【动手学深度学习v2】](https://www.bilibili.com/video/BV1D64y1z7CA/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)
+
+2. [跟李沐学AI 57 长短期记忆网络（LSTM）【动手学深度学习v2】](https://www.bilibili.com/video/BV1JU4y1H7PC?spm_id_from=333.788.recommend_more_video.4&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)
+
+3. [跟李沐学AI GAN论文逐段精读【论文精读】](https://www.bilibili.com/video/BV1rb4y187vD/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)
+
+4. [跟着李沐学AI Transformer论文逐段精读【论文精读】](https://www.bilibili.com/video/BV1pu411o7BE/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)
+
+5. [自监督式学习](https://www.bilibili.com/video/BV1m3411p7wD?spm_id_from=333.788.videopod.episodes&vd_source=0272bb7dd0d8d9302c55fc082442b9e3&p=46)
+
+6. [【Transformer 其实是个简单到令人困惑的模型【白话DeepSeek06】](https://www.bilibili.com/video/BV1C3dqYxE3q/?share_source=copy_web&vd_source=3fbbb3c2ad24817002f9c39fad247a3b)
+
+7. [68 Transformer【动手学深度学习v2】]( https://www.bilibili.com/video/BV1Kq4y1H7FL/?p=2&share_source=copy_web&vd_source=3fbbb3c2ad24817002f9c39fad247a3b)
+
+8. [【68 Transformer【动手学深度学习 v2】](https://www.bilibili.com/video/BV1Kq4y1H7FL/?p=2&share_source=copy_web&vd_source=3fbbb3c2ad24817002f9c39fad247a3b)
+
+
+---
+
+## 作业要求
+
+1. **严禁抄袭**。这是你的毕业设计，请用一份独立完成的作品为你这段旅程画上圆满的句号。
+2. **善用工具**。遇到问题时，首先尝试通过搜索引擎、官方文档和AI助手解决。如果仍然无法解决，欢迎在群里进行有深度的提问。
+3. **拥抱AI，但保持思考**。不限制使用ChatGPT等大语言模型工具，但你必须确保能完全理解模型生成的每一行代码。
+4. **规范化提交**。所有作业均需通过Git提交到你个人的GitHub仓库中。
+
+## 作业提交方式
+
+1. 在你的个人GitHub仓库中为本次作业创建一个新的文件夹 (例如 `task6-cs231n-a3`)。
+2. 将你完成的所有代码（`.py`和`.ipynb`文件）上传到该文件夹。
+3. 通过Pull Request的方式，在课程仓库的 `solutions.md` 文件中更新你的仓库地址。

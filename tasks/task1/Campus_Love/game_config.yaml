@@ -1,0 +1,222 @@
+# 校园恋爱物语 - 游戏主配置文件
+# Campus Love Story - Main Configuration File
+
+game_info:
+  title: "校园恋爱物语"
+  subtitle: "如果在校园里遇见你"
+  version: "1.0.0"
+  description: "一个关于校园生活、学习成长与青春爱恋的互动式恋爱模拟游戏"
+  
+# 男主角设定
+protagonist:
+  name: "主角"
+  grade: "大一新生"
+  year: 2025
+  background: "某知名大学新生代表"
+  
+  # 基础属性
+  attributes:
+    intelligence: 95    # 智商
+    appearance: 90      # 颜值  
+    programming: 100    # 编程能力
+    social: 70          # 社交能力
+    art: 60            # 艺术天赋
+    
+  # 性格特点
+  personality:
+    - "外表谦逊内心自信"
+    - "不张扬但有实力"
+    - "遇编程话题会激动"
+    - "喜欢扮猪吃老虎"
+    - "善于倾听他人"
+    
+  # 背景故事
+  backstory: |
+    你是一名刚刚踏入某知名大学校园的2025级新生。
+    凭借优异的成绩和综合素质，你在开学典礼上被选为新生代表发言。
+    你的精彩发言和不凡气质让你迅速成为全校焦点，
+    关于"神秘新生代表"的讨论传遍了整个校园。
+    现在，你的大学生活即将开始，而三位不同的女生将与你的命运产生交集...
+
+# 女主角们的基础设定
+heroines:
+  senpai:
+    name: "绘画社长学姐"
+    default_name: "雅音"
+    age: 20
+    grade: "大二"
+    role: "绘画社团部长"
+    
+    appearance:
+      hair: "黑色长直发"
+      style: "清冷气质"
+      height: "高挑身材"
+      fashion: "简约文艺风"
+      
+    personality:
+      traits:
+        - "外冷内热"
+        - "对新人要求严格"
+        - "内心善良温柔"
+        - "完美主义者"
+        - "暗中依赖他人"
+      description: "表面上严肃认真的社团部长，实际上内心柔软，渴望被理解和依靠"
+      
+    interests:
+      - "绘画艺术"
+      - "古典音乐"
+      - "文学作品"
+      - "咖啡文化"
+      - "程序设计美学"
+      
+    background: |
+      绘画社的部长，因为严格的管理风格被社员们敬畏。
+      实际上她对艺术有着纯真的热爱，希望能找到真正理解她的人。
+      对于有才华的人会格外关注，尤其是能在艺术和技术间找到平衡的人。
+      
+  xiaobai:
+    name: "图书馆少女"
+    default_name: "雪梨"
+    age: 18
+    grade: "大一"
+    role: "同级新生"
+    
+    appearance:
+      hair: "白色及肩短发"
+      style: "娇小可爱"
+      accessories: "大号耳机"
+      fashion: "校服风格"
+      
+    personality:
+      traits:
+        - "天然呆萌"
+        - "热爱学习"
+        - "对编程感兴趣"
+        - "像小猫一样"
+        - "容易依赖他人"
+      description: "一个纯真可爱的技术宅女孩，对编程有着浓厚兴趣，但经常需要指导"
+      
+    interests:
+      - "编程学习"
+      - "算法研究"
+      - "技术书籍"
+      - "奶茶美食"
+      - "可爱小物"
+      
+    background: |
+      和主角同级的新生，经常在图书馆学习。
+      对编程有着强烈的兴趣但基础薄弱，渴望找到能够耐心指导她的人。
+      性格单纯善良，一旦信任某人就会完全依赖。
+      
+  jiejie:
+    name: "咖啡店姐姐"
+    default_name: "温心"
+    age: 24
+    grade: "研究生"
+    role: "研究生学姐"
+    
+    appearance:
+      hair: "披肩长发"
+      style: "成熟知性"
+      fashion: "优雅风衣"
+      aura: "温柔理性"
+      
+    personality:
+      traits:
+        - "温柔理性"
+        - "充满智慧"
+        - "阅历丰富"
+        - "善于倾听"
+        - "内心坚强"
+      description: "成熟稳重的研究生学姐，经历过人生起伏，拥有独特的人生智慧"
+      
+    interests:
+      - "学术研究"
+      - "咖啡文化"
+      - "人生哲学"
+      - "文学艺术"
+      - "深度交流"
+      
+    background: |
+      正在攻读研究生学位的知性女性，经常在校外的咖啡店阅读和思考。
+      经历过一些人生挫折，因此比同龄人更加成熟稳重。
+      欣赏有深度和内涵的人，喜欢进行有意义的交流。
+
+# 游戏系统设定
+game_systems:
+  affinity_system:
+    max_affinity: 100
+    ending_threshold: 100
+    base_talk_bonus: 5
+    
+  gift_system:
+    gifts:
+      鲜花:
+        senpai: 10
+        xiaobai: 10
+        jiejie: 15
+        description: "美丽的鲜花，表达心意的经典选择"
+        
+      编程笔记:
+        senpai: 8
+        xiaobai: 20
+        jiejie: 15
+        description: "精心整理的编程学习笔记，满含技术干货"
+        
+      奶茶:
+        senpai: 15
+        xiaobai: 25
+        jiejie: 20
+        description: "香甜可口的奶茶，温暖的午后时光"
+        
+      奇怪的石头:
+        default: -10
+        description: "来历不明的奇异石头，让人困惑的选择"
+        
+      精致钢笔:
+        senpai: 25
+        xiaobai: 12
+        jiejie: 25
+        description: "做工精美的钢笔，知识分子的象征"
+        
+      可爱玩偶:
+        senpai: 12
+        xiaobai: 25
+        jiejie: 10
+        description: "毛茸茸的可爱玩偶，治愈系的小伙伴"
+        
+      夜宵外卖:
+        senpai: 5
+        xiaobai: 8
+        jiejie: -3
+        description: "深夜的温暖外卖，熬夜学习的好伙伴"
+        
+      限定手办:
+        senpai: 8
+        xiaobai: 30
+        jiejie: 5
+        description: "珍贵的限定版手办，技术宅的心头好"
+        
+      咖啡豆:
+        senpai: 15
+        xiaobai: 5
+        jiejie: 30
+        description: "高品质的咖啡豆，品味生活的选择"
+
+# 剧情帧分类
+story_frames:
+  categories:
+    - "prologue"      # 序章
+    - "encounter"     # 邂逅
+    - "development"   # 发展
+    - "crisis"        # 危机
+    - "resolution"    # 解决
+    - "ending"        # 结局
+    
+  frame_types:
+    - "narrative"     # 叙述帧
+    - "dialogue"      # 对话帧  
+    - "choice"        # 选择帧
+    - "battle"        # 竞争帧
+    - "event"         # 事件帧
+    - "ending"        # 结局帧
