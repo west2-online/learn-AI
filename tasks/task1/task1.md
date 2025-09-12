@@ -111,13 +111,13 @@ TomoriNaoiy是一个死宅，他憎恨所有的现充，但是弱小的他无法
 
 **他要在py的世界里面，掌控一切！！**
 
-你需要完成一个由他臆想出来的gal世界，通过阅读“校园·if恋剧本.md”，完成 "校园·if恋.py" 文件里面的待完成函数。其中包括:对话函数，好感度函数，玩家操作....等等
+你需要完成一个由他臆想出来的gal世界，通过阅读[“校园·if恋剧本故事.md”](/tasks/task1/Campus_IF_Love/Campus_IF_Love_Story.md)，完成 ["校园·if恋.py"](/tasks/task1/Campus_IF_Love/Campus_IF_Love.py) 文件里面的待完成函数。其中包括:对话函数，好感度函数，玩家操作....等等
 
 如果你实在无法理解
 
 **“一个死宅到底是怎么想的啊？!”**
 
-那么你可以点开[校园·if恋answer.py](/tasks/task1/Campus_IF_Love/校园·if恋.py)来窥视他梦境的一角...
+那么你可以点开[校园·if恋answer.py](/tasks/task1/Campus_IF_Love/Campus_IF_Love_answer.py)来窥视他梦境的一角...
 
 ---
 
@@ -252,3 +252,4 @@ wjord2023是一个cool guy，他最近沉迷上了宝可梦游戏。可是有一
 ## Bonus
 
 完成CS61A的学习，完成相应的作业和lab（不要畏惧全英文的学习，你完全可以使用各类翻译软件帮助你学习(包括GPT)），如果能啃下这门课那么你的编程水平将会超过绝大多数毕业生。
+
