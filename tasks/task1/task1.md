@@ -119,9 +119,10 @@ TomoriNaoiy是一个死宅，他憎恨所有的现充，但是弱小的他无法
 
 那么你可以点开[校园·if恋answer.py](/tasks/task1/Campus_IF_Love/Campus_IF_Love_answer.py)来窥视他梦境的一角...
 
+**作业引导 [README.MD]（/tasks/task1/Campus_IF_Love/README.md）**
 ---
 
-作业引导-new folder
+
 
 ---
 
@@ -252,4 +253,5 @@ wjord2023是一个cool guy，他最近沉迷上了宝可梦游戏。可是有一
 ## Bonus
 
 完成CS61A的学习，完成相应的作业和lab（不要畏惧全英文的学习，你完全可以使用各类翻译软件帮助你学习(包括GPT)），如果能啃下这门课那么你的编程水平将会超过绝大多数毕业生。
+
 
