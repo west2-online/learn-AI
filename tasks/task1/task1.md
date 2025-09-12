@@ -86,6 +86,8 @@ Python基础语法、认识生成式AI
 
 选项二：完成作业三。
 
+选项三：自行设计一个涉及到类Class、Magic Methods使用的小项目，需要分包，且至少500行
+
 可以根据自己的情况和偏好来自由选择
 
 #### 作业一 娜比娅偷吃事件
@@ -115,7 +117,7 @@ TomoriNaoiy是一个死宅，他憎恨所有的现充，但是弱小的他无法
 
 **“一个死宅到底是怎么想的啊？!”**
 
-那么你可以点开[校园·if恋answer.py](https://github.com/ShaddockNH3/learn-AI/tasks/task1/Campus_IF_Love/校园·if恋.py)来窥视他梦境的一角...
+那么你可以点开[校园·if恋answer.py](/tasks/task1/Campus_IF_Love/校园·if恋.py)来窥视他梦境的一角...
 
 ---
 
@@ -225,13 +227,16 @@ wjord2023是一个cool guy，他最近沉迷上了宝可梦游戏。可是有一
 
 > wjord2023的代码里面依旧有许多不足的地方，可以多多完善，当然也可以自行从零开始设计（在面向对象程序设计中每个人都会有不一样的思路，而每个思路都会有可取的地方，大家也可以在群里多多交流）
 
+> 可参考ShaddockNH3去年考核写的[完整代码](https://github.com/ShaddockNH3/west2-online-ai-2024-test/blob/master/pokemon_impact.py)，但是他的代码显然有优化空间，比如说没有分包（其实是因为当时分包了会报错），大量的代码复用，以及一些取巧的实践方式。
+
 ## 作业要求
 
-1. 不要抄袭
-2. 遇到不会可以多使用搜索引擎，实在没有找到解决方法可以来群里提问，作为一个CSer学习提问的方式也非常重要，强烈建议阅读[别像弱智一样提问](https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways/blob/master/README.md)这篇文章
-3. 不限制使用ChatGPT等大语言模型工具，但你需要确保你了解模型生成的内容的每一个细节，最好你可以在使用大语言模型生成的代码部分注释上"reference from ChatGPT"这样的内容
-4. 你还需要学习基本的Git的使用，所有考核都采用Git的方式进行上传
-5. 作业内容可能会进行更新，请保持关注
+1. 不要求实现的多完美，这一轮考核主要是要你的输出，只要有写出来点什么东西，就都能过
+2. 不要抄袭
+3. 遇到不会可以多使用搜索引擎，实在没有找到解决方法可以来群里提问，作为一个CSer学习提问的方式也非常重要，强烈建议阅读[别像弱智一样提问](https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways/blob/master/README.md)这篇文章
+4. 不限制使用ChatGPT等大语言模型工具，但你需要确保你了解模型生成的内容的每一个细节，最好你可以在使用大语言模型生成的代码部分注释上"reference from ChatGPT"这样的内容
+5. 你还需要学习基本的Git的使用，所有考核都采用Git的方式进行上传
+6. 作业内容可能会进行更新，请保持关注
 
 ## 作业提交方式
 

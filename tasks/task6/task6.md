@@ -18,11 +18,11 @@
 
 ## 学习内容
 
-对于选择CV方向的同学，请点击[这里](https://github.com/ShaddockNH3/learn-AI/tree/main/tasks/task6/task_cs231n.md)
+对于选择CV方向的同学，请点击[这里](/tasks/task6/task6_cs231n.md)
 
-对于选择NLP方向的同学，请点击[这里](https://github.com/ShaddockNH3/learn-AI/tree/main/tasks/task6/task_cs224n.md)
+对于选择NLP方向的同学，请点击[这里](/tasks/task6/task6_cs224n.md)
 
-想实现一个AI项目的，请接着往下看，本轮内容将带你实现一个[new folder](https://github.com/ShaddockNH3/learn-AI/tree/main/tasks/task6/task_new_folder.md)
+想实现一个AI项目的，请接着往下看，本轮内容将带你实现一个[new folder](/tasks/task6/task6_new_folder.md)
 
 ## 学习要求
 
