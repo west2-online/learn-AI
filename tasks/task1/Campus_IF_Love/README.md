@@ -2,7 +2,7 @@
 =================
 
 ## 友情提示
-本游戏是一个攻略向的galgame游戏，目标是完成对三位女主角的攻略，为了熟悉剧情，你应该阅读文件夹中的[剧本](/tasks/task1/Campus_IF_Love/Campus_IF_Love_Story.py)
+本游戏是一个攻略向的galgame游戏，目标是完成对三位女主角的攻略，为了熟悉剧情，你应该阅读文件夹中的[剧本](/tasks/task1/Campus_IF_Love/Campus_IF_Love_Story.md)
 
 ## 游戏玩法
 
