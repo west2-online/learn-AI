@@ -24,8 +24,9 @@ Python基础语法、认识生成式AI
 
 - 大语言模型的使用？
 
-不限制大语言模型的使用<details style="display:inline-block; margin-bottom: -5px;"><summary>（但是...）</summary>~~豆包除外~~</details>，但你需要对大语言模型生成的内容做到足够的了解，并且保证可以复现。
+不限制大语言模型的使用，但你需要对大语言模型生成的内容做到足够的了解，并且保证可以复现。
 
+<details style="display:inline-block; margin-bottom: -5px;"><summary>（...）</summary>豆包除外</details>
 
 ## 考核内容
 
@@ -256,6 +257,7 @@ wjord2023是一个cool guy，他最近沉迷上了宝可梦游戏。可是有一
 ## Bonus
 
 完成CS61A的学习，完成相应的作业和lab（不要畏惧全英文的学习，你完全可以使用各类翻译软件帮助你学习(包括GPT)），如果能啃下这门课那么你的编程水平将会超过绝大多数毕业生。
+
 
 
 
