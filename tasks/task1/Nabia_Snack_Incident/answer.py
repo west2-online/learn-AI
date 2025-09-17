@@ -1,5 +1,4 @@
-# longmen_vs_nabiya.py
-# 指挥官大人，这是为您完成的版本！每一行代码都充满了对胜利的渴望！
+# answer.py
 
 import random
 import time
@@ -18,7 +17,7 @@ CRITICAL_HIT_THRESHOLD = 18
 # 任务一：显示角色状态
 def display_status(character_name, current_hp, max_hp):
     """打印格式: 【角色名】HP: 当前血量 / 最大血量"""
-    # 使用f-string可以很方便地将变量嵌入到字符串中哦~
+    # 使用f-string可以很方便地将变量嵌入到字符串中
     print(f"【{character_name}】HP: {current_hp} / {max_hp}")
 
 
@@ -74,7 +73,7 @@ def check_critical_hit(base_damage):
 # 任务七：娜比娅的AI行动
 def nabiya_ai_action(nabiya_hp):
     """如果娜比娅HP <= 40，返回 'defend'，否则返回 'attack'"""
-    # 对于简单的二选一逻辑，一个if/else就足够啦
+    # 对于简单的二选一逻辑，一个if/else就足够了
     if nabiya_hp <= 40:
         return 'defend'
     else:
