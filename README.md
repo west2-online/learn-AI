@@ -18,6 +18,8 @@
 
 此外，考核只会在初期阶段筛选掉缺乏热情及浑水摸鱼的同学。在后续阶段，毅力与坚持才是通关的唯一秘诀。
 
+考核内容可以点击tasks文件夹进行查看，或者点击下方Phase的数字。
+
 ## **AI学习路线总览 (Optimized Version)**
 
 | 阶段 (Phase) | 学习内容 (Learning Content)             | 目标 (Goal)                                                                                                       | 预期时长 (Duration) |
