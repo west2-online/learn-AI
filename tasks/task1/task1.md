@@ -60,13 +60,17 @@ Python基础语法、认识生成式AI
 4. 菜鸟教程 [Python3 教程](https://www.runoob.com/python3/python3-tutorial.html)
 5. 廖雪峰的官方教程 [Python教程](https://www.liaoxuefeng.com/wiki/1016959663602400)
 6. B站上有大量的入门基础课程，大家可以自行探索，找到适合自己的是最好的。
-7. 如果你想要系统的学习的话，强烈推荐来自UCB的神课[CS61A](https://csdiy.wiki/%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8/Python/CS61A/)（课程难度较大，建议可以先选择一个更为友好的入门编程课程入门，需要学习相关学习资料的话可以来群里问）。
+7. 如果你想要系统的学习的话，强烈推荐来自UCB的神课[CS61A](https://csdiy.wiki/%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8/Python/CS61A/)（课程难度较大，建议可以先选择一个更为友好的入门编程课程入门，需要学习相关学习资料的群里有压缩包）。
 
 - 生成式AI认识：
 
 [李宏毅2024 B站](https://www.bilibili.com/video/BV1BJ4m1e7g8/?spm_id_from=333.337.search-card.all.click&vd_source=e3594664d709db7578f4b2e76329df18)
 
 [李宏毅2024 YouTube](https://www.youtube.com/watch?v=AVIKFXLCPY8&t=1s)
+
+[李宏毅2025 YouTube](https://www.youtube.com/watch?v=VuQUF1VVX40&list=PLJV_el3uVTsMMGi5kbnKP5DrDHZpTX0jT&index=1&t=10s)
+
+> 注意，生成式AI导论可不要求该课程的作业。2025油管上的课程还在持续更新中
 
 ### 3. 检验学习内容
 

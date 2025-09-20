@@ -24,6 +24,10 @@ AI的方向有很多，但大体分为两种，计算机视觉（CV）以及自�
 
 本轮学习内容对新手而言具有相当的挑战性，尤其对于首次接触全英文课程的同学。但这正是我们希望你克服的第一个障碍。在AI领域，**英文阅读能力不是加分项，而是必需品**，因为绝大多数前沿论文、官方文档和高质量社区讨论都以英文为载体。我们鼓励你勇敢地面对这个挑战，并善用工具辅助自己。
 
+此外，本轮需要一些前置知识：线性代数、微积分、numpy以及python编程。
+
+后两者已经在前几轮涉及到，前两个，如果学校课程没有开的话（对于大一生，偏导部分在高数大一下教），可以看下一节的推荐教程。
+
 ## 推荐教程
 
 * **核心课程**: **Stanford CS231n: Convolutional Neural Networks for Visual Recognition**
@@ -33,15 +37,16 @@ AI的方向有很多，但大体分为两种，计算机视觉（CV）以及自�
 
 * **前置知识补充**:
 
-  1. **NumPy**: 作业将大量使用NumPy进行向量化计算。请务必完成 [CS231n官方NumPy教程](https://cs231n.github.io/python-numpy-tutorial/)。对于不熟悉的API，学会使用搜索引擎和AI工具进行查询。
-  2. **矩阵求导**: 这是理解反向传播数学原理的关键。不必畏惧，你只需掌握基础的求偏导知识即可入门。推荐通过以下资源学习：
-
+  1. 前三轮知识的学习。
+  2. 多元函数复合求导（求偏导），具体的内容在高数B下，可参考[宋浩高等数学](https://www.bilibili.com/video/BV1Eb411u7Fw?spm_id_from=333.788.videopod.episodes&vd_source=0272bb7dd0d8d9302c55fc082442b9e3&p=96)，直至可以完成一些简单的求偏导内容。
+  3. 线性代数，计算机专业的同学大一上已经开了线性代数。无论对于学没学过的同学，都可以参考[线性代数的本质](https://www.bilibili.com/video/BV1Ys411k7yQ/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)该系列视频完成对线性代数的熟悉。
+  4. **NumPy**: 作业将大量使用NumPy进行向量化计算。请务必完成 [CS231n官方NumPy教程](https://cs231n.github.io/python-numpy-tutorial/)。对于不熟悉的API，学会使用搜索引擎和AI工具进行查询。
+  5. **矩阵求导**: 这是理解反向传播数学原理的关键。不必畏惧，你只需掌握基础的求偏导知识即可入门。推荐通过以下资源学习：
      * [B站视频教程](https://www.bilibili.com/video/BV1av4y1b7MM/)
      * [知乎文章讲解](https://zhuanlan.zhihu.com/p/273729929)
-  3. **课程视频 (选看)**:
-
-     * CS231n的课程视频是很好的补充材料。
-     * 如果觉得CS231n的数学推导过多，强烈推荐观看 [李宏毅老师的机器学习课程](https://www.bilibili.com/video/BV1Wv411h7kN/)，该课程更侧重于从直观上理解模型原理。
+  6. **课程视频**:
+     * CS231n的[课程视频](https://www.bilibili.com/video/BV1b1agz5ERC/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)是很好的补充材料。
+     * 如果觉得CS231n的数学推导过多，建议观看 [李宏毅老师的机器学习课程](https://www.bilibili.com/video/BV1Wv411h7kN/)，该课程更侧重于从直观上理解模型原理。
 
 ## 一个可能的学习路径
 

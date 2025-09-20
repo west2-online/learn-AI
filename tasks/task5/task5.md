@@ -26,11 +26,13 @@
 
 ## 作业
 
+### 作业1
+
 **核心任务：完成 [CS231n Assignment 2](https://cs231n.github.io/assignments2025/assignment2/)**
 
 本次作业分为三个循序渐进的部分，将引导你完成一次从底层构建到高层应用的完整体验：
 
-### 第一部分：模块化全连接网络 (Fully-Connected Nets)
+#### 第一部分：模块化全连接网络 (Fully-Connected Nets)
 
 在这一部分，你将告别Task 4中的“一体化”网络，开始构建一个可以自由堆叠层数的深度神经网络。你需要：
 
@@ -39,7 +41,7 @@
 * 将这些独立的层组合起来，构建一个可以任意指定层数和隐藏单元数量的全连接网络。
 * 实现一个通用的`Solver`类来训练你的模型，并用它来寻找最佳的网络配置。
 
-### 第二部分：卷积神经网络 (Convolutional Nets)
+#### 第二部分：卷积神经网络 (Convolutional Nets)
 
 这是本次作业的核心与亮点。你将亲手揭开CNN的神秘面纱，实现其最重要的两个组成部分：
 
@@ -47,7 +49,7 @@
 * **最大池化层 (Max-Pooling Layer)**: 实现其`forward`和`backward`传播。
 * 将这些新的卷积组件与你之前实现的全连接层组合起来，构建一个真正的卷积神经网络。
 
-### 第三部分：现代框架实践 (PyTorch/TensorFlow)
+#### 第三部分：现代框架实践 (PyTorch/TensorFlow)
 
 在经历了手动实现所有核心组件的“磨难”之后，你将体验到现代深度学习框架的强大与便捷。在这一部分，你需要：
 
@@ -57,6 +59,55 @@
 ---
 
 > 完成这次作业后，你将对一个问题有醍醐灌顶般的理解：“我们为什么需要PyTorch这样的框架？” 因为你已经亲身走过了最艰难的底层实现之路。这种“先苦后甜”的体验，将让你对深度学习的理解超越绝大多数仅仅停留在调包层面的人。
+
+### 作业2 根据MNIST数据集实现一个简单的识别数字的demo
+
+**核心任务：实现并部署一个基于 TensorFlow\.js 的 MNIST 手写数字识别 Web应用。**
+
+该项目的最终成果可以在[这里](https://shaddocknh3.github.io/tfjs-mnist-digit-recognizer/)体验。
+
+本次作业的目标是让你亲历一个AI应用从训练到部署的全过程。你将以 [该项目](https://github.com/ShaddockNH3/tfjs-mnist-digit-recognizer) 为基础框架，但核心的识别模型需要由你自己亲手训练和替换。
+
+你的任务是基于MNIST数据集训练一个识别数字的demo，应该fork[该项目](https://github.com/ShaddockNH3/tfjs-mnist-digit-recognizer)，然后替换原仓库model文件夹下的两个训练文件。
+
+你不需要实现前端。
+
+#### 第一部分：训练你的专属识别模型 (Train Your Own Recognition Model)
+
+原项目（指的是旧版实现，本人已替换为新版实现）中的模型存在版本兼容性或识别效果不佳的问题。现在，你的首要任务是使用CNN亲自训练一个全新的、更强大的识别模型。
+
+* **环境与工具:** 你需要在 Python 环境下，使用 Keras 框架来完成此任务。
+* **模型构建:** 在经典的 MNIST 数据集上，从零开始构建并训练一个卷积神经网络 (CNN)。你需要自行设计网络结构、选择优化器和损失函数，并进行超参数调整，以达到尽可能高的识别准确率。
+* **产出:** 训练完成后，你将得到一个 Keras 模型文件（通常是 `.h5` 格式），这是我们后续工作的基础。
+
+#### 第二部分：模型转换与前端整合 (Model Conversion & Frontend Integration)
+
+浏览器里的 JavaScript 不认识 Python 的模型文件，所以我们需要一座桥梁，将你在Python世界里创造的“大脑”移植到Web世界中。
+
+* **模型转换:** 你需要学习并使用 `tensorflowjs_converter` 这个官方工具。它的作用是将上一步得到的 `.h5` 模型文件，转换成 TensorFlow\.js 能够加载和理解的格式，即一个 `model.json` (模型结构) 和一个 `.bin` 权重文件。
+* **核心替换:** 将你亲手生成的新模型文件（`model.json` 和 `.bin` 文件），替换掉基础项目仓库中 `/model/` 文件夹下的所有旧文件。这是让你的AI应用拥有“新灵魂”的关键一步。
+
+#### 第三部分：部署、验证与优化 (Deploy, Verify & Optimize)
+
+测试可以参考[该项目](https://github.com/ShaddockNH3/tfjs-mnist-digit-recognizer)的部署，一般而言，报错了是版本不匹配，而不是前端出了问题。
+
+* **在线部署:** 将你修改后的整个项目，通过 **GitHub Pages** 功能发布，生成一个任何人都可以通过浏览器访问的公开网页链接。
+* **多端验证:** 在PC和\*\*移动端（手机）\*\*上打开你的应用，在画板上写下数字进行测试。检验识别功能是否正常工作，特别是解决原项目在手机上无法正确识别的问题。
+* **调试与修复:** 仔细观察浏览器开发者工具(F12)中的控制台。如果在加载模型或进行预测时出现任何报错信息，你需要像侦探一样去分析问题根源，并尝试修复它。
+
+在完成最终的模型后，你应该替换`index.html`的第6行为自己的github用户名
+
+#### 参考资料
+
+* [参考实现: 使用Keras.js的旧版思路](https://github.com/starkwang/keras-js-demo)
+* [参考教程: 从训练到部署的详细步骤](https://www.cnblogs.com/chinasoft/p/17084356.html)
+* [TensorFlow.js 官方文档](https://www.tensorflow.org/js/guide?hl=zh-cn)
+
+#### 提示
+
+- 该项目可以全程跑在colab上，你可以参考答案[train.ipynb](https://github.com/ShaddockNH3/tfjs-mnist-digit-recognizer/blob/train/training/train.ipynb)，但不要抄袭代码
+
+---
 
 ## 作业要求
 
