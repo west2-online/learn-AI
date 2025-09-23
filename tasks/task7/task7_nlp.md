@@ -22,7 +22,7 @@
 Kaggle是全世界数据科学家的“游乐场”和“竞技场”。本次作业是你的“必修课”，你将在这里完成一次从0到1的完整数据科学项目。
 
 * **核心任务：** 完成一次完整的Kaggle项目流程。
-* **项目选择：** 指定的项目仍在设计中，但非常鼓励大家主动出击！你可以先从以下经典入门竞赛中任选其一，开始你的冒险：
+* **项目选择：** 你可以先从以下经典入门竞赛中任选其一，当然也可以自由选择nlp相关的项目，开始你的冒险：
 
   * [**Titanic: Machine Learning from Disaster**](https://www.kaggle.com/c/titanic)
   * [**House Prices - Advanced Regression Techniques**](https://www.kaggle.com/c/house-prices-advanced-regression-techniques)
@@ -49,10 +49,15 @@ Kaggle是全世界数据科学家的“游乐场”和“竞技场”。本次�
 
 * **具体步骤：**
 
-  1. **模型选择与下载：** 选择一个开源大模型（如 ChatGLM3-6B, Qwen-7B 等）并成功下载到本地，当然测试的时候如果本地没有gpu，可以使用Qwen-1.8B的模型在colab上测试。
+  1. **模型选择与下载：** 选择一个开源大模型下载到本地或colab环境中。
   2. **数据集准备：** 构建你自己的小型问答数据集（`.jsonl`格式），定义你希望模型学习的“新知识”。
   3. **执行微调：** 使用 **LoRA** 等高效微调技术，在你自己的数据集上训练模型。
   4. **应用构建:** 将你微调后的模型，通过 **LangChain** 框架封装成一个可以进行问答的应用。
+
+  具体要求实现的完整步骤和学习路线可以查看[Nya-Akashi-Workshop-w2](https://github.com/ShaddockNH3/Nya-Akashi-Workshop/tree/w2)
+
+  当然，如果你想完整的了解整个项目的学习流程和实现（后续的rag，agent等），可以查看[Nya-Akashi-Workshop-stu](https://github.com/ShaddockNH3/Nya-Akashi-Workshop/tree/stu)分支。
+
 
 #### 选择二：环境体验 (Experience Path)
 
