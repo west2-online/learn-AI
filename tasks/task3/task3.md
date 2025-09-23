@@ -31,7 +31,7 @@
 
   2. **PyTorch 速成 (cs224n)**: [PyTorch Quickstart](https://colab.research.google.com/drive/1Pz8b_h-W9zIBk1p2e6v-YFYThG1NkYeS?usp=sharing)
 
-  这里只是放在这里，暂时不要求掌握，也没那么快用到现代工具。
+  这里只是放在这里，暂时不要求掌握，也没那么快用到pytorch之类的现代工具。
 
   3. **菜鸟教程 (中文)**:
 

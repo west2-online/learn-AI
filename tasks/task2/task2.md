@@ -110,9 +110,72 @@ weijianxian是一只可爱的猫娘，她对bs4的不优雅颇有微词。碰巧
 3. 获取每个项目的 具体信息,包括 项目简述 项目产出要求
 4. (进阶) 下载项目申请书的pdf
 
+### bonus wiki
+
+网址：
+
+[https://wiki.biligame.com/blhx/api.php](https://wiki.biligame.com/blhx/api.php)
+
+[https://wiki.biligame.com/blhx/%E5%88%86%E7%B1%BB:%E6%96%B9%E6%A1%88%E8%88%B0%E5%A8%98](https://wiki.biligame.com/blhx/%E5%88%86%E7%B1%BB:%E6%96%B9%E6%A1%88%E8%88%B0%E5%A8%98)
+
+#### 要求
+
+为了完成ShaddockNH3自己给自己布置的[task7-nlp-作业2](../task7/task7_nlp.md)最终完整版项目，可怜的Gemini被当成黑奴一样，天天被ShaddockNH3驱使着爬取wiki的内容。
+
+wiki是一个开放的知识库，通常由社区成员共同维护和编辑。它允许用户创建、修改和链接页面，以便共享信息和知识。wiki通常具有版本控制功能，可以跟踪页面的历史变化，并允许用户回滚到之前的版本。
+
+api是应用程序编程接口（Application Programming Interface）的缩写，是不同软件系统之间进行交互和通信的桥梁。它定义了一组规则和协议，允许一个软件应用程序访问另一个软件应用程序的功能或数据，而无需了解其内部实现细节。
+
+事实上，在大多数情况，爬虫不需要从零开始编写，而是可以直接使用网站提供的api进行数据获取。
+
+以下是你的任务：
+1. 通过wiki的api获取wiki中“方案舰娘”分类下的所有页面，不需要整理文本（洗数据非常麻烦，直接获取原始数据即可）
+
+#### 提示
+
+1. 比较抽象的是，wiki的页面上显示允许爬虫，但是具体种类的具体参数只有管理员才能访问，因此可以使用抓包工具或者直接试出来具体的页面信息
+2. ~~当你实在猜不到api，红温了，直接上模拟浏览器~~
+3. api的访问需要遵循礼仪，如wiki的api建议每次访问间隔1秒以上，且当服务器繁忙时，最长等待5秒，否则放弃请求。此外，不可以采用并行请求的方式，否则会被ban掉ip
+4. 这里直接给出请求头，category是“方案舰娘”
+
+```python
+# --- 全局配置 ---
+API_URL = "https://wiki.biligame.com/blhx/api.php"
+OUTPUT_DIR = "name_you_like"  # 输出文件夹名称
+
+# 规范化请求头
+HEADERS = {
+    'User-Agent': '',
+    'Accept-Encoding': 'gzip', # 启用Gzip压缩，节约带宽
+}
+
+# 最终验证过的 分类 -> 文件名前缀 映射表
+CATEGORY_PREFIX_MAP = {
+    "Category:方案舰娘": "PR",
+}
+```
+
+以及请求参数
+
+```python
+        params = {
+            "action": "query", 
+            "list": "categorymembers", 
+            "cmtitle": category, 
+            "cmlimit": "500", 
+            "format": "json", 
+            "formatversion": "2",
+            "maxlag": "5"  
+        }
+```
+
+5. 可以参考[实现](https://github.com/ShaddockNH3/Nya-Akashi-Workshop/blob/dev/get_knowledge/get_ships.py)
+
+> 不要拿ShaddockNH3的HEADERS，也不要运行这个文件，谢谢。由于本作业带私货，且设置的不严谨，所以作为bonus，可以选择性完成
+
 ## 作业要求
 
-1. 不要抄袭
+1. 不要抄袭，代码会查重
 2. 遇到不会的问题可以多使用搜索引擎，实在没有找到解决方法可以来群里提问
 3. 不限制使用chatgpt等大语言模型工具，但你需要确保你了解模型生成的内容的每一个细节，最好你可以在使用大语言模型生成的代码部分注释上reference from ChatGPT这样的内容
 4. 你还需要学习基本的git的使用，所有考核都采用git的方式进行上传
