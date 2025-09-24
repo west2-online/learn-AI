@@ -6,6 +6,13 @@
 
 本项目遵循GPL-3.0 License，转载请注明本项目仓库地址。
 
+## 观前须知
+
+1. 蓝色下划线是可以点进去的链接
+2. 文件夹可以被逐个点开看
+3. 你需要先查看[https://github.com/west2-online-reserve/collection-ai](https://github.com/west2-online-reserve/collection-ai)下的git使用，作业并不是直接在github上直接修改提交的
+
+
 ## 概览
 
 各位在通过所有考核后，即可成为西二在线网络工作室的正式成员，届时将发放实习证明与成员证书。成为正式成员后，你将拥有诸多福利，包括：
@@ -19,6 +26,8 @@
 此外，考核只会在初期阶段筛选掉缺乏热情及浑水摸鱼的同学。在后续阶段，毅力与坚持才是通关的唯一秘诀。
 
 考核内容可以点击tasks文件夹进行查看，或者点击下方Phase的数字。
+
+[**task1的考核地址（请点击我）**](./tasks/task1/task1.md)
 
 ## **AI学习路线总览 (Optimized Version)**
 

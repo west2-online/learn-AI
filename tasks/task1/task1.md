@@ -250,7 +250,7 @@ wjord2023是一个cool guy，他最近沉迷上了宝可梦游戏。可是有一
 ## 作业提交方式
 
 1. 你需要学习GitHub的使用，创建一个你自己的仓库用来存放你的代码实现
-2. 接着你需要学习如何使用Git进行PR操作，在[solutions](https://github.com/west2-online-reserve/collection-ai/blob/main/task1/solutions.md)中填写你的仓库地址，这样便于你对你的实现进行更新
+2. 接着你需要学习如何使用Git进行PR操作，在[solutions](https://github.com/west2-online-reserve/collection-ai/blob/main/2025/task1/solutions.md)中填写你的仓库地址，这样便于你对你的实现进行更新
 
 相关教程：
 
@@ -261,18 +261,3 @@ wjord2023是一个cool guy，他最近沉迷上了宝可梦游戏。可是有一
 ## Bonus
 
 完成CS61A的学习，完成相应的作业和lab（不要畏惧全英文的学习，你完全可以使用各类翻译软件帮助你学习(包括GPT)），如果能啃下这门课那么你的编程水平将会超过绝大多数毕业生。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
