@@ -16,7 +16,7 @@
 
 所以，task7只是给你一条学习路径，为了让你有机会进行一次完整的项目实践，同时给你一条路径去了解大模型的实际应用，以及目前现代框架下，是如何对AI进行“编程”的。
 
-正如我在[星辰大海](../The_Sea_of_Constellations/The_Sea_of_Constellations.md)中所说的：
+正如我在[星辰大海](../the_sea_of_constellations/The_Sea_of_Constellations.md)中所说的：
 
 > 恭喜你，你已经出色地完成了所有结构化的训练任务。但这并不意味着学习的结束。恰恰相反，你才刚刚抵达新世界的港口，拿到了属于你自己的船票。真正的AI之旅，现在才刚刚开始。
 
