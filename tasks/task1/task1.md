@@ -4,6 +4,10 @@
 
 如今，Python是构建人工智能应用的首选语言。因此，熟练掌握其语法是开启AI之旅的必备钥匙。
 
+不太建议大家将宝贵的精力主攻在[Python后端](https://github.com/west2-online/learn-python)上，在就业市场和性能要求上，有像[Go](https://github.com/west2-online/learn-go)和[Java](https://github.com/west2-online/learn-java)这样更受青睐的选择
+
+不过py后端开发起来非常快，常用于个人小项目的急速开发。
+
 ## 学习内容
 
 Python基础语法、认识生成式AI
@@ -94,11 +98,27 @@ Python基础语法、认识生成式AI
 
 关于本次的任务，需要完成作业一，并从作业二、三、四中选择一项完成，可以根据自己的情况和偏好来自由选择。
 
+如果对于作业一上来感觉很懵逼的，可以写一部分作业零来帮助自己熟悉和巩固，作业零是不必要的。
+
 上述所言的py基础文档和李宏毅AI导论文档是必要的。
 
 本轮作业二、三、四不要求实现的多完美，这一轮考核主要是要你的输出，只要有写出来点什么东西即可。考核给的时间很长，截止至11月中旬，请尽可能地完善你的项目。
 
-作业难度：作业一 << 作业二 < 作业三 ≈ 作业四
+作业难度：作业零 ≈ 作业一 << 作业二 < 作业三 ≈ 作业四
+
+#### 作业零 OI
+
+请使用py完成下列任务
+
+1. 洛谷P1001：https://www.luogu.com.cn/problem/P1001
+
+2. 洛谷P1046：https://www.luogu.com.cn/problem/P1046
+
+3. 洛谷P5737：https://www.luogu.com.cn/problem/P5737
+
+4. AtCoder ARC017A：https://www.luogu.com.cn/problem/AT_arc017_1
+
+[py后端作业1](https://github.com/west2-online/learn-python/blob/main/docs/1-%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95.md)
 
 #### 作业一 娜比娅偷吃事件
 
