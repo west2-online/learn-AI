@@ -27,7 +27,7 @@
 
 考核内容可以点击tasks文件夹进行查看，或者点击下方Phase对应的汉字。
 
-[**task1的考核地址（请点击我）**](./tasks/task1/task1.md)
+[**task1的考核地址（请点击我）**](./tasks/task1-2/task1.md)
 
 ## **AI学习路线总览 (Optimized Version)**
 
