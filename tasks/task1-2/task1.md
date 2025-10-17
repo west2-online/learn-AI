@@ -118,7 +118,7 @@ Python基础语法、认识生成式AI
 
 4. AtCoder ARC017A：https://www.luogu.com.cn/problem/AT_arc017_1
 
-[py后端作业1](https://github.com/west2-online/learn-python/blob/main/docs/1-%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95.md)
+5. [py后端作业1](https://github.com/west2-online/learn-python/blob/main/docs/1-%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95.md)
 
 #### 作业一 娜比娅偷吃事件
 
