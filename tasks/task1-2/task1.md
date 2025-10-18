@@ -4,7 +4,7 @@
 
 如今，Python是构建人工智能应用的首选语言。因此，熟练掌握其语法是开启AI之旅的必备钥匙。
 
-不太建议大家将宝贵的精力主攻在[Python后端](https://github.com/west2-online/learn-python)上，在就业市场和性能要求上，有像[Go](https://github.com/west2-online/learn-go)和[Java](https://github.com/west2-online/learn-java)这样更受青睐的选择
+不太建议大家将宝贵的精力主攻在[Python后端](https://github.com/west2-online/learn-python)上，在就业市场和性能要求上，有像[Golang](https://github.com/west2-online/learn-go)和[Java](https://github.com/west2-online/learn-java)这样更受青睐的选择
 
 不过py后端开发起来非常快，常用于个人小项目的急速开发。
 
@@ -36,7 +36,9 @@ Python基础语法、认识生成式AI
 
 ### 1. 配置环境
 
-- 科学上网工具的使用
+- 科学上网工具的使用以及谷歌账号的注册
+
+前者实在找不到的私聊群主，后者自行研究（taobao）
 
 - 安装IDE集成开发环境
 
@@ -44,15 +46,13 @@ Python基础语法、认识生成式AI
 
 个人更建议使用[VSCode](https://code.visualstudio.com/)（主要是PyCharm的Jupyter notebook太过难用，建议初学者可以多使用Jupyter来编写程序）。
 
-- 安装Conda环境
+- 安装Conda环境/学习Python虚拟环境的配置
 
 使用[miniconda](https://docs.anaconda.com/miniconda/)来管理环境，它轻量且功能强大。
 
-当然如果你不喜欢conda这样会污染命令窗口，使用pyenv或venv也都是可以的。
+当然如果你不喜欢conda这样会污染命令窗口，使用pyenv或venv管理环境也都是可以的，初学者一定要注意这个问题，从一开始就养成好的习惯。
 
-- 学习Python虚拟环境的配置
-
-初学者一定要注意这个问题，从一开始就养成好的习惯。
+> 关于虚拟环境，等你某一天环境炸了再来研究
 
 ### 2. 推荐教程
 
@@ -66,6 +66,8 @@ Python基础语法、认识生成式AI
 6. B站上有大量的入门基础课程，大家可以自行探索，找到适合自己的是最好的。
 7. 如果你想要系统的学习的话，强烈推荐来自UCB的神课[CS61A](https://csdiy.wiki/%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8/Python/CS61A/)（课程难度较大，建议可以先选择一个更为友好的入门编程课程入门，需要学习相关学习资料的群里有压缩包）。
 
+> 对于教程，不需要全部都看，只需要挑选几个自己喜欢的，边学边写。
+
 - 生成式AI认识：
 
 [李宏毅2024 B站](https://www.bilibili.com/video/BV1BJ4m1e7g8/?spm_id_from=333.337.search-card.all.click&vd_source=e3594664d709db7578f4b2e76329df18)
@@ -76,35 +78,34 @@ Python基础语法、认识生成式AI
 
 > 注意，生成式AI导论可不要求该课程的作业。2025油管上的课程还在持续更新中
 
-### 3. 检验学习内容
-
-在你完成Python基础的知识学习后，你需要确保你对以下知识点能正确回答（如果不能，你仍可以通过B站视频以及网上文档的方式进行弥补）：
-
-- 数据结构List、Dict的使用
-- Lambda匿名函数
-- Decorator装饰器
-- 类Class、Magic Methods的使用
-- re正则表达式的使用
-- 列表推导式
-- generator生成器（yield关键字）
-- OOP面向对象编程思想
-- Type Hint类型注释
-
-你需要以文档的形式（推荐使用markdown或jupyter）详细解释以上内容。
-
-在完成对生成式AI的认识后，你需要以文档的形式讲述一下大语言模型的整个训练流程。
-
 ### 4. 完成作业
 
-关于本次的任务，需要完成作业一，并从作业二、三、四中选择一项完成，可以根据自己的情况和偏好来自由选择。
+关于本次的任务，你需要完成以下内容——
+
+- 两份文档，帮助你把学到的 Python 和对 生成式 AI 的理解，系统地记录下来
+- 完成作业一
+- 从作业二、三、四中选择一项完成，可以根据自己的情况和偏好来自由选择。
 
 如果对于作业一上来感觉很懵逼的，可以写一部分作业零来帮助自己熟悉和巩固，作业零是不必要的。
-
-上述所言的py基础文档和李宏毅AI导论文档是必要的。
 
 本轮作业二、三、四不要求实现的多完美，这一轮考核主要是要你的输出，只要有写出来点什么东西即可。考核给的时间很长，截止至11月中旬，请尽可能地完善你的项目。
 
 作业难度：作业零 ≈ 作业一 << 作业二 < 作业三 ≈ 作业四
+
+#### 文档1
+
+在你初步掌握了Python基础的知识学习后，请将你对以下知识点的理解，整理成一份你自己的笔记（推荐使用Markdown或Jupyter Notebook）。
+
+- 基础容器：List (列表)、Dict (字典) 的使用技巧
+- 函数：Lambda 匿名函数、Decorator 装饰器
+- 面向对象：Class (类) 与 Magic Methods (魔法方法)，以及 - OOP (面向对象编程) 的思想
+- 文本处理：re 正则表达式
+- 代码美学：列表推导式、Type Hint (类型注释)
+- 进阶技巧：generator 生成器 (yield 关键字)
+
+#### 文档2
+
+在完成对生成式AI的认识后，你需要以文档的形式讲述一下大语言模型的整个训练流程。（不需要精确的表达与数学公式，只需要大致讲解一下自己的理解即可）
 
 #### 作业零 OI
 
@@ -118,7 +119,7 @@ Python基础语法、认识生成式AI
 
 4. AtCoder ARC017A：https://www.luogu.com.cn/problem/AT_arc017_1
 
-5. [py后端作业1](https://github.com/west2-online/learn-python/blob/main/docs/1-%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95.md)
+5. py后端[作业1](https://github.com/west2-online/learn-python/blob/main/docs/1-%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95.md)
 
 #### 作业一 娜比娅偷吃事件
 
