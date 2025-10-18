@@ -24,6 +24,7 @@ AI的训练来源是大量的数据，获取数据有两种方式，第一种是
 爬虫推荐的教程包含内容较多，大家根据考核需求自行选择。
 
 - 爬虫
+  - [b站视频](https://www.bilibili.com/video/BV1Yh411o7Sz)看到药企实战前，注意阿贾克斯
   - [50分钟超快速入门Python爬虫](https://www.bilibili.com/video/BV1EHdUYEEEj)
   - [Python3网络爬虫开发实战教程](https://cuiqingcai.com/5052.html)
   - [xpath教程](https://www.runoob.com/xpath/xpath-syntax.html)
@@ -120,7 +121,7 @@ weijianxian是一只可爱的猫娘，她对bs4的不优雅颇有微词。碰巧
 
 #### 要求
 
-为了完成ShaddockNH3自己给自己布置的[task7-nlp-作业2](../task7/task7_nlp.md)最终完整版项目，可怜的Gemini被当成黑奴一样，天天被ShaddockNH3驱使着爬取wiki的内容。
+为了完成ShaddockNH3自己给自己布置的[task7-nlp-作业2](../task7/task7_nlp.md)最终完整版项目，可怜的[Gemini](https://gemini.google.com/)被当成黑奴一样，天天被ShaddockNH3驱使着爬取wiki的内容。
 
 wiki是一个开放的知识库，通常由社区成员共同维护和编辑。它允许用户创建、修改和链接页面，以便共享信息和知识。wiki通常具有版本控制功能，可以跟踪页面的历史变化，并允许用户回滚到之前的版本。
 
@@ -133,7 +134,7 @@ api是应用程序编程接口（Application Programming Interface）的缩写�
 
 #### 提示
 
-1. 比较抽象的是，wiki的页面上显示允许爬虫，但是具体种类的具体参数只有管理员才能访问，因此可以使用抓包工具或者直接试出来具体的页面信息
+1. 比较抽象的是，wiki的页面上显示允许爬虫，但是具体种类的具体参数只有管理员才能访问，因此可以使用抓包工具或者直接试出来具体的页面信息，涉及到一定的逆向思维
 2. ~~当你实在猜不到api，红温了，直接上模拟浏览器~~
 3. api的访问需要遵循礼仪，如wiki的api建议每次访问间隔1秒以上，且当服务器繁忙时，最长等待5秒，否则放弃请求。此外，不可以采用并行请求的方式，否则会被ban掉ip
 4. 这里直接给出请求头，category是“方案舰娘”
