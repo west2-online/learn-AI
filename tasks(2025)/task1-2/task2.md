@@ -15,7 +15,9 @@ AI的训练来源是大量的数据，获取数据有两种方式，第一种是
 
 ## 学习要求
 
-本轮学习内容不会有太高的要求（毕竟我们不是搞AI的吗），爬虫只要求掌握最基础的使用requests进行请求和使用XPath等工具进行数据提取，以及更强大的浏览器模拟工具Selenium（它能有效应对许多反爬机制）
+本轮学习内容不会有太高的要求（毕竟我们不是搞AI的吗），爬虫只要求掌握最基础的使用requests进行请求和使用XPath等工具进行数据提取，更强大的浏览器模拟工具Selenium（它能有效应对许多反爬机制），以及阅读文档 ，利用api来获取数据的能力。
+
+对于https等支持并发的工具，这里不是重点（https非并发请求和requests写起来一模一样），因为以后的爬虫大多数都是依据api来爬，而提供的api大多数都会有比如一秒只能爬一次的限制，不像福大教务处，只要你连接校园网就可以随便爬。
 
 虽说不是重点，但这门技术是你不得不掌握的知识。当某日陷入训练数据丢失，或者曾经写的爬虫脚本失效时，你得亲手去修改这些爬虫，让他们获取到正确的数据。
 
@@ -111,7 +113,38 @@ weijianxian是一只可爱的猫娘，她对bs4的不优雅颇有微词。碰巧
 3. 获取每个项目的 具体信息,包括 项目简述 项目产出要求
 4. (进阶) 下载项目申请书的pdf
 
-### bonus wiki
+### 作业4 Open-Meteo
+
+[2025电工杯](https://new.saikr.com/vse/EECMCM2025)A题的第三问要求结合天气数据分析，聪明的[Gemini](https://gemini.google.com/)为ShaddockNH3找到了一个好用的天气数据查询网站——
+
+[Open-Meteo](https://open-meteo.com/en/docs/historical-weather-api)
+
+该网站可以一次性获取许多天气数据，本次任务要求是只允许发起一次请求，来获取福州大学旗山校区（经度:119.198，纬度:26.05942）2024年1月至12月的以下数据，并保存为csv文件：
+
+每小时天气变量 (Hourly Weather Variables):
+
+- temperature_2m (温度，2米)
+- relative_humidity_2m (相对湿度，2米)
+- apparent_temperature (体感温度)
+- precipitation (降水，雨+雪)
+- weather_code (天气代码)
+- cloud_cover_totalcloud_cover_total (总云量)
+- wind_speed_10m (风速，10米)
+- wind_wind_direction_10m (风向，10米)
+- shortwave_radiation_instant (短波太阳辐射 GHI，即时)
+- is_day (是白天还是黑夜)
+
+每日天气变量 (Daily Weather Variables):
+
+- temperaturetemperature_2m_mean (平均温度，2米)
+- temperature_2m_max (最高温度，2米)
+- temperature_2m_min (最低温度，2米)
+- precipitation_sum (降水量)
+- sunshine_duration (日照时长)
+
+### bonus
+
+爬取b-wiki界面
 
 网址：
 
@@ -119,9 +152,13 @@ weijianxian是一只可爱的猫娘，她对bs4的不优雅颇有微词。碰巧
 
 [https://wiki.biligame.com/blhx/%E5%88%86%E7%B1%BB:%E6%96%B9%E6%A1%88%E8%88%B0%E5%A8%98](https://wiki.biligame.com/blhx/%E5%88%86%E7%B1%BB:%E6%96%B9%E6%A1%88%E8%88%B0%E5%A8%98)
 
+教程：
+
+[mediawiki](https://www.mediawiki.org/wiki/API:Action_API)
+
 #### 要求
 
-为了完成ShaddockNH3自己给自己布置的[task7-nlp-作业2](../task7/task7_nlp.md)最终完整版项目，可怜的[Gemini](https://gemini.google.com/)被当成黑奴一样，天天被ShaddockNH3驱使着爬取wiki的内容。
+为了完成ShaddockNH3的Akashi最终完整版项目，可怜的[Gemini](https://gemini.google.com/)被当成黑奴一样，天天被ShaddockNH3驱使着爬取wiki的内容。
 
 wiki是一个开放的知识库，通常由社区成员共同维护和编辑。它允许用户创建、修改和链接页面，以便共享信息和知识。wiki通常具有版本控制功能，可以跟踪页面的历史变化，并允许用户回滚到之前的版本。
 
@@ -170,9 +207,9 @@ CATEGORY_PREFIX_MAP = {
         }
 ```
 
-5. 可以参考[实现](https://github.com/ShaddockNH3/Nya-Akashi-Workshop/blob/dev/get_knowledge/get_ships.py)
+5. 可以参考[实现](https://github.com/ShaddockNH3/Nya-Akashi-Workshop/blob/dev/Local/get_knowledge/get_ships.py)
 
-> 不要拿ShaddockNH3的HEADERS，也不要运行这个文件，谢谢。由于本作业带私货，且设置的不严谨，所以作为bonus，可以选择性完成
+> 不要拿ShaddockNH3的HEADERS，也不要运行这个文件。由于本作业带私货，且设置的不严谨，所以作为bonus，可以选择性完成
 
 ## 作业要求
 

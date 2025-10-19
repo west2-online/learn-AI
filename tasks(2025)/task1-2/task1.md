@@ -76,7 +76,11 @@ Python基础语法、认识生成式AI
 
 [李宏毅2025 YouTube](https://www.youtube.com/watch?v=VuQUF1VVX40&list=PLJV_el3uVTsMMGi5kbnKP5DrDHZpTX0jT&index=1&t=10s)
 
-> 注意，生成式AI导论可不要求该课程的作业。2025油管上的课程还在持续更新中
+[李宏毅生成式人工智能教程课本](https://github.com/datawhalechina/leegenai-tutorial/releases)
+
+> 注意，生成式AI导论可不要求该课程的作业。
+> 2025油管上的课程还在持续更新中
+> 课本其实就是上课的话整理出来的，是先有的课才有的课本
 
 ### 4. 完成作业
 
@@ -138,7 +142,7 @@ Python基础语法、认识生成式AI
 
 #### 作业二 校园·if恋
 
-TomoriNaoiy是一个死宅，他憎恨所有的现充，但是弱小的他无法改变一切，但是，偶然一天他发现了一个名为py的东西，于是，一个神奇的想法在他脑海里面浮现......
+[Tomori Nao](https://github.com/TomoriNaoiy)是一个死宅，他憎恨所有的现充，但是弱小的他无法改变一切，但是，偶然一天他发现了一个名为py的东西，于是，一个神奇的想法在他脑海里面浮现......
 
 **他要在py的世界里面，掌控一切！！**
 
@@ -152,7 +156,7 @@ TomoriNaoiy是一个死宅，他憎恨所有的现充，但是弱小的他无法
 
 #### 作业三 宝可梦对战
 
-wjord2023是一个cool guy，他最近沉迷上了宝可梦游戏。可是有一天他的Switch坏掉了，为了在等待维修的过程中还能玩宝可梦游戏，他向你提出了以下的程序设计要求————
+[JadeMelody](https://github.com/wjord2023)是一个cool guy，他最近沉迷上了宝可梦游戏。可是有一天他的Switch坏掉了，为了在等待维修的过程中还能玩宝可梦游戏，他向你提出了以下的程序设计要求————
 
 你将要实现一个基于命令行游玩的宝可梦对战游戏, 玩家和电脑可以各自选择3名宝可梦（电脑随机选择）组成队伍，游戏开始时候从3个宝可梦中选择一个出战，每个宝可梦拥有以下特性：
 
@@ -260,6 +264,10 @@ wjord2023是一个cool guy，他最近沉迷上了宝可梦游戏。可是有一
 
 你的任务是自行设计一个结构完整、功能清晰的小项目，需要运用到类(Class)、魔法方法(Magic Methods)等面向对象的思想，并合理地拆分为多个文件。
 
+#### Bonus
+
+完成CS61A的学习，完成相应的作业和lab（不要畏惧全英文的学习，你完全可以使用各类翻译软件帮助你学习(包括GPT)），如果能啃下这门课那么你的编程水平将会超过绝大多数毕业生。
+
 ## 作业要求
 
 1. 不要抄袭
@@ -278,7 +286,3 @@ wjord2023是一个cool guy，他最近沉迷上了宝可梦游戏。可是有一
 [https://github.com/west2-online-reserve/collection-ai](https://github.com/west2-online-reserve/collection-ai) 里面有Git使用和西二作业提交教程
 
 [Git工作流和核心原理 | GitHub基本操作 | VS Code里使用Git和关联GitHub](https://www.bilibili.com/video/BV1r3411F7kn/?share_source=copy_web&vd_source=31019e44b62a4369d4eab7afea0fcfdf)
-
-## Bonus
-
-完成CS61A的学习，完成相应的作业和lab（不要畏惧全英文的学习，你完全可以使用各类翻译软件帮助你学习(包括GPT)），如果能啃下这门课那么你的编程水平将会超过绝大多数毕业生。

@@ -18,6 +18,6 @@
 
 ## 学习内容
 
-对于选择CV方向的同学，请点击[这里](/tasks/task4-6/task6_cs231n.md)
+对于选择CV方向的同学，请点击[这里](/tasks/task4-6/task6-cs231n.md)
 
-对于选择NLP方向的同学，请点击[这里](/tasks/task4-6/task6_cs224n.md)
+对于选择NLP方向的同学，请点击[这里](/tasks/task4-6/task6-cs224n.md)
