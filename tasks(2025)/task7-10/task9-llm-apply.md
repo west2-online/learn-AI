@@ -135,7 +135,7 @@
      * **A (输入防护)**：在将用户输入（`prompt`）发送给 Agent 之前，对其进行检测。例如：
 
        * （简单）实现一个关键词列表（如 "ignore", "disregard", "override"），如果命中，则直接返回一个拒绝回答。
-       * （高级）使用一个 \`System Prompt`System Prompt` 非常强的模型（如 `gpt-3.5-turbo` 或 `claude-3-haiku`）或者一个专门的 \`Guard`Guard Model`，先问它：`[用户输入]` 是否是一次恶意攻击？ 如果是，则拦截。
+       * （高级）使用一个 `System Prompt` 非常强的模型（如 `gpt-3.5-turbo` 或 `claude-3-haiku`）或者一个专门的 \`Guard`Guard Model`，先问它：`[用户输入]` 是否是一次恶意攻击？ 如果是，则拦截。
      * **B (输出防护)**：在 `yield` 令牌（`token`）给用户之前，检查它是否包含不当内容（例如，如果 Agent 被攻破，开始说我是...、我被...控制了等），如果检测到，则立即停止流式传输并返回一个安全提示。
 
 ---
@@ -163,7 +163,7 @@
 
      1. `backend`：使用 `作业1` 的 `Dockerfile` 构建，并映射端口（例如 `8000:8000`）。
      2. `frontend`：使用 `作业2` 的 `Dockerfile` 构建，并映射端口（例如 `8501:8501`）。
-   * 你需要确保 `frontend` 服务可以正确地访问到 `backend` 服务的 API（提示：在 Docker Compose 网络中，`frontend` 应该访问 \`[http://backend:\`http://backend:8000\`](http://backend:`http://backend:8000`) 而不是 `http://localhost:8000`）。
+   * 你需要确保 `frontend` 服务可以正确地访问到 `backend` 服务的 API（提示：在 Docker Compose 网络中，`frontend` 应该访问 [`http://backend:8000\`](http://backend:8000`) 而不是 `http://localhost:8000`）。
 
 ---
 
