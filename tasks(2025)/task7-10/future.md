@@ -45,7 +45,9 @@ llm：词嵌入，机器翻译，transformer
 cv：rnn，transformer，gan，ssl，ltsm
 
 task7：
+
 llm：hugging face生态（包括pipline，预训练），langchain框架
+
 cv：timm，opencv，Albumentations，OpenMMLab
 
 task8：
