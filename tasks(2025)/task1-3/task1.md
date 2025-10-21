@@ -146,13 +146,13 @@ Python基础语法、认识生成式AI
 
 **他要在py的世界里面，掌控一切！！**
 
-你需要完成一个由他臆想出来的gal世界，通过阅读[Campus_IF_Love_Story.md](/tasks/task1/Campus_IF_Love/Campus_IF_Love_Story.md)，完成 [Campus_IF_Love.py](/tasks/task1/Campus_IF_Love/Campus_IF_Love.py) 文件里面的待完成函数。其中包括：对话函数，好感度函数，玩家操作....等等
+你需要完成一个由他臆想出来的gal世界，通过阅读[Campus_IF_Love_Story.md](Campus_IF_Love/Campus_IF_Love_Story.md)，完成 [Campus_IF_Love.py](Campus_IF_Love/Campus_IF_Love.py) 文件里面的待完成函数。其中包括：对话函数，好感度函数，玩家操作....等等
 
 如果你实在无法理解
 
 **“一个死宅到底是怎么想的啊？!”**
 
-那么你可以点开[Campus_IF_Love/README](/tasks/task1/Campus_IF_Love/README.md)来窥视他梦境的一角...
+那么你可以点开[Campus_IF_Love/README](Campus_IF_Love/README.md)来窥视他梦境的一角...
 
 #### 作业三 宝可梦对战
 
