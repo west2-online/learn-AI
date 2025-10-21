@@ -52,10 +52,10 @@
 
 根据你在 Task 7 选择的**领域（CV / LLM）**，和你此刻选择的**路线（应用 / 论文）**，请点击下方属于专属航线：
 
-* [**Task 8 - LLM 应用篇 (Advanced RAG & Agent)**](task9-llm-apply.md)
+* [**Task 8 - LLM 应用篇 (Advanced RAG & Agent)**](task8-llm-apply.md)
 
-* [**Task 8 - LLM 论文篇 (论文精读与复现)**](task9-llm-research.md)
+* [**Task 8 - LLM 论文篇 (论文精读与复现)**](task8-llm-research.md)
 
-* [**Task 8 - CV 应用篇 (SOTA检测与分割)**](task9-cv-apply.md)
+* [**Task 8 - CV 应用篇 (SOTA检测与分割)**](task8-cv-apply.md)
 
-* [**Task 8 - CV 论文篇 (论文精读与复现)**](task9-cv-research.md)
+* [**Task 8 - CV 论文篇 (论文精读与复现)**](task8-cv-research.md)
