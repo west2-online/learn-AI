@@ -11,7 +11,11 @@
 ## **学习内容**
 
 * **数据科学基本工具学习**
-
+  * **Numpy 的基本应用**:
+    
+    * 矩阵的基本操作
+    * 广播机制
+    * 简单图像处理
   * **Pandas 的深度应用**:
 
     * 数据读取与写入 (`read_csv`, `to_csv`, etc.)
@@ -31,27 +35,23 @@
 
   1. **Numpy 速成 (CS231n)**: [Python Numpy Tutorial](https://cs231n.github.io/python-numpy-tutorial/)
 
-  2. **PyTorch 速成 (cs224n)**: [PyTorch Quickstart](https://colab.research.google.com/drive/1Pz8b_h-W9zIBk1p2e6v-YFYThG1NkYeS?usp=sharing)
-
-  > pytorch只是放在这里，暂时不要求掌握，也没那么快用到pytorch之类的现代工具。
-
-  3. **菜鸟教程 (中文)**:
+  2. **菜鸟教程 (中文)**:
 
      * [Pandas 教程](https://www.runoob.com/pandas/pandas-tutorial.html)
      * [Numpy 教程](https://www.runoob.com/numpy/numpy-tutorial.html)
 
-  4. **kaggle (Kaggle Learn)**
+  3. **kaggle (Kaggle Learn)**
 
   * [Kaggle Learn](https://www.kaggle.com/learn)
 
   **Pandas** 和 **Data Visualization** 这两门课，非常适合动手学习，强烈推荐
 
-  5. **深度探索 (学有余力的同学)**
+  4. **深度探索 (学有余力的同学)**
 
   * [UC Berkeley Data 8](https://www.data8.org/): 伯克利大学经典的数据科学入门课。
   * [UC Berkeley Data 100](https://ds100.org/): 更深入的数据科学原理与技术。
 
-  6. **官方权威手册 (当你需要精确查阅时)**
+  5. **官方权威手册 (当你需要精确查阅时)**
 
   * [Pandas 官方文档](https://pandas.pydata.org/docs/)
   * [Numpy 官方文档](https://numpy.org/doc/stable/)
@@ -100,7 +100,7 @@ $f(x) = \frac{L}{1 + e^{-k(x-x_0)}}$
 #### **要求**
 
 1. 请使用 `matplotlib` 绘制一个标准的 Logistic 函数图像，其中参数设置为：`L=1`, `k=1`, `x0=0`。
-2. 为了帮助ShaddockNH3更好地理解，请尝试在同一张图或多张子图中，绘制不同 `L`、`k`、`x0` 参数下的 Logistic 函数，并用图例或文字简单说明，改变每个参数是如何影响函数形状的。
+2. 为了更好地理解，请尝试在同一张图或多张子图中，绘制不同 `L`、`k`、`x0` 参数下的 Logistic 函数，并用图例或文字简单说明，改变每个参数是如何影响函数形状的。
 
 > 其实这个函数在深度学习里经常被使用到
 

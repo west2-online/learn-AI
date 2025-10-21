@@ -65,11 +65,13 @@
 
 ## **⭐ 重要提示 ⭐**
 
-* **关于最终项目 (Final Project)**：为了让大家能将精力完全集中在对核心知识的编码实现上，本次考核**无需完成**CS224n的最终项目 (Final Project) 哦！
-* **关于翻译与学习资料**：在学习过程中，如果遇到困难，或想为社区做出贡献，强烈推荐参考（和参与）我们自己的学习仓库：
+* **关于最终项目 (Final Project)**：为了让大家能将精力完全集中在对核心知识的编码实现上，本次考核**无需完成**CS224n的最终项目 (Final Project) 
+* **关于翻译与学习资料**：在学习过程中，如果遇到困难，可以参考：
 
   * **[ShaddockNH3/CS224N-Nyan-Book](https://github.com/ShaddockNH3/CS224N-Nyan-Book)**
   * 这是本人的学习仓库，你可以在这里找到课程PPT的翻译、论文精读笔记等宝贵资料，尤其是环境配置（cs224n的环境配置没有cs231n配置那么方便）。仓库下放着本人的实现代码，这部分请不要看。
+
+> 其实还是建议走LLM路线的先去写cs224n的前三个assignment，然后再去把cs231n给写完
 
 ### **作业参考资料**
 0. [cs224n](https://www.bilibili.com/video/BV1vQMBz6EvP/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)，可以啃得下来ppt和论文的可以不用看视频

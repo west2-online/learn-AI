@@ -6,12 +6,15 @@
 
 本项目遵循GPL-3.0 License，转载请注明本项目仓库地址。
 
+## **⭐ 重要提示 ⭐**
+
+**考核只涉及到task1-6！**
+
 ## 观前须知
 
 1. 蓝色下划线是可以点进去的链接
 2. 文件夹可以被逐个点开看
 3. 你需要先查看[https://github.com/west2-online-reserve/collection-ai](https://github.com/west2-online-reserve/collection-ai)下的git使用，作业并不是直接在github上直接修改提交的
-
 
 ## 概览
 
@@ -48,7 +51,7 @@
 
 在此基础上，进一步强调“计算思维”与“系统整合”能力。在底层实现阶段，通过强制向量化编程，培养高效处理数据的思维模式。而在更高阶的考核中（如生成模型），即便允许使用PyTorch，考核的重点也从“实现”转向了“整合与理解”。需要将自己先前构建的模块（如CNN）与新的复杂模型（如RNN/Transformer）进行拼接，并要求可视化注意力权重、分析模型内部状态，以此证明不仅能搭建系统，更能洞察其内在机制，真正做到知其然，并知其所以然。
 
-更具体的设计理念内容可见ShaddockNH3的[blog](https://shaddocknh3.github.io/p/%E6%9C%89%E5%85%B3ai%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%E7%9A%84%E6%80%9D%E8%80%83/)
+更具体的设计理念内容可见[ShaddockNH3的blog](https://shaddocknh3.github.io/p/%E6%9C%89%E5%85%B3ai%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%E7%9A%84%E6%80%9D%E8%80%83/)
 
 ## 群聊
 

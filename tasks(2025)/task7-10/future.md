@@ -2,9 +2,11 @@
 
 ## AI的未来
 
+AI是什么？
+
 当你看到这里的时候，意味着你的西二AI考核之旅已经接近尾声。强烈建议你去读一下[ShaddockNH3关于AI学习路线的思考](https://shaddocknh3.github.io/p/%E6%9C%89%E5%85%B3ai%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%E7%9A%84%E6%80%9D%E8%80%83/)，这也是考核如何设计以及改革的核心。
 
-那么AI是什么？
+学到这里，相信你已经对AI有了初步的了解，也大致知道了AI是什么。
 
 在你踏上这段旅程之初，这或许只是一个模糊的概念，一堆由代码、数学和人工智能这个时髦词汇构成的集合。而现在，当你历经了从Python基础到手动实现反向传播，再到驾驭现代神经网络的全部洗礼后，你已经有资格用自己的代码和理解，去书写这个问题的答案。
 
@@ -25,6 +27,50 @@ AI领域的发展速度超乎想象，每隔几个月甚至几周，都可能有
 ## 未来可能的学习路线
 
 本路线为[ShaddockNH3](https://github.com/ShaddockNH3)自行设计的，如有纰漏请提issue
+
+task1：py基础（含一定oop思想）
+
+task2：爬虫（基本业务可能会碰到的所有情况）
+
+task3：数据分析工具（numpy，pandas，matplotlib）
+
+task4：机器学习（knn，svm，softmax，两层神经网络，以及与深度学习机理不同的决策树，随机森林，xgboost等）
+
+task5：深度学习入门（反向传播，批/层归一化，cnn，pytorch）
+
+task6：深度学习深入
+
+llm：词嵌入，机器翻译，transformer
+
+cv：rnn，transformer，gan，ssl，ltsm
+
+task7：
+
+llm：hugging face生态（包括pipline，预训练），langchain框架
+
+cv：timm，opencv，Albumentations，OpenMMLab
+
+task8：
+
+llm应用：高级rag与agent，模型微调，lora
+
+llm论文：BERT -> gpt2/3 -> LoRA -> RAG -> ReAct(Agent)
+
+cv应用：YOLO/Faster，R-CNN
+
+cv论文：AlexNet ->  ResNet -> R-CNN -> YOLO
+
+task9：
+
+llm应用：LLM部署与运维 (MLOps / LLMOps)，vllm推理，流式传输，容器
+
+llm论文：RLHF -> DPO -> HELM
+
+cv应用：CV部署与运维 (MLOps)，ONNX/TensorRT加速，实时应用，容器
+
+cv论文：3D Vision -> Stable Diffusion -> DiT(Transformer&Diffusion, the core of sora)
+
+task10：AI安全与伦理，Embodied AI/Robotics，多模态（Gemini系列），World Models（JEPA框架等），自己的理解
 
 | 阶段 (Phase)                                                                                                              | 学习内容 (Learning Content)                              | 目标 (Goal)                                                                                                          | 预期时长 (Duration) |
 | :---------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------- | :-------------- |
