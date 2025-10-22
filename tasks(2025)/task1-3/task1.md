@@ -4,9 +4,9 @@
 
 如今，Python是构建人工智能应用的首选语言。因此，熟练掌握其语法是开启AI之旅的必备钥匙。
 
-不太建议大家将宝贵的精力主攻在[Python后端](https://github.com/west2-online/learn-python)上，在就业市场和性能要求上，有像[Golang](https://github.com/west2-online/learn-go)和[Java](https://github.com/west2-online/learn-java)这样更受青睐的选择
+不太建议大家将宝贵的精力主攻[Python后端](https://github.com/west2-online/learn-python)，在就业市场和性能要求上，有像[Golang](https://github.com/west2-online/learn-go)和[Java](https://github.com/west2-online/learn-java)这样更受青睐的选择。
 
-不过py后端开发起来非常快，常用于个人小项目的急速开发。
+不过Python后端开发起来非常快，常用于个人小项目的急速开发。
 
 ## 学习内容
 
@@ -113,7 +113,7 @@ Python基础语法、认识生成式AI
 
 #### 作业零 OI
 
-请使用py完成下列任务
+请使用Python完成下列任务
 
 1. 洛谷P1001：https://www.luogu.com.cn/problem/P1001
 
@@ -123,7 +123,7 @@ Python基础语法、认识生成式AI
 
 4. AtCoder ARC017A：https://www.luogu.com.cn/problem/AT_arc017_1
 
-5. py后端[作业1](https://github.com/west2-online/learn-python/blob/main/docs/1-%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95.md)
+5. Python后端[作业1](https://github.com/west2-online/learn-python/blob/main/docs/1-%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95.md)
 
 #### 作业一 娜比娅偷吃事件
 
@@ -135,30 +135,29 @@ Python基础语法、认识生成式AI
 
 你的任务，就是为长门大人编写战斗的核心逻辑，帮助她赶跑偷吃的娜比娅！
 
-请下载[Nabia_Snack_Incident](https://github.com/ShaddockNH3/learn-AI/releases/download/task1/Nabia_Snack_Incident/Nabia_Snack_Incident.rar
-)，解压后阅读`README.md`，根据指引完成8个函数的编写。
+请下载 [Nabia_Snack_Incident](https://github.com/ShaddockNH3/learn-AI/releases/download/task1/Nabia_Snack_Incident/Nabia_Snack_Incident.rar)，解压后阅读 `README.md`，根据指引完成8个函数的编写。
 
-这份作业并不难，只涉及到`if`,`else`,`while`，所以请不要看`Nabia_Snack_Incident`下的`answer.py`
+这份作业并不难，只涉及到 `if`、`else`、`while`，所以请不要看 `Nabia_Snack_Incident` 下的 `answer.py`。
 
 #### 作业二 校园·if恋
 
-[Tomori Nao](https://github.com/TomoriNaoiy)是一个死宅，他憎恨所有的现充，但是弱小的他无法改变一切，但是，偶然一天他发现了一个名为py的东西，于是，一个神奇的想法在他脑海里面浮现......
+[Tomori Nao](https://github.com/TomoriNaoiy) 是一个死宅，他憎恨所有的现充，但是弱小的他无法改变一切。但是，偶然一天他发现了一个名为 Python 的东西，于是，一个神奇的想法在他脑海里面浮现......
 
-**他要在py的世界里面，掌控一切！！**
+**他要在Python的世界里面，掌控一切！！**
 
-你需要完成一个由他臆想出来的gal世界，通过阅读[Campus_IF_Love_Story.md](Campus_IF_Love/Campus_IF_Love_Story.md)，完成 [Campus_IF_Love.py](Campus_IF_Love/Campus_IF_Love.py) 文件里面的待完成函数。其中包括：对话函数，好感度函数，玩家操作....等等
+你需要完成一个由他臆想出来的 gal 世界，通过阅读 [Campus_IF_Love_Story.md](Campus_IF_Love/Campus_IF_Love_Story.md)，完成 [Campus_IF_Love.py](Campus_IF_Love/Campus_IF_Love.py) 文件里面的待完成函数。其中包括：对话函数，好感度函数，玩家操作等等。
 
 如果你实在无法理解
 
-**“一个死宅到底是怎么想的啊？!”**
+**"一个死宅到底是怎么想的啊？!"**
 
-那么你可以点开[Campus_IF_Love/README](Campus_IF_Love/README.md)来窥视他梦境的一角...
+那么你可以点开 [Campus_IF_Love/README](Campus_IF_Love/README.md) 来窥视他梦境的一角...
 
 #### 作业三 宝可梦对战
 
-[JadeMelody](https://github.com/wjord2023)是一个cool guy，他最近沉迷上了宝可梦游戏。可是有一天他的Switch坏掉了，为了在等待维修的过程中还能玩宝可梦游戏，他向你提出了以下的程序设计要求————
+[JadeMelody](https://github.com/JadeMelody) 是一个 cool guy，他最近沉迷上了宝可梦游戏。可是有一天他的 Switch 坏掉了，为了在等待维修的过程中还能玩宝可梦游戏，他向你提出了以下的程序设计要求——
 
-你将要实现一个基于命令行游玩的宝可梦对战游戏, 玩家和电脑可以各自选择3名宝可梦（电脑随机选择）组成队伍，游戏开始时候从3个宝可梦中选择一个出战，每个宝可梦拥有以下特性：
+你将要实现一个基于命令行游玩的宝可梦对战游戏，玩家和电脑可以各自选择3名宝可梦（电脑随机选择）组成队伍，游戏开始时从3个宝可梦中选择一个出战，每个宝可梦拥有以下特性：
 
 1. HP：此宝可梦的血量，当宝可梦的剩余HP小于等于0时，该宝可梦会【昏厥】
 2. 属性： 宝可梦的属性会影响属性和抗性，相同属性的宝可梦会有一个相同的属性被动，宝可梦的属性会影响造成和受到的伤害
@@ -178,7 +177,7 @@ Python基础语法、认识生成式AI
 
 6. 招式：即技能，用来攻击对手的宝可梦，或者给对手的宝可梦附加各种各样的"效果"
 
-这是wjord2023设计的4个宝可梦：
+这是JadeMelody设计的4个宝可梦：
 
 1. **皮卡丘 (PikaChu)**
 
@@ -220,7 +219,7 @@ Python基础语法、认识生成式AI
 
 **蓄能爆炎 (Flame Charge )：** 小火龙召唤出强大的火焰，对敌人造成 300% 火属性伤害，并有80%的几率使敌人陷入“烧伤”状态，这个技能需要1个回合的蓄力，并且在面对改技能时敌法闪避率增加 20%
 
-你仍需要再设计至少一个宝可梦，如果你对wjord2023设计的宝可梦不满意，feel free去修改他们
+你仍需要再设计至少一个宝可梦，如果你对 JadeMelody 设计的宝可梦不满意，feel free 去修改他们。
 
 你需要实现类似这样命令行输出用于游玩该游戏：
 
@@ -246,27 +245,27 @@ Python基础语法、认识生成式AI
 小火龙 受到了 25 点伤害！剩余 HP: 75
 ```
 
-对于wjord2023设计的玩法不满意，同样feel free去修改他们
+对于JadeMelody设计的玩法不满意，同样 feel free 去修改他们
 
-要尽可能避免代码重复，可以创建一个Pokemon的基类，一个属性类像WaterPokemon继承自它，再有一个宝可梦继承自属性类
+要尽可能避免代码重复，可以创建一个 Pokemon 的基类，一个属性类像 WaterPokemon 继承自它，再有一个宝可梦继承自属性类。
 
-完成后写一个README.md文件介绍玩法，一同上传github
+完成后写一个 README.md 文件介绍玩法，一同上传 GitHub。
 
-> 在[示例代码](./Pokemon_Example)文件夹中有示例代码（已经实现了一个宝可梦，你们只需要在wjord2023的基础上添加更多内容就可以）（阅读代码也是一个需要大家多多锻炼的技能），可以发挥自己的创造力去实现更多的功能做的fancy一点，到时候再写一个markdown文档可以放在你的github仓库下
+> 在[示例代码](./Pokemon_Example)文件夹中有示例代码（已经实现了一个宝可梦，你们只需要在 JadeMelody 的基础上添加更多内容就可以）（阅读代码也是一个需要大家多多锻炼的技能），可以发挥自己的创造力去实现更多的功能做得 fancy 一点，到时候再写一个 Markdown 文档可以放在你的 GitHub 仓库下。
 
-> wjord2023的代码里面依旧有许多不足的地方，可以多多完善，当然也可以自行从零开始设计（在面向对象程序设计中每个人都会有不一样的思路，而每个思路都会有可取的地方，大家也可以在群里多多交流）
+> JadeMelody 的代码里面依旧有许多不足的地方，可以多多完善，当然也可以自行从零开始设计（在面向对象程序设计中每个人都会有不一样的思路，而每个思路都会有可取的地方，大家也可以在群里多多交流）。
 
-> 可参考ShaddockNH3去年考核写的[完整代码](https://github.com/ShaddockNH3/west2-online-ai-2024-test/blob/master/pokemon_impact.py)，但是他的代码显然有很大的优化空间，比如说没有分包（其实是因为当时分包了会报错），大量的代码复用，以及一些取巧的实践方式。
+> 可参考 ShaddockNH3 去年考核写的[完整代码](https://github.com/ShaddockNH3/west2-online-ai-2024-test/blob/master/pokemon_impact.py)，但是他的代码显然有很大的优化空间，比如说没有分包（其实是因为当时分包了会报错），大量的代码复用，以及一些取巧的实践方式。
 
 #### 作业四 好玩的东西
 
 猫娘是一种软乎乎的，可爱的生物，美中不足的是，她们有的时候会哈气。这个时候只有一种办法安抚她们，那就是奉上一个完整的py项目。
 
-你的任务是自行设计一个结构完整、功能清晰的小项目，需要运用到类(Class)、魔法方法(Magic Methods)等面向对象的思想，并合理地拆分为多个文件。
+你的任务是自行设计一个结构完整、功能清晰的小项目，需要运用到类(Class)、魔法方法(Magic Methods)等面向对象的思想，并合理地拆分为多个文件。。
 
 #### Bonus
 
-完成CS61A的学习，完成相应的作业和lab（不要畏惧全英文的学习，你完全可以使用各类翻译软件帮助你学习(包括GPT)），如果能啃下这门课那么你的编程水平将会超过绝大多数毕业生。
+完成 CS61A 的学习，完成相应的作业和 lab（不要畏惧全英文的学习，你完全可以使用各类翻译软件帮助你学习（包括 GPT）），如果能啃下这门课那么你的编程水平将会超过绝大多数毕业生。
 
 ## 作业要求
 
