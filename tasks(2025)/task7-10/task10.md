@@ -4,9 +4,9 @@
 
 在[本人](https://github.com/ShaddockNH3)看来，至少在现有的架构下，纯LLM已经发挥到了极致，毕竟LLM再怎么先进也只是语言。因此，多模态诞生了。Google Gemini 正是基于多模态开发，原生的理解视频和音频。
 
-而另一方面，CV依旧大放异彩，近期sora2的推出更是将这股风潮推向顶尖。
+而另一方面，CV也摸到了瓶颈，曾经的sora难以生成长视频，但近期sora2的推出重新将cv风潮推向顶尖。事实上，sora2采用的架构并非单纯的stable diffusion或transformer，而是采用了Dit，一种结合了二者的技术。
 
-或许，现有的架构已经摸到了瓶颈。事实上，sora2采用的架构并非单纯的stable diffusion or transformer，而是采用了Dit，一种结合了二者优点的技术。
+或许无论对于LLM还是CV而言，现有的架构都已经摸到了瓶颈。
 
 World Models的概念悄然诞生——你的下一个十年，何必是Transformer！
 
