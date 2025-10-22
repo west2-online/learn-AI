@@ -9,8 +9,10 @@
 ## **⭐ 重要提示 ⭐**
 
 1. 考核只涉及到task1-6
-2. 考核task1-6从开始到结束为止只需要你去配置python的环境，不需要去碰任何和深度学习有关的环境。考虑到很多人没有好电脑，本地没办法跑任何深度学习的东西，比如说[ShaddockNH3](https://github.com/ShaddockNH3)，而且你真要跑深度学习比较深度的内容都是要上云服务器的，所以所有涉及到算力的部分全都使用免费云端gpu
+2. 考核task1-6从开始到结束为止只需要你去配置python的环境，不需要去碰任何和深度学习有关的环境。考虑到很多人没有好电脑，本地没办法跑任何深度学习的东西，而且真要跑深度学习比较深度的内容都是要上云服务器的，所以所有涉及到算力的部分全都使用免费云端gpu
 3. 魔法和谷歌账号是你自己需要解决的事情，如果实在没有前者，可以私聊[ShaddockNH3](https://github.com/ShaddockNH3)；如果实在没有后者，请自行淘宝/咸鱼
+
+<details style="display:inline-block; margin-bottom: -5px;"><summary>（...）</summary>跟我的AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx   (2.10 GHz)说去吧</details>
 
 ## 观前须知
 
