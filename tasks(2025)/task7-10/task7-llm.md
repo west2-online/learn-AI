@@ -10,9 +10,9 @@
 
 此阶段的学习目的在于：
 
-* **拥抱业界最强生态，效率至上**：你将告别纯粹的底层复现与手搓模型，转而拥抱并深度掌握由全球AI社区共同构建的、工业界最顶尖的 LLM “魔法圣器”——以 **Hugging Face** 和 **LangChain** 为代表的工具链。学习如何高效地加载、调用、微调和组合这些强大的模型与框架，让你的开发效率实现质的飞跃。
-* **掌握“基础语言魔法”，实现核心功能**：你将不仅仅停留在调用 LLM API 的层面。你将学习如何灵活运用 LLM 的核心能力，通过精巧的提示工程（Prompt Engineering）和简单的链式（Chains）组合，实现文本生成、智能问答、内容摘要等基础而强大的语言智能功能。
-* **奠定“LLM实战基础”，指引未来方向**：通过本阶段的学习与实践，你将建立起扎实的 LLM 应用开发能力，清楚地了解从模型选择、数据准备、基础微调策略到应用原型设计的全链路。这不仅是技能树的拓展，更是你未来在 LLM 领域进行更高级部署、前沿科研探索及商业化落地的坚实基石。你将从一个“旁观者”，成长为一名能够真正“创造和引领”语言智能未来的先行者！
+* **拥抱业界最强生态，效率至上**：你将告别纯粹的底层复现与手搓模型，转而拥抱并深度掌握由全球 AI 社区共同构建的、工业界最顶尖的 LLM "魔法圣器"——以 **Hugging Face** 和 **LangChain** 为代表的工具链。学习如何高效地加载、调用、微调和组合这些强大的模型与框架，让你的开发效率实现质的飞跃。
+* **掌握"基础语言魔法"，实现核心功能**：你将不仅仅停留在调用 LLM API 的层面。你将学习如何灵活运用 LLM 的核心能力，通过精巧的提示工程（Prompt Engineering）和简单的链式（Chains）组合，实现文本生成、智能问答、内容摘要等基础而强大的语言智能功能。
+* **奠定"LLM 实战基础"，指引未来方向**：通过本阶段的学习与实践，你将建立起扎实的 LLM 应用开发能力，清楚地了解从模型选择、数据准备、基础微调策略到应用原型设计的全链路。这不仅是技能树的拓展，更是你未来在 LLM 领域进行更高级部署、前沿科研探索及商业化落地的坚实基石。你将从一个"旁观者"，成长为一名能够真正"创造和引领"语言智能未来的先行者！
 
 ---
 
@@ -20,11 +20,11 @@
 
 本阶段将聚焦于 LLM 领域最核心、最实用的应用开发工具与技术，助你从理论走向实践。
 
-* **Hugging Face 生态工具链的深度探索：你的“模型军械库”**
+* **Hugging Face 生态工具链的深度探索：你的"模型军械库"**
 
   * **`transformers` 库**：
 
-    * 深入学习如何加载和使用各种预训练的 LLM 模型（如 Llama, Mistral, Gemma, GLM 等）及其配套的 Tokenizer。
+    * 深入学习如何加载和使用各种预训练的 LLM 模型（如 Llama、Mistral、Gemma、GLM 等）及其配套的 Tokenizer。
     * 进行文本生成、情感分析、问答、翻译等基础任务的推理实践。
     * 模型结构认知：理解不同 LLM 模型的特点、优势及适用场景。
   * **`pipeline` 模块**：
@@ -48,11 +48,11 @@
 
 ## **推荐教程：通往LLM世界的权威指引**
 
-* **Hugging Face 官方文档与教程 (英文，但高质量)**
+* **Hugging Face 官方文档与教程**
 
   * [Hugging Face Transformers 官方文档](https://huggingface.co/docs/transformers/index)
   * [Hugging Face Course (推荐从 NLP 模块开始)](https://huggingface.co/course/chapter1/1)
-* **LangChain 官方文档 (英文，更新迅速)**
+* **LangChain 官方文档**
 
   * [LangChain Python Docs](https://python.langchain.com/docs/get_started/introduction)
   * [LangChain Expressions Language (LCEL) 教程](https://python.langchain.com/docs/expression_language/) (非常推荐，它是 LangChain 的未来)
@@ -84,7 +84,7 @@
 
    * 加载一个开源的文本生成 LLM 模型（例如 Llama2-7B-Chat、Mistral-7B-Instruct 等，可通过 Hugging Face 加载）。
    * 实现一个简单的文本生成功能，用户输入一个开头（prompt），模型能生成一段连贯的文本。
-   * 尝试调整生成参数（如 `max_new_tokens`, `temperature`, `top_k`, `top_p`），观察它们对生成结果的影响。
+   * 尝试调整生成参数（如 `max_new_tokens`、`temperature`、`top_k`、`top_p`），观察它们对生成结果的影响。
 2. **文本摘要/翻译器**：
 
    * 选择一个你感兴趣的 NLP 任务，例如：

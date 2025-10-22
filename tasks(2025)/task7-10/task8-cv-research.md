@@ -2,10 +2,10 @@
 
 ## **学习目的：从调包到洞察**
 
-你已经在 Task 7 中初步接触了 `OpenCV`, `timm` 和 `OpenMMLab` 生态，它们是当今 CV 应用的标准套件。然而，你是否曾想过：
+你已经在 Task 7 中初步接触了 `OpenCV`、`timm` 和 `OpenMMLab` 生态，它们是当今 CV 应用的标准套件。然而，你是否曾想过：
 
-* 为什么 `AlexNet` 的出现，被称作CV界的宇宙大爆炸？
-* 为什么 `ResNet` 能堆到152层还不会退化，它解决了什么根本问题？
+* 为什么 `AlexNet` 的出现，被称作 CV 界的宇宙大爆炸？
+* 为什么 `ResNet` 能堆到 152 层还不会退化，它解决了什么根本问题？
 * `R-CNN` 和 `YOLO`，同为目标检测，它们在设计哲学上到底有何天壤之别？
 
 如果你在应用路线上感到知其然，而不知其所以然，那么 **Task 8 的科研路线，就是为你铸魂的时刻！**
@@ -24,24 +24,24 @@
 
 本阶段将聚焦于串联起现代 CV 应用背后的核心论文，理解它们之间的传承与革新。
 
-* **深度力量的觉醒 (The Big Bang)**
+* **深度力量的觉醒（The Big Bang）**
 
-  * **`AlexNet`**: 理解它为何能在 2012 年断层式地赢得 ImageNet 竞赛。学习它如何**首次成功地将深度卷积网络(CNN)应用于大规模图像分类**，以及 `ReLU` 激活函数、`GPU` 并行训练等工程技巧的开创性使用。
-* **深度瓶颈的突破 (The Backbone)**
+  * **`AlexNet`**：理解它为何能在 2012 年断层式地赢得 ImageNet 竞赛。学习它如何**首次成功地将深度卷积网络（CNN）应用于大规模图像分类**，以及 `ReLU` 激活函数、`GPU` 并行训练等工程技巧的开创性使用。
+* **深度瓶颈的突破（The Backbone）**
 
-  * **`ResNet`**: 洞察在 `AlexNet` 之后，网络越堆越深时遇到的梯度消失和网络退化(Degradation)的绝境。学习 `ResNet` 是如何通过**残差连接(Skip Connection)**的精妙设计，**彻底解决了深度的诅咒**，让训练成百上千层的网络成为可能，并成为了后续所有CV任务的标准骨架。
-* **两阶段检测范式的确立 (The Two-Stage)**
+  * **`ResNet`**：洞察在 `AlexNet` 之后，网络越堆越深时遇到的梯度消失和网络退化（Degradation）的绝境。学习 `ResNet` 是如何通过**残差连接（Skip Connection）** 的精妙设计，**彻底解决了深度的诅咒**，让训练成百上千层的网络成为可能，并成为了后续所有 CV 任务的标准骨架。
+* **两阶段检测范式的确立（The Two-Stage）**
 
-  * **`R-CNN`**: 学习它是如何开创性地将分类问题拓展到检测问题。理解其**先提议、后分类(Propose then Classify)的两阶段核心思想**——即先用传统方法（如 Selective Search）找出可能有物体的区域(Region)，再对每个区域用CNN（如 `AlexNet`）去识别。
+  * **`R-CNN`**：学习它是如何开创性地将分类问题拓展到检测问题。理解其**先提议、后分类（Propose then Classify）的两阶段核心思想**——即先用传统方法（如 Selective Search）找出可能有物体的区域（Region），再对每个区域用 CNN（如 `AlexNet`）去识别。
 * **一阶段检测革命 (The One-Stage)**
 
   * **`YOLO`**: 学习 `YOLO (You Only Look Once)` 是如何**彻底颠覆** `R-CNN` 体系的。理解其**一步到位的端到端哲学**——它将检测视为一个**单一的回归问题**，直接在全图上预测框和类别，从而实现了**前所未有的实时检测速度**。
 
 ---
 
-## 推荐教程：神话的原文 (The Papers)
+## 推荐教程：神话的原文（The Papers）
 
-本阶段的教程不再是文档或博客，而是那些定义了时代的原始论文。请至少阅读它们的摘要(Abstract)、引言(Introduction)和结论(Conclusion)。
+本阶段的教程不再是文档或博客，而是那些定义了时代的原始论文。请至少阅读它们的摘要（Abstract）、引言（Introduction）和结论（Conclusion）。
 
 * **[AlexNet]**: **"ImageNet Classification with Deep Convolutional Neural Networks"** (Krizhevsky et al., 2012)
 
@@ -58,9 +58,9 @@
 
 ---
 
-## 作业：撰写你的CV思想族谱报告 (A-la-One Report)
+## 作业：撰写你的 CV 思想族谱报告（A-la-One Report）
 
-在应用路线的同学在配置 `mmdetection` 跑通 `YOLO` 项目时，你的任务是构建一个All-in-One Insight——一份阐明你所有见解的**思想族谱报告**。
+在应用路线的同学在配置 `mmdetection` 跑通 `YOLO` 项目时，你的任务是构建一个 All-in-One Insight——一份阐明你所有见解的**思想族谱报告**。
 
 ### **作业要求**
 
@@ -76,12 +76,8 @@
      * `ResNet` 的残差块是如何从**根本上**解决这个问题的？
    * **[ResNet -> R-CNN / YOLO]**
 
-     * 为什么一个强大的分类网络（如 `ResNet`）是 `R-CNN` 和 `YOLO` 成功的**先决条件**？（即Backbone的意义是什么？）
+     * 为什么一个强大的分类网络（如 `ResNet`）是 `R-CNN` 和 `YOLO` 成功的**先决条件**？（即 Backbone 的意义是什么？）
    * **[R-CNN vs. YOLO]**
 
      * 请用你自己的话，描述 `R-CNN`（两阶段）和 `YOLO`（一阶段）在**核心设计哲学**上的**最大区别**。
      * 这个哲学区别是如何直接导致了它们俩最著名的性能权衡（Trade-off）的？（提示：一个准而慢，一个快但（早期）没那么准）
-——即先用传统方法（如 Selective Search）找出可能有物体的区域(Region)，再对每个区域用CNN（如 `AlexNet`）去识别。
-* **一阶段检测革命 (The One-Stage)**
-
-  * **`YOLO`**: 学习 `YOLO (You Only Look Once)` 是如何**彻底颠覆** `R-CNN` 体系的。理解其**一步到位的端到端哲学**——它将检测视为一个**单一的回归问题**，直接在全图上预测框和类别，从而实现了**前所未有的实时检测速度**。

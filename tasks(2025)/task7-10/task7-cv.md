@@ -10,9 +10,9 @@
 
 此阶段的学习目的在于：
 
-* **拥抱业界最强生态，效率至上**：你将告别纯粹的底层复现与手搓模型，转而拥抱并深度掌握由全球AI社区共同构建的、工业界最顶尖的 CV 魔法圣器——以 **OpenMMLab**, **timm**, **Albumentations** 和 **OpenCV** 为代表的工具链。学习如何高效地加载SOTA模型、构建复杂数据增强、并使用框架驱动训练，让你的开发效率实现质的飞跃。
-* **掌握核心视觉魔法，实现核心功能**：你将不仅仅停留在手写训练循环的层面。你将学习如何灵活运用这些生态工具，通过标准化的配置（Configs）和强大的API，高效实现**图像分类**、**目标检测**、**图像分割**等基础而强大的视觉智能功能。
-* **奠定CV实战基础，指引未来方向**：通过本阶段的学习与实践，你将建立起扎实的 CV 应用开发能力，清楚地了解从数据处理、模型选型、SOTA训练范式到应用原型设计的全链路。这不仅是技能树的拓展，更是你未来在 CV 领域进行更高级部署、前沿科研探索及商业化落地的坚实基石。你将从一个旁观者，成长为一名能够真正创造和引领视觉智能未来的先行者。
+* **拥抱业界最强生态，效率至上**：你将告别纯粹的底层复现与手搓模型，转而拥抱并深度掌握由全球 AI 社区共同构建的、工业界最顶尖的 CV 魔法圣器——以 **OpenMMLab**、**timm**、**Albumentations** 和 **OpenCV** 为代表的工具链。学习如何高效地加载 SOTA 模型、构建复杂数据增强、并使用框架驱动训练，让你的开发效率实现质的飞跃。
+* **掌握核心视觉魔法，实现核心功能**：你将不仅仅停留在手写训练循环的层面。你将学习如何灵活运用这些生态工具，通过标准化的配置（Configs）和强大的 API，高效实现**图像分类**、**目标检测**、**图像分割**等基础而强大的视觉智能功能。
+* **奠定 CV 实战基础，指引未来方向**：通过本阶段的学习与实践，你将建立起扎实的 CV 应用开发能力，清楚地了解从数据处理、模型选型、SOTA 训练范式到应用原型设计的全链路。这不仅是技能树的拓展，更是你未来在 CV 领域进行更高级部署、前沿科研探索及商业化落地的坚实基石。你将从一个旁观者，成长为一名能够真正创造和引领视觉智能未来的先行者。
 
 ---
 
@@ -22,30 +22,30 @@
 
 * **`OpenCV`：你的数字暗房**
 
-  * **图像I/O**：深入学习 `cv2.imread`, `cv2.imwrite`, `cv2.imshow`，掌握不同图像格式的读写。
-  * **色彩空间**：理解并实践 `cv2.cvtColor` (如 BGR <-> RGB, BGR <-> GRAY)。
-  * **基础变换**：掌握 `cv2.resize`, `cv2.flip`, `cv2.rotate`。
-  * **图像处理**：学习高斯模糊 (`GaussianBlur`)、边缘检测 (`Canny`)、形态学操作 (`erode`, `dilate`) 等经典算法。
+  * **图像 I/O**：深入学习 `cv2.imread`、`cv2.imwrite`、`cv2.imshow`，掌握不同图像格式的读写。
+  * **色彩空间**：理解并实践 `cv2.cvtColor` (如 BGR <-> RGB、BGR <-> GRAY)。
+  * **基础变换**：掌握 `cv2.resize`、`cv2.flip`、`cv2.rotate`。
+  * **图像处理**：学习高斯模糊 (`GaussianBlur`)、边缘检测 (`Canny`)、形态学操作 (`erode`、`dilate`) 等经典算法。
 
-* **`Albumentations`：你的SOTA数据增强工坊**
+* **`Albumentations`：你的 SOTA 数据增强工坊**
 
   * **核心 Pipeline**：理解 `A.Compose` 的概念，学习如何构建一个强大的、可序列化的数据增强流水线。
-  * **像素级增强**：掌握 `RandomBrightnessContrast`, `CLAHE`, `ColorJitter` 等。
-  * **空间级增强**：掌握 `ShiftScaleRotate`, `Perspective`, `GridDistortion` 等。
-  * **特定任务增强**：了解如何将其应用于目标检测（同步增强BBox）和分割（同步增强Mask）。
+  * **像素级增强**：掌握 `RandomBrightnessContrast`、`CLAHE`、`ColorJitter` 等。
+  * **空间级增强**：掌握 `ShiftScaleRotate`、`Perspective`、`GridDistortion` 等。
+  * **特定任务增强**：了解如何将其应用于目标检测（同步增强 BBox）和分割（同步增强 Mask）。
 
-* **`timm` (PyTorch Image Models)：你的SOTA模型军械库**
+* **`timm` (PyTorch Image Models)：你的 SOTA 模型军械库**
 
-  * **`timm.create_model`**：学习如何**一键加载**海量的预训练模型（如 `ResNet`, `ViT`, `SwinTransformer`, `ConvNeXt` 等）。
+  * **`timm.create_model`**：学习如何**一键加载**海量的预训练模型（如 `ResNet`、`ViT`、`SwinTransformer`、`ConvNeXt` 等）。
   * **特征提取**：学习如何使用 `features_only=True` 或 `get_intermediate_layers` 来获取模型的中间层特征图（Feature Maps）。
   * **模型微调**：理解如何替换 `timm` 模型的分类头 (`classifier` / `head`) 以适应你自己的任务。
 
-* **`OpenMMLab` 生态 (重点)：你的AI航母战斗群**
+* **`OpenMMLab` 生态 (重点)：你的 AI 航母战斗群**
 
   * **`MMCV` / `MMEngine`**：理解 `OpenMMLab` 的灵魂——**Config 配置文件系统**和**注册器 (Registry)** 机制。这是你驾驭整个生态的基础。
   * **`MMPretrain` (原 MMClassification)**：
 
-    * **核心实践**：学习如何**不写一行训练代码**，仅通过修改 `Config` 文件，来**复现**一个SOTA的图像分类模型（如在 CIFAR-10 或 ImageNet 上的 ResNet）。
+    * **核心实践**：学习如何**不写一行训练代码**，仅通过修改 `Config` 文件，来**复现**一个 SOTA 的图像分类模型（如在 CIFAR-10 或 ImageNet 上的 ResNet）。
     * 学习 `tools/train.py` 和 `tools/test.py` 脚本的使用。
   * **`MMDetection` (目标检测)**：
 
