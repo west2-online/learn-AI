@@ -1,83 +1,63 @@
 # Task 8：CV-Research
 
-## **学习目的：从调包到洞察**
+## 学习目的
 
-你已经在 Task 7 中初步接触了 `OpenCV`、`timm` 和 `OpenMMLab` 生态，它们是当今 CV 应用的标准套件。然而，你是否曾想过：
+你已经在 Task 7 中初步接触了 `OpenCV`、`timm` 和 `OpenMMLab` 生态，这些是当今计算机视觉应用的标准工具。然而，仅仅掌握工具的使用并不足以深入理解计算机视觉技术的本质。
 
-* 为什么 `AlexNet` 的出现，被称作 CV 界的宇宙大爆炸？
-* 为什么 `ResNet` 能堆到 152 层还不会退化，它解决了什么根本问题？
-* `R-CNN` 和 `YOLO`，同为目标检测，它们在设计哲学上到底有何天壤之别？
+本阶段的学习目标是理解现代计算机视觉技术的演进脉络，通过研读经典论文，掌握核心思想的演化过程。
 
-如果你在应用路线上感到知其然，而不知其所以然，那么 **Task 8 的科研路线，就是为你铸魂的时刻！**
+- **追本溯源，构建知识体系**：通过阅读奠基性论文，理解现代深度视觉技术的发展历程
+- **理解技术演进规律**：当前的 SOTA 模型都是在前人工作基础上的创新。`ResNet` 解决了 `AlexNet` 面临的深度瓶颈问题；`R-CNN` 和 `YOLO` 则基于强大的分类网络（如 `ResNet`），针对检测任务提出了两种不同的解决方案
+- **建立系统性思维**：完成本阶段学习后，你将建立清晰的概念框架。面对新的计算机视觉技术（如 ViT、DETR、NeRF）时，能够快速定位其在技术谱系中的位置，理解其解决的问题和继承的思想
 
-此阶段的学习目的，是让你**停止追逐SOTA，开始理解思想**。你将沿着 `AlexNet -> ResNet -> R-CNN -> YOLO` 这条黄金族谱，进行一次思想考古。
+## 学习内容
 
-* **追本溯源，构筑你的思想族谱**：你将亲身回到那些神话诞生的时刻，阅读那些定义了现代深度视觉范式的奠基之作。
-* **理解演化而非突变**：你将洞察到，今天我们所用的一切SOTA模型，都不是凭空出现的。`ResNet` 是对 `AlexNet` 深度瓶颈的伟大突破；而 `R-CNN` 和 `YOLO` 则是站在 `ResNet` 这样的巨人骨架上，对检测任务提出的两种截然不同的解法。
-* **从调包侠到思想布道者**：完成本轮试炼，你将拥有一个清晰的概念地图。当你再次面对新的CV技术（如 ViT, DETR, NeRF）时，你将不再是盲目跟风，而是能迅速定位它在整个族谱中的位置，理解它解决了什么以及继承了什么。
+本阶段将通过研读现代计算机视觉领域的核心论文，理解技术演进的内在逻辑。
 
-这是成为一名真正AI架构师和研究者的必经之路。
+### 深度卷积网络的突破
 
----
+**AlexNet**：理解其在 2012 年 ImageNet 竞赛中取得突破性成功的原因。学习其如何首次成功地将深度卷积网络（CNN）应用于大规模图像分类，以及 `ReLU` 激活函数、`GPU` 并行训练等工程技术的应用。
 
-## 学习内容：CV黄金时代的思想族谱
+### 网络深度的突破
 
-本阶段将聚焦于串联起现代 CV 应用背后的核心论文，理解它们之间的传承与革新。
+**ResNet**：深入理解网络加深过程中遇到的梯度消失和网络退化（Degradation）问题。学习 `ResNet` 如何通过残差连接（Skip Connection）解决深度网络训练的难题，使得训练成百上千层的网络成为可能，并成为后续计算机视觉任务的标准骨干网络。
 
-* **深度力量的觉醒（The Big Bang）**
+### 两阶段检测范式
 
-  * **`AlexNet`**：理解它为何能在 2012 年断层式地赢得 ImageNet 竞赛。学习它如何**首次成功地将深度卷积网络（CNN）应用于大规模图像分类**，以及 `ReLU` 激活函数、`GPU` 并行训练等工程技巧的开创性使用。
-* **深度瓶颈的突破（The Backbone）**
+**R-CNN**：学习其如何将分类问题拓展到检测问题。理解其先提议、后分类（Propose then Classify）的两阶段核心思想——先使用传统方法（如 Selective Search）提取可能包含物体的区域（Region），再对每个区域使用 CNN（如 `AlexNet`）进行分类。
 
-  * **`ResNet`**：洞察在 `AlexNet` 之后，网络越堆越深时遇到的梯度消失和网络退化（Degradation）的绝境。学习 `ResNet` 是如何通过**残差连接（Skip Connection）** 的精妙设计，**彻底解决了深度的诅咒**，让训练成百上千层的网络成为可能，并成为了后续所有 CV 任务的标准骨架。
-* **两阶段检测范式的确立（The Two-Stage）**
+### 一阶段检测革命
 
-  * **`R-CNN`**：学习它是如何开创性地将分类问题拓展到检测问题。理解其**先提议、后分类（Propose then Classify）的两阶段核心思想**——即先用传统方法（如 Selective Search）找出可能有物体的区域（Region），再对每个区域用 CNN（如 `AlexNet`）去识别。
-* **一阶段检测革命 (The One-Stage)**
+**YOLO**：学习 `YOLO (You Only Look Once)` 如何突破 `R-CNN` 的两阶段范式。理解其端到端的设计思想——将检测视为单一的回归问题，直接在全图上预测框和类别，从而实现实时检测。
 
-  * **`YOLO`**: 学习 `YOLO (You Only Look Once)` 是如何**彻底颠覆** `R-CNN` 体系的。理解其**一步到位的端到端哲学**——它将检测视为一个**单一的回归问题**，直接在全图上预测框和类别，从而实现了**前所未有的实时检测速度**。
+## 推荐教程
 
----
+本阶段的学习资料为奠基性论文，建议至少阅读论文的摘要（Abstract）、引言（Introduction）和结论（Conclusion）部分。
 
-## 推荐教程：神话的原文（The Papers）
+- **AlexNet**: "ImageNet Classification with Deep Convolutional Neural Networks" (Krizhevsky et al., 2012) [搜索论文](https://www.google.com/search?q=ImageNet+Classification+with+Deep+Convolutional+Neural+Networks+paper)
+- **ResNet**: "Deep Residual Learning for Image Recognition" (He et al., 2015) [搜索论文](https://www.google.com/search?q=Deep+Residual+Learning+for+Image+Recognition+paper)
+- **R-CNN**: "Rich feature hierarchies for accurate object detection and semantic segmentation" (Girshick et al., 2014) [搜索论文](https://www.google.com/search?q=Rich+feature+hierarchies+for+accurate+object+detection+and+semantic+segmentation+paper)
+- **YOLO**: "You Only Look Once: Unified, Real-Time Object Detection" (Redmon et al., 2016) [搜索论文](https://www.google.com/search?q=You+Only+Look+Once:+Unified,+Real-Time+Object+Detection+paper)
 
-本阶段的教程不再是文档或博客，而是那些定义了时代的原始论文。请至少阅读它们的摘要（Abstract）、引言（Introduction）和结论（Conclusion）。
+## 考核内容
 
-* **[AlexNet]**: **"ImageNet Classification with Deep Convolutional Neural Networks"** (Krizhevsky et al., 2012)
+### 论文研读报告
 
-  * [点击搜索论文 (Google Search)](https://www.google.com/search?q=ImageNet+Classification+with+Deep+Convolutional+Neural+Networks+paper)
-* **[ResNet]**: **"Deep Residual Learning for Image Recognition"** (He et al., 2015)
+1. **提交形式**
 
-  * [点击搜索论文 (Google Search)](https://www.google.com/search?q=Deep+Residual+Learning+for+Image+Recognition+paper)
-* **[R-CNN]**: **"Rich feature hierarchies for accurate object detection and semantic segmentation"** (Girshick et al., 2014)
+以 Markdown 或 Jupyter Notebook 形式提交分析报告
 
-  * [点击搜索论文 (Google Search)](https://www.google.com/search?q=Rich+feature+hierarchies+for+accurate+object+detection+and+semantic+segmentation+paper)
-* **[YOLO]**: **"You Only Look Once: Unified, Real-Time Object Detection"** (Redmon et al., 2016)
+2. **核心内容**
 
-  * [点击搜索论文 (Google Search)](https://www.google.com/search?q=You+Only+Look+Once:+Unified,+Real-Time+Object+Detection+paper)
+通过研读上述 4 篇（或更多）论文，回答以下核心问题：
 
----
+- **AlexNet -> ResNet**
+  - `AlexNet` 证明了深度网络的有效性，但为什么在其之后，简单地堆叠更深的网络会遇到困难（即网络退化问题的本质是什么）
+  - `ResNet` 的残差块如何从根本上解决这个问题
 
-## 作业：撰写你的 CV 思想族谱报告（A-la-One Report）
+- **ResNet -> R-CNN / YOLO**
+  - 为什么强大的分类网络（如 `ResNet`）是 `R-CNN` 和 `YOLO` 成功的前提条件（即 Backbone 的意义）
 
-在应用路线的同学在配置 `mmdetection` 跑通 `YOLO` 项目时，你的任务是构建一个 All-in-One Insight——一份阐明你所有见解的**思想族谱报告**。
-
-### **作业要求**
-
-1. **提交形式**：
-
-   * 一份 Markdown 报告（或 Jupyter Notebook），清晰地阐述你的分析。
-2. **核心内容：连接思想的脉络**：
-
-   * 你需要**串联**阅读上述 4 篇（或更多）论文，并回答以下几个**核心问题**：
-   * **[AlexNet -> ResNet]**
-
-     * `AlexNet` 证明了深是好的，但为什么在它之后，人们无法简单地堆叠出更深的网络？（即网络退化问题是什么？）
-     * `ResNet` 的残差块是如何从**根本上**解决这个问题的？
-   * **[ResNet -> R-CNN / YOLO]**
-
-     * 为什么一个强大的分类网络（如 `ResNet`）是 `R-CNN` 和 `YOLO` 成功的**先决条件**？（即 Backbone 的意义是什么？）
-   * **[R-CNN vs. YOLO]**
-
-     * 请用你自己的话，描述 `R-CNN`（两阶段）和 `YOLO`（一阶段）在**核心设计哲学**上的**最大区别**。
-     * 这个哲学区别是如何直接导致了它们俩最著名的性能权衡（Trade-off）的？（提示：一个准而慢，一个快但（早期）没那么准）
+- **R-CNN vs. YOLO**
+  - 描述 `R-CNN`（两阶段）和 `YOLO`（一阶段）在核心设计思想上的主要区别
+  - 这种设计差异如何导致了它们在性能上的权衡（Trade-off）

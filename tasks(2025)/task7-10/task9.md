@@ -1,35 +1,31 @@
-# Task 9：The Summit
+# Task 9
 
-## 学习目的：从**原型**到**成品**，从**已知**到**未来**
+## 学习目的
 
-你已经征服了 Task 8。
+你已经完成了 Task 8 的学习。
 
-* **如果你写了 task8-apply**：你亲手打造了一个功能强大、逻辑复杂的**魔法原型**（一个高级 RAG Agent，或一个 SOTA 的 CV 检测模型）。它在你的本地机器/开发环境里运行得完美无缺... 但它能承受一千个、一万个用户的同时访问吗？它能在生产环境上做到瞬时响应、坚如磐石吗？
-* **如果你研究了 task8-research**：你已经追溯了那些**古代神话**（BERT、ResNet...）。你理解了我们**为何**站在这里... 但你是否听到了来自**未来**的呼唤？那些正在被书写的**新神话**（DPO、Sora、NeRF），你是否敢于去直面它们、解构它们？
+- **如果你完成了 task8-apply**：你构建了一个功能强大、逻辑复杂的应用原型（一个高级 RAG Agent，或一个 SOTA 的 CV 检测模型）。它在本地开发环境里运行良好，但是否能承受大量用户的同时访问？能否在生产环境上做到高效响应和稳定运行？
+- **如果你完成了 task8-research**：你已经研读了那些奠基性论文（BERT、ResNet 等），理解了我们为何站在这里。但你是否关注到正在被书写的新技术（DPO、Sora、NeRF）？
 
-**Task 9，就是你从过去走到现在的实战。**
+Task 9 是你从理论到实践的进阶阶段。
 
-* **【应用 (The Path of Application)】**
+### 应用路线（Apply）
 
-  * **使命**：**部署 (Deployment)** 与 **运维 (Operations)**。你的使命不再是**让它跑通**，而是**让它跑得又快、又稳、又能服务万千用户**。你将成为连接**算法**与**现实**的最后一道桥梁，执掌 AI 在生产环境中的命脉。
-  * **战场**：
+- **核心目标**：部署（Deployment）与运维（Operations）。你的目标不再是让系统运行，而是让它运行得高效、稳定，能够服务大量用户
+- **学习方向**：
+  - **LLM 应用**：深入学习 MLOps / LLMOps 的核心技术。你将面对延迟和成本的挑战，使用 `vLLM`（高吞吐量）、`FastAPI`（API 标准化）、`Docker/容器化`（环境隔离）、`流式传输`（用户体验优化），以及 `Triton`（NVIDIA 推理服务）等工具
+  - **CV 应用**：学习性能优化技术。你的学习重点是边缘设备和云端 GPU 的部署，使用 `TensorRT / ONNX`（模型加速）、`OpenVINO`（Intel 平台）、`Triton Inference Server`（工业级部署），以及 `MLOps` 流水线（CI/CD）
+- **关键词**：性能、稳定性、可扩展性（Performance, Reliability, Scalability）
 
-    * **(LLM 应用)**：你将深入 **MLOps / LLMOps** 的核心。你的敌人是**延迟**和**成本**。你的武器是 `vLLM` (极致吞吐量)、`FastAPI` (标准 API)、`Docker/容器化` (环境隔离)、`流式传输` (用户体验)，以及 `Triton` (NVIDIA 推理服务)。
-    * **(CV 应用)**：你将成为**性能优化大师**。你的战场是**边缘设备**和**云端 GPU**。你的武器是 `TensorRT / ONNX` (模型加速)、`OpenVINO` (Intel 平台)、`Triton Inference Server` (工业级部署)，以及 `MLOps` 流水线 (CI/CD)。
-  * **核心**：**性能、稳定、可扩展性 (Performance, Reliability, Scalability)。**
+### 研究路线（Research）
 
-* **【论文 (The Path of Research)】**
+- **核心目标**：前沿探索。你的目标不再是理解过去，而是解读现在，洞察未来。你将学习那些刚刚诞生、甚至还未被完全理解的新技术
+- **学习方向**：
+  - **LLM**：深入学习 AI 对齐（Alignment）技术。你将研究 `RLHF` 和 `DPO` 的原理，学习如何使用 `HELM` 等整体性评估基准衡量模型能力
+  - **CV**：从 2D 理解跃迁到 3D 创造。你将探索神经渲染（`NeRF`）的原理，研究生成模型（`Stable Diffusion`、`DiT/Sora`）如何生成图像和视频
+- **关键词**：前沿论文、批判性思维、未来趋势（Bleeding-Edge, Critical Thinking, Future Trends）
 
-  * **使命**：**预言 (Foreseeing)**。你的使命不再是**理解过去**，而是**解构现在，洞察未来**。你将站在时间的最前沿，去触碰那些刚刚诞生、甚至还未被完全理解的**新魔法**。
-  * **战场**：
-
-    * **(LLM)**：你将深入 AI 的**灵魂**——**对齐 (Alignment)**。你将直面 `RLHF` 的复杂与 `DPO` 的精妙。你将学习如何**衡量**灵魂—— `HELM` 等**整体性评估**基准。
-    * **(CV)**：你将从**看懂 2D** 跃迁到**创造 3D**。你将探索**神经渲染** (`NeRF`) 的奥秘，解构**生成模型** (`Stable Diffusion`、`DiT/Sora`) 如何凭空创造世界。
-  * **核心**：**前沿论文、批判性思维、未来趋势 (Bleeding-Edge, Critical Thinking, Future Trends)。**
-
----
-
-## 学习内容：
+## 学习内容
 
 [task9-llm-apply](task9-llm-apply.md)
 
