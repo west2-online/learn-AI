@@ -1,4 +1,4 @@
-# Task 7：LLM
+# Task 7：RAG 与 Agent
 
 ## 学习目的：从理解原理到高效实践（Learning Objectives: From Understanding to Efficient Practice）
 

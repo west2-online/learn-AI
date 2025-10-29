@@ -66,7 +66,7 @@ AI 领域的发展速度超乎想象，每隔几个月甚至几周，都可能�
 
 | 阶段（Phase） | 学习内容（Learning Content） | 目标（Goal） | 预期时长（Duration） |
 | :--- | :--- | :--- | :--- |
-| **[高级生态](task7.md)** | AI 生态工具链（Hugging Face, LangChain, OpenMMLab, OpenCV） | **掌握工业界的核心工具**。从底层实现转向高效开发。熟练使用 Hugging Face、LangChain（LLM）与 OpenMMLab、timm（CV）等最先进生态系统，具备快速构建、训练和迭代复杂 AI 应用的能力。 | - |
-| **[应用与科研](task8.md)** | 高级应用与论文阅读（Advanced RAG, Agent, YOLO, 论文复现） | **方向分化与专业深化**：成为实践者与研究者。深入 LLM（高级 RAG, Agent）与 CV（YOLO 系列, R-CNN）的最先进应用。同时，系统性阅读顶级会议论文，培养独立科研能力，实现从使用者到贡献者的转变。 | - |
-| **[部署与前沿](task9.md)** | 模型部署与前沿探索（MLOps, vLLM, TensorRT, Sora, 3D Vision） | **系统部署与前沿追踪**：让 AI 落地并追踪未来。掌握 MLOps/LLMOps，学会使用 vLLM、TensorRT、ONNX 将模型部署到生产环境。同时，追踪 Sora、3D 视觉等最前沿研究，保持对技术发展的持续关注。 | - |
-| **[视野与责任](task10.md)** | AI 安全、伦理与多模态 | **成为负责任的 AI 开发者**。超越技术本身，深入探讨 AI 安全、对齐与伦理问题。全面理解多模态（Multi-modal）的未来趋势，构建完整、深刻、富有责任感的 AI 世界观，为技术赋予社会价值。 | - |
+| **[高级生态](task7.md)** | AI 生态工具链（Hugging Face, LangChain, OpenMMLab, OpenCV） | **掌握工业界的核心工具**。从底层实现转向高效开发。熟练使用 Hugging Face、LangChain（LLM）与 OpenMMLab、timm（CV）等最先进生态系统，具备快速构建、训练和迭代复杂 AI 应用的能力。 | 45 天 |
+| **[应用与科研](task8.md)** | 高级应用与论文阅读（Advanced RAG, Agent, YOLO, 论文复现） | **方向分化与专业深化**：成为实践者与研究者。深入 LLM（高级 RAG, Agent）与 CV（YOLO 系列, R-CNN）的最先进应用。同时，系统性阅读顶级会议论文，培养独立科研能力，实现从使用者到贡献者的转变。 | 90 天 |
+| **[部署与前沿](task9.md)** | 模型部署与前沿探索（MLOps, vLLM, TensorRT, Sora, 3D Vision） | **系统部署与前沿追踪**：让 AI 落地并追踪未来。掌握 MLOps/LLMOps，学会使用 vLLM、TensorRT、ONNX 将模型部署到生产环境。同时，追踪 Sora、3D 视觉等最前沿研究，保持对技术发展的持续关注。 | 75 天 |
+| **[视野与责任](task10.md)** | AI 安全、伦理与多模态 | **成为负责任的 AI 开发者**。超越技术本身，深入探讨 AI 安全、对齐与伦理问题。全面理解多模态（Multi-modal）的未来趋势，构建完整、深刻、富有责任感的 AI 世界观，为技术赋予社会价值。 | 30 天 |

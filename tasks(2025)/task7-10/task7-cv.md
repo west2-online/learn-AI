@@ -1,4 +1,4 @@
-# Task 7：CV
+# Task 7 CV 现代工具
 
 ## 学习目的：从理解原理到高效实践（Learning Objectives: From Understanding to Efficient Practice）
 
