@@ -51,14 +51,14 @@
 
 这是最具挑战性的任务之一！你将构建一个能将一种语言翻译成另一种语言的系统。你需要：
 
-* 实现一个带有**注意力机制（Attention）**的**编码器-解码器（Encoder-Decoder）**模型。
+* 实现一个带有注意力机制（Attention）的编码器-解码器（Encoder-Decoder）模型。
 * 在训练过程中，你将能观察到模型在生成每一个目标语言单词时，它的注意力是如何在源语言句子的不同部分上动态分配的。
 
 ### **第四部分：探索 Transformer（Assignment 4）**
 
 在体验了 RNN 处理序列的模式后，你将接触到当今 AI 领域的主流方法——Transformer。你需要：
 
-* 学习并亲手实现**自注意力机制（Self-Attention）**和**多头注意力（Multi-Head Attention）**的核心计算过程。
+* 学习并亲手实现自注意力机制（Self-Attention）和多头注意力（Multi-Head Attention）的核心计算过程。
 * 通过构建一个简化的 Transformer 模型，你将彻底理解它为何能并行处理序列，并成为 GPT 等所有大语言模型的基础架构。
 
 ---
