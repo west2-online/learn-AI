@@ -58,8 +58,6 @@
 
 > 完成这次作业后，你将深刻理解一个重要问题：「我们为什么需要 PyTorch 这样的框架？」因为你已经亲身经历了完整的底层实现过程。这种从底层到高层的学习路径，将让你对深度学习的理解远超仅使用现成库的学习者。
 
----
-
 ### 作业 2：根据 MNIST 数据集实现一个简单的识别数字的 Demo（选做）
 
 **核心任务：实现并部署一个基于 TensorFlow.js 的 MNIST 手写数字识别 Web 应用。**
@@ -106,8 +104,6 @@
 #### 提示
 
 - 该项目可以全程跑在 Colab 上，你可以参考答案 [train.ipynb](https://github.com/ShaddockNH3/tfjs-mnist-digit-recognizer/blob/train/training/train.ipynb)，但不要抄袭代码
-
----
 
 ## 作业要求
 
