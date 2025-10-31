@@ -2,6 +2,51 @@
 
 本文档汇总了进行 AI 学习所需掌握的计算机基础知识。你不需要一开始就全部掌握，而是在遇到相关问题时，再回来查阅对应的章节。
 
+## 📋 知识清单
+
+### 基础准备
+- [ ] 注册 Google 账号和 GitHub 账号
+- [ ] 配置科学上网工具
+- [ ] 学习 Markdown 基础语法
+
+### 版本控制
+- [ ] 掌握 Git 基本操作（clone、commit、push）
+- [ ] 学会使用 GitHub（创建仓库、提交 PR）
+- [ ] 理解 Git 工作流
+- [ ] 配置 `.gitignore` 文件避免上传缓存文件
+
+### 开发环境
+- [ ] 配置 Python 虚拟环境（Conda 或 venv）
+- [ ] 安装并配置 IDE（PyCharm 或 VS Code）
+- [ ] 掌握终端/命令行基本操作
+
+### Python 编码规范
+- [ ] 了解 PEP 8 命名规范
+- [ ] 掌握 `if __name__ == "__main__"` 的使用
+- [ ] 学会使用代码风格检查工具（pylint、flake8）
+
+### 网络基础
+- [ ] 理解 HTTP 协议和状态码
+- [ ] 学会使用 Python requests 库调用 API
+- [ ] 了解 API 认证方式
+
+### 系统操作
+- [ ] 掌握文件和目录管理
+- [ ] 学会使用终端运行程序
+- [ ] 了解不同操作系统的差异（Windows/macOS/Linux）
+
+### 错误处理
+- [ ] 识别三种错误类型（语法、运行时、逻辑）
+- [ ] 学会阅读错误信息和堆栈跟踪
+- [ ] 掌握基本调试方法（print 调试、断点调试）
+- [ ] 理解解释型语言的特点
+
+### 编码与字符集
+- [ ] 统一使用 UTF-8 编码
+- [ ] 了解常见编码错误的解决方法
+
+---
+
 ## 前置准备
 
 ### 账号与工具准备
@@ -39,7 +84,7 @@ Markdown 是一种轻量级标记语言，广泛应用于技术文档编写。�
 
 PEP 8 是 Python 官方的代码风格指南。以下是最重要的规范：
 
-##### 命名规范
+**命名规范**
 
 * 变量和函数：使用小写字母，单词之间用下划线分隔（snake_case）
   ```python
@@ -70,7 +115,7 @@ PEP 8 是 Python 官方的代码风格指南。以下是最重要的规范：
           pass
   ```
 
-##### 缩进与空格
+**缩进与空格**
 
 * 使用 4 个空格进行缩进（不要使用 Tab）
 * 运算符两边各留一个空格
@@ -101,7 +146,7 @@ PEP 8 是 Python 官方的代码风格指南。以下是最重要的规范：
       pass
   ```
 
-##### 行长度限制
+**行长度限制**
 
 * 每行代码不超过 79 个字符（文档字符串和注释不超过 72 个字符）
 * 过长的代码可以使用括号、反斜杠或三引号换行
@@ -123,7 +168,7 @@ PEP 8 是 Python 官方的代码风格指南。以下是最重要的规范：
 
 这是 Python 中最重要的编码习惯之一。
 
-##### 作用说明
+**作用说明**
 
 * 区分模块的两种使用方式：
   1. **直接运行**：`python script.py`
@@ -131,7 +176,7 @@ PEP 8 是 Python 官方的代码风格指南。以下是最重要的规范：
 
 * 只有在直接运行时，`if __name__ == "__main__"` 代码块才会执行
 
-##### 基本用法
+**基本用法**
 
 ```python
 def greet(name):
@@ -149,7 +194,7 @@ if __name__ == "__main__":
     main()
 ```
 
-##### 为什么要使用？
+**为什么要使用？**
 
 * **模块复用**：其他文件可以导入你的函数，而不会自动执行测试代码
   ```python
@@ -171,7 +216,7 @@ if __name__ == "__main__":
 
 * **脚本入口**：明确标识程序的入口点
 
-##### 标准项目结构示例
+**标准项目结构示例**
 
 ```python
 #!/usr/bin/env python3
@@ -216,7 +261,7 @@ if __name__ == "__main__":
 
 #### 其他重要规范
 
-##### 导入顺序
+**导入顺序**
 
 导入语句应该分组，每组之间空一行：
 
@@ -240,7 +285,7 @@ from my_module import my_function
 from .utils import helper
 ```
 
-##### 文档字符串（Docstring）
+**文档字符串（Docstring）**
 
 为函数、类、模块编写文档字符串：
 
@@ -263,7 +308,7 @@ def calculate_area(width, height):
     return width * height
 ```
 
-##### 避免使用魔法数字
+**避免使用魔法数字**
 
 将常量定义为有意义的变量：
 
@@ -278,7 +323,7 @@ if age > ADULT_AGE:
     print("成年人")
 ```
 
-##### 使用列表推导式
+**使用列表推导式**
 
 在合适的场景使用列表推导式，代码更简洁：
 
@@ -292,7 +337,7 @@ for i in range(10):
 squares = [i ** 2 for i in range(10)]
 ```
 
-##### 异常处理的具体化
+**异常处理的具体化**
 
 捕获具体的异常类型，而不是捕获所有异常：
 
@@ -357,6 +402,164 @@ GitHub 是基于 Git 的代码托管平台。你需要学会：
 
 * 推荐教程：
   * [Git 工作流详解](https://www.bilibili.com/video/BV19e4y1q7JJ/?spm_id_from=333.337.search-card.all.click)
+
+### `.gitignore` 文件配置
+
+`.gitignore` 文件用于告诉 Git 哪些文件或文件夹不需要被版本控制。这对于避免上传临时文件、缓存、敏感信息等非常重要。
+
+#### 为什么需要 `.gitignore`
+
+* 避免上传无用的缓存文件（如 Python 的 `__pycache__`）
+* 避免上传敏感信息（如 API 密钥、数据库密码）
+* 避免上传依赖包（如 `node_modules`、虚拟环境）
+* 避免上传 IDE 配置文件（如 `.vscode`、`.idea`）
+* 减小仓库体积，提高 clone 和 pull 的速度
+
+#### Python 项目的 `.gitignore` 模板
+
+在项目根目录创建 `.gitignore` 文件，添加以下内容：
+
+```gitignore
+# Python 缓存文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 虚拟环境
+venv/
+env/
+ENV/
+.venv/
+.conda/
+
+# IDE 配置文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# 环境变量和配置文件
+.env
+.env.local
+config.ini
+secrets.json
+
+# 数据文件（根据需要调整）
+*.csv
+*.xlsx
+*.db
+*.sqlite
+data/
+datasets/
+
+# 模型文件（通常很大）
+*.h5
+*.pkl
+*.pth
+*.ckpt
+models/
+checkpoints/
+
+# 日志文件
+*.log
+logs/
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 编译文件
+*.so
+*.dylib
+*.dll
+
+# 分发文件
+dist/
+build/
+*.egg-info/
+```
+
+#### 常见场景说明
+
+**场景 1：上传数据集**
+
+如果你的项目需要上传小型示例数据，可以创建例外规则：
+
+```gitignore
+# 忽略所有数据文件
+data/*
+
+# 但保留示例数据
+!data/sample.csv
+!data/example/
+```
+
+**场景 2：上传配置文件模板**
+
+敏感配置不上传，但可以上传模板：
+
+```gitignore
+# 忽略真实配置
+config.ini
+
+# 保留配置模板
+!config.template.ini
+```
+
+**场景 3：团队协作**
+
+如果团队使用不同 IDE，添加：
+
+```gitignore
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+```
+
+#### 如何使用
+
+1. **创建文件**：在项目根目录创建 `.gitignore` 文件
+   ```bash
+   # Windows PowerShell
+   New-Item .gitignore -ItemType File
+   
+   # macOS/Linux
+   touch .gitignore
+   ```
+
+2. **编辑文件**：用文本编辑器打开，添加上述规则
+
+3. **验证效果**：使用 `git status` 查看，被忽略的文件不会显示
+
+4. **如果文件已被追踪**：如果某些文件在添加 `.gitignore` 前已经被 Git 追踪，需要先移除：
+   ```bash
+   # 移除已追踪的缓存文件
+   git rm -r --cached __pycache__/
+   git rm --cached *.pyc
+   
+   # 提交更改
+   git commit -m "Remove cached files"
+   ```
+
+#### 快速生成 `.gitignore`
+
+* **GitHub 模板**：创建仓库时选择 Python 模板
+* **gitignore.io**：访问 [gitignore.io](https://www.toptal.com/developers/gitignore) 生成自定义模板
+* **VS Code 插件**：安装 `gitignore` 插件快速生成
+
+> 良好的 `.gitignore` 配置是专业项目的标志，从一开始就养成这个习惯！
 
 ## 开发环境
 
@@ -558,7 +761,7 @@ REST（表述性状态转移）是目前最流行的 API 设计风格。
 
 理解 Python 作为解释型语言的特性，有助于你更好地理解为什么某些错误只在运行时才会出现。
 
-##### 编译型语言（如 C、C++、Java）
+**编译型语言（如 C、C++、Java）**
 
 * 执行流程：
   1. 编写源代码
@@ -572,7 +775,7 @@ REST（表述性状态转移）是目前最流行的 API 设计风格。
   * 运行速度快
   * 需要先编译才能运行
 
-##### 解释型语言（如 Python、JavaScript）
+**解释型语言（如 Python、JavaScript）**
 
 * 执行流程：
   1. 编写源代码
@@ -586,7 +789,7 @@ REST（表述性状态转移）是目前最流行的 API 设计风格。
   * 灵活性高，开发效率高
   * 运行速度相对较慢
 
-##### 为什么 Python 的运行时错误只在执行时出现？
+**为什么 Python 的运行时错误只在执行时出现？**
 
 这是 Python 作为**解释型语言**的本质特征：
 
@@ -620,7 +823,7 @@ REST（表述性状态转移）是目前最流行的 API 设计风格。
       import windows_only_module  # 只在 Windows 上才会检查这个模块是否存在
   ```
 
-##### 优缺点对比
+**优缺点对比**
 
 | 特性 | 编译型语言 | 解释型语言（Python） |
 |------|-----------|---------------------|
@@ -630,7 +833,7 @@ REST（表述性状态转移）是目前最流行的 API 设计风格。
 | 灵活性 | 较低（需要声明类型） | 高（动态类型） |
 | 适用场景 | 系统级、性能要求高 | 快速开发、脚本、AI |
 
-##### 对开发的启示
+**对开发的启示**
 
 * 写完代码后要**实际运行测试**，不能仅凭语法检查
 * 使用**类型提示**（Type Hints）可以让 IDE 提前发现一些潜在问题
