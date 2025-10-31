@@ -1,6 +1,6 @@
-# 未来发展方向（Future Development）
+# 未来发展方向
 
-## AI 的未来（The Future of AI）
+## AI 的未来
 
 AI 是什么？
 
@@ -24,7 +24,7 @@ AI 领域的发展速度超乎想象，每隔几个月甚至几周，都可能�
 
 祝你，也祝我们，在这场 AI 技术发展中，都能找到属于自己的发展方向，获得最好的学习成果。
 
-## 未来可能的学习路线（Future Learning Path）
+## 未来可能的学习路线
 
 本路线为 [ShaddockNH3](https://github.com/ShaddockNH3) 自行设计的，如有问题请提 issue
 

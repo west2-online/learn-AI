@@ -39,7 +39,7 @@
 - **R-CNN**: "Rich feature hierarchies for accurate object detection and semantic segmentation" (Girshick et al., 2014) [搜索论文](https://www.google.com/search?q=Rich+feature+hierarchies+for+accurate+object+detection+and+semantic+segmentation+paper)
 - **YOLO**: "You Only Look Once: Unified, Real-Time Object Detection" (Redmon et al., 2016) [搜索论文](https://www.google.com/search?q=You+Only+Look+Once:+Unified,+Real-Time+Object+Detection+paper)
 
-## 考核内容
+## 作业
 
 ### 论文研读报告
 
