@@ -1,4 +1,4 @@
-# **Task 8：发展分化（The Great Divergence）**
+# Task 8：部署与过去
 
 ## 学习目的：工程实践还是理论研究
 

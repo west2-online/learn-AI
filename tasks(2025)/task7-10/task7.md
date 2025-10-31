@@ -1,4 +1,4 @@
-# Task 7
+# Task 7 现代主流 CV or LLM 框架的基本使用
 
 ## 学习目的（Learning Objectives）
 

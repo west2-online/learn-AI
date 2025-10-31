@@ -1,4 +1,4 @@
-# Task 6
+# Task 6 CV or LLM
 
 ## 学习目的（Learning Objectives）
 
