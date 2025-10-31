@@ -2,48 +2,17 @@
 
 本文档汇总了进行 AI 学习所需掌握的计算机基础知识。你不需要一开始就全部掌握，而是在遇到相关问题时，再回来查阅对应的章节。
 
-## 📋 知识清单
+谁看你那b文档.jpg
 
-### 基础准备
-- [ ] 注册 Google 账号和 GitHub 账号
-- [ ] 配置科学上网工具
-- [ ] 学习 Markdown 基础语法
+快速查阅可以查看[QA](QA.md)
 
-### 版本控制
-- [ ] 掌握 Git 基本操作（clone、commit、push）
-- [ ] 学会使用 GitHub（创建仓库、提交 PR）
-- [ ] 理解 Git 工作流
-- [ ] 配置 `.gitignore` 文件避免上传缓存文件
+## 使用说明
 
-### 开发环境
-- [ ] 配置 Python 虚拟环境（Conda 或 venv）
-- [ ] 安装并配置 IDE（PyCharm 或 VS Code）
-- [ ] 掌握终端/命令行基本操作
+本文档是一个索引性质的知识清单。建议你：
 
-### Python 编码规范
-- [ ] 了解 PEP 8 命名规范
-- [ ] 掌握 `if __name__ == "__main__"` 的使用
-- [ ] 学会使用代码风格检查工具（pylint、flake8）
-
-### 网络基础
-- [ ] 理解 HTTP 协议和状态码
-- [ ] 学会使用 Python requests 库调用 API
-- [ ] 了解 API 认证方式
-
-### 系统操作
-- [ ] 掌握文件和目录管理
-- [ ] 学会使用终端运行程序
-- [ ] 了解不同操作系统的差异（Windows/macOS/Linux）
-
-### 错误处理
-- [ ] 识别三种错误类型（语法、运行时、逻辑）
-- [ ] 学会阅读错误信息和堆栈跟踪
-- [ ] 掌握基本调试方法（print 调试、断点调试）
-- [ ] 理解解释型语言的特点
-
-### 编码与字符集
-- [ ] 统一使用 UTF-8 编码
-- [ ] 了解常见编码错误的解决方法
+1. 首次阅读时，快速浏览各个章节，了解大致内容
+2. 在实际学习过程中遇到相关问题时，再回来详细查阅对应章节
+3. 逐步掌握这些基础知识，它们将伴随你整个编程生涯
 
 ---
 
@@ -58,6 +27,43 @@
 3. 注册一个非 QQ 的邮箱（推荐网易邮箱或 Gmail）用于接收学术通知
 
 > 如果在科学上网方面遇到困难，可以私聊寻求帮助。
+
+---
+
+## 学习方法
+
+### 高效提问
+
+作为一名计算机学习者，学会如何高效提问是一项重要技能。
+
+* 推荐阅读：[提问的智慧](https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways/blob/master/README.md)
+
+* 提问时应包含的信息：
+  1. 你想做什么？（你的目标）
+  2. 你尝试了什么？（贴上你的关键代码）
+  3. 你遇到了什么问题？（贴上完整的报错信息）
+  4. 你觉得可能的原因是什么？（展现你的思考过程）
+
+  <img src="task0.assets/55bf4998af2d14209e0879b6237c5cb0.jpeg" alt="55bf4998af2d14209e0879b6237c5cb0.jpeg" style="zoom:50%;" />
+
+### 使用搜索引擎
+
+遇到问题时，首先应该尝试使用搜索引擎（Google、Bing）自行解决。这不仅能培养独立解决问题的能力，也能帮助你更快地成长。
+
+* 搜索技巧：
+  * 使用英文关键词通常能获得更好的结果
+  * 添加 `site:stackoverflow.com` 限定在特定网站搜索
+  * 搜索完整的错误信息
+
+### 使用 AI 辅助工具
+
+不限制使用 ChatGPT、Gemini 等大语言模型工具，但你需要注意：
+
+1. 确保你理解 AI 生成内容的每一个细节
+2. 不要盲目复制粘贴，要理解代码的工作原理
+3. 在使用 AI 生成的代码时，建议添加注释标注来源（如 `# reference from ChatGPT`）
+
+---
 
 ## 文档编写
 
@@ -402,6 +408,158 @@ GitHub 是基于 Git 的代码托管平台。你需要学会：
 
 * 推荐教程：
   * [Git 工作流详解](https://www.bilibili.com/video/BV19e4y1q7JJ/?spm_id_from=333.337.search-card.all.click)
+
+### 开源许可证（LICENSE）
+
+开源许可证决定了他人如何使用、修改和分发你的代码。为项目选择合适的许可证是开源项目的重要组成部分。
+
+#### 为什么需要 LICENSE
+
+* 明确代码的使用权限和限制
+* 保护作者的权益
+* 让其他开发者知道如何合法使用你的代码
+* 促进开源社区的健康发展
+
+> **重要**：没有 LICENSE 的项目，在法律上意味着"保留所有权利"，他人无法合法使用你的代码！
+
+#### 常用开源许可证
+
+**MIT License（最宽松）**
+
+* 特点：
+  * 允许商业使用
+  * 允许修改和分发
+  * 仅需保留版权声明
+  * 无需开源衍生作品
+
+* 适用场景：希望代码被广泛使用，不关心商业化
+
+* 示例项目：React、Vue.js、Node.js
+
+```text
+MIT License
+
+Copyright (c) [year] [fullname]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+**Apache License 2.0（专利保护）**
+
+* 特点：
+  * 允许商业使用
+  * 允许修改和分发
+  * 提供专利授权
+  * 需要说明修改内容
+
+* 适用场景：企业级项目，需要专利保护
+
+* 示例项目：Android、Kubernetes、Apache Spark
+
+**GNU GPL v3（传染性）**
+
+* 特点：
+  * 允许商业使用
+  * 允许修改和分发
+  * **要求衍生作品也开源**（Copyleft）
+  * 禁止专利诉讼
+
+* 适用场景：希望衍生作品也保持开源
+
+* 示例项目：Linux、Git、WordPress
+
+**BSD License（类似 MIT）**
+
+* 特点：
+  * 允许商业使用
+  * 允许修改和分发
+  * 简单宽松
+  * 不能使用作者名字推广
+
+* 适用场景：学术项目，简单宽松
+
+**Creative Commons（CC）系列（非软件）**
+
+* 特点：
+  * 主要用于文档、图片、视频等非代码内容
+  * 多种组合（BY、SA、NC、ND）
+  * CC BY 4.0：署名即可
+  * CC BY-SA 4.0：署名 + 相同方式共享
+
+* 适用场景：教程、文档、数据集
+
+#### 如何选择 LICENSE
+
+根据你的需求选择：
+
+| 需求 | 推荐许可证 |
+|------|-----------|
+| 希望代码被广泛使用，不限制商业化 | MIT |
+| 需要专利保护，企业级项目 | Apache 2.0 |
+| 希望衍生作品也开源 | GPL v3 |
+| 学术项目，简单宽松 | BSD |
+| 文档、教程、数据集 | CC BY 4.0 |
+
+#### 如何添加 LICENSE
+
+**方法 1：GitHub 创建仓库时选择**
+
+在 GitHub 创建新仓库时，可以直接选择许可证模板。
+
+**方法 2：手动添加**
+
+1. 在项目根目录创建 `LICENSE` 文件（无扩展名）
+2. 复制对应许可证的全文
+3. 修改年份和作者名称
+4. 提交到仓库
+
+**方法 3：使用命令行工具**
+
+```bash
+# 使用 GitHub CLI
+gh repo create my-project --public --license mit
+
+# 使用 choosealicense.com 提供的模板
+curl https://choosealicense.com/licenses/mit/ > LICENSE
+```
+
+#### 在代码中注明 LICENSE
+
+在每个源代码文件头部添加简短的许可证声明：
+
+```python
+# Copyright (c) 2025 Your Name
+# Licensed under the MIT License
+# See LICENSE file in the project root for full license information
+
+def main():
+    pass
+```
+
+#### 使用他人代码时的注意事项
+
+* 检查项目的 LICENSE 文件
+* 遵守许可证要求（如署名、保留版权声明）
+* GPL 代码会"传染"到你的项目，谨慎使用
+* 无 LICENSE 的代码不要随意使用
+
+> 推荐阅读：[Choose an open source license](https://choosealicense.com/) - GitHub 提供的许可证选择指南
 
 ### `.gitignore` 文件配置
 
@@ -1002,46 +1160,3 @@ finally:
 > 建议：在项目开始时就设置好编码规范，可以避免后期出现大量编码问题。
 
 > 记住：遇到错误是正常的，每个程序员都会遇到大量错误。关键是学会如何系统性地分析和解决问题。
-
-## 学习方法
-
-### 高效提问
-
-作为一名计算机学习者，学会如何高效提问是一项重要技能。
-
-* 推荐阅读：[提问的智慧](https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways/blob/master/README.md)
-
-* 提问时应包含的信息：
-  1. 你想做什么？（你的目标）
-  2. 你尝试了什么？（贴上你的关键代码）
-  3. 你遇到了什么问题？（贴上完整的报错信息）
-  4. 你觉得可能的原因是什么？（展现你的思考过程）
-
-  <img src="task0.assets/55bf4998af2d14209e0879b6237c5cb0.jpeg" alt="55bf4998af2d14209e0879b6237c5cb0.jpeg" style="zoom:50%;" />
-
-### 使用搜索引擎
-
-遇到问题时，首先应该尝试使用搜索引擎（Google、Bing）自行解决。这不仅能培养独立解决问题的能力，也能帮助你更快地成长。
-
-* 搜索技巧：
-  * 使用英文关键词通常能获得更好的结果
-  * 添加 `site:stackoverflow.com` 限定在特定网站搜索
-  * 搜索完整的错误信息
-
-### 使用 AI 辅助工具
-
-不限制使用 ChatGPT、Gemini 等大语言模型工具，但你需要注意：
-
-1. 确保你理解 AI 生成内容的每一个细节
-2. 不要盲目复制粘贴，要理解代码的工作原理
-3. 在使用 AI 生成的代码时，建议添加注释标注来源（如 `# reference from ChatGPT`）
-
----
-
-## 使用说明
-
-本文档是一个索引性质的知识清单。建议你：
-
-1. 首次阅读时，快速浏览各个章节，了解大致内容
-2. 在实际学习过程中遇到相关问题时，再回来详细查阅对应章节
-3. 逐步掌握这些基础知识，它们将伴随你整个编程生涯
