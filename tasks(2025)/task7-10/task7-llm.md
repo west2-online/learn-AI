@@ -1,6 +1,6 @@
 # Task 7：RAG 与 Agent
 
-## 学习目的：从理解原理到高效实践（Learning Objectives: From Understanding to Efficient Practice）
+## 学习目的：从理解原理到高效实践
 
 祝贺你已经成功完成了深度学习前沿内容的学习，亲手掌握并理解了诸如 Transformer 这样具有重要影响的核心技术。你现在已经能够深刻理解这些大型语言模型（LLM）的底层运作机制，甚至可以从零开始实现它们的结构。
 
@@ -16,7 +16,7 @@
 
 ---
 
-## 学习内容：LLM 技术的工具生态系统（Learning Content: LLM Technology Ecosystem）
+## 学习内容：LLM 技术的工具生态系统
 
 本阶段将聚焦于 LLM 领域最核心、最实用的应用开发工具与技术，助你从理论走向实践。
 
@@ -74,7 +74,7 @@
 
 本轮作业的重点在于**实战运用 Hugging Face 和 LangChain 的核心功能**，构建一些基础的语言智能应用原型。我们不要求你从零开始训练一个大型语言模型，也不要求你实现复杂的 RAG 和 Agent 系统，而是期望你能够熟练运用现有的生态工具和框架，实现核心的语言处理功能。本轮考核将延续“can run is ok”的原则，鼓励你大胆尝试，让你的程序先跑起来，实现核心功能。
 
-### **作业1：智能文本处理工具集 (基于 Hugging Face)**
+### **作业 1：智能文本处理工具集 (基于 Hugging Face)**
 
 你的是利用 Hugging Face 的 `transformers` 库和 `pipeline` 模块，构建一个智能文本处理工具集。
 
@@ -98,7 +98,7 @@
    * 报告中请说明你选择的模型、任务实现思路，并展示几个不同任务的运行示例及结果。
    * 思考并记录你在使用 Hugging Face `pipeline` 和 `transformers` 过程中遇到的便利之处，以及对不同模型表现的初步体会。
 
-### **作业2：智能对话片段模拟器（基于 LangChain）**
+### **作业 2：智能对话片段模拟器（基于 LangChain）**
 
 你的任务是利用 LangChain 的 `Prompt Templates`、`LLMs` 和 `Memory` 模块，构建一个能进行简单记忆的对话片段模拟器。
 

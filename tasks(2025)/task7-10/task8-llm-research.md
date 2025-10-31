@@ -44,7 +44,7 @@
 - **RAG**: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks" (Lewis et al., 2020) [搜索论文](https://www.google.com/search?q=Retrieval-Augmented+Generation+for+Knowledge-Intensive+NLP+Tasks+paper)
 - **ReAct**: "ReAct: Synergizing Reasoning and Acting in Language Models" (Yao et al., 2022) [搜索论文](https://www.google.com/search?q=ReAct:+Synergizing+Reasoning+and+Acting+in+Language+Models+paper)
 
-## 考核内容
+## 作业
 
 ### 论文研读报告
 

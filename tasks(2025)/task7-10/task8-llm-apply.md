@@ -58,11 +58,11 @@
 - [OpenAI Function Calling 文档](https://platform.openai.com/docs/guides/function-calling)
 - [B 站搜索 LangChain Agent 自定义工具](https://www.google.com/search?q=LangChain+Agent+%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B7%A5%E5%85%B7)
 
-## 考核内容
+## 作业
 
 本阶段的考核重点是项目完整性和技术融合能力。你需要将 task1-7 学到的技能整合成一个完整的应用项目。
 
-### 阶段一：数据与模型准备
+### 作业 1：数据与模型准备
 
 1. **爬取数据**
 
@@ -72,7 +72,7 @@
 
 对一个基础模型（如 Qwen-7B、Llama3-8B-Instruct、Mistral-7B-Instruct、Gemma-7B-Instruct 等）进行 `LoRA` 微调。微调数据可以自己构建对话数据集（`jsonl` 格式），或使用现有的人设数据集，让模型拥有独特的说话风格
 
-### 阶段二：高级 RAG 知识库构建
+### 作业 2：高级 RAG 知识库构建
 
 1. **构建知识库**
 
@@ -86,7 +86,7 @@
 - **优化 B（Hybrid Search）**：实现 `BM25` + 向量嵌入的混合检索
 - **优化 C（Query Transform）**：实现 `Multi-Query Retriever` 或 `HyDE`
 
-### 阶段三：Agent 的构建与整合
+### 作业 3：Agent 的构建与整合
 
 1. **创建自定义工具（Tools）**
 
@@ -100,7 +100,7 @@
 
 使用 LangChain 的 `AgentExecutor`（推荐 `create_react_agent` 或 `create_openai_tools_agent`），将阶段一微调过的模型（如果没做微调，就用基础模型）和阶段三创建的 3 个工具整合起来
 
-### 阶段四：报告与演示
+### 作业 4：报告与演示
 
 1. 以 **Jupyter Notebook** 或 Markdown 形式提交代码和分析报告
 

@@ -1,6 +1,6 @@
 # Task 7 CV 现代工具
 
-## 学习目的：从理解原理到高效实践（Learning Objectives: From Understanding to Efficient Practice）
+## 学习目的：从理解原理到高效实践
 
 你已经成功完成了深度学习前沿内容的学习，亲手掌握并理解了诸如 **CNN** 和 **Transformer** 这样具有重要影响的核心技术。你现在已经能够深刻理解这些视觉模型（CV）的底层运作机制，甚至可以从零开始实现它们的结构（比如卷积层和注意力层）。
 
@@ -16,7 +16,7 @@
 
 ---
 
-## 学习内容：视觉技术的工具生态系统（Learning Content: Visual Technology Ecosystem）
+## 学习内容：视觉技术的工具生态系统
 
 本阶段将聚焦于 CV 领域最核心、最实用的应用开发工具与技术，助你从理论走向实践。
 
@@ -56,7 +56,7 @@
 
 ---
 
-## 推荐教程：CV 学习的权威指引（Recommended Tutorials）
+## 推荐教程：CV 学习的权威指引
 
 * **OpenCV 官方文档与教程（中文友好）**
 
@@ -78,9 +78,9 @@
 
   * 关注 Kaggle 上的 CV 竞赛，查看 Top 选手的 Notebooks，学习他们是如何组合使用 `Albumentations` 和 `timm` 的。
 
-## 作业：CV 入门实践（Assignment: CV Practical Introduction）
+## 作业：CV 入门实践
 
-### **作业1：图像处理基础（OpenCV & Albumentations）**
+### **作业 1：图像处理基础（OpenCV & Albumentations）**
 
 在开始训练模型之前，首先要学会如何处理图像数据。
 
@@ -105,7 +105,7 @@
 
 ---
 
-### **作业2：使用预训练模型（timm）**
+### **作业 2：使用预训练模型（timm）**
 
 `timm` 就像一个模型库，里面收藏着无数预训练的最先进模型。现在让我们来学习如何加载并使用它们。
 

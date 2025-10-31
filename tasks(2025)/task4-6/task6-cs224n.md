@@ -1,6 +1,6 @@
-# Task 6 CV 入门
+# Task 6 LLM 入门
 
-## 学习目的（Learning Objectives）
+## 学习目的
 
 祝贺你坚持到这里。你已经完成了前期的系统学习：在 Task 4 中，你实现了反向传播算法；在 Task 5 中，你使用模块化的方法构建了现代卷积神经网络的架构。你不再仅是调用 API 的使用者，而是真正理解神经网络内部运作机制的开发者。
 
@@ -10,7 +10,7 @@
 
 本次任务将是你从理解经典模型到接触前沿研究的过渡。完成它，意味着你将具备初步阅读 NLP 顶级会议论文、理解并实现复杂语言系统的核心能力。
 
-## 学习内容（Learning Content）
+## 学习内容
 
 本阶段你将接触到一系列定义了现代 NLP 研究方向的重要模型与方法：
 
@@ -19,7 +19,7 @@
 * **序列到序列模型（Sequence-to-Sequence Models）**：构建一个带**注意力机制（Attention）**的**神经机器翻译（Neural Machine Translation, NMT）**系统，体验模型在翻译时的注意力分配。
 * **Transformer 架构（Transformer Architecture）**：深入理解驱动了当今大语言模型发展的核心——**自注意力机制（Self-Attention）**，并亲手实现其关键组件。
 
-## 学习要求（Learning Requirements）
+## 学习要求
 
 与前几次作业相比，本阶段任务对**数学基础、理论深度和代码实现精度**的要求达到了最高水平。
 
@@ -27,7 +27,7 @@
 2. **代码精确实现**：本次作业中的很多模块（如 NMT 的 `forward` 和 `backward`）对代码的精确度要求极高，一个微小的索引错误或维度不匹配都可能导致整个系统出错。
 3. **系统级整合与调试**：你需要将编码器、解码器、注意力模块等多个复杂组件准确地组合起来。调试这样一个庞大的系统极具挑战，你需要更有耐心，并学会如何设计单元测试来验证每个模块的正确性。
 
-## 作业（Assignment）
+## 作业
 
 **核心任务：完成 [CS224n 四大编程作业](https://web.stanford.edu/class/cs224n/)**
 
@@ -81,15 +81,3 @@
 3. [跟李沐学AI Transformer论文逐段精读【论文精读】](https://www.bilibili.com/video/BV1pu411o7BE/)
 4. [【Transformer 其实是个简单到令人困惑的模型【白话DeepSeek-06】】](https://www.bilibili.com/video/BV1C3dqYxE3q/)
 5. [台大李宏毅老师 机器学习2021（Self-Attention和Transformer部分）](https://www.bilibili.com/video/BV1JA411X76s?p=65)
-
-### **作业要求**
-
-1. **严禁抄袭**。这是你的重要学习成果，请用一份独立完成的作业为这一阶段的学习画上句号，这既是对知识的尊重，也是对自己的负责。
-2. **善用工具**。遇到问题时，首先尝试通过搜索引擎、官方文档和 AI 助手解决。如果仍然无法解决，欢迎在群里进行有深度的、描述清晰的提问。
-3. **拥抱 AI，但保持思考**。不限制使用 ChatGPT 等大语言模型工具辅助学习和 Debug，但你必须确保能完全理解模型生成的每一行代码的含义。
-4. **规范化提交**。所有作业均需通过 Git 提交到你个人的 GitHub 仓库中。
-
-## 作业提交方式（Submission Method）
-
-1. 你需要学习 GitHub 的使用，创建一个你自己的仓库用来存放你的代码实现
-2. 接着你需要学习如何使用 Git 进行 PR 操作，在 [solutions](https://github.com/west2-online-reserve/collection-ai) 中进行操作
