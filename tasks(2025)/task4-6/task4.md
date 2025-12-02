@@ -105,7 +105,7 @@
 
 这个过程将引导你深入理解算法的每一个实现细节，而不是简单地使用现成的库函数，从而真正建立起对深度学习核心原理的深刻认知。
 
-### 作业 2：掌握 scikit-learn 库并实践经典机器学习算法（选做）
+### 作业 2：掌握 scikit-learn 库并实践经典机器学习算法
 
 **核心任务：以 Kaggle 经典入门赛 [Titanic: Machine Learning from Disaster](https://www.kaggle.com/competitions/titanic) 为实战项目，熟练运用 `scikit-learn` 完成一个完整的机器学习流程。**
 
@@ -152,7 +152,7 @@ scikit-learn 是一个强大的机器学习库，内部封装了众多经过验�
 
 #### 注意
 
-1. 提交的最终成绩至少达到 0.9
+1. 只需跑通即可，可追求更高的准确率，但不强求
 2. 可以参考 [ShaddockNH3 关于 Titanic 的思考](https://github.com/ShaddockNH3/MyKaggle/tree/main/titanic)
 
 完成这个作业后，你不仅将熟练掌握 `scikit-learn` 的核心用法，更将获得一次宝贵的、端到端解决实际问题的项目经验。
