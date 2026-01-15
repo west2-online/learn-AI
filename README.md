@@ -6,17 +6,11 @@
 
 本项目遵循 GPL-3.0 License。如需转载，请注明本项目仓库地址。
 
-## ⭐ 重要提示
+## 重要提示
 
 1. 正式考核范围为 Task 1 至 Task 6
-2. Task 1-6 的学习过程中，你只需配置 Python 开发环境，无需配置深度学习相关环境。考虑到部分同学的硬件条件有限，所有需要使用 GPU 算力的任务均可通过免费的云端 GPU 平台（如 Google Colab）完成
-3. 科学上网工具与 Google 账号需自行准备。如有困难，可私聊 [ShaddockNH3](https://github.com/ShaddockNH3) 寻求帮助
-
-<details style="display:inline-block; margin-bottom: -5px;"><summary>（硬件配置参考）</summary>
-
-和我的 AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx (2.10 GHz) 说去吧
-
-</details>
+2. Task 1-6 的学习过程中，如果你的硬件资源有限，你只需配置 Python 开发环境，无需配置深度学习相关环境，一台任意的普通电脑都可以完成学习。所有需要使用 GPU 算力的任务均可通过免费的云端 GPU 平台（如 Google Colab）完成
+3. 科学上网工具与 Google 账号需自行准备。如有困难，入群后咨询群主获得帮助
 
 ## 使用说明
 
@@ -30,12 +24,12 @@
 
 通过所有考核后，你将成为西二在线网络工作室的正式成员，并获得以下权益：
 
-- 实习证明与成员证书
+- 成员证书
 - 使用工作室的计算资源，组队参与算法竞赛
 - 获得外包项目与企业实习机会
 - 拥有固定的个人工位及活动室使用权
 - 参与科研合作项目
-- ~~以及玩无人机~~
+- ~~玩无人机~~
 
 ### 考核理念
 
@@ -50,8 +44,6 @@
 考核内容可通过点击 `tasks(2025)` 文件夹查看，或直接点击下表中对应的阶段名称。
 
 **[→ 点击这里开始 Task 1](./tasks(2025)/task1-3/task1.md)**
-
-> 此外，你需要掌握一些计算机的[基础知识](./tasks(2025)/task0/task0.md)。这是一份索引性质的知识清单，你不需要一开始就全部掌握，而是在遇到相关问题时再回来查阅对应章节。如果你觉得文档冗长，也可以查看[QA文档](./tasks(2025)/task0/QA.md)
 
 ## AI 学习路线总览
 
@@ -85,4 +77,4 @@
 
 欢迎扫码加入 AI 方向学习交流群，与其他学习者共同进步。
 
-<img src="./README.assets/west2-AI-qrcode-2025.jpg" alt="west2-AI-qrcode-2025" style="zoom:50%;" />
+![west2-AI-qrcode-2025](./README.assets/west2-AI-qrcode-2025.jpg)

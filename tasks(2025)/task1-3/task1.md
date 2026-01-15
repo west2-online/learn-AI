@@ -38,19 +38,29 @@ Python 也有前端框架(如 Streamlit)，适合快速搭建数据展示和 AI 
 
 不限制大语言模型的使用，但你需要对大语言模型生成的内容做到足够了解，并且确保可以复现。
 
-<details style="display:inline-block; margin-bottom: -5px;"><summary>（...）</summary>
+如果有能力，建议使用 Gemini，ChatGPT 等，也请至少使用腾讯元宝（DeepSeek 版）、千问、智谱、DeepSeek。
 
-如果有能力，建议使用 Gemini 系列或者 ChatGPT 等国外 AI；如果是国内的 AI，也请使用 DeepSeek 或腾讯元宝（DeepSeek 版）。不要使用豆包
-
-</details>
+请不要使用豆包。
 
 ## 推荐教程
+
+### 安装 Python
+
+访问 [Python 官方网站](https://www.python.org/downloads/) 下载并安装 Python 3 版本。
+
+下载的时候请选择 Add Python 3.x to PATH 选项以便在命令行中使用 Python。
+
+> 对于 Python 的版本，我的建议是固定使用 Python 3.12.3 版本，这是目前很多主流 AI 框架支持的比较新的版本，也是 Ubuntu 24.04 LTS 默认支持的版本。
+>
+> 对于 Python 3.13 乃至 Python 3.14，很多 AI 框架还没有支持。
+>
+> Python 属于是一个对版本变化非常敏感的语言，很多东西你只要改了一个小版本号，然后代码就全炸了。
 
 ### 环境配置
 
 - 科学上网工具的使用以及谷歌账号的注册
 
-前者实在找不到的私聊群主，后者自行研究（taobao）
+前者实在找不到的私聊群主，后者自行研究（taobao or xianyu）。
 
 - 安装 IDE 集成开发环境
 
@@ -58,13 +68,21 @@ Python 也有前端框架(如 Streamlit)，适合快速搭建数据展示和 AI 
 
 个人更建议使用 [VSCode](https://code.visualstudio.com/)（主要是 PyCharm 的 Jupyter Notebook 太过难用，建议初学者可以多使用 Jupyter 来编写程序）。
 
-- 安装 Conda 环境/学习 Python 虚拟环境的配置
+> 在下载 VSCode 后，请下载 Python 插件以获得更好的 Python 支持
+
+- 安装 Conda 环境 / 学习 Python 虚拟环境的配置
 
 使用 [miniconda](https://docs.anaconda.com/miniconda/) 来管理环境，它轻量且功能强大。
 
-当然如果你不喜欢 Conda 这样会污染命令窗口，使用 pyenv 或 venv 管理环境也都是可以的，初学者一定要注意这个问题，从一开始就养成好的习惯。
+如果你不喜欢 Conda 这样会污染命令窗口，使用 pyenv 或 venv 管理环境也都是可以的。
 
-> 关于虚拟环境，等你某一天环境炸了，自然会来研究
+此外，使用 `poetry` 或 `uv` 等工具来自动管理项目依赖和虚拟环境，能够提升项目的可维护性和可移植性。
+
+初学者一定要注意这个问题，从一开始就养成好的习惯。
+
+> 关于虚拟环境，你现在可以在全局里跑。
+>
+> 等你哪一天环境炸了，自然会来研究。
 
 ### Python 基础
 
@@ -77,8 +95,6 @@ Python 也有前端框架(如 Streamlit)，适合快速搭建数据展示和 AI 
 7. 如果你想要系统的学习的话，强烈推荐来自 UCB 的神课 [CS61A](https://csdiy.wiki/%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8/Python/CS61A/)（课程难度较大，建议可以先选择一个更为友好的入门编程课程入门，需要学习相关学习资料的群里有压缩包）。
 
 > 对于教程，不需要全部都看，只需要挑选几个自己喜欢的，边学边写。
->
-> 推荐使用 Python 3.12 版本，人工智能主流框架一般更新的没那么快
 
 ### 生成式 AI 认识
 
@@ -96,6 +112,100 @@ Python 也有前端框架(如 Streamlit)，适合快速搭建数据展示和 AI 
 >
 > 学习生成式 AI 导论时，无需看完所有课程或课本，只需根据作业文档 2 的要求，针对性地学习相关内容即可。
 
+### Markdown 基础
+
+Markdown 是一种轻量级标记语言，排版语法简洁，让人们更多地关注内容本身而非排版。它使用易读易写的纯文本格式编写文档，可与 HTML 混编，可导出 HTML、PDF 以及本身的 .md 格式的文件。因简洁、高效、易读、易写，Markdown 被大量使用，如 Github、Wikipedia、简书等。
+
+在线体验一下 [Markdown 在线编辑器](https://markdown.com.cn/editor/)。
+
+对于未来的文档作业，我们要求你使用 Markdown 或者 Jupyter Notebook 来编写。
+
+Markdown 语法并不复杂，建议初学者只需掌握基本语法即可，如标题、列表、加粗、斜体、链接、代码块等。进阶语法如脚注、任务列表等可根据需要学习。
+
+[Markdown 基本语法学习](https://markdown.com.cn/basic-syntax/)
+
+> 你可以直接在 Vscode 里编写 Markdown 文件，然后使用快捷键 `Ctrl+Shift+V` 进行预览。建议下载 Markdown 格式检查插件。
+>
+> 需要注意的是，Github 不完全是 Markdown 标准，建议下载 GitHub Markdown Preview 插件以获得更好的兼容性。
+
+### 代码风格
+
+#### PEP 8 规范
+
+- [PEP 8 -- Style Guide for Python Code](https://peps.python.org/pep-0008/)
+
+在一开始学习的时候，我们不强制你使用 PEP 8 规范，但是建议你养成良好的代码风格习惯。
+
+#### Main 函数编写与 Vscode 直接运行
+
+虽然 python 是可以直接运行脚本的语言，但是建议都写一个 main 函数简单封装一下。
+
+Vscode 等集成开发环境右上角有一个运行按钮，建议搞明白这个是什么之后再使用一键运行的按钮。
+
+否则请开一个终端，使用：
+
+```bash
+python your_script.py
+```
+
+#### 代码格式化
+
+手写的代码经常黏黏糊糊一大坨，写起来方便，但是阅读起来就很痛苦，而好的代码风格能大大提升代码的可读性和可维护性。
+
+推荐使用 black formatter(vs code) <https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter>
+
+默认快捷键 `Alt+Shift+F` 进行代码格式化，推荐打开 `保存时自动格式化`
+
+链接：<vscode://settings/editor.formatOnSave>
+
+### Git 教程以及规范
+
+#### Git 相关教程
+
+Git入门：<https://west2-online.feishu.cn/wiki/Lsz9w3CiGinXzgkevtmceHZknrf>
+
+Github 如何 fork 以及 pr（如何交作业）：<https://west2-online.feishu.cn/wiki/Zvqow0CUxig3iWkWQgBcHp4AnHe>
+
+Git 使用和西二作业提交教程：<https://github.com/west2-online-reserve/collection-ai>
+
+Git 工作流和核心原理 | GitHub 基本操作 | VS Code 里使用 Git 和关联 GitHub：<https://www.bilibili.com/video/BV1r3411F7kn/?share_source=copy_web&vd_source=31019e44b62a4369d4eab7afea0fcfdf>
+
+Git 工作流：<https://www.bilibili.com/video/BV19e4y1q7JJ/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3>
+
+#### Git 规范
+
+- 妥善使用 .gitignore
+
+一些对于项目无用的，如 `__pycache__` 文件夹，`.vscode` 文件夹等不需要提交到 Git 仓库。
+
+可以通过 `.gitignore` 文件忽略这些文件夹。
+
+- 不要上传大文件到 GitHub
+
+Github 建议大小不要超过 50MB，超过 100MB 的文件是无法上传的。另外，二进制文件不适合上传到 github 上，建议使用云盘进行存储，然后把链接放在 github 上。
+
+例如图片就是二进制存储的，所以你一旦进行了修改，Github 不会删掉这个旧版本的图片，而是会把新的图片和旧的图片都存储下来，导致仓库体积暴涨。
+
+旧图藏在了历史版本里，肉眼是看不到的。
+
+所以，不要把你的大文件直接上传到 Github 上。
+
+例如训练前的数据，训练好的模型文件，你爬虫爬到的东西，请使用 .gitignore 忽略掉。
+
+- Commit 信息规范
+
+对于这部分，刚开始可以相对随意一些，等你熟悉了 Git 的使用之后，再来规范这部分内容。
+
+```bash
+git commit -m "feat: add xxx feature"
+git commit -m "fix: fix xxx bug"
+git commit -m "docs: update xxx doc"
+git commit -m "style: format xxx code"
+git commit -m "refactor: refactor xxx code"
+git commit -m "test: add xxx test"
+git commit -m "chore: update xxx config"
+```
+
 ## 作业
 
 关于本次的任务，你需要完成以下内容——
@@ -112,7 +222,7 @@ Python 也有前端框架(如 Streamlit)，适合快速搭建数据展示和 AI 
 
 ### 文档 1
 
-当你初步掌握 Python 基础的知识学习后，请将以下知识点的理解，整理成一份你自己的笔记（推荐使用 Markdown 或 Jupyter Notebook）。
+当你初步掌握 Python 基础的知识学习后，请将以下知识点的理解，整理成一份你自己的笔记（使用 Markdown 或 Jupyter Notebook）。
 
 - 基础容器：List（列表）、Dict（字典）的使用技巧
 - 函数：Lambda 匿名函数、Decorator 装饰器
@@ -126,21 +236,22 @@ Python 也有前端框架(如 Streamlit)，适合快速搭建数据展示和 AI 
 在完成生成式 AI 的认识后，你需要以文档形式讲述大语言模型的整个训练流程。
 
 > 本文档**不要求精确的数学公式和理论表达**，只需用你自己的话，简要描述生成式 AI 的三个核心训练阶段：
-> 1. **自监督学习（Pre-training）**
-> 2. **监督式学习（Supervised Fine-tuning）**
-> 3. **人类反馈强化学习（RLHF）**
+>
+> 1. 自监督学习（Pre-training）
+> 2. 监督式学习（Supervised Fine-tuning）
+> 3. 人类反馈强化学习（RLHF）
 
-### 作业 0 OI
+### 作业 0： OI
 
 请使用 Python 完成下列任务
 
-1. 洛谷 P1001：https://www.luogu.com.cn/problem/P1001
+1. 洛谷 P1001：<https://www.luogu.com.cn/problem/P1001>
 
-2. 洛谷 P1046：https://www.luogu.com.cn/problem/P1046
+2. 洛谷 P1046：<https://www.luogu.com.cn/problem/P1046>
 
-3. 洛谷 P5737：https://www.luogu.com.cn/problem/P5737
+3. 洛谷 P5737：<https://www.luogu.com.cn/problem/P5737>
 
-4. AtCoder ARC017A：https://www.luogu.com.cn/problem/AT_arc017_1
+4. AtCoder ARC017A：<https://www.luogu.com.cn/problem/AT_arc017_1>
 
 5. Python 后端[作业 1](https://github.com/west2-online/learn-python/blob/main/docs/1-%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95.md)
 
@@ -158,6 +269,8 @@ Python 也有前端框架(如 Streamlit)，适合快速搭建数据展示和 AI 
 
 这份作业并不难，只涉及到 `if`、`else`、`while`，所以请不要看 `Nabia_Snack_Incident` 下的 `answer.py`。
 
+> 在写这份作业的时候，请思考 pass 的作用并且删除之。
+
 ### 作业 2：校园·if恋
 
 [Tomori Nao](https://github.com/TomoriNaoiy) 是一个死宅，他憎恨所有的现充，但是弱小的他无法改变一切。但是，偶然一天他发现了一个名为 Python 的东西，于是，一个神奇的想法在他脑海里面浮现......
@@ -168,7 +281,7 @@ Python 也有前端框架(如 Streamlit)，适合快速搭建数据展示和 AI 
 
 如果你实在无法理解
 
-**「一个死宅到底是怎么想的啊！」**
+「一个死宅到底是怎么想的啊！」
 
 那么你可以点开 [Campus_IF_Love/README](Campus_IF_Love/README.md) 来窥视他梦境的一角...
 
@@ -184,16 +297,15 @@ Python 也有前端框架(如 Streamlit)，适合快速搭建数据展示和 AI 
 4. 防御力：来自其他宝可梦的伤害需要减去防御力的数值
 5. 闪避率：在战斗中成功躲闪开敌人攻击的概率
 
-| 属性 | 克制 | 被克制 | 属性被动                             |
-| ---- | ---- | ------ | ------------------------------------ |
-| 草   | 水   | 火     | 每回合回复 10% 最大 HP 值            |
-| 火   | 草   | 水     | 每次造成伤害，叠加 10% 攻击力，最多 4 层 |
-| 水   | 火   | 电     | 受到伤害时，有 50% 的几率减免 30% 的伤害 |
-| 电   | 水   | 草     | 当成功躲闪时，可以立即使用一次技能   |
-| ···  | ···  | ···    | ···（你还可以自行设计）              |
+| 属性 | 克制 | 被克制 | 属性被动                                 |
+| ---- | ---- | ------ | ---------------------------------------- |
+| 草   | 水   | 火     | 每回合回复 10% 最大 HP 值                |
+| 火   | 草   | 水     | 每次造成伤害,叠加 10% 攻击力,最多 4 层   |
+| 水   | 火   | 电     | 受到伤害时,有 50% 的几率减免 30% 的伤害  |
+| 电   | 水   | 草     | 当成功躲闪时,可以立即使用一次技能        |
+| ···  | ···  | ···    | ···                                      |
 
-被克制的宝可梦受到来自克制的宝可梦的伤害翻倍，被克制的宝可梦对克制的宝可梦造成的伤害减半
-
+被克制的宝可梦受到来自克制的宝可梦的伤害翻倍，被克制的宝可梦对克制的宝可梦造成的伤害减半。
 6. 招式：即技能，用来攻击对手的宝可梦，或者给对手的宝可梦附加各种各样的「效果」
 
 这是 JadeMelody 设计的 4 个宝可梦：
@@ -207,7 +319,6 @@ Python 也有前端框架(如 Streamlit)，适合快速搭建数据展示和 AI 
 **十万伏特（Thunderbolt）：** 对敌人造成 1.4 倍攻击力的电属性伤害，并有 10% 概率使敌人麻痹
 
 **电光一闪（Quick Attack）：** 对敌人造成 1.0 倍攻击力的快速攻击（快速攻击有几率触发第二次攻击），10% 概率触发第二次
-
 2. **妙蛙种子（Bulbasaur）**
 
 ![妙蛙种子](./task1-3.assets/3A370008-CF12-4404-B088-634C466404AA.jpeg)
@@ -217,7 +328,6 @@ Python 也有前端框架(如 Streamlit)，适合快速搭建数据展示和 AI 
 **种子炸弹（Seed Bomb）：** 妙蛙种子发射一颗种子，爆炸后对敌方造成草属性伤害。若击中目标，目标有 15% 几率陷入「中毒」状态，每回合损失 10% 生命值
 
 **寄生种子（Parasitic Seeds）：** 妙蛙种子向对手播种，每回合吸取对手 10% 的最大生命值并恢复自己，效果持续 3 回合
-
 3. **杰尼龟（Squirtle）**
 
 ![杰尼龟](./task1-3.assets/D9506539-335B-4856-9768-27203069DE8C.jpeg)
@@ -227,7 +337,6 @@ Python 也有前端框架(如 Streamlit)，适合快速搭建数据展示和 AI 
 **水枪（Aqua Jet）：** 杰尼龟喷射出一股强力的水流，对敌方造成 140% 水属性伤害
 
 **护盾（Shield）：** 杰尼龟使用水流形成保护盾，减少下一回合受到的伤害 50%
-
 4. **小火龙（Charmander）**
 
 ![小火龙](./task1-3.assets/A46CDBFA-F132-4DC0-BCCE-4506CB07B905.jpeg)
@@ -242,7 +351,7 @@ Python 也有前端框架(如 Streamlit)，适合快速搭建数据展示和 AI 
 
 你需要实现类似这样命令行输出用于游玩该游戏：
 
-```log
+```bash
 请选择 3 个宝可梦用于组成你的队伍：
 1. 皮卡丘（电属性） 2. 妙蛙种子（草属性） 3. 杰尼龟（水属性） 4. 小火龙（火属性）
 输入数字选择你的宝可梦：1 2 4
@@ -264,17 +373,17 @@ Python 也有前端框架(如 Streamlit)，适合快速搭建数据展示和 AI 
 小火龙 受到了 25 点伤害！剩余 HP：75
 ```
 
-对于 JadeMelody 设计的玩法不满意，同样 feel free 去修改他们
+如果对于 JadeMelody 设计的玩法不满意，feel free 修改他们。
 
 要尽可能避免代码重复，可以创建一个 Pokemon 的基类，一个属性类像 WaterPokemon 继承自它，再有一个宝可梦继承自属性类。
 
 完成后写一个 README.md 文件介绍玩法，一同上传 GitHub。
 
 > 在[示例代码](./Pokemon_Example) 文件夹中有示例代码（已经实现了一个宝可梦，你们只需要在 JadeMelody 的基础上添加更多内容就可以）（阅读代码也是一个需要大家多多锻炼的技能），可以发挥自己的创造力去实现更多的功能做得 fancy 一点，到时候再写一个 Markdown 文档可以放在你的 GitHub 仓库下。
-
+>
 > JadeMelody 的代码里面依旧有许多不足的地方，可以多多完善，当然也可以自行从零开始设计（在面向对象程序设计中每个人都会有不一样的思路，而每个思路都会有可取的地方，大家也可以在群里多多交流）。
-
-> 可参考 ShaddockNH3 去年考核写的[完整代码](https://github.com/ShaddockNH3/west2-online-ai-2024-test/blob/master/pokemon_impact.py)，但是他的代码显然有很大的优化空间，比如说没有分包（其实是因为当时分包了会报错）、大量的代码复用，以及一些取巧的实践方式。
+>
+> 可参考 ShaddockNH3 考核写的[完整代码](https://github.com/ShaddockNH3/west2-online-ai-2024-test/blob/master/pokemon_impact.py)，但是他的代码显然有很大的优化空间，比如说没有分包（其实是因为当时分包了会报错）、大量的代码复用，以及一些取巧的实践方式。
 
 ### 作业4：好玩的东西
 
@@ -300,9 +409,3 @@ CS61A 是一门大学级别的计算机科学导论课，它将带你深入探�
 
 1. 你需要学习 GitHub 的使用，创建一个你自己的仓库用来存放你的代码实现
 2. 接着你需要学习如何使用 Git 进行 PR 操作，在 [solutions](https://github.com/west2-online-reserve/collection-ai) 中进行操作
-
-### Git 相关教程
-
-[https://github.com/west2-online-reserve/collection-ai](https://github.com/west2-online-reserve/collection-ai) 里面有 Git 使用和西二作业提交教程
-
-[Git 工作流和核心原理 | GitHub 基本操作 | VS Code 里使用 Git 和关联 GitHub](https://www.bilibili.com/video/BV1r3411F7kn/?share_source=copy_web&vd_source=31019e44b62a4369d4eab7afea0fcfdf)

@@ -3,7 +3,7 @@
 import random
 import time
 
-# --- 战斗设定 (这些是预设好的值，不需要修改哦) ---
+# --- 战斗设定 (这些是预设好的值，不需要修改) ---
 NAGATO_MAX_HP = 120
 NABIYA_MAX_HP = 100
 NAGATO_ATTACK_DICE = 4
@@ -83,7 +83,7 @@ def nabiya_ai_action(nabiya_hp):
 # 任务八：核心战斗循环
 def main_battle_loop():
     """
-    这是最重要的部分！将所有零件组装成一台可以运转的战斗引擎！
+    这是最重要的部分，将所有零件组装成起来。
     """
     # 1. 初始化长门和娜比娅的HP，以及双方的防御值
     nagato_hp = NAGATO_MAX_HP
@@ -176,4 +176,3 @@ def main_battle_loop():
 
         turn = turn + 1
         time.sleep(2)
-
