@@ -6,7 +6,7 @@
 
 现在，欢迎来到 CS231n 系列的最后阶段，也是基础学习阶段的重要总结。
 
-在本阶段的学习中，我们将从单一的**判别式（Discriminative）**图像分类任务扩展到更广阔的领域。你将学习如何让模型**生成（Generate）**全新的数据，如何让模型结合视觉与语言进行**多模态处理（Multimodal Processing）**，以及如何在没有人工标注的情况下进行**自监督学习（Self-Supervised Learning）**。
+在本阶段的学习中，我们将从单一的判别式（Discriminative）图像分类任务扩展到更广阔的领域。你将学习如何让模型生成（Generate）全新的数据，如何让模型结合视觉与语言进行多模态处理（Multimodal Processing），以及如何在没有人工标注的情况下进行自监督学习（Self-Supervised Learning）。
 
 本次任务将是你从理解经典模型到接触前沿研究的过渡。完成它，意味着你将具备初步阅读顶级会议论文、理解并实现复杂 AI 系统的核心能力。
 
@@ -14,22 +14,22 @@
 
 本阶段你将接触到一系列定义了现代 AI 研究方向的重要模型与方法：
 
-* **序列模型（Sequence Models）**：循环神经网络（Recurrent Neural Network, RNN）与长短期记忆网络（Long Short-Term Memory, LSTM），及其在图文生成任务中的应用。
-* **注意力机制与 Transformer（Attention Mechanism and Transformer）**：理解驱动了当今大语言模型发展的核心——自注意力机制（Self-Attention），并将其应用于计算机视觉任务。
-* **生成式模型（Generative Models）**：学习并实现生成对抗网络（Generative Adversarial Networks, GANs），训练一个能生成逼真图像的模型。
-* **自监督学习（Self-Supervised Learning）**：学习前沿的自监督学习方法（SimCLR），了解如何在没有标签的数据上训练强大的表征模型。
+* 序列模型（Sequence Models）：循环神经网络（Recurrent Neural Network, RNN）与长短期记忆网络（Long Short-Term Memory, LSTM），及其在图文生成任务中的应用。
+* 注意力机制与 Transformer（Attention Mechanism and Transformer）：理解驱动了当今大语言模型发展的核心——自注意力机制（Self-Attention），并将其应用于计算机视觉任务。
+* 生成式模型（Generative Models）：学习并实现生成对抗网络（Generative Adversarial Networks, GANs），训练一个能生成逼真图像的模型。
+* 自监督学习（Self-Supervised Learning）：学习前沿的自监督学习方法（SimCLR），了解如何在没有标签的数据上训练强大的表征模型。
 
 ## 学习要求
 
-与前两次作业相比，本阶段任务在代码实现上的工作量可能有所减少，但对**概念理解和系统整合能力**的要求达到了最高水平。
+与前两次作业相比，本阶段任务在代码实现上的工作量可能有所减少，但对概念理解和系统整合能力的要求达到了最高水平。
 
-1. **跨领域思维**：你需要将 Task 5 中训练的 CNN 作为特征提取器（Feature Extractor），与本阶段学习的 RNN/Transformer 等序列处理器（Sequence Processor）结合起来，共同完成图文生成这一多模态任务。
-2. **理解前沿方法**：GAN 的博弈论思想、Transformer 的自注意力机制、SimCLR 的对比学习范式，这些都是近十年来 AI 领域的重大突破。你需要花费大量时间阅读课程笔记，甚至尝试阅读相关的经典论文（如「Attention Is All You Need」），才能真正理解其核心思想。
-3. **系统级调试**：你将要构建的是一个包含多个复杂组件的系统，调试的难度会显著上升。你需要更有耐心，并学会如何分模块进行测试和验证。
+1. 跨领域思维：你需要将 Task 5 中训练的 CNN 作为特征提取器（Feature Extractor），与本阶段学习的 RNN/Transformer 等序列处理器（Sequence Processor）结合起来，共同完成图文生成这一多模态任务。
+2. 理解前沿方法：GAN 的博弈论思想、Transformer 的自注意力机制、SimCLR 的对比学习范式，这些都是近十年来 AI 领域的重大突破。你需要花费大量时间阅读课程笔记，甚至尝试阅读相关的经典论文（如「Attention Is All You Need」），才能真正理解其核心思想。
+3. 系统级调试：你将要构建的是一个包含多个复杂组件的系统，调试的难度会显著上升。你需要更有耐心，并学会如何分模块进行测试和验证。
 
 ## 作业
 
-**完成 [CS231n Assignment 3](https://cs231n.github.io/assignments2025/assignment3/)**
+完成 [CS231n Assignment 3](https://cs231n.github.io/assignments2025/assignment3/)
 
 本次考核包含多个模块，你可以根据自己的兴趣和精力选择完成的深度。
 
@@ -38,21 +38,21 @@
 在这一部分，你将构建一个能够为图片生成文字描述的模型。它会接收一张图片，并生成一段描述图片内容的文字。你需要：
 
 * 使用一个预训练好的 CNN 模型来提取图像的特征向量。
-* 实现一个基于**循环神经网络（RNN）**的解码器，它会接收图像特征，并逐词生成描述语句。
+* 实现一个基于循环神经网络（RNN）的解码器，它会接收图像特征，并逐词生成描述语句。
 * 为了解决 RNN 的长期依赖问题，你将进一步实现一个基于长短期记忆网络（LSTM）的解码器，并观察其性能提升。
 
 ### 第二部分：Transformer
 
 在体验了 RNN 处理序列的模式后，你将接触到当今 AI 领域的主流方法——Transformer。你需要：
 
-* 学习并实现**自注意力机制（Self-Attention）**和**多头注意力（Multi-Head Attention）**。
-* 将 RNN 解码器替换为一个基于 **Transformer** 的解码器，再次完成图文生成任务，并与 LSTM 的结果进行比较。
+* 学习并实现自注意力机制（Self-Attention）和多头注意力（Multi-Head Attention）。
+* 将 RNN 解码器替换为一个基于 Transformer 的解码器，再次完成图文生成任务，并与 LSTM 的结果进行比较。
 
 ### 第三部分：生成对抗网络（GANs）
 
 在这一部分，你将从理解内容转向创造内容。你将实现一个 GAN，从随机噪声中生成逼真的手写数字图像。你需要：
 
-* 分别实现一个生成器（Generator）**和一个**判别器（Discriminator）网络。
+* 分别实现一个生成器（Generator）和一个判别器（Discriminator）网络。
 * 理解并实现 GAN 的交替训练过程，在生成器和判别器的对抗与博弈中，让模型学会生成越来越真实的图像。
 
 ### 第四部分：自监督学习 - SimCLR

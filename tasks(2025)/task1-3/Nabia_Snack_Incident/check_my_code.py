@@ -1,5 +1,5 @@
 # check_my_code.py
-# 每当你完成 longmen_vs_nabiya.py 里的一个函数，就运行我来检查一下吧！
+# 每当你完成 longmen_vs_nabiya.py 里的一个函数，就可以运行来检查一下
 
 import sys
 

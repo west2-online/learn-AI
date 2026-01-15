@@ -91,13 +91,15 @@ class Play:
             print("All your Pokemon have fainted. You lose!")
             self.game_finished()
 
-        if not self.current_player_pokemon.alive:
+        if self.current_player_pokemon and not self.current_player_pokemon.alive:
             self.player_choose_pokemon()
-        if not self.current_computer_pokemon.alive:
+        if self.current_computer_pokemon and not self.current_computer_pokemon.alive:
             self.computer_choose_pokemon()
 
     def player_use_skills(self):
         # 玩家选择技能
+        if self.current_player_pokemon is None:
+            return
         print("Choose the skill your pokemon to use")
         skills = self.current_player_pokemon.skills
         for i, skill in enumerate(skills, 1):
@@ -113,6 +115,8 @@ class Play:
 
     def computer_use_skills(self):
         # 电脑随机选择技能
+        if self.current_computer_pokemon is None:
+            return
         computer_skill = random.choice(self.current_computer_pokemon.skills)
         self.current_computer_pokemon.use_skill(
             computer_skill, self.current_player_pokemon
@@ -120,11 +124,15 @@ class Play:
 
     def battle_round_begin(self):
         # 回合开始
+        if self.current_player_pokemon is None or self.current_computer_pokemon is None:
+            return
         self.current_player_pokemon.begin()
         self.current_computer_pokemon.begin()
         self.check_game_status()
 
     def battle_round(self):
+        if self.current_player_pokemon is None or self.current_computer_pokemon is None:
+            return
         # 回合进行
         print(
             f"\n{self.current_player_pokemon.name} vs {self.current_computer_pokemon.name}"

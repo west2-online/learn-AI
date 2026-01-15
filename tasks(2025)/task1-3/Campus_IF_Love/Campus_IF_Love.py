@@ -32,9 +32,10 @@ class Game:
         self.characters = {
             "学姐": Character("学姐", "社团里的艺术少女"),
             "小白": Character("小白", "课堂上的元气同学"),
-            "姐姐": Character("姐姐", "食堂里的温柔姐姐")
+            "姐姐": Character("姐姐", "食堂里的温柔姐姐"),
+            "None": Character("None", "无")
         }
-        self.current_target = None
+        self.current_target = self.characters["None"]
 
     def start(self):
         print("========== 游戏开始：校园 if·恋 ==========")
@@ -119,7 +120,7 @@ class Game:
             else:
                 print("无效输入，请重新选择。")
 
-            if self.current_target.check_ending():
+            if self.current_target == self.characters["None"] or self.current_target.check_ending():
                 break
             
 

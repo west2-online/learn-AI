@@ -4,7 +4,7 @@
 import random
 import time
 
-# --- 战斗设定 (这些是预设好的值，不需要修改哦) ---
+# --- 战斗设定 (这些是预设好的值，不需要修改) ---
 NAGATO_MAX_HP = 120
 NABIYA_MAX_HP = 100
 NAGATO_ATTACK_DICE = 4
@@ -13,7 +13,6 @@ NABIYA_ATTACK_DICE = 4
 NABIYA_DEFEND_DICE = 3
 SPECIAL_ATTACK_DAMAGE = 30
 CRITICAL_HIT_THRESHOLD = 18
-
 
 # 任务一：显示角色状态
 def display_status(character_name, current_hp, max_hp):
@@ -69,7 +68,7 @@ def nabiya_ai_action(nabiya_hp):
 # 任务八：核心战斗循环
 def main_battle_loop():
     """
-    这是最重要的部分！请根据下面的注释步骤来完成。
+    这是最重要的部分，请根据下面的注释步骤来完成。
     
     适当的编写输出来说明战斗发生了什么，比如：
     print("长门：「感受BIG SEVEN的威力吧！」")

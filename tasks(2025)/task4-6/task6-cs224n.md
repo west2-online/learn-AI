@@ -14,64 +14,64 @@
 
 本阶段你将接触到一系列定义了现代 NLP 研究方向的重要模型与方法：
 
-* **词的向量表示（Word Embeddings）**：学习 `word2vec` 的原理，理解计算机如何通过向量运算捕捉词语间的语义关系。
-* **句法结构分析（Syntactic Parsing）**：学习并实现一个基于神经网络的**依存句法分析器（Dependency Parser）**，让模型理解句子的结构。
-* **序列到序列模型（Sequence-to-Sequence Models）**：构建一个带**注意力机制（Attention）**的**神经机器翻译（Neural Machine Translation, NMT）**系统，体验模型在翻译时的注意力分配。
-* **Transformer 架构（Transformer Architecture）**：深入理解驱动了当今大语言模型发展的核心——**自注意力机制（Self-Attention）**，并亲手实现其关键组件。
+* 词的向量表示（Word Embeddings）：学习 `word2vec` 的原理，理解计算机如何通过向量运算捕捉词语间的语义关系。
+* 句法结构分析（Syntactic Parsing）：学习并实现一个基于神经网络的依存句法分析器（Dependency Parser），让模型理解句子的结构。
+* 序列到序列模型（Sequence-to-Sequence Models）：构建一个带注意力机制（Attention）的神经机器翻译（Neural Machine Translation, NMT）系统，体验模型在翻译时的注意力分配。
+* Transformer 架构（Transformer Architecture）：深入理解驱动了当今大语言模型发展的核心——自注意力机制（Self-Attention），并亲手实现其关键组件。
 
 ## 学习要求
 
-与前几次作业相比，本阶段任务对**数学基础、理论深度和代码实现精度**的要求达到了最高水平。
+与前几次作业相比，本阶段任务对数学基础、理论深度和代码实现精度的要求达到了最高水平。
 
-1. **深入理论学习**：CS224n 以其理论深度著称。你需要花费大量时间消化课程笔记，彻底理解反向传播在 RNN（BPTT）、Attention 和 Transformer 中的推导细节。
-2. **代码精确实现**：本次作业中的很多模块（如 NMT 的 `forward` 和 `backward`）对代码的精确度要求极高，一个微小的索引错误或维度不匹配都可能导致整个系统出错。
-3. **系统级整合与调试**：你需要将编码器、解码器、注意力模块等多个复杂组件准确地组合起来。调试这样一个庞大的系统极具挑战，你需要更有耐心，并学会如何设计单元测试来验证每个模块的正确性。
+1. 深入理论学习：CS224n 以其理论深度著称。你需要花费大量时间消化课程笔记，彻底理解反向传播在 RNN（BPTT）、Attention 和 Transformer 中的推导细节。
+2. 代码精确实现：本次作业中的很多模块（如 NMT 的 `forward` 和 `backward`）对代码的精确度要求极高，一个微小的索引错误或维度不匹配都可能导致整个系统出错。
+3. 系统级整合与调试：你需要将编码器、解码器、注意力模块等多个复杂组件准确地组合起来。调试这样一个庞大的系统极具挑战，你需要更有耐心，并学会如何设计单元测试来验证每个模块的正确性。
 
 ## 作业
 
-**核心任务：完成 [CS224n 四大编程作业](https://web.stanford.edu/class/cs224n/)**
+核心任务：完成 [CS224n 四大编程作业](https://web.stanford.edu/class/cs224n/)
 
 本次考核由四个核心模块构成，它们将引领你逐步掌握 NLP 领域的核心技术。
 
-### **第一部分：词向量的探索与应用（Assignment 1）**
+### 第一部分：词向量的探索与应用（Assignment 1）
 
 在这一部分，你将深入学习词语在向量空间中的表示方法。你需要：
 
 * 理解 `word2vec` 模型（CBOW 和 Skip-Gram）背后的核心思想。
 * 使用 `gensim` 等工具进行实践，并完成基于词向量的语义类比测试（如「king - man + woman ≈ queen」），直观感受词向量的效果。
 
-### **第二部分：神经网络与依存句法分析（Assignment 2）**
+### 第二部分：神经网络与依存句法分析（Assignment 2）
 
 在理解了词的表示后，你将开始让机器理解句子的结构。你需要：
 
 * 实现一个基于神经网络的依存句法分析器。
 * 深刻理解模型是如何通过分析句子中词语之间的修饰与被修饰关系，来形成对整个句子结构的语法树表示的。
 
-### **第三部分：神经机器翻译（Assignment 3）**
+### 第三部分：神经机器翻译（Assignment 3）
 
 这是最具挑战性的任务之一！你将构建一个能将一种语言翻译成另一种语言的系统。你需要：
 
 * 实现一个带有注意力机制（Attention）的编码器-解码器（Encoder-Decoder）模型。
 * 在训练过程中，你将能观察到模型在生成每一个目标语言单词时，它的注意力是如何在源语言句子的不同部分上动态分配的。
 
-### **第四部分：探索 Transformer（Assignment 4）**
+### 第四部分：探索 Transformer（Assignment 4）
 
 在体验了 RNN 处理序列的模式后，你将接触到当今 AI 领域的主流方法——Transformer。你需要：
 
 * 学习并亲手实现自注意力机制（Self-Attention）和多头注意力（Multi-Head Attention）的核心计算过程。
 * 通过构建一个简化的 Transformer 模型，你将彻底理解它为何能并行处理序列，并成为 GPT 等所有大语言模型的基础架构。
 
-## ⭐ 重要提示 ⭐
+## 重要提示
 
-* **关于最终项目（Final Project）**：为了让大家能将精力完全集中在对核心知识的编码实现上，本次考核**无需完成** CS224n 的最终项目（Final Project）
-* **关于翻译与学习资料**：在学习过程中，如果遇到困难，可以参考：
+* 关于最终项目（Final Project）：为了让大家能将精力完全集中在对核心知识的编码实现上，本次考核无需完成 CS224n 的最终项目（Final Project）
+* 关于翻译与学习资料：在学习过程中，如果遇到困难，可以参考：
 
-  * **[ShaddockNH3/CS224N-Nyan-Book](https://github.com/ShaddockNH3/CS224N-Nyan-Book)**
+  * [ShaddockNH3/CS224N-Nyan-Book](https://github.com/ShaddockNH3/CS224N-Nyan-Book)
   * 这是本人的学习仓库，你可以在这里找到课程 PPT 的翻译、论文精读笔记等学习资料，尤其是环境配置（cs224n 的环境配置没有 cs231n 配置那么方便）。仓库下放着本人的实现代码，这部分请不要看。
 
 > 建议选择 LLM 路线的同学先完成 cs224n 的前三个 assignment，然后再去完成 cs231n
 
-### **作业参考资料**
+### 作业参考资料
 
 0. [cs224n](https://www.bilibili.com/video/BV1vQMBz6EvP/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)，能够理解 ppt 和论文的可以不用看视频
 1. [跟李沐学AI 词向量（word2vec）【动手学深度学习v2】](https://www.bilibili.com/video/BV1sY4y1572C/)
