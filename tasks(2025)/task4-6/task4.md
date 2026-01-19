@@ -36,49 +36,121 @@
 
 此外，本轮需要一些前置知识：线性代数、微积分、NumPy 以及 Python 编程。
 
-后两者已经在前几轮涉及，前两者如果学校课程尚未开设（对于大一学生，偏导数（Partial Derivative）部分在高等数学大一下学期讲授），可以参考下一节的推荐教程。
+后两者已经在前几轮涉及，前两者如果学校课程尚未开设（对于大一学生，偏导数部分在高等数学大一下学期讲授），可以参考下一节的推荐教程。
 
 ## 推荐教程
 
-### 核心课程
+本轮考核要求你掌握深度学习系的机器学习以及一些其他的经典机器学习算法。
 
-Stanford CS231n: Convolutional Neural Networks for Visual Recognition
+深度学习系的机器学习主要参考 Stanford CS231n 课程的内容，经典机器学习算法则主要参考 scikit-learn 库的使用。
 
-- [课程英文主页（Notes & Assignments）](https://cs231n.github.io/)
-- [课程中文翻译（Notes）](https://zhuanlan.zhihu.com/p/21930884)（采用 Python 2.7 版本，已过时，可作为辅助理解材料）
+学习机器学习需要有一定的数学知识作为基础。
 
-### Scikit-learn
-
-[scikit-learn 官方学习指南](https://scikit-learn.org/stable/user_guide.html)
-
-### 前置知识及辅助资料
+### 前置知识
 
 1. 前三轮知识：尤其是 NumPy、Pandas 和 Matplotlib 库。Python 基础不必多说，爬虫的作用主要是为未来进行人工智能研究时，具备补全数据或爬取所需数据的能力。
-
 2. 多元函数复合求导（求偏导）：具体内容在高等数学 B 下学期讲授，可参考[宋浩高等数学](https://www.bilibili.com/video/BV1Eb411u7Fw?spm_id_from=333.788.videopod.episodes&vd_source=0272bb7dd0d8d9302c55fc082442b9e3&p=96)，直至能够完成一些简单的求偏导计算。
-
 3. 线性代数：计算机专业的同学大一上已经开设线性代数课程。无论对于已学或未学的同学，都可以参考[线性代数的本质](https://www.bilibili.com/video/BV1Ys411k7yQ/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)系列视频加深对线性代数的理解。
-
 4. NumPy：作业将大量使用 NumPy 进行向量化（Vectorization）计算。请务必完成 [CS231n 官方 NumPy 教程](https://cs231n.github.io/python-numpy-tutorial/)。对于不熟悉的 API，学会使用搜索引擎和大语言模型工具进行查询。
-
 5. 矩阵求导：这是理解反向传播数学原理的关键。不必畏惧,你只需掌握基础的求偏导知识即可入门。推荐通过以下资源学习：
    - [B 站视频教程](https://www.bilibili.com/video/BV1av4y1b7MM/)
    - [知乎文章讲解](https://zhuanlan.zhihu.com/p/273729929)
 
-6. 课程视频：
-   - CS231n 的[课程视频](https://www.bilibili.com/video/BV1b1agz5ERC/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)是很好的补充材料
-   - 如果觉得 CS231n 的数学推导过多，建议观看[李宏毅老师的机器学习课程](https://www.bilibili.com/video/BV1Wv411h7kN/)，该课程更侧重于从直观角度理解模型原理
-   - [吴恩达老师的机器学习视频](https://www.bilibili.com/video/BV1owrpYKEtP/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)
-   - 一些经典的机器学习方法，包括与神经网络在技术原理和路线上有所不同的[经典机器学习方法](https://www.bilibili.com/video/BV1T84y167U9/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)
+### CS231n 课程相关链接
 
-## 学习路径建议
+Stanford CS231n: Convolutional Neural Networks for Visual Recognition
+
+- [CS231n 2024 Notes](https://cs231n.github.io/)
+- [CS231n 2024 Spring](https://cs231n.github.io/)
+- [CS231n 2025 Spring](https://cs231n.stanford.edu/assignments.html)
+- [课程中文翻译](https://zhuanlan.zhihu.com/p/21930884)（采用 Python 2.7 版本，已过时，可作为辅助理解材料）
+
+> 需要注意，CS231n 课程官方笔记页面提供的是 24 版本的作业。当前版本的则是 25 版，不过官方的笔记没有跟进。你可以选择完成 24 年的版本或者 25 年的版本，无论选择哪个版本，核心任务和学习目标是一致的。
+>
+> 如果你选择的版本和本文档要求的实现的有所不同，请以你选择的版本为准。
+
+### 课程视频
+
+1. CS231n 的[课程视频](https://www.bilibili.com/video/BV1b1agz5ERC/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)
+2. 如果觉得 CS231n 的数学推导过多，建议观看[李宏毅老师的机器学习课程](https://www.bilibili.com/video/BV1Wv411h7kN/)，该课程更侧重于从直观角度理解模型原理
+3. [吴恩达老师的机器学习视频](https://www.bilibili.com/video/BV1owrpYKEtP/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)
+
+### 配环境
+
+学习 CS231n 需要配置环境，这里主要推荐两条路线。
+
+#### 使用 Colab
+
+CS231n 官方和 Google 有合作，只要你有 Google 账号，就可以直接使用 Colab 环境完成作业。
+
+打开 CS231n [24 Spring Assignment 1](https://cs231n.github.io/assignments2024/assignment1/) 页面或者 [25 Spring Assignment 1](https://cs231n.github.io/assignments2025/assignment1/) 页面，然后观看 Setup 这个视频，按照视频中的步骤操作即可。
+
+这里直接给出这个视频的链接：[CS231N Google Colab Assignment Workflow Tutorial](https://www.youtube.com/watch?v=DsGd2e9JNH4&source_ve_path=MjM4NTE&embeds_referring_euri=https%3A%2F%2Fcs231n.github.io%2F)
+
+#### 本地配置环境
+
+本地配置环境不推荐直接使用 Windows 系统，建议使用 Linux 或 macOS。
+
+如果你是 Windows 用户，可以考虑两条途径：
+
+1. 使用 Linux 虚拟机
+2. 使用 Windows Subsystem for Linux（WSL2）
+
+个人推荐使用 WSL2，微软官方有详细的[安装教程](https://learn.microsoft.com/zh-cn/windows/wsl/install)。
+
+这里贴出来几个下载 WSL2 碰到的常见的问题以及解决方案，如果你是 Linux 或者 Mac 用户，可以跳过这部分。
+
+- 我配完 WSL2 后，手机模拟器（例如 mumu 模拟器）非常卡顿，怎么办？
+
+因为市面上大多数的手机模拟器的实现技术和 WSL2 是冲突的。
+
+具体而言，WSL2 是基于 Hyper-V 的虚拟化技术，而大多数手机模拟器是基于 VirtualBox 或者其他虚拟化技术实现的，这两种虚拟化技术是冲突的，所以会导致手机模拟器非常卡顿。
+
+解决方法有两种，一种是使用蓝叠模拟器或者谷歌模拟器（Beta 开发中），另一种是 `Win + Shift + R`，输入 `cmd` 后，`Win + Shift +Enter` 进入管理员模式：
+
+```bash
+# 只能使用 wsl 时
+bcdedit /set hypervisorlaunchtype auto
+
+# 使用 mumu 模拟器时
+bcdedit /set hypervisorlaunchtype off
+```
+
+然后重启。
+
+注意是重启，大部分没经过特别设置的 Windows，关机等同于深度睡眠，并不会修改你的系统设置。
+
+### 学习路径建议
 
 1. 适应英文环境：积极适应全英文的学习材料。建议不要使用浏览器的全文自动翻译，可以安装划词翻译插件，强制自己阅读原文，只在遇到生词时进行查询。
 2. 研读课程笔记（Notes）：CS231n 的课程 Notes 是完成作业的重要学习资源，内容详实且深入。请务必花费时间仔细阅读，这是理解所有模型原理的基础。
 3. 攻克数学难点：遇到矩阵求导等数学难题时，不要直接跳过。利用推荐的视频和文章，认真推导一两个简单的例子，你会发现它并没有想象中那么困难。
 4. 建立交流社区：我们希望将考核群打造成一个高效的学习社区。请积极在群里讨论问题，尤其是数学和理论方面的内容。交流能极大地提高学习效率。但严禁直接分享或抄袭代码。
 
+### Scikit-learn
+
+scikit-learn 是一个强大的机器学习库，内部封装了众多经过验证的经典机器学习算法，在数据科学竞赛和实际应用中表现出色。
+
+我们后续主要探索更前沿的深度学习，这部分内容只需要浅尝辄止，不需要深入研究其内部复杂的实现原理，重点是了解其功能，并在未来需要时，能够熟练地查阅官方文档，直接调用其提供的强大接口（API）来解决问题。
+
+推荐了解以下这些经典的机器学习算法，它们与我们主攻的深度学习（神经网络）在技术原理和路线上有所不同，但在许多场景下（尤其是数据科学、数学建模等竞赛中）依然是非常强大和高效的工具：
+
+1. [决策树（Decision Tree）](https://scikit-learn.org/stable/modules/tree.html)
+2. [随机森林（Random Forest）](https://scikit-learn.org/stable/modules/ensemble.html)
+3. XGBoost（Extreme Gradient Boosting）
+
+下面是一些推荐的学习资源：
+
+1. [scikit-learn 官方学习指南](https://scikit-learn.org/stable/user_guide.html)
+2. 一些[经典机器学习方法](https://www.bilibili.com/video/BV1T84y167U9/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)，不推荐看这个视频，只推荐看这个视频集的目录
+
 ## 作业
+
+关于本次的任务，你需要完成以下内容——
+
+- 作业内容中提到的所有文档（不出意外的话是 2 份）
+- 完成作业一
+- 从作业二、三中选择一项完成
 
 ### 作业 1：完成 CS231n Assignment 1
 
@@ -86,7 +158,7 @@ Stanford CS231n: Convolutional Neural Networks for Visual Recognition
 
 本次作业将引导你从零开始，系统地实现多个经典的机器学习与神经网络模型，为后续更复杂的挑战奠定坚实的基础。
 
-#### 第一部分：经典图像分类器
+#### 经典图像分类器
 
 在这一部分，你将深入理解图像分类的基础理论，通过手动实现三个经典的线性分类器来构建对模型内部工作原理的直观认知。你需要：
 
@@ -95,7 +167,7 @@ Stanford CS231n: Convolutional Neural Networks for Visual Recognition
 - 为多分类问题实现 Softmax 分类器，包括其损失函数与梯度的计算。
 - 使用 随机梯度下降（Stochastic Gradient Descent, SGD） 算法来优化你实现的 SVM 和 Softmax 模型，并学习如何调整超参数（Hyperparameter）以获得更好的性能。
 
-#### 第二部分：你的第一个神经网络
+#### 第一个神经网络
 
 在掌握了线性分类器的基础上，你将进一步学习神经网络的构建，从零开始实现一个完整的神经网络。你需要：
 
@@ -105,23 +177,13 @@ Stanford CS231n: Convolutional Neural Networks for Visual Recognition
 
 这个过程将引导你深入理解算法的每一个实现细节，而不是简单地使用现成的库函数，从而真正建立起对深度学习核心原理的深刻认知。
 
-### 作业 2：掌握 scikit-learn 库并实践经典机器学习算法
+### 作业 2：完成 Kaggle Titanic 预测任务
 
-核心任务：以 Kaggle 经典入门赛 [Titanic: Machine Learning from Disaster](https://www.kaggle.com/competitions/titanic) 为实战项目，熟练运用 `scikit-learn` 完成一个完整的机器学习流程。
-
-scikit-learn 是一个强大的机器学习库，内部封装了众多经过验证的经典机器学习算法，在数据科学竞赛和实际应用中表现出色。
-
-我们后续主要探索更前沿的深度学习，这部分内容只需要浅尝辄止，不需要深入研究其内部复杂的实现原理，重点是了解其功能，并在未来需要时，能够熟练地查阅官方文档，直接调用其提供的强大接口（API）来解决问题。
-
-推荐了解以下这些经典的机器学习算法，它们与我们主攻的深度学习（神经网络）在技术原理和路线上有所不同，但在许多场景下（尤其是数据科学竞赛中）依然是非常强大和高效的工具：
-
-1. [决策树（Decision Tree）](https://scikit-learn.org/stable/modules/tree.html)
-2. [随机森林（Random Forest）](https://scikit-learn.org/stable/modules/ensemble.html)
-3. XGBoost（Extreme Gradient Boosting）
+以 Kaggle 经典入门赛 [Titanic: Machine Learning from Disaster](https://www.kaggle.com/competitions/titanic) 为实战项目，熟练运用 `scikit-learn` 完成一个完整的机器学习流程。
 
 本次作业将引导你直面一个真实的预测任务，你将不再使用简单的示例数据集，而是要亲手处理带有缺失值和噪音的原始数据，最终提交你的预测结果，体验一次完整的数据科学竞赛之旅。
 
-#### 第一部分：数据探索与预处理
+#### 数据探索与预处理
 
 在这一部分，你将对数据进行全面的探索和分析，清洗和整理泰坦尼克号的乘客数据，为后续的模型训练做好准备。
 
@@ -129,7 +191,7 @@ scikit-learn 是一个强大的机器学习库，内部封装了众多经过验�
 - 数据清洗：对缺失值进行合理的填充（例如，使用均值、中位数或众数）。
 - 特征工程：将非数值的类别特征（如 `Sex`、`Embarked`）转换为模型可以理解的数值格式（例如，独热编码（One-hot Encoding）或标签编码（Label Encoding））。此外，你需要决定哪些特征（如 `Name`、`Ticket`）对于预测生存率是无关的，并将其舍弃。
 
-#### 第二部分：训练与评估多种分类模型
+#### 训练与评估多种分类模型
 
 在完成数据准备后，你将使用 `scikit-learn` 训练多种模型，并比较它们在预测乘客生还率上的表现。
 
@@ -142,7 +204,7 @@ scikit-learn 是一个强大的机器学习库，内部封装了众多经过验�
   - 随机森林（`sklearn.ensemble.RandomForestClassifier`）
 - 模型评估：在验证集上评估每一个模型，使用 `sklearn.metrics.accuracy_score` 和 `sklearn.metrics.classification_report` 来比较它们的准确率（Accuracy）、精确度（Precision）、召回率（Recall）等指标，并选出表现最佳的模型。
 
-#### 第三部分：模型调优与生成提交文件
+#### 模型调优与生成提交文件
 
 为了在 Kaggle 排行榜上获得更好的名次，你需要对你的最佳模型进行精细的优化和调整。
 
@@ -152,9 +214,103 @@ scikit-learn 是一个强大的机器学习库，内部封装了众多经过验�
 
 #### 注意
 
-1. 只需跑通即可，可追求更高的准确率，但不强求
+1. 只需跑通即可，可追求更高的准确率，但不强求（推荐追求到 90%+）
 
-完成这个作业后，你不仅将熟练掌握 `scikit-learn` 的核心用法，更将获得一次宝贵的、端到端解决实际问题的项目经验。
+### 作业 3：数学建模 - 2025 电工杯 A 题（的问题 2）
+
+数学建模竞赛通常涉及大量的数据处理和分析任务，近年来，深度学习方法在数学建模中的应用越来越广泛，成为解决复杂问题的有力工具。
+
+数学建模每年最大的比赛是 **国赛** 和 **美赛**，除了这两个之外，**电工杯** 的含金量也很高。
+
+> 美赛通常在每年 1 月末，电工杯通常在 5 月末，国赛通常在 9 月初。
+
+国赛有 A、B、C 三个题目，C 题通常是**数据分析**，也就是考察你的爬虫、数据清洗、数据可视化、数据分析工具、机器学习等能力。
+
+对于美赛也是类似的，C 题通常是**数据建模**。
+
+而国赛和美赛的难度都比较大，适合有一定基础的同学参加，对初学者并不友好。
+
+所以电工杯是一个很好的选择，因为电工杯的题目通常不难。
+
+不过考察的方向不像国赛、美赛那么固定。恰巧，2025 年的电工杯 A 题是一个很经典的机器学习问题。
+
+它有 4 个问题，问题 1-4，问题 1 和后 3 问无关，且与机器学习无关，所以直接跳过。问题 4 是问题 3 的超集，涉及到插值优化，和机器学习关系并没有那么紧密。
+
+请注意，如果你选择了这个作业，那么包括 task 4 在内的 task 4-6，你都默认需要完成这部分。
+
+所以，不要完成了这部分题目就把完成的东西给删了。
+
+#### 下载题目
+
+由于官网提供的方式是百度网盘，所以直接点击[这里](...)下载即可。
+
+如果你想使用官网的方式进行下载，可以参考下面两条链接：
+
+1. [2025 电工杯下载链接](https://new.saikr.com/vse/EECMCM2025?type=notice&id=31337)
+2. [2025 电工杯压缩包密码](https://new.saikr.com/vse/EECMCM2025?type=notice&id=31338)
+
+#### 收集数据
+
+如果你不想找数据，可以使用[2017 Sky Images and Photovoltaic Power Generation Dataset for Short-term Solar Forecasting (Stanford Raw)](https://purl.stanford.edu/sm043zf7254) 这个数据集。
+
+这个数据集有一点问题，问题是它研究的是较小范围的光伏发电，和题目要求的光伏电站发电有一定差距，不过这个数据集已经足够你完成作业了。
+
+注意在官网是下载 csv 文件，其他原始图片数据不需要下载。
+
+当然你也可以自行查找其他数据集进行解答。
+
+#### 作业 3 - 作业要求
+
+本次要求你实现问题 2，原文如下：
+
+```txt 2025 电工杯 A 题 - 问题 2
+问题 2：建立基于历史功率的光伏电站日前发电功率预测模型
+
+建立基于历史功率的光伏电站日前发电功率预测模型，进行发电功率预测，根据附件 1 中考核要求分析你所采用方法的准确性。
+````
+
+在你下载下来作业之后，你应该对数据进行以下的处理：
+
+1. 阅读下面的**建立模型**，这是题目的原文要求，也很容易理解
+2. 数据清洗，剔除数据集中的异常值
+3. 数据预处理，包括但不限于：
+   1. 时间对齐，将数据对齐到 15 分钟一个时间点
+   2. 缺失值处理，使用插值法或者其他方法填补缺失值
+4. 归一化
+5. 数据集划分，划分训练集和测试集
+
+```txt 建立模型
+建立光伏电站发电功率日前预测模型，要求如下：
+
+1. 训练集与测试集划分要求：第 2、5、8、11 个月最后一周数据作为测试集，其他数据作为训练集
+2. 预测时间范围：7 天，时间分辨率为 15 分钟，预测结果和实际功率的格式要求填写表 2，并以附件的形式上传
+3. 预测误差统计指标计算仅限白昼时段
+```
+
+注意到建立模型这部分有**误差统计**，我们先**不做**这部分。
+
+数据清理完毕后，你需要选择一个合适的模型来进行训练和预测，以下给出你需要使用的模型：
+
+1. LR（Logistic 回归）
+2. SVR（支持向量回归）
+3. RF（随机森林回归）
+4. XGBoost 回归
+
+这些模型 sk-learn 库中都有封装，你也可以选择更多的模型，但不可以使用深度学习模型。
+
+你不需要对模型进行参数调优，直接使用默认参数即可。
+
+在完成作业后，你需要写一份**文档**，内容包括但不限于：
+
+1. 数据清洗与预处理方法
+2. 模型选择与超参数调优方法
+3. 可视化你的结果
+
+以及你遇到的问题，等等。
+
+#### 参考链接
+
+1. 2025 电工杯的官网[https://new.saikr.com/vse/EECMCM2025](https://new.saikr.com/vse/EECMCM2025)
 
 ## 作业要求
 

@@ -29,11 +29,13 @@
 
 ## 作业
 
+### 作业 1
+
 完成 [CS231n Assignment 3](https://cs231n.github.io/assignments2025/assignment3/)
 
 本次考核包含多个模块，你可以根据自己的兴趣和精力选择完成的深度。
 
-### 第一部分：RNN / LSTM
+#### 第一部分：RNN / LSTM
 
 在这一部分，你将构建一个能够为图片生成文字描述的模型。它会接收一张图片，并生成一段描述图片内容的文字。你需要：
 
@@ -41,28 +43,28 @@
 * 实现一个基于循环神经网络（RNN）的解码器，它会接收图像特征，并逐词生成描述语句。
 * 为了解决 RNN 的长期依赖问题，你将进一步实现一个基于长短期记忆网络（LSTM）的解码器，并观察其性能提升。
 
-### 第二部分：Transformer
+#### 第二部分：Transformer
 
 在体验了 RNN 处理序列的模式后，你将接触到当今 AI 领域的主流方法——Transformer。你需要：
 
 * 学习并实现自注意力机制（Self-Attention）和多头注意力（Multi-Head Attention）。
 * 将 RNN 解码器替换为一个基于 Transformer 的解码器，再次完成图文生成任务，并与 LSTM 的结果进行比较。
 
-### 第三部分：生成对抗网络（GANs）
+#### 第三部分：生成对抗网络（GANs）
 
 在这一部分，你将从理解内容转向创造内容。你将实现一个 GAN，从随机噪声中生成逼真的手写数字图像。你需要：
 
 * 分别实现一个生成器（Generator）和一个判别器（Discriminator）网络。
 * 理解并实现 GAN 的交替训练过程，在生成器和判别器的对抗与博弈中，让模型学会生成越来越真实的图像。
 
-### 第四部分：自监督学习 - SimCLR
+#### 第四部分：自监督学习 - SimCLR
 
 在最后一部分，你将接触到一种强大的无监督学习方法，它使得在海量无标签数据上预训练模型成为可能。你需要：
 
 * 理解对比学习（Contrastive Learning）的核心思想。
 * 实现 SimCLR 的关键组件，如数据增强、投影头和 NT-Xent 损失函数。
 
-### 作业参考资料
+#### 作业参考资料
 
 1. [跟李沐学AI 54 循环神经网络 RNN【动手学深度学习v2】](https://www.bilibili.com/video/BV1D64y1z7CA/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)
 
@@ -77,3 +79,5 @@
 6. [【Transformer 其实是个简单到令人困惑的模型【白话DeepSeek-06】](https://www.bilibili.com/video/BV1C3dqYxE3q/?share_source=copy_web&vd_source=3fbbb3c2ad24817002f9c39fad247a3b)
 
 7. [68 Transformer【动手学深度学习v2】](https://www.bilibili.com/video/BV1Kq4y1H7FL/?p=2&share_source=copy_web&vd_source=3fbbb3c2ad24817002f9c39fad247a3b)
+
+### 作业 3
