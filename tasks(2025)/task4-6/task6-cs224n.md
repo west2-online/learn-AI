@@ -29,49 +29,64 @@
 
 ## 作业
 
-核心任务：完成 [CS224n 四大编程作业](https://web.stanford.edu/class/cs224n/)
+关于本次的任务，你需要完成以下内容——
 
-本次考核由四个核心模块构成，它们将引领你逐步掌握 NLP 领域的核心技术。
+* 作业内容中提到的所有文档（不出意外的话是 2 份）
+* 完成作业一
+* 从作业二、三中选择一项完成
 
-### 第一部分：词向量的探索与应用（Assignment 1）
+### 作业 1
+
+完成 [CS224n 四大编程作业](https://web.stanford.edu/class/cs224n/)
+
+本次考核由四个模块构成，它们将引领你逐步掌握 NLP 领域的核心技术。
+
+> 建议选择 LLM 路线的同学先完成 cs224n 的前三个 assignment，然后再去完成 cs231n（毕竟都写了前两个了）。
+
+#### 词向量的探索与应用（Assignment 1）
 
 在这一部分，你将深入学习词语在向量空间中的表示方法。你需要：
 
 * 理解 `word2vec` 模型（CBOW 和 Skip-Gram）背后的核心思想。
 * 使用 `gensim` 等工具进行实践，并完成基于词向量的语义类比测试（如「king - man + woman ≈ queen」），直观感受词向量的效果。
 
-### 第二部分：神经网络与依存句法分析（Assignment 2）
+#### 神经网络与依存句法分析（Assignment 2）
 
 在理解了词的表示后，你将开始让机器理解句子的结构。你需要：
 
 * 实现一个基于神经网络的依存句法分析器。
 * 深刻理解模型是如何通过分析句子中词语之间的修饰与被修饰关系，来形成对整个句子结构的语法树表示的。
 
-### 第三部分：神经机器翻译（Assignment 3）
+#### 神经机器翻译（Assignment 3）
 
-这是最具挑战性的任务之一！你将构建一个能将一种语言翻译成另一种语言的系统。你需要：
+这是最具挑战性的任务之一，你将构建一个能将一种语言翻译成另一种语言的系统。你需要：
 
 * 实现一个带有注意力机制（Attention）的编码器-解码器（Encoder-Decoder）模型。
 * 在训练过程中，你将能观察到模型在生成每一个目标语言单词时，它的注意力是如何在源语言句子的不同部分上动态分配的。
 
-### 第四部分：探索 Transformer（Assignment 4）
+#### 探索 Transformer（Assignment 4）
 
 在体验了 RNN 处理序列的模式后，你将接触到当今 AI 领域的主流方法——Transformer。你需要：
 
 * 学习并亲手实现自注意力机制（Self-Attention）和多头注意力（Multi-Head Attention）的核心计算过程。
 * 通过构建一个简化的 Transformer 模型，你将彻底理解它为何能并行处理序列，并成为 GPT 等所有大语言模型的基础架构。
 
-## 重要提示
+#### 重要提示
 
 * 关于最终项目（Final Project）：为了让大家能将精力完全集中在对核心知识的编码实现上，本次考核无需完成 CS224n 的最终项目（Final Project）
 * 关于翻译与学习资料：在学习过程中，如果遇到困难，可以参考：
-
   * [ShaddockNH3/CS224N-Nyan-Book](https://github.com/ShaddockNH3/CS224N-Nyan-Book)
-  * 这是本人的学习仓库，你可以在这里找到课程 PPT 的翻译、论文精读笔记等学习资料，尤其是环境配置（cs224n 的环境配置没有 cs231n 配置那么方便）。仓库下放着本人的实现代码，这部分请不要看。
+  * 这是本人的学习仓库，你可以在这里找到课程 PPT 的翻译、论文精读笔记等学习资料，尤其是环境配置（cs224n 的环境配置没有 cs231n 配置那么方便）。
 
-> 建议选择 LLM 路线的同学先完成 cs224n 的前三个 assignment，然后再去完成 cs231n
+#### 作业 1 - 作业要求
 
-### 作业参考资料
+在完成作业后，你需要写一份**文档**，内容包括但不限于：
+
+1. 各个模型的实现细节与数学原理
+2. 各个模型在词向量表示、句法分析、机器翻译、Transformer 任务上的性能比较与分析
+3. 你在实现过程中遇到的挑战与解决方案
+
+#### 作业参考资料
 
 0. [cs224n](https://www.bilibili.com/video/BV1vQMBz6EvP/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)，能够理解 ppt 和论文的可以不用看视频
 1. [跟李沐学AI 词向量（word2vec）【动手学深度学习v2】](https://www.bilibili.com/video/BV1sY4y1572C/)
@@ -79,3 +94,11 @@
 3. [跟李沐学AI Transformer论文逐段精读【论文精读】](https://www.bilibili.com/video/BV1pu411o7BE/)
 4. [【Transformer 其实是个简单到令人困惑的模型【白话DeepSeek-06】】](https://www.bilibili.com/video/BV1C3dqYxE3q/)
 5. [台大李宏毅老师 机器学习2021（Self-Attention和Transformer部分）](https://www.bilibili.com/video/BV1JA411X76s?p=65)
+
+### 作业 2
+
+> 鬼点子生成中。
+
+### 作业 3
+
+详见 CV 方向的作业 3。
