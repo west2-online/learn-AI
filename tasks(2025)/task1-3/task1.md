@@ -1,5 +1,7 @@
 # Task 1 Python 基础与面向对象
 
+> 你需要在 collection-ai 提交 2 份文档，作业零、一、二、三、四的最小可运行版本以及仓库地址。无需提交不相关的文档和测评机等，这些可以放置在你的个人 GitHub 仓库中。
+
 ## 学习目的
 
 如今，Python 是构建人工智能应用的首选语言之一。因此，熟练掌握其语法是开启 AI 之旅的必备基础。
@@ -265,7 +267,7 @@ git commit -m "chore: update xxx config"
 
 你的任务，就是为长门大人编写战斗的核心逻辑，帮助她赶跑偷吃的娜比娅！
 
-请下载 [Nabia_Snack_Incident](https://github.com/ShaddockNH3/learn-AI/releases/download/task1/Nabia_Snack_Incident/Nabia_Snack_Incident.rar)，解压后阅读 `README.md`，根据指引完成8个函数的编写。
+请阅读 [Nabia_Snack_Incident](./Nabia_Snack_Incident)，根据指引完成8个函数的编写。
 
 这份作业并不难，只涉及到 `if`、`else`、`while`，所以请不要看 `Nabia_Snack_Incident` 下的 `answer.py`。
 

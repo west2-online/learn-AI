@@ -18,9 +18,9 @@
 
 ## 学习内容（Learning Content）
 
-选择计算机视觉（CV）方向的同学，请点击[这里](task6-cs231n.md)
+选择计算机视觉（CV）方向的同学，请点击[Task 6 CV 入门](task6-cs231n.md)
 
-选择自然语言处理（NLP）方向的同学，请点击[这里](task6-cs224n.md)
+选择自然语言处理（NLP）方向的同学，请点击[Task 6 NLP 入门](task6-cs224n.md)
 
 ## 作业要求
 
