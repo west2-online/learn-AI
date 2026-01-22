@@ -198,6 +198,8 @@ dataset/
 
 1. 为什么这些特征可能有助于提升模型性能？如果没有提升，可能的原因是什么？如果提升了，具体提升了多少？为什么会提升？
 2. 在日前预测场景下，思考哪些滞后特征是真实可用的？（例如：昨天的同一时刻 vs 刚刚过去的 15 分钟）
+3. 在预测未来第 7 天的数据时，你无法直接获得昨天（即第 6 天）的真实功率作为特征输入。此时你的模型该如何运行？是使用预测值代替真实值（递归预测），还是专门训练一个预测第 7 天的模型？
+4. 给出的特征不一定正确，请分析可能存在的问题，并提出改进方案。
 
 #### 模型调参
 
@@ -223,7 +225,7 @@ dataset/
 
 你可以将时间序列数据转换为适合 CNN 输入的格式，然后设计一个简单的 CNN 模型进行训练。
 
-可以使用 1D-CNN，也可以使用 2D-CNN（将滑动窗口的数据视作图像）
+可以使用 1D-CNN，也可以使用 2D-CNN（将滑动窗口的数据视作图像，例如将 (Time_Window, Features) 的矩阵直接看作单通道图像）。主要推荐 1D-CNN，这更符合时序数据的直觉。
 
 训练完毕后，比较 CNN 模型与传统模型的预测效果，然后思考以下问题：
 
@@ -248,50 +250,59 @@ dataset/
 
 ### 作业 4：根据 MNIST 数据集实现一个简单的识别数字的 Demo（选做）
 
-实现并部署一个基于 TensorFlow.js 的 MNIST 手写数字识别 Web 应用。
+人工智能的高级框架不只有 PyTorch，还有 TensorFlow，Keras 等等。
+
+目前，Keras 已经被集成到 TensorFlow 中，成为其高级 API。
+
+TensorFlow.js 是 TensorFlow 的 JavaScript 版本，可以直接在浏览器中运行深度学习模型。
+
+本次作业要求你实现并部署一个基于 TensorFlow.js 的 MNIST 手写数字识别 Web 应用。
 
 该项目的最终成果可以在[这里](https://shaddocknh3.github.io/tfjs-mnist-digit-recognizer/)体验。
 
-本次作业的目标是让你亲历一个人工智能应用从训练到部署的全过程。你将以[该项目](https://github.com/ShaddockNH3/tfjs-mnist-digit-recognizer)为基础框架，但核心的识别模型需要由你自己亲手训练和替换。
+本次作业的目标是让你亲历一个人工智能应用从训练到部署的全过程。你可以以[该项目](https://github.com/ShaddockNH3/tfjs-mnist-digit-recognizer)为基础框架，核心识别模型需要你亲手训练。
 
-你的任务是基于 MNIST 数据集训练一个识别数字的 Demo，应该 fork [该项目](https://github.com/ShaddockNH3/tfjs-mnist-digit-recognizer)，然后替换原仓库 model 文件夹下的两个训练文件。
-
-你不需要实现前端。
+> 此后简称为该项目，不列出链接。
 
 #### 训练识别模型
 
-原项目（指的是旧版实现，本人已替换为新版实现）中的模型存在版本兼容性或识别效果不佳的问题。现在，你的首要任务是使用 CNN 亲自训练一个全新的、更强大的识别模型。
+原项目（旧版本）中的模型存在版本兼容性以及无法兼容手机端的问题。
 
-* 环境与工具：你需要在 Python 环境下，使用 Keras 框架来完成此任务。
-* 模型构建：在经典的 MNIST 数据集上，从零开始构建并训练一个卷积神经网络（CNN）。你需要自行设计网络结构、选择优化器和损失函数，并进行超参数调整，以达到尽可能高的识别准确率。
-* 产出：训练完成后，你将得到一个 Keras 模型文件（通常是 `.h5` 格式），这是我们后续工作的基础。
+由于浏览器环境主要运行 TensorFlow.js，无法直接运行 PyTorch 和 TensorFlow。
 
-#### 模型转换与前端整合
+你的任务是使用 Keras / PyTorch，在经典的 MNIST 数据集上，从零开始构建并训练一个卷积神经网络（CNN）。
 
-由于浏览器环境无法直接运行 Python 代码，我们需要通过转换工具，将训练好的模型迁移到 Web 环境中。
+你需要自行设计网络结构、选择优化器和损失函数，并进行超参数调整，以达到尽可能高的识别准确率。
 
-* 模型转换：你需要学习并使用 `tensorflowjs_converter` 这个官方工具。它的作用是将上一步得到的 `.h5` 模型文件，转换成 TensorFlow.js 能够加载和理解的格式，即一个 `model.json`（模型结构）和一个 `.bin` 权重文件。
-* 核心替换：将你生成的新模型文件（`model.json` 和 `.bin` 文件），替换掉基础项目仓库中 `/model/` 文件夹下的所有旧文件。这是实现模型更新的关键步骤。
+训练完成后，你将得到一个 Keras / PyTorch 模型文件（通常是 `.h5` 格式或 `.pt` 格式）。
 
-#### 部署、验证与优化
+#### 模型转换
 
-测试可以参考[该项目](https://github.com/ShaddockNH3/tfjs-mnist-digit-recognizer)的部署，一般而言，报错了是版本不匹配，而不是前端出了问题。
+你需要通过转换工具，将训练好的模型迁移到 Web 环境中。
 
-* 在线部署：将你修改后的整个项目，通过 GitHub Pages 功能发布，生成一个任何人都可以通过浏览器访问的公开网页链接。
-* 多端验证：在 PC 和移动端（手机）上打开你的应用，在画板上写下数字进行测试。检验识别功能是否正常工作，特别是解决原项目在手机上无法正确识别的问题。
-* 调试与修复：仔细观察浏览器开发者工具（F12）中的控制台。如果在加载模型或进行预测时出现任何报错信息，你需要系统地分析问题根源，并尝试修复它。
+如果你采用了 Keras 进行训练，你需要使用 `tensorflowjs_converter` 将 Keras 模型直接转换为 TensorFlow.js 格式。
 
-在完成最终的模型后，你应该替换 `index.html` 的第 6 行为自己的 GitHub 用户名。
+如果你采用了 PyTorch 进行训练，你需要把训练好的模型导出为 ONNX 格式，然后使用 onnx-tf 等工具将 ONNX 模型转换为 TensorFlow SavedModel，再转换为 TensorFlow.js 格式。
+
+最终，你将得到两个文件：`model.json` 和一个 `.bin` 权重文件。
+
+#### 前端实现
+
+你可以 fork 该项目，然后替换原仓库 model 文件夹下的两个训练文件。
+
+在你完成了文件替换后，你还需要修改 index.html 的第 6 行为自己的 GitHub 用户名。
+
+当然你也可以从零开始实现一个前端页面，要求功能与该项目类似即可。
+
+在你完成了整个项目后，你需要通过 GitHub Pages，将你的项目部署为一个公开可访问的网页。
+
+在 PC 和移动端打开你的网页，在画板上写下数字，验证识别功能是否正常工作。
 
 #### 参考资料
 
 * [参考实现：使用 Keras.js 的旧版思路](https://github.com/starkwang/keras-js-demo)
 * [参考教程：从训练到部署的详细步骤](https://www.cnblogs.com/chinasoft/p/17084356.html)
 * [TensorFlow.js 官方文档](https://www.tensorflow.org/js/guide?hl=zh-cn)
-
-#### 提示
-
-1. 该项目可以全程跑在 Colab 上，你可以参考答案 [train.ipynb](https://github.com/ShaddockNH3/tfjs-mnist-digit-recognizer/blob/train/training/train.ipynb)，但不要抄袭代码
 
 ## 作业要求
 

@@ -267,7 +267,7 @@ git commit -m "chore: update xxx config"
 
 你的任务，就是为长门大人编写战斗的核心逻辑，帮助她赶跑偷吃的娜比娅！
 
-请下载 [Nabia_Snack_Incident](https://github.com/ShaddockNH3/learn-AI/releases/download/task1/Nabia_Snack_Incident/Nabia_Snack_Incident.rar)，解压后阅读 `README.md`，根据指引完成8个函数的编写。
+请阅读 [Nabia_Snack_Incident](./Nabia_Snack_Incident)，根据指引完成8个函数的编写。
 
 这份作业并不难，只涉及到 `if`、`else`、`while`，所以请不要看 `Nabia_Snack_Incident` 下的 `answer.py`。
 
