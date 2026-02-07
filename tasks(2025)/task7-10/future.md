@@ -30,41 +30,41 @@ AI 领域的发展速度超乎想象，每隔几个月甚至几周，都可能�
 
 本路线为 [ShaddockNH3](https://github.com/ShaddockNH3) 自行设计的，如有问题请提 issue
 
-**Task 1**：Python 基础（含一定面向对象编程（OOP）思想）
+Task 1：Python 基础（含一定面向对象编程（OOP）思想）
 
-**Task 2**：爬虫（基本业务可能会遇到的所有情况）
+Task 2：爬虫（基本业务可能会遇到的所有情况）
 
-**Task 3**：数据分析工具（NumPy、Pandas、Matplotlib）
+Task 3：数据分析工具（NumPy、Pandas、Matplotlib）
 
-**Task 4**：机器学习（KNN、SVM、Softmax、两层神经网络，以及与深度学习机理不同的决策树、随机森林、XGBoost 等）
+Task 4：机器学习（KNN、SVM、Softmax、两层神经网络，以及与深度学习机理不同的决策树、随机森林、XGBoost 等）
 
-**Task 5**：深度学习入门（反向传播、批/层归一化、CNN、PyTorch）
+Task 5：深度学习入门（反向传播、批/层归一化、CNN、PyTorch）
 
-**Task 6**：深度学习深入
+Task 6：深度学习深入
 
 - LLM：词嵌入、机器翻译、Transformer
 - CV：RNN、Transformer、GAN、SSL、LSTM
 
-**Task 7**：
+Task 7：
 
 - LLM：Hugging Face 生态（包括 pipeline、预训练）、LangChain 框架
 - CV：timm、OpenCV、Albumentations、OpenMMLab
 
-**Task 8**：
+Task 8：
 
 - LLM 应用：高级 RAG 与 Agent、模型微调、LoRA
 - LLM 论文：BERT -> GPT-2/3 -> LoRA -> RAG -> ReAct（Agent）
 - CV 应用：YOLO/Faster R-CNN
 - CV 论文：AlexNet -> ResNet -> R-CNN -> YOLO
 
-**Task 9**：
+Task 9：
 
 - LLM 应用：LLM 部署与运维（MLOps / LLMOps）、vLLM 推理、流式传输、容器
 - LLM 论文：RLHF -> DPO -> HELM
 - CV 应用：CV 部署与运维（MLOps）、ONNX/TensorRT 加速、实时应用、容器
 - CV 论文：3D Vision -> Stable Diffusion -> DiT（Transformer & Diffusion, the core of sora）
 
-**Task 10**：AI 安全与伦理、具身智能（Embodied AI）/机器人、多模态（Gemini 系列）、世界模型（World Models，JEPA 框架等）、自己的理解
+Task 10：AI 安全与伦理、具身智能（Embodied AI）/机器人、多模态（Gemini 系列）、世界模型（World Models，JEPA 框架等）、自己的理解
 
 | 阶段（Phase） | 学习内容（Learning Content） | 目标（Goal） | 预期时长（Duration） |
 | :--- | :--- | :--- | :--- |
