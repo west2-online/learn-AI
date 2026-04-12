@@ -1,4 +1,4 @@
-# west2-online AI 考核指南
+﻿# west2-online AI 考核指南
 
 欢迎来到西二在线工作室人工智能方向的考核指南。本指南旨在为初学者提供一条循序渐进的人工智能学习路线，帮助你系统性地掌握人工智能的核心知识与技能。
 
@@ -32,13 +32,13 @@ graph TD
     D --> H((数据科学分析))
 ```
 
-考核大致分为两个阶段，[Foundation](./tasks(2026)/foundation) 和 [Scientific Research](./tasks(2026)/scientific-research) / [Application](./tasks(2026)/application)。[Foundation](./tasks(2026)/foundation) 是共通路线，在完成 [Foundation](./tasks(2026)/foundation) 后，你需要从 [Scientific Research](./tasks(2026)/scientific-research) 和 [Application](./tasks(2026)/application) 两者中选择一个。
+考核大致分为两个阶段：[Foundation](./tasks(2026)/foundation) 与分流阶段（[Scientific Research](./tasks(2026)/scientific-research) / [Application](./tasks(2026)/application)）。[Foundation](./tasks(2026)/foundation) 是共通路线，完成后你需要在 Scientific Research 与 Application 两条路线中选择其一。
 
 如果你想保研，未来想进实验室，那么建议选前者。
 
 如果你未来想找工作，那么可以选择后者。
 
-关于更具体的建议，以及为什么会有 [Python Backend](./tasks(2026)/backend)、[Python Frontend](./tasks(2026)/frontend) 和 [Statistics](./tasks(2026)/statistic)，可以见 [Foundation](./tasks(2026)/foundation) 文件夹的 [task4.md](./tasks(2026)/foundation/task4.md)，这是关于后续方向的导引。
+关于更具体的建议，以及为什么会有 [Python Backend](./tasks(2026)/backend)、[Python Frontend](./tasks(2026)/frontend) 和 [Statistics](./tasks(2026)/statistic)，可见 [Foundation](./tasks(2026)/foundation) 中的 [Task 4（task4.md）](./tasks(2026)/foundation/task4.md)，这是后续方向导引。
 
 ### 成为正式成员后的权益
 
@@ -53,11 +53,11 @@ graph TD
 
 ## 如何开始
 
-请点开 [tasks(2026)](./tasks(2026)) 文件夹，从 [foundation](./tasks(2026)/foundation) 文件夹中的 [task0.md](./tasks(2026)/foundation/task0.md) 开始学习。
+请进入 [tasks(2026)](./tasks(2026)) 文件夹，从 [Foundation](./tasks(2026)/foundation) 中的 [Task 0（task0.md）](./tasks(2026)/foundation/task0.md) 开始学习。
 
 我们希望学习方式是“文档引导 + 个人自学”。我们会告诉你应当如何快速上手，但你想要学好、学懂，除了我们的引导外，还需要主动进行个人提升。
 
-从功利的角度出发，如果你想进入 west2-online 工作室，在完成基础内容后，还需要适当完成一定量的选做和 Bonus 内容。
+从功利的角度出发，如果你想进入 west2-online 工作室，在完成基础内容后，还需要适当完成一定量的 Bonus 内容。
 
 我们的答辩会考察你一定的知识储备。
 

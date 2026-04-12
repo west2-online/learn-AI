@@ -1,4 +1,4 @@
-# Task 3 数据分析与可视化
+# Task 3 - 数据分析与可视化
 
 > 预计耗时：7 天
 
@@ -134,7 +134,7 @@ $f(x) = \frac{L}{1 + e^{-k(x-x_0)}}$
    - 找出 `points_B` 中，与 `points_A` 中至少一个点的距离小于 20 的所有点的索引。
    - 提示：综合运用布尔掩码、`numpy.any` 以及 `numpy.where`。
 
-#### 作业 3.3 - 图像数据的数组表示与操作（选做）
+#### Bonus - 图像数据的数组表示与操作
 
 你需要按照以下要求完成任务：
 
@@ -187,10 +187,10 @@ $f(x) = \frac{L}{1 + e^{-k(x-x_0)}}$
    - [Kaggle Learn](https://www.kaggle.com/learn)
    - Pandas 和 Data Visualization 这两门课，非常适合动手学习，强烈推荐。
 
-4. 深度探索（学有余力的同学）：
-   - [UC Berkeley Data 8](https://www.data8.org/)：伯克利大学经典的数据科学入门课。
+4. 深度探索（学有余力）：
+   - [UC Berkeley Data 8](https://www.data8.org/)：伯克利大学数据科学入门课。
    - [UC Berkeley Data 100](https://ds100.org/)：更深入的数据科学原理与技术。
 
-5. 官方手册（当你需要精确查阅时）：
+5. 官方手册：
    - [Pandas 官方文档](https://pandas.pydata.org/docs/)
    - [NumPy 官方文档](https://numpy.org/doc/stable/)

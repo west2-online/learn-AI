@@ -1,4 +1,4 @@
-# Task 1 语法基础与简单面向对象
+# Task 1 - 语法基础与简单面向对象
 
 > 预计耗时：21 天
 
@@ -8,18 +8,18 @@ Life is short, you need Python.
 
 如今，Python 是构建人工智能应用的首选语言之一。因此，熟练掌握其语法是开启 AI 之旅的必备基础。
 
-需要注意的是，不建议将主要精力投入到 [Python 后端](https://github.com/west2-online/learn-python) 开发上。Python 后端虽然开发效率高，适合快速原型验证和中小型项目，但在高并发场景下性能表现不如 [Golang](https://github.com/west2-online/learn-go) 和 [Java](https://github.com/west2-online/learn-java)，且在企业级应用和就业市场中的竞争力相对较弱。
+需要注意的是，不建议将主要精力投入到 [Python 后端](https://github.com/west2-online/learn-python) 开发上。Python 后端虽然开发效率高，适合快速原型验证和中小型项目，但在高并发场景下性能表现不如 [Go](https://github.com/west2-online/learn-go) 和 [Java](https://github.com/west2-online/learn-java)，且在企业级应用和就业市场中的竞争力相对较弱。
 
-Python 也有前端框架（如 Streamlit），适合快速搭建数据展示和 AI 演示应用，但功能和生态远不如 JavaScript 生态系统完善。因此，若要从事专业的 [前端开发](https://github.com/west2-online/learn-frontend)，建议学习主流前端技术栈。
+Python 也有前端框架（如 Streamlit），适合快速搭建数据展示和 AI 演示应用，但功能和生态远不如 JavaScript / TypeScript 生态系统完善。因此，若要从事专业的 [前端开发](https://github.com/west2-online/learn-frontend)，建议学习主流前端技术栈。
 
 ## 学习内容
 
-- Python 面向对象编程基础
-- 生成式 AI 的基本原理和训练流程
+- 终端的使用
+- Python 基本面向对象基础
 
 ## 学习要求
 
-本轮考核的目的在于让你初步接触面向对象编程的思想，并且对生成式 AI 有一个基本的认识。
+本轮考核的目的在于让你初步接触面向对象编程的思想，并且对终端的使用有一个认知。
 
 ## 作业
 
@@ -40,9 +40,13 @@ Python 也有前端框架（如 Streamlit），适合快速搭建数据展示和
 >
 > 此后关于文档的要求也同样适用。
 
+### 作业 2 - 终端的基本使用
+
+写一篇文档阐述一下你在作业 1，2、3、4 中碰到的和终端相关的问题，并且解释 VS Code 右上角的三角形运行按钮是什么意思。
+
 ### 作业 1 - 娜比娅偷吃事件
 
-某日，在前往 ShaddockNH3 办公室的路上，重樱的神子大人 **长门** 意外地发现一个塞壬人形「娜比娅」正鬼鬼祟祟地躲在角落里偷吃军粮！
+某日，在前往 ShaddockNH3 办公室的路上，重樱的神子大人「长门」意外地发现一个塞壬人形「娜比娅」正鬼鬼祟祟地躲在角落里偷吃军粮！
 
 「汝，竟敢在余之港区放肆！」
 
@@ -68,7 +72,7 @@ Python 也有前端框架（如 Streamlit），适合快速搭建数据展示和
 
 「一个死宅到底是怎么想的啊！」
 
-那么你可以点开 [Campus_IF_Love/README](Campus_IF_Love/README.md) 来窥视他梦境的一角...
+那么你可以点开 [Campus_IF_Love/README.md](Campus_IF_Love/README.md) 来窥视他梦境的一角 ...
 
 ### 作业 3 - 宝可梦对战
 
@@ -135,7 +139,9 @@ HP：80 攻击力：35 防御力：15 属性：火 躲闪率：10%
 
 蓄能爆炎（Flame Charge）： 小火龙召唤出强大的火焰，对敌人造成 300% 火属性伤害，并有 80% 的几率使敌人陷入「烧伤」状态。这个技能需要 1 个回合蓄力，并且在面对该技能时敌方闪避率增加 20%
 
-你仍需要再设计至少一个宝可梦，如果你对 JadeMelody 设计的宝可梦不满意，feel free 去修改它们。
+你仍需要再设计至少一个宝可梦。
+
+如果你对 JadeMelody 设计的宝可梦不满意，feel free 去修改它们。
 
 你需要实现类似下面的命令行输出，用于游玩该游戏：
 
@@ -154,7 +160,7 @@ HP：80 攻击力：35 防御力：15 属性：火 躲闪率：10%
 1. 火花
 2. 蓄能爆炎
 选择一个技能进行攻击：1
-小火龙 使用了 火焰喷射！
+小火龙 使用了 火花！
 杰尼龟 受到了 30 点伤害！剩余 HP：70
 
 杰尼龟 使用了 水枪！
@@ -177,14 +183,43 @@ HP：80 攻击力：35 防御力：15 属性：火 躲闪率：10%
 
 你的任务是自行设计一个结构完整、功能清晰的小项目，需要运用到类（Class）、魔法方法（Magic Methods）等面向对象的思想，并合理地拆分为多个文件。
 
+以下有几个历年好玩项目供你参考：
+
+1. 三国杀 Demo
+2. 基于 Whisper 和 Gemini 文字整理的视频转文字工具
+3. Galgame 引擎（富文本播·放器）
+
 ### Bonus - CS61A 的学习
 
 完成 CS61A 的学习，完成相应的作业和 lab，不要畏惧全英文的学习，你完全可以使用各类翻译软件帮助你学习，包括 GPT。
 
 CS61A 是一门大学级别的计算机科学导论课，它将带你深入探索编程的本质，如递归、高阶函数、数据抽象和解释器设计等。这门课的挑战性极高，但若能坚持学完，你的编程内功和计算机思维将获得质的飞跃，如果能啃下这门课，那么你的编程水平将会超过绝大多数毕业生。
 
+> 这是一个长期任务，不要求在本轮 21 天内完成，但也应该在 Foundation 结束之前完成。
+
 ## 推荐教程与参考资料
 
-### Python 基础
+### 终端的相关使用
+
+1. [Linux 基本命令](https://www.runoob.com/linux/linux-command-manual.html)
+2. [Windows PowerShell 基本命令](https://learn.microsoft.com/zh-cn/powershell/)
+3. [missing semester](https://missing.csail.mit.edu/)（学有余力）
+
+### Python 面向对象基础
 
 见 [Task 0](./task0.md) 的推荐教程与参考资料部分。
+
+### CS61A
+
+这里给这门课写一个简单的入门。
+
+由于 2024 年政策的变动，CS61A 改为只对伯努利学生内部开放（视频和课本是公开的），所以如果你想写这门课，请入群下载压缩包。
+
+每年的 lab 都大差不差，所以写哪一年的都无所谓。
+
+需要注意的是，必须得按照对应年份的网页去做对应的 lab，对某些代码实现的要求，每年都会变化。
+
+此外需要注意虚拟环境的配置。
+
+1. [CS61A 课本](https://www.composingprograms.com/)
+2. [CS61A 课本翻译](https://composingprograms.netlify.app/)
