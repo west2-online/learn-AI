@@ -1,4 +1,4 @@
-﻿# Research 1 - 从机器学习到深度学习
+﻿﻿﻿# Research 1 - 从机器学习到深度学习
 
 > 预计耗时：90 天
 
@@ -204,6 +204,25 @@ Stanford CS231n: Convolutional Neural Networks for Visual Recognition
 
   这里直接给出这个视频的链接：[CS231N Google Colab Assignment Workflow Tutorial](https://www.youtube.com/watch?v=DsGd2e9JNH4&source_ve_path=MjM4NTE&embeds_referring_euri=https%3A%2F%2Fcs231n.github.io%2F)
 
+  如果你使用 2025 版 CS231n ，你可能会遇到如下问题：
+
+  使用 Colab 运行 ipynb 文件带有以下两行的代码块，这两行代码在所有 ipynb 文件里面都存在
+
+  ```python
+  %load_ext autoreload
+  %autoreload 2
+  ```
+  
+  如果你没有特地去修改过 Colab 的 Python 运行版本可能会出现如下错误
+  
+  ```
+  ModuleNotFoundError                       Traceback (most recent call last)
+  …………
+  ModuleNotFoundError: No module named 'cs231n'
+  ```
+  
+  解决方法：点击右下角的 `Python 3` 选项，选择 “更改运行时类型” 将 “运行时版本” 修改为 “2025.07”，然后一定要重启 Colab 。重启后再次按顺序运行即可
+  
 - 本地配置环境
 
   本地配置环境的推荐前提是有一台性能较好的电脑，最好有 NVIDIA 显卡（支持 CUDA）。
@@ -252,7 +271,7 @@ Stanford CS231n: Convolutional Neural Networks for Visual Recognition
   ```bash
   只能使用 wsl 时
   bcdedit /set hypervisorlaunchtype auto
-
+  
   使用 mumu 模拟器时
   bcdedit /set hypervisorlaunchtype off
   ```
