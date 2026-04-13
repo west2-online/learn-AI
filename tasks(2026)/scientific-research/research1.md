@@ -163,9 +163,11 @@ Stanford CS231n: Convolutional Neural Networks for Visual Recognition
 
 - [CS231n 2026 Notes](https://cs231n.github.io/)
 - [CS231n 2026 Spring](https://cs231n.stanford.edu/assignments.html)
+- [CS231n 2025 Spring](https://cs231n.stanford.edu/2025/assignments.html)
+- [CS231n 2024 Spring](https://cs231n.stanford.edu/2024/assignments.html)
 - [课程中文翻译](https://zhuanlan.zhihu.com/p/21930884)（采用 Python 2.7 版本，已过时，可作为辅助理解材料）
 
-> 需要注意，截止至2026年4月，斯坦福大学官方已将上述所有链接都更新为2026年的最新版，提供的作业获取链接也已经修改为2026版，不提供25版与之前的作业官方获取途径。由于2026版的 assignment2 与 assignment3 尚未发布，可以通过 GitHub 上 [Mathematics-Yang整理的仓库](https://github.com/Mathematics-Yang/cs231n-documents-2025) 获取到2025版的作业，无论选择哪个版本，核心任务和学习目标是一致的。
+> 需要注意，CS231n 课程官方笔记页面提供的是 26 版的作业（预计2026.5更新完毕），可以通过上述链接获取到往年版本已经更新完毕的作业。但由于 CS231n 的笔记页面是一个单独维护的静态页面，所以无法通过修改链接的方法查看往年笔记，当前笔记版本为2026版。你可以选择完成 25 年的版本或者 26 年的版本，无论选择哪个版本，核心任务和学习目标是一致的。
 
 #### CS231n 课程视频
 
