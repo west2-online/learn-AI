@@ -167,7 +167,7 @@ Stanford CS231n: Convolutional Neural Networks for Visual Recognition
 - [CS231n 2024 Spring](https://cs231n.stanford.edu/2024/assignments.html)
 - [课程中文翻译](https://zhuanlan.zhihu.com/p/21930884)（采用 Python 2.7 版本，已过时，可作为辅助理解材料）
 
-> 需要注意，CS231n 课程官方笔记页面提供的是 26 版的作业（预计2026.5更新完毕），可以通过上述链接获取到往年版本已经更新完毕的作业。但由于 CS231n 的笔记页面是一个单独维护的静态页面，所以无法通过修改链接的方法查看往年笔记，当前笔记版本为2026版。你可以选择完成 25 年的版本或者 26 年的版本，无论选择哪个版本，核心任务和学习目标是一致的。
+> 需要注意，CS231n 课程官方笔记页面提供的是 26 版的作业（预计 2026.5 更新完毕），可以通过上述链接获取到往年版本已经更新完毕的作业。但由于 CS231n 的笔记页面是一个单独维护的静态页面，所以无法通过修改链接的方法查看往年笔记，当前笔记版本为 2026 版。你可以选择完成 24、25 或者 26 年的版本，无论选择哪个版本，核心任务和学习目标是一致的。
 
 #### CS231n 课程视频
 
@@ -177,7 +177,7 @@ Stanford CS231n: Convolutional Neural Networks for Visual Recognition
 
 #### CS231n Assignment 3 相关链接
 
-> CS231n 的笔记只包含了 assignment1 与 assignment2 的部分，对于 assignment3 可以参考以下视频 
+> CS231n 的笔记只包含了 assignment1 与 assignment2 的部分，对于 assignment3 可以参考以下视频
 
 1. [跟李沐学AI 54 循环神经网络 RNN【动手学深度学习v2】](https://www.bilibili.com/video/BV1D64y1z7CA/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)
 
