@@ -233,3 +233,7 @@ Web Search 相关的东西想必不需要过多介绍。
 
 1. [LangChain Python Docs](https://python.langchain.com/docs/get_started/introduction)
 2. [LangChain Expressions Language (LCEL) 教程](https://python.langchain.com/docs/expression_language/)
+
+### Function Call 速成
+
+[阿里云百炼关于 Function Call 的介绍](https://bailian.console.aliyun.com/cn-beijing?spm=5176.28197581.0.0.63b074a1h3190h&tab=doc#/doc/?type=model&url=2862208)
