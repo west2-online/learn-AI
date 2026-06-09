@@ -1,0 +1,181 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memo Codex 5.5 TODO</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <style>
+      :root { color-scheme: light; font-family: "Segoe UI", Arial, sans-serif; }
+      body { margin: 0; background: #f6f7fb; color: #1f2937; }
+      .app { max-width: 1080px; margin: 0 auto; padding: 32px 18px; }
+      .hero { background: linear-gradient(135deg, #2563eb, #7c3aed); color: white; border-radius: 22px; padding: 28px; box-shadow: 0 18px 40px rgba(37, 99, 235, .22); }
+      .hero h1 { margin: 0 0 8px; font-size: 34px; }
+      .hero p { margin: 0; opacity: .9; }
+      .panel { background: white; margin-top: 18px; padding: 20px; border-radius: 18px; box-shadow: 0 8px 24px rgba(15, 23, 42, .08); }
+      .grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+      .wide { grid-column: span 2; }
+      input, select, textarea, button { font: inherit; border-radius: 12px; border: 1px solid #d1d5db; padding: 10px 12px; box-sizing: border-box; }
+      textarea { min-height: 44px; resize: vertical; }
+      button { cursor: pointer; background: #2563eb; color: white; border: none; font-weight: 700; }
+      button.secondary { background: #475569; }
+      button.success { background: #16a34a; }
+      button.warning { background: #d97706; }
+      button.danger { background: #dc2626; }
+      button:disabled { opacity: .55; cursor: not-allowed; }
+      .filters { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+      .filters input, .filters select { min-width: 150px; }
+      .todos { display: grid; gap: 12px; }
+      .todo { border: 1px solid #e5e7eb; border-radius: 16px; padding: 16px; display: grid; gap: 10px; }
+      .todo.done { background: #f0fdf4; }
+      .todo-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+      .todo-title { font-weight: 800; font-size: 18px; }
+      .badge { display: inline-flex; align-items: center; border-radius: 999px; padding: 4px 10px; background: #e0e7ff; color: #3730a3; font-size: 12px; font-weight: 700; }
+      .muted { color: #64748b; font-size: 14px; }
+      .actions { display: flex; flex-wrap: wrap; gap: 8px; }
+      .pager { display: flex; justify-content: space-between; align-items: center; margin-top: 14px; gap: 12px; }
+      .message { margin-top: 12px; color: #2563eb; font-weight: 700; }
+      @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } .wide { grid-column: auto; } .todo-head { flex-direction: column; } }
+    </style>
+  </head>
+  <body>
+    <div id="app" class="app">
+      <section class="hero">
+        <h1>Memo Codex 5.5 TODO</h1>
+        <p>FastAPI + SQLite + Vue3，实现待办事项的增删改查、分页、标签和逻辑删除。</p>
+      </section>
+
+      <section class="panel">
+        <h2>新增待办</h2>
+        <div class="grid">
+          <input v-model="form.title" placeholder="标题，例如：完成 AI 作业" />
+          <input v-model="form.tag" placeholder="标签，例如：学习 / 生活 / 紧急" />
+          <textarea class="wide" v-model="form.description" placeholder="描述（可选）"></textarea>
+          <button @click="createTodo" :disabled="loading || !form.title.trim()">添加</button>
+        </div>
+        <div class="message" v-if="message">{{ message }}</div>
+      </section>
+
+      <section class="panel">
+        <h2>筛选与批量操作</h2>
+        <div class="filters">
+          <select v-model="filters.state" @change="resetAndLoad">
+            <option value="">全部事项</option>
+            <option value="todo">所有待办</option>
+            <option value="done">所有已完成</option>
+          </select>
+          <input v-model="filters.keyword" @keyup.enter="resetAndLoad" placeholder="关键字搜索" />
+          <input v-model="filters.tag" @keyup.enter="resetAndLoad" placeholder="按标签筛选" />
+          <select v-model.number="filters.page_size" @change="resetAndLoad">
+            <option :value="5">每页 5 条</option>
+            <option :value="10">每页 10 条</option>
+            <option :value="20">每页 20 条</option>
+          </select>
+          <button class="secondary" @click="resetAndLoad">查询</button>
+          <button class="success" @click="completeAll">全部待办设为完成</button>
+          <button class="warning" @click="reopenAll">全部完成设为待办</button>
+          <button class="danger" @click="deleteByState('todo')">删除所有待办</button>
+          <button class="danger" @click="deleteByState('done')">删除所有已完成</button>
+          <button class="danger" @click="deleteByState('')">删除所有事项</button>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>事项列表</h2>
+        <div class="todos">
+          <article v-for="todo in todos" :key="todo.id" class="todo" :class="{ done: todo.state === 'done' }">
+            <div class="todo-head">
+              <div>
+                <div class="todo-title">#{{ todo.id }} {{ todo.title }}</div>
+                <div class="muted">{{ todo.description || '无描述' }}</div>
+              </div>
+              <span class="badge">{{ todo.tag }} · {{ todo.state === 'done' ? '已完成' : '待办' }}</span>
+            </div>
+            <div class="actions">
+              <button class="success" @click="completeOne(todo.id)" v-if="todo.state === 'todo'">设为完成</button>
+              <button class="warning" @click="reopenOne(todo.id)" v-else>设为待办</button>
+              <input v-model="todo.newTag" placeholder="新标签" />
+              <button class="secondary" @click="updateTag(todo)">修改标签</button>
+              <button class="danger" @click="deleteOne(todo.id)">逻辑删除</button>
+            </div>
+          </article>
+          <p class="muted" v-if="!todos.length">暂无数据。</p>
+        </div>
+        <div class="pager">
+          <button class="secondary" @click="prevPage" :disabled="filters.page <= 1">上一页</button>
+          <span>第 {{ filters.page }} 页 / 共 {{ total }} 条</span>
+          <button class="secondary" @click="nextPage" :disabled="filters.page * filters.page_size >= total">下一页</button>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      const { createApp } = Vue
+      const apiBase = '/api'
+
+      createApp({
+        data() {
+          return {
+            loading: false,
+            message: '',
+            form: { title: '', description: '', tag: '学习' },
+            filters: { state: '', keyword: '', tag: '', page: 1, page_size: 10 },
+            todos: [],
+            total: 0,
+          }
+        },
+        mounted() { this.loadTodos() },
+        methods: {
+          async request(path, options = {}) {
+            this.loading = true
+            try {
+              const response = await fetch(`${apiBase}${path}`, {
+                headers: { 'Content-Type': 'application/json', ...(options.headers || {}) },
+                ...options,
+              })
+              const body = await response.json()
+              if (!response.ok) throw new Error(body.detail || body.message || '请求失败')
+              return body.data
+            } finally {
+              this.loading = false
+            }
+          },
+          queryString() {
+            const params = new URLSearchParams()
+            Object.entries(this.filters).forEach(([key, value]) => {
+              if (value !== '' && value !== null && value !== undefined) params.set(key, value)
+            })
+            return params.toString()
+          },
+          async loadTodos() {
+            const data = await this.request(`/todos?${this.queryString()}`)
+            this.todos = data.items.map(item => ({ ...item, newTag: item.tag }))
+            this.total = data.total
+          },
+          async createTodo() {
+            const created = await this.request('/todos', { method: 'POST', body: JSON.stringify(this.form) })
+            this.message = `已创建：#${created.id}`
+            this.form = { title: '', description: '', tag: '学习' }
+            await this.resetAndLoad()
+          },
+          async resetAndLoad() { this.filters.page = 1; await this.loadTodos() },
+          async completeOne(id) { await this.request(`/todos/${id}/complete`, { method: 'PATCH' }); await this.loadTodos() },
+          async reopenOne(id) { await this.request(`/todos/${id}/reopen`, { method: 'PATCH' }); await this.loadTodos() },
+          async updateTag(todo) { await this.request(`/todos/${todo.id}/tag`, { method: 'PATCH', body: JSON.stringify({ tag: todo.newTag }) }); await this.loadTodos() },
+          async deleteOne(id) { if (confirm('确定逻辑删除这条事项吗？')) { await this.request(`/todos/${id}`, { method: 'DELETE' }); await this.loadTodos() } },
+          async completeAll() { await this.request('/todos/complete', { method: 'PATCH' }); await this.loadTodos() },
+          async reopenAll() { await this.request('/todos/reopen', { method: 'PATCH' }); await this.loadTodos() },
+          async deleteByState(state) {
+            const label = state ? `所有 ${state === 'todo' ? '待办' : '已完成'} 事项` : '所有事项'
+            if (!confirm(`确定逻辑删除${label}吗？`)) return
+            const suffix = state ? `?state=${state}` : ''
+            await this.request(`/todos${suffix}`, { method: 'DELETE' })
+            await this.loadTodos()
+          },
+          async prevPage() { if (this.filters.page > 1) { this.filters.page -= 1; await this.loadTodos() } },
+          async nextPage() { if (this.filters.page * this.filters.page_size < this.total) { this.filters.page += 1; await this.loadTodos() } },
+        },
+      }).mount('#app')
+    </script>
+  </body>
+</html>

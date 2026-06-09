@@ -1,5 +1,6 @@
 # Research 1 - 从机器学习到深度学习
 
+> [!NOTE]
 > 预计耗时：90 天
 
 ## 学习目的
@@ -18,6 +19,7 @@
 
 从功利的角度出发，你已经可以去其他实验室面试了。
 
+> [!TIP]
 > 西二在线的负责老师可以作为保底。
 
 $\color{red}{\text{如果你觉得 Research 1 入手晦涩难懂，这很正常。}}$
@@ -57,6 +59,7 @@ $\color{red}{\text{但是这是进实验室最基本的要求，大家都是这�
 
 阅读[李宏毅生成式人工智能教程课本](https://github.com/datawhalechina/leegenai-tutorial/releases)，整理相关内容，并以文档形式讲述大语言模型的整个训练流程。
 
+> [!NOTE]
 > 本文档**不要求精确的数学公式和理论表达**，只需用你自己的话，简要描述生成式 AI 的三个训练阶段：
 >
 > 1. 自监督学习（Pre-training）
@@ -65,8 +68,9 @@ $\color{red}{\text{但是这是进实验室最基本的要求，大家都是这�
 
 ### 文档 2 - 传统机器学习算法之间的区别
 
-介绍 K-Nearest Neighbor（k-NN, K-近邻）、Support Vector Machine（SVM, 支持向量机）、Softmax Classifier（Softmax 分类器）、XGBoost、Random Forest（随机森林）这五种机器学习算法的原理和使用场景，并指出这些算法与神经网络的区别。
+介绍 K-Nearest Neighbor（k-NN）、Support Vector Machine（SVM，支持向量机）、Softmax Classifier（Softmax 分类器）、XGBoost、Random Forest（随机森林）这五种机器学习算法的原理和使用场景，并指出这些算法与神经网络的区别。
 
+> [!NOTE]
 > 这里简要解释传统机器学习与深度学习的区别。二者最核心的区别在于如何学习和利用数据的「特征」。
 >
 > 例如，决策树和随机森林基于预先定义的特征（如气象状态、温度范围等），通过一系列逻辑判断逐步推理出结论，整个决策过程直观且可解释。
@@ -83,12 +87,14 @@ $\color{red}{\text{但是这是进实验室最基本的要求，大家都是这�
 
 完成 [CS231n Assignment 1](https://cs231n.github.io/assignments2025/assignment1/)，并写一份文档来描述你在完成作业过程中遇到的挑战和解决方案。
 
+> [!NOTE]
 > 本轮作业的目标是让你从零实现一个两层神经网络，并且通过这个过程来深入理解神经网络的基本原理和反向传播算法。
 
 ### 作业 2 - CNN
 
 完成 [CS231n Assignment 2](https://cs231n.github.io/assignments2025/assignment2/)，并写一份文档来描述你在完成作业过程中遇到的挑战和解决方案。
 
+> [!TIP]
 > 完成作业 1 后，你成功实现了一个简单的二层神经网络，并在 CIFAR-10 数据集上进行了训练。
 >
 > 然而，现实世界中的神经网络远比两层神经网络复杂得多。为了应对更复杂的任务，我们需要引入更多的层次、更复杂的结构，以及更高效的训练方法。
@@ -105,6 +111,7 @@ $\color{red}{\text{但是这是进实验室最基本的要求，大家都是这�
 
 完成 [CS224n](https://web.stanford.edu/class/cs224n/)，并写一份文档来描述你在完成作业过程中遇到的挑战和解决方案。
 
+> [!TIP]
 > 人工智能的研究方向主要分为计算机视觉和自然语言处理，当然也包括其他更多方向。
 >
 > 鉴于每个人的时间和精力有限，在完成了作业 2 之后，你可以选择继续完成 CS231n 的作业，深入学习计算机视觉相关的内容；或者转向 CS224n，探索自然语言处理领域的知识。
@@ -127,6 +134,7 @@ $\color{red}{\text{但是这是进实验室最基本的要求，大家都是这�
 
 [李宏毅生成式人工智能教程课本](https://github.com/datawhalechina/leegenai-tutorial/releases)
 
+> [!TIP]
 > 注意：生成式 AI 导论不要求完成课程作业。YouTube 上的 2025 版课程仍在持续更新，教程课本是根据 2024 年春季学期课程整理而成。
 >
 > 2025 年秋季版课程在前几讲就引入了较为复杂的概念，与 2024 年春季版相比难度提升较多，内容变化也较大。建议初学者优先学习 2024 年春季版课程或直接阅读教程课本，无需观看 2025 年秋季版。
@@ -173,6 +181,7 @@ Stanford CS231n: Convolutional Neural Networks for Visual Recognition
 - [CS231n 2024 Spring](https://cs231n.stanford.edu/2024/assignments.html)
 - [课程中文翻译](https://zhuanlan.zhihu.com/p/21930884)（采用 Python 2.7 版本，已过时，可作为辅助理解材料）
 
+> [!TIP]
 > 需要注意，CS231n 课程官方笔记页面提供的是 26 版的作业（预计 2026.5 更新完毕），可以通过上述链接获取到往年版本已经更新完毕的作业。但由于 CS231n 的笔记页面是一个单独维护的静态页面，所以无法通过修改链接的方法查看往年笔记，当前笔记版本为 2026 版。你可以选择完成 24、25 或者 26 年的版本，无论选择哪个版本，核心任务和学习目标是一致的。
 
 #### CS231n 课程视频
@@ -183,21 +192,22 @@ Stanford CS231n: Convolutional Neural Networks for Visual Recognition
 
 #### CS231n Assignment 3 相关链接
 
+> [!TIP]
 > CS231n 的笔记只包含了 assignment1 与 assignment2 的部分，对于 assignment3 可以参考以下视频
 
-1. [跟李沐学AI 54 循环神经网络 RNN【动手学深度学习v2】](https://www.bilibili.com/video/BV1D64y1z7CA/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)
+1. [跟李沐学 AI 54 循环神经网络 RNN【动手学深度学习 v2】](https://www.bilibili.com/video/BV1D64y1z7CA/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)
 
-2. [跟李沐学AI 57 长短期记忆网络（LSTM）【动手学深度学习v2】](https://www.bilibili.com/video/BV1JU4y1H7PC?spm_id_from=333.788.recommend_more_video.4&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)
+2. [跟李沐学 AI 57 长短期记忆网络（LSTM）【动手学深度学习 v2】](https://www.bilibili.com/video/BV1JU4y1H7PC?spm_id_from=333.788.recommend_more_video.4&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)
 
-3. [跟李沐学AI GAN论文逐段精读【论文精读】](https://www.bilibili.com/video/BV1rb4y187vD/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)
+3. [跟李沐学 AI GAN 论文逐段精读【论文精读】](https://www.bilibili.com/video/BV1rb4y187vD/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)
 
-4. [跟着李沐学AI Transformer论文逐段精读【论文精读】](https://www.bilibili.com/video/BV1pu411o7BE/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)
+4. [跟着李沐学 AI Transformer 论文逐段精读【论文精读】](https://www.bilibili.com/video/BV1pu411o7BE/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)
 
 5. [自监督式学习](https://www.bilibili.com/video/BV1m3411p7wD?spm_id_from=333.788.videopod.episodes&vd_source=0272bb7dd0d8d9302c55fc082442b9e3&p=46)
 
-6. [【Transformer 其实是个简单到令人困惑的模型【白话DeepSeek-06】](https://www.bilibili.com/video/BV1C3dqYxE3q/?share_source=copy_web&vd_source=3fbbb3c2ad24817002f9c39fad247a3b)
+6. [【Transformer 其实是个简单到令人困惑的模型【白话 DeepSeek-06】](https://www.bilibili.com/video/BV1C3dqYxE3q/?share_source=copy_web&vd_source=3fbbb3c2ad24817002f9c39fad247a3b)
 
-7. [68 Transformer【动手学深度学习v2】](https://www.bilibili.com/video/BV1Kq4y1H7FL/?p=2&share_source=copy_web&vd_source=3fbbb3c2ad24817002f9c39fad247a3b)
+7. [68 Transformer【动手学深度学习 v2】](https://www.bilibili.com/video/BV1Kq4y1H7FL/?p=2&share_source=copy_web&vd_source=3fbbb3c2ad24817002f9c39fad247a3b)
 
 #### 配环境 - CS231n
 
@@ -222,9 +232,9 @@ Stanford CS231n: Convolutional Neural Networks for Visual Recognition
   %autoreload 2
   ```
   
-  如果你没有特地去修改过 Colab 的 Python 运行版本可能会出现如下错误
+  如果你没有特地去修改过 Colab 的 Python 运行版本可能会出现如下错误：
   
-  ```
+  ```bash
   ModuleNotFoundError                       Traceback (most recent call last)
   …………
   ModuleNotFoundError: No module named 'cs231n'
@@ -242,9 +252,9 @@ Stanford CS231n: Convolutional Neural Networks for Visual Recognition
 
   不推荐使用 Linux 虚拟机，因为虚拟机的性能通常较差，可能无法满足深度学习的需求。
 
-  如果你执意要直接使用 Windows，可以参考[weijianxian CS231n 2025 spring 的环境配置](https://github.com/weijianxian/cs231n-25)，该方法使用 uv，也可以使用传统的 venv。
+  如果你执意要直接使用 Windows，可以参考 [柠檬味氨水 CS231n 2025 spring 的环境配置](https://github.com/weijianxian/cs231n-25)，该方法使用 uv，也可以使用传统的 venv。
 
-  如果你想采用 Windows + conda 的方式进行配置，可以参考[rechenz CS231n 2025 spring 的环境配置](https://github.com/rechenz/SetupLocal-for-cs231n-25)。
+  如果你想采用 Windows + conda 的方式进行配置，可以参考 [rechenz CS231n 2025 spring 的环境配置](https://github.com/rechenz/SetupLocal-for-cs231n-25)。
 
   个人推荐使用 WSL2，微软官方有详细的[安装教程](https://learn.microsoft.com/zh-cn/windows/wsl/install)。
 
@@ -289,6 +299,7 @@ Stanford CS231n: Convolutional Neural Networks for Visual Recognition
 
   注意是重启，大部分未经过特别设置的 Windows，关机等同于深度睡眠，并不会修改你的系统设置。
 
+> [!NOTE]
 > 更新中。
 
 ### CS224n
@@ -297,11 +308,11 @@ Stanford CS231n: Convolutional Neural Networks for Visual Recognition
 
 0. [CS224n PyTorch 速成](https://colab.research.google.com/drive/1Pz8b_h-W9zIBk1p2e6v-YFYThG1NkYeS?usp=sharing)
 1. [cs224n](https://www.bilibili.com/video/BV1vQMBz6EvP/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)，如果你能理解 PPT 和论文内容，可以不用看视频。
-2. [跟李沐学AI 词向量（word2vec）【动手学深度学习v2】](https://www.bilibili.com/video/BV1sY4y1572C/)
-3. [跟李沐学AI 注意力机制【动手学深度学习v2】](https://www.bilibili.com/video/BV1ui4y1j783/)
-4. [跟李沐学AI Transformer论文逐段精读【论文精读】](https://www.bilibili.com/video/BV1pu411o7BE/)
-5. [【Transformer 其实是个简单到令人困惑的模型【白话DeepSeek-06】】](https://www.bilibili.com/video/BV1C3dqYxE3q/)
-6. [台大李宏毅老师 机器学习2021（Self-Attention和Transformer部分）](https://www.bilibili.com/video/BV1JA411X76s?p=65)
+2. [跟李沐学 AI 词向量（word2vec）【动手学深度学习 v2】](https://www.bilibili.com/video/BV1sY4y1572C/)
+3. [跟李沐学 AI 注意力机制【动手学深度学习 v2】](https://www.bilibili.com/video/BV1ui4y1j783/)
+4. [跟李沐学 AI Transformer 论文逐段精读【论文精读】](https://www.bilibili.com/video/BV1pu411o7BE/)
+5. [【Transformer 其实是个简单到令人困惑的模型【白话 DeepSeek-06】】](https://www.bilibili.com/video/BV1C3dqYxE3q/)
+6. [台大李宏毅老师 机器学习 2021（Self-Attention 和 Transformer 部分）](https://www.bilibili.com/video/BV1JA411X76s?p=65)
 
 #### 配环境 - CS224n
 

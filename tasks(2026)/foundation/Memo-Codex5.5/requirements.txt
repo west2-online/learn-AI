@@ -1,0 +1,4 @@
+﻿fastapi==0.115.6
+uvicorn[standard]==0.34.0
+sqlmodel==0.0.22
+requests==2.32.3

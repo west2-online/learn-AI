@@ -1,4 +1,4 @@
-﻿# Backend Routine
+# Backend Routine
 
 ## 学习目的
 
@@ -118,7 +118,7 @@ Flask / FastAPI
 
 1. 开源软件供应链点亮计划（开源之夏）：<https://summer-ospp.ac.cn/>
 2. Google Summer of Code (GSoC)：<https://summerofcode.withgoogle.com/>
-3. GLCC开源夏令营：<https://opensource.alibaba.com/>
+3. GLCC 开源夏令营：<https://opensource.alibaba.com/>
 4. 腾讯犀牛鸟开源人才培养计划：<https://opensource.tencent.com/summer-of-code>
 
 除此之外，可以关注一下一些大厂的开源网站
@@ -128,4 +128,4 @@ Flask / FastAPI
 3. Meta Open Source：<https://opensource.fb.com/>
 4. Google Open Source：<https://opensource.google/>
 5. Uber Open Source：<https://uber.github.io/#/>
-6. 开源 - 美团技术团队：[https://tech.meituan.com/tags/%E5%BC%80%E6%BA%90.html](https://tech.meituan.com/tags/开源.html)
+6. 开源 - 美团技术团队：<https://tech.meituan.com/tags/开源.html>

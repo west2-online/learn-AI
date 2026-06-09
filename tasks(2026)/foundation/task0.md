@@ -1,5 +1,6 @@
 # Task 0 - 环境搭建
 
+> [!NOTE]
 > 预计耗时：7 天
 
 ## 学习目的
@@ -26,7 +27,7 @@
 
 在完成本次作业后，你应该注意并使用正确的浏览器，学会基本的文件管理，学会使用基本的截图工具，自由访问需要的网站等。
 
-### 作业 2 - Git 基础使用
+### 作业 2 - Git 基础使用与第一份 Markdown
 
 创建一个 GitHub 账号，并且创建一个名为 `learn-ai-username` 的仓库（其中 `username` 替换为你的 GitHub 用户名，或者你也可以自行命名）。
 
@@ -38,7 +39,45 @@
 - 代码块
 - 表格
 
-你的 Markdown 文档需要通过 Markdown Lint 的基本检查。
+你的 Markdown 文档需要通过 Markdown Lint 的基本检查，且需要至少保证如下 Apple 规范：
+
+- 中英文之间需要增加空格
+
+  例如：
+  
+  ```txt
+  √ 小红书 App 在苹果 iOS 应用商店将官方英文名称统一改写为全小写的 “rednote”。
+  x 小红书App在苹果iOS应用商店将官方英文名称统一改为全小写的“rednote”
+  ```
+
+- 中文与数字之间需要增加空格
+
+  例如：
+
+  ```txt
+  √ 可预约开启 6 小时后，苹果 iPhone 17 系列新品预约总量突破 200 万。
+  x 可预约开启6小时后，苹果 iPhone 17 系列新品预约总量突破200万。
+  ```
+
+- 数字与单位之间无需增加空格
+
+  例如：
+
+  ```txt
+  √ iPhone 17 标准版起步内存为 8GB，存储容量均从 256GB 起步。
+  x iPhone 17 标准版起步内存为 8 GB，存储容量均从 256 GB 起步。
+  ```
+
+- 全角与半角不能混用
+
+  中文语境下绝对使用全角标点（，。！？），英文 / 代码语境下使用半角标点。当一段中文被英文词汇打断时，跟在英文词汇后面的标点如果是句子的停顿，仍必须使用中文全角标点。
+
+  例如：
+
+  ```txt
+  √ 打开你的 iPhone，然后点击“设置”。
+  x 打开你的 iPhone, 然后点击“设置”.
+  ```
 
 ### 作业 3 - Hello World
 
@@ -66,7 +105,7 @@
 4. 输入⼀个列表（list），列表中含有字符串和整数，删除其中的字符串元素，然后把剩下的整数升序排序，输出列表
 5. 创建一个字典（dict），为字典添加几个键为学号，值为姓名元素，删除学号尾号为偶数的元素，输出字典
 6. 创建一个函数，这个函数可以统计一个只有数字的列表中各个数字出现的次数，通过字典方式返回
-7. 设计⼀个商品类，它具有的私有数据成员是商品序号、商品名、单价、总数量和剩余数量。具有的 公有成员函数是：初始化商品信息的构造函数 __init__，显示商品信息的函数display，计算已售出 商品价值 income，修改商品信息的函数 setdata
+7. 设计⼀个商品类，它具有的私有数据成员是商品序号、商品名、单价、总数量和剩余数量。具有的 公有成员函数是：初始化商品信息的构造函数 __init__，显示商品信息的函数 display，计算已售出 商品价值 income，修改商品信息的函数 setdata
 8. 尝试用所学的知识写一个斗地主随机发牌程序，将每个人的发牌以及多的三张牌的结果分别输出到 player1.txt，player2.txt，player3.txt，others.txt 四个文件中，可以不要求牌的花色
 
 #### 相对进阶的 Python 程序
@@ -137,9 +176,9 @@ Windows 用户可以通过「控制面板」中的「程序和功能」来卸载
 
 不限制大语言模型的使用，但你需要对大语言模型生成的内容做到足够了解，并且确保可以复现。
 
-如果有能力，建议使用 Gemini，ChatGPT 等，也请至少使用腾讯元宝（DeepSeek 版）、千问、智谱、DeepSeek。
+如果有能力，建议使用 Gemini，ChatGPT 等，也请至少使用、千问、智谱、DeepSeek。
 
-请不要使用豆包。
+请不要使用豆包、腾讯元宝（DeepSeek 版）
 
 ### 魔法工具
 
@@ -149,10 +188,11 @@ Windows 用户可以通过「控制面板」中的「程序和功能」来卸载
 
 ### 安装 Python
 
-访问 [Python 官方网站](https://www.python.org/downloads/) 下载并安装 Python 3 版本。
+访问 [Python 官方网站](https://www.python.org/downloads/) 下载并安装 Python 3.x 版本。
 
 下载的时候请选择 Add Python 3.x to PATH 选项以便在命令行中使用 Python。如果你没有做这一步，最简单的方法是卸载后重新下载。
 
+> [!TIP]
 > 对于 Python 的版本，我的建议是固定使用 Python 3.12.3 版本，这是目前很多主流 AI 框架支持的比较新的版本，也是 Ubuntu 24.04 LTS 默认支持的版本。
 >
 > 对于 Python 3.13 乃至 Python 3.14，很多 AI 框架还不支持。
@@ -169,31 +209,8 @@ Windows 用户可以通过「控制面板」中的「程序和功能」来卸载
 
 个人更建议使用 [VS Code](https://code.visualstudio.com/)（主要是 PyCharm 的 Jupyter Notebook 太过难用，建议初学者可以多使用 Jupyter 来编写程序）。
 
-> 在下载 VS Code 后，请下载 Python 插件以获得更好的 Python 支持
-
-### Python 虚拟环境的配置
-
-在未来的学习中，由于不同项目可能会依赖不同版本的库，因此建议使用虚拟环境来隔离项目的依赖，避免版本冲突。
-
-最简单的方法是使用 `venv`，这是 Python 内置的虚拟环境工具，可以通过以下命令创建和激活虚拟环境：
-
-```bash
-python -m venv myenv
-source myenv/bin/activate  # Linux/Mac
-myenv\Scripts\activate  # Windows
-```
-
-当然，更推荐使用 `uv`，这是一个更现代的 Python 虚拟环境管理工具，提供了更简洁的命令和更好的性能，最重要的是它支持并发安装依赖，极大地提升了安装速度。
-
-你也可以使用 [miniconda](https://docs.anaconda.com/miniconda/) 来管理环境，它轻量且功能强大。
-
-但是 Conda 会污染命令窗口，因此这里不作首选推荐。
-
-初学者一定要注意环境相关的问题，从一开始就养成好的习惯。
-
-> 关于虚拟环境，你现在可以在全局里跑。
->
-> 等你哪一天环境炸了，自然会来研究。
+> [!TIP]
+> 在下载 VS Code 后，请下载 Python 插件以获得更好的 Python 支持。
 
 ### 清华源
 
@@ -212,6 +229,31 @@ index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 
 这样配置后，你就可以直接使用 `pip install some-package` 来安装包了，速度会快很多。
 
+### Python 虚拟环境的配置
+
+在未来的学习中，由于不同项目可能会依赖不同版本的库，因此建议使用虚拟环境来隔离项目的依赖，避免版本冲突。
+
+最简单的方法是使用 `venv`，这是 Python 内置的虚拟环境工具，可以通过以下命令创建和激活虚拟环境：
+
+```bash
+python -m venv myenv
+source myenv/bin/activate  # Linux/Mac
+myenv\Scripts\activate  # Windows
+```
+
+当然，更推荐使用 [uv](https://uv.oaix.tech/)，这是一个更现代的 Python 虚拟环境管理工具，提供了更简洁的命令和更好的性能，最重要的是它支持并发安装依赖，极大地提升了安装速度。
+
+你也可以使用 [miniconda](https://docs.anaconda.com/miniconda/) 来管理环境，它轻量且功能强大。但是 Conda 会污染命令窗口，因此这里不作首选推荐。
+
+初学者一定要注意环境相关的问题，从一开始就养成好的习惯。
+
+如果你想对虚拟环境有进一步的了解，并且获得 step by step 的指导，可以阅读 [柠檬味氨水](https://github.com/weijianxian) 的博客 [uv 如何使用](https://blog.weijx.vip/p/uv%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8/)。
+
+> [!TIP]
+> 关于虚拟环境，你现在可以在全局里跑。
+>
+> 等你哪一天环境炸了，自然会来研究。
+
 ### Markdown 基础
 
 Markdown 是一种轻量级标记语言，排版语法简洁。它使用易读易写的纯文本格式编写文档，可与 HTML 混编，也可导出 HTML、PDF 以及 .md 文件。因简洁、高效、易读、易写，Markdown 被大量使用，如 GitHub、Wikipedia 等。
@@ -226,6 +268,7 @@ Markdown 语法并不复杂，建议初学者只需掌握基本语法即可，�
 
 [Markdown 规范检查](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 
+> [!TIP]
 > 你可以直接在 VS Code 里编写 Markdown 文件，然后使用快捷键 `Ctrl+Shift+V` 进行预览。
 >
 > 需要注意的是，GitHub 并不完全遵循 Markdown 标准，建议下载 GitHub Markdown Preview 插件以获得更好的兼容性。
@@ -239,6 +282,7 @@ Markdown 语法并不复杂，建议初学者只需掌握基本语法即可，�
 5. 廖雪峰的官方教程 [Python 教程](https://www.liaoxuefeng.com/wiki/1016959663602400)
 6. B 站上有大量的入门基础课程，大家可以自行探索，找到适合自己的是最好的。
 
+> [!TIP]
 > 对于教程，不需要全部都看，只需要挑选几个自己喜欢的，边学边写。
 
 ### 代码风格
