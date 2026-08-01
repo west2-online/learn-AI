@@ -1,4 +1,4 @@
-# Application 3 - 更进一步
+# Application 3 - JSON & Agent
 
 > [!NOTE]
 > 预计耗时：60 天
@@ -127,7 +127,23 @@ JSON 是一种非常常见的数据格式，AI 系统的输入输出也经常采
 1. 编写代码校验
 2. 将错误的部分重新输入给 AI 进行修正
 
-### 作业 2 - Potato Code Ultra
+### 作业 2 - Agent Learning
+
+#### Potato Code
+
+Claude Code 是 Anthropic 公司推出的一款面向开发者的智能编程助手，在一次“意外”中被迫开源。
+
+[learn-claude-code](https://github.com/shareAI-lab/learn-claude-code/blob/main/README-zh.md) 是一个学习 Claude Code 的项目，旨在从 0 构建自己的 Agent。
+
+你需要学习 learn-claude-code 的 s01 到 s04，完成一个简单的 Agent。
+
+#### Potato Code Pro
+
+Potato Code 的能力明显不足以满足天才程序员的 Coding 需求了，所以我们需要一个更加强大的智能编程助手，Potato Code Pro！
+
+你需要学习 learn-claude-code 的 s05 到 s11，完成一个基本的 Agent。
+
+#### Potato Code Ultra
 
 在和低调的黑客笑面佛战斗 500 回合后，天才程序员的 Potato Code Pro 终于被斩于马下。
 
@@ -135,7 +151,10 @@ JSON 是一种非常常见的数据格式，AI 系统的输入输出也经常采
 
 你需要学习 learn-claude-code 的 s12 到 s20，完成一个基本的 Agent。
 
-#### 作业要求 - 作业 2
+#### 学习要求
 
-- 学习 learn-claude-code 的 s12 到 s20 的内容。
-- 你需要自己编写一个简单的 Agent，并且覆盖 s01 到 s20 中的所有功能。
+- 学习 learn-claude-code 的 s01 到 s20 的内容。
+- 你需要自己编写一个 Agent，并且覆盖 s01 到 s20 中的所有功能。你可以根据上述分块分步实现，而不是一次到位。
+- 使用 anthropic 模块调用 API，选择合适的模型。
+- 你需要有清晰的项目结构，而不是像 learn-claude-code 的单脚本应用。
+- 必须使用 uv 管理项目依赖和运行环境。
