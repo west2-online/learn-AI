@@ -1,7 +1,7 @@
 ﻿# Application 1 - AI 应用认知
 
 > [!NOTE]
-> 预计耗时：30 天
+> 预计耗时：21 天
 
 ## 学习目的
 
@@ -11,7 +11,7 @@
 
 打一个通俗易懂的链条：
 
-数学 -> Numpy 手算反向传播 -> Pytorch 自动推导反向传播 -> Transformer 库（Hugging Face 集成 Pytorch / TensorFlow，屏蔽底层细节，抽象出 Pipeline 的概念） -> Langchain / Dify 模块化集成（轻松调用工具） -> LLM API 屏蔽所有底层细节 -> AI 应用（调用 API 完成任务、聊天机器人、Agent 调用 API）
+数学 -> Numpy 手算反向传播 -> Pytorch 自动推导反向传播 -> Transformer 库（Hugging Face 集成 Pytorch / TensorFlow，屏蔽底层细节，抽象出 Pipeline 的概念） -> Langchain / Dify 模块化集成（轻松调用工具） -> LLM API 屏蔽所有底层细节 -> AI 应用（调用 API 完成任务、聊天机器人、Agent 调用 API）-> harness
 
 Application 的目的是要你站在最顶层的视角向下看，并且向下只最多接触到 Hugging Face。
 
@@ -22,6 +22,8 @@ Application 的目的是要你站在最顶层的视角向下看，并且向下�
 当然正如 [Task 4](../foundation/task4.md) 导引部分提到的一样，作为一个 211 的本科生，如果只拥有高级应用能力，会在就业市场上很吃亏。
 
 所以建议学习这部分的前提是你已经掌握了一门其他语言，或者将来会去学习其他语言。
+
+本轮作业将从传统机器学习与深度学习开始，带你认识 AI 应用。
 
 $\color{red}{\text{再次强调，进行这部分内容前请你清晰的知道你现在在做什么。}}$
 
@@ -35,7 +37,7 @@ $\color{red}{\text{否则不仅晦涩难懂，而且还没什么用。}}$
 
 ## 作业
 
-> 我们鼓励你在 Application 方向的相关作业中使用 MacOS / Linux 系统进行学习。但如果硬件条件实在有限，Windows 系统的 WSL2 依旧是一个不错的选择，相关配置教程在网络上相当丰富，请自行搜索。
+我们鼓励你在 Application 方向的相关作业中使用 MacOS / Linux 系统进行学习。但如果硬件条件实在有限，Windows 系统的 WSL2 依旧是一个不错的选择，相关配置教程可以参考[安装教程](https://learn.microsoft.com/zh-cn/windows/wsl/install)。
 
 ### 文档 1
 
@@ -72,11 +74,15 @@ $\color{red}{\text{否则不仅晦涩难懂，而且还没什么用。}}$
 >
 > 一般而言并不建议初学者一上来就去阅读 Pytorch 官方文档，你可以从 pytorch-deep-learning 项目开始做起一步步学会使用 Pytorch。
 
-### 作业 1 - 数学建模
+### 作业 1 - 机器学习与深度学习
 
 数学建模竞赛通常涉及大量的数据处理和分析任务，近年来，深度学习方法在数学建模中的应用越来越广泛，成为解决复杂问题的有力工具。
 
-但本次任务的重点并不是完整的数学建模，而是通过数学建模对机器学习和深度学习相关内容进行学习并且学会使用 sk-learn 等工具。但我们希望你的眼光能够不止局限于 sk-learn 里封装好的机器学习方法，而应放眼深度学习领域，了解一些基本的深度学习知识。本次你需要完成的任务是完成 2025 电工杯数学建模的第 2 题。数据集在参考资料中已有给出。
+但本次任务的重点并不是完整的数学建模，而是通过数学建模对机器学习和深度学习相关内容进行学习并且学会使用 [scikit-learn](https://scikit-learn.org/stable/) 等工具。
+
+但我们希望你的眼光能够不止局限于 [scikit-learn](https://scikit-learn.org/stable/) 里封装好的机器学习方法，而应放眼深度学习领域，了解一些基本的深度学习知识。
+
+本次你需要完成的任务是完成 2025 电工杯数学建模的第 2 题。数据集在参考资料中已有给出。
 
 一部分原文如下：
 
@@ -87,6 +93,18 @@ $\color{red}{\text{否则不仅晦涩难懂，而且还没什么用。}}$
 ```
 
 提示：本题的最优解是一个深度学习网络方法。
+
+#### 基本方法
+
+- SVM
+- XGBoost
+- Random Forest
+- CNN
+- RNN
+- Transformer
+- LSTM
+
+对于这部分内容，你可以翻阅 [scikit-learn](https://scikit-learn.org/stable/) 官网来学习。
 
 #### 下载题目
 
@@ -106,18 +124,40 @@ $\color{red}{\text{否则不仅晦涩难懂，而且还没什么用。}}$
 
 1. [2017 Sky Images and Photovoltaic Power Generation Dataset for Short-term Solar Forecasting (Stanford Raw)](https://purl.stanford.edu/sm043zf7254)
 
-### 作业 2 - YOLO
+### 作业 2 - YOLO 的基本使用
 
-YOLO 是计算机视觉领域最具代表性的单阶段目标检测算法系列，本次任务并不会太难，目的是介绍 AI 应用领域并非只有 LLM。
+YOLO 是计算机视觉领域最具代表性的单阶段目标检测算法系列，它的作用是提供一个简单的 API 来识别特定的物体。
 
-在本次作业中，你需要借助 YOLO 实现一个有趣的小项目。如果你没有 idea 那么我们推荐你做一个自动通关 PVZ 1-10 关的脚本。
+本次任务并不会太难，目的是介绍 AI 应用领域并非只有 LLM。
+
+在本次作业中，你需要借助 YOLO 实现一个有趣的小项目，例如贪吃蛇全自动控制。
+
+如果你没有 idea，我们推荐你做一个自动通关 PVZ 1-10 关的脚本。
 
 #### 作业要求 - 作业 2
 
 - 请不要只是做一个识别 YOLO 模型中已经包含的模型的 demo。
 
-### 参考资料 - 作业 2
+#### 参考资料 - 作业 2
 
-[PVZ 原版下载](http://jspvz.com/ResDownload/1_PC_E.htm#v1.0.0.1051)
+1. [YOLO 快速使用](https://docs.ultralytics.com/zh)
+2. [PVZ 原版下载](http://jspvz.com/ResDownload/1_PC_E.htm#v1.0.0.1051)
+3. [PVZ 修改器](http://jspvz.com/ResDownload/Modifier.htm#v1.9)
 
-[PVZ 修改器](http://jspvz.com/ResDownload/Modifier.htm#v1.9)
+### 作业 3 - 现代 LLM 思想
+
+在现代的框架下，调用大语言模型只需要挑很少量的参数，例如 Temperature、Top-K、Top-P 等等，而不需要关心模型的底层实现细节。
+
+Hugging Face 是一个友好的开源社区，在上面你可以找到绝大多数的开源模型及其参数。
+
+尽管我们做的是上层应用，但仍应理解现代 LLM 应用是如何基于 Pipeline 这一概念构建的。
+
+阅读 Hugging Face 官方文档教学，了解现代的 LLM 架构（例如 Pipeline），了解 Transformer 的基本原理。
+
+1. [PyTorch 文档](https://docs.pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html)
+
+2. [Hugging Face 课程](https://huggingface.co/learn/llm-course/zh-CN)
+
+3. [Transformers 文档](https://huggingface.co/docs/transformers/v5.9.0/zh/index)
+
+在完成上述任务后，你应该写一份文档来阐述你的理解，并且做到可以完成类似 Foundation 3 作业 2 中的代码即可。

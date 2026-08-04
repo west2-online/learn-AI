@@ -1,7 +1,7 @@
 # Appliction 2 - 大语言模型简单应用
 
 > [!NOTE]
-> 预计耗时：60 天
+> 预计耗时：21 天
 
 ## 学习目的
 
@@ -16,26 +16,6 @@
 - Whisper
 
 ## 作业
-
-### 文档 1 - 现代 LLM 思想
-
-在现代的框架下，调用大语言模型只需要挑很少量的参数，例如 Temperature、Top-K、Top-P 等等，而不需要关心模型的底层实现细节。
-
-Hugging Face 是一个友好的开源社区，在上面你可以找到绝大多数的开源模型及其参数。
-
-尽管我们做的是上层应用，但仍应理解现代 LLM 应用是如何基于 Pipeline 这一概念构建的。
-
-阅读 Hugging Face 官方文档教学，了解现代的 LLM 架构（例如 Pipeline），了解 Transformer 的基本原理。
-
-同时，你还需要了解微调的基本方法，以及 Hugging Face Hub 的使用方法。
-
-1. [PyTorch 文档](https://docs.pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html)
-
-2. [Hugging Face 课程](https://huggingface.co/learn/llm-course/zh-CN)
-
-3. [Transformers 文档](https://huggingface.co/docs/transformers/v5.9.0/zh/index)
-
-在完成上述任务后，你应该写一份文档来阐述你的理解。
 
 ### 作业 1 - 橘雪莉妙妙屋
 
@@ -100,9 +80,15 @@ Hugging Face 是一个友好的开源社区，在上面你可以找到绝大多�
 
 ### 作业 3 - 实时转写
 
+Whisper 是一个端到端的 Transformer 解码器-编码器模型，是目前业界应用最广泛的语音转写方案之一。支持多语言识别与翻译，并且提供了多种模型尺寸供选择使用。
+
 在这项作业中，你需要使用 OpenAI 的语音识别模型 Whisper 实现一个简单的会议实时转写与总结。
 
-Whisper 是一个端到端的 Transformer 解码器-编码器模型，是目前业界应用最广泛的语音转写方案之一。支持多语言识别与翻译，并且提供了多种模型尺寸供选择使用。这里推荐使用尺寸为 small 的模型，其 244M 的参数量足以支持你完成本次作业，并且能够在个人 PC 上流畅运行。
+这里推荐使用尺寸为 small 的模型，其 244M 的参数量足以支持你完成本次作业，并且能够在个人 PC 上流畅运行。
+
+#### 参考资料 - 作业 3
+
+[Whisper 官方文档](https://openai.com/zh-Hans-CN/index/whisper/)
 
 #### 作业要求 - 作业 3
 

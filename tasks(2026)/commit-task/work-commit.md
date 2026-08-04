@@ -20,7 +20,7 @@ Task 0 - Task 3 的答辩预计在 1 月初（元旦）进行，答辩形式为�
 
 答辩形式是做一份 PPT（推荐）或者写一份文档，讲 10 - 15 分钟，再进行拷打。
 
-如果你选择了 Application 路线，那么 Application 1 - Application 2 的答辩在预计 5 月初（五一节），Application 3 的答辩预计在 6 月中末进行。
+如果你选择了 Application 路线，那么 Application 1 - Application 3 的答辩在预计 5 月初（五一节），Application 4 的答辩预计在 6 月中末进行。
 
 答辩形式是做一份 PPT 或者写一份文档，介绍自己开发过程中碰到的问题、设计思路等，讲 10 - 15 分钟，再进行拷打。
 
