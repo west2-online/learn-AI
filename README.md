@@ -104,7 +104,7 @@ node scripts/check-markdown.mjs
 
 ## 致谢
 
-感谢 [ShaddockNH3](https://github.com/ShaddockNH3)，[JadeMelody](https://github.com/wjord2023)，[Tomori Nao](https://github.com/TomoriNaoiy)，[Longxi Zheng](https://github.com/REREREGO)，[Cai](https://github.com/ACaiCat)，[Schariac125](https://github.com/Schariac125)，[柠檬味氨水](https://github.com/weijianxian)，对 2026 / 2025 / 2024 版考核的贡献。
+感谢 [ShaddockNH3](https://github.com/ShaddockNH3)，[JadeMelody](https://github.com/wjord2023)，[Schariac125](https://github.com/Schariac125)，[Longxi Zheng](https://github.com/REREREGO)，[Cai](https://github.com/ACaiCat)，[柠檬味氨水](https://github.com/weijianxian)，[Tomori Nao](https://github.com/TomoriNaoiy)，对 2026 / 2025 / 2024 版考核的贡献。
 
 ## 加入我们
 
