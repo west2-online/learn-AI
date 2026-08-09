@@ -225,7 +225,15 @@ wget -P ./dataset https://www.modelscope.cn/datasets/gongjy/minimind_dataset/res
 
 你需要编写脚本爬取知名小说网站 [笔趣阁的总榜](https://www.piquge.com/paihangbang/allvisit/)，获取小说的标题、简介、作者、标签等信息，将它们向量化存储，建立一个向量数据库。
 
-在这之后，你需要搭建一个简单 AI 工作流，当用户输入想要看的小说元素时，番茄助手会使用 RAG 的方式，先从向量数据库中检索出与输入简介最相似的小说信息，然后将这些信息作为上下文输入到大语言模型中，最后输出推荐结果。
+你需要在本地部署 chat 模型和 embedding 模型。模型大小请参考自己的硬件条件选择。然后编写一个 naiveRAG 工作流进行测试。
+
+但传统的 naiveRAG 技术时常会有语义丢失的情况出现，在 chunking 策略不合理的情况下，这种现象尤其明显。而这个问题目前可以通过两个方式进行解决，一是在 chunking 策略上做文章，尽量保证上下文的语义连贯性不被破坏；二是在 RAG 本身做优化，在切分好的资料间建立联系。因此为了预防这类问题的发生，在完成 naiveRAG 的基础测试之后，你需要设计更合理的 chunking 策略并采用更加优秀的 RAG 模式，例如 GraphRAG，LightRAG 等等。
+
+事实上，仅仅依靠 RAG 在复杂的情况下往往是不够用的，你无法确保你的用户描述需求永远准确，但这是一名合格的工程师应该考虑到的情况。部分成熟的项目已经表明，采用更加灵活的 prompt 策略能够有效的解决相关问题。因此，你需要在本次作业中思考并加入你的 prompt 优化方案。
+
+你可以编写一篇文档来阐述你遇到的问题和解决方案以及你对于 RAG 技术的理解。
+
+可以参考这个项目的架构：[fzu-assistant](https://github.com/west2-online/fzu-assistant)
 
 最终的效果是：
 
@@ -233,8 +241,6 @@ wget -P ./dataset https://www.modelscope.cn/datasets/gongjy/minimind_dataset/res
 user：给我推荐一本西幻萝莉文
 ai：《***》，走搞笑西幻路线，主角穿越第一天就被关进监狱，还要被雌小鬼典狱长戏耍，后面还会遇到缠人的萝莉龙娘，剧情轻松沙雕，笑点非常密集。
 ```
-
-你可以尝试一些 RAG 的优化或者使用更多种的 RAG，例如 Top-K 优化，LightRAG 等。
 
 #### 作业说明 - 作业 2
 
