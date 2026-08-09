@@ -1,4 +1,4 @@
-# Appliction 2 - 大语言模型简单应用
+# Application 2 - 大语言模型简单应用
 
 > [!NOTE]
 > 预计耗时：21 天
