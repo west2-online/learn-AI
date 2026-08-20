@@ -33,7 +33,7 @@
 
 [Schariac125](https://github.com/Schariac125) 喜欢看番剧，她的家长认为这是 Japan 文化入侵的表征，于是把她手机里的 AcFun 卸载了。
 
-为了让 Schariac125 可以快乐看片，请你写一个基于 “三层架构” 的 Python 视频网站（使用 FastAPI / FLASK / BlackSheep），让 Schariac125 能够享受到番剧的快乐！
+为了让 Schariac125 可以快乐看片，请你写一个基于 “三层架构” 的 Python 视频网站（使用 FastAPI / FLASK），让 Schariac125 能够享受到番剧的快乐！
 
 请按照以下接口文档完成功能：
 
@@ -72,8 +72,6 @@
 
 - 请勿抄袭
 - 严禁使用 vibe coding 的方式完成本次任务，适当的借助 AI 是可行的。作业一旦被发现是 vibe coding 完成的将会被直接判定为不通过
-- 0 基础的同学请使用 Python 进行开发。先前有过相关开发经验的同学不限定语言
-- 请不要在这个任务上花费太多的时间
 - 在项目中附上你的 SQL 建表语句
 - 为你的项目编写 README.md
 - 编写 API 接口文档
