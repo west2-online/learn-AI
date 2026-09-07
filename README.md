@@ -110,4 +110,4 @@ node scripts/check-markdown.mjs
 
 欢迎扫码加入 AI 方向学习交流群，与其他学习者共同进步。
 
-![west2-AI-qrcode-2025](./README.assets/west2-AI-qrcode-2025.jpg)
+![west2-AI-qrcode-2025](./README.assets/west2-AI-qrcode-2026.png)
