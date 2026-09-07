@@ -62,7 +62,7 @@ Python 也有前端框架（如 Streamlit），适合快速搭建数据展示和
 
 你的任务，就是为长门大人编写战斗的核心逻辑，帮助她赶跑偷吃的娜比娅！
 
-阅读 [Nabia_Snack_Incident](./Nabia_Snack_Incident)，根据指引完成 8 个函数的编写。
+阅读 [Nabia_Snack_Incident/README.md](./Nabia_Snack_Incident/README.md)，根据指引完成 `longmen_vs_nabia.py` 中的 12 个函数。
 
 这份作业并不难，只涉及到 `if`、`else`、`while`。
 
