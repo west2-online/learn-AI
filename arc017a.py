@@ -1,15 +1,10 @@
 n = int(input())
-nums = list(map(int, input().split()))
-is_ok = True
-
-for i in range(n - 1):
-    current = nums[i]
-    next_num = nums[i + 1]
-    if next_num <= current:
-        is_ok = False    
-        break
-        
-if is_ok:
-    print("YES")
-else:
+if n<2:
     print("NO")
+else:
+    for i in range(2, int(n**0.5)+1):
+        if n % i == 0:
+            print("NO")
+            break
+    else:
+        print("YES")
