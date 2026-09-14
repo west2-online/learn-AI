@@ -74,9 +74,9 @@ graph TD
 
 ## 详细说明
 
-更多关于考核设计的思考，请参考 [ShaddockNH3 的博客](https://shaddocknh3.github.io/2025/10/19/3.w2-ai-think/)。
+更多关于考核设计的思考，请参考 [ShaddockNH3 的博客](https://blog.attilio.cc/posts/post-9/)。
 
-这篇博客已经过时，待 ShaddockNH3 有时间再维护。
+这篇博客还有一部分没有更新完，待 ShaddockNH3 有时间再维护。
 
 ## 维护指南
 
