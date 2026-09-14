@@ -23,8 +23,8 @@ graph TD
     A[环境搭建] --> B[语法基础与简单面向对象]
     B --> C[网络爬虫]
     B --> E[简单数据分析与可视化]
-    C --> D[后续简介]
-    E --> D[后续简介]
+    C --> D[简单 AI 认知]
+    E --> D[简单 AI 认知]
 
     %% AI 相关技能树
     D --> J((Python 前 / 后端))
@@ -74,9 +74,9 @@ graph TD
 
 ## 详细说明
 
-更多关于考核设计的思考，请参考 [ShaddockNH3 的博客](https://shaddocknh3.github.io/2025/10/19/3.w2-ai-think/)。
+更多关于考核设计的思考，请参考 [ShaddockNH3 的博客](https://blog.attilio.cc/posts/post-9/)。
 
-这篇博客已经过时，待 ShaddockNH3 有时间再维护。
+这篇博客还有一部分没有更新完，待 ShaddockNH3 有时间再维护。
 
 ## 维护指南
 
