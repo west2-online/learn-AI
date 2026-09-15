@@ -66,7 +66,7 @@
 - 需要支持双 Token
 - 为你的项目提供一份目录树
 
-可以阅读 [backend](../backend/backend-routine.md) 中的相关内容获得更好的支持。
+可以阅读 [backend](../others/backend-routine.md) 中的相关内容获得更好的支持。
 
 #### 作业要求
 
