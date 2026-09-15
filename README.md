@@ -39,7 +39,7 @@ graph TD
 
 如果你未来想找工作，那么可以选择后者。但单纯的 AI 应用意义不大，因此我们设置了 [Application 0](./tasks(2026)/application/application0.md) 任务，只有完成了此项任务才能继续 Application 方向的学习，请根据自身现有水平量力而行。
 
-关于更具体的建议，以及为什么会有 [Python Backend](./tasks(2026)/backend)、[Python Frontend](./tasks(2026)/frontend) 和 [Statistics](./tasks(2026)/statistic)，可见 [Foundation](./tasks(2026)/foundation) 中的 [Task 4（task4.md）](./tasks(2026)/foundation/task4.md)，这是后续方向导引。
+关于更具体的建议，以及为什么会有 [Python Backend](./tasks(2026)/others/backend-routine.md)、[Python Frontend](./tasks(2026)/others/frontend-routine.md) 和 [Statistics](./tasks(2026)/others/statistic-routine.md)，可见 [Foundation](./tasks(2026)/foundation) 中的 [Task 4（task4.md）](./tasks(2026)/foundation/task4.md)，这是后续方向导引。
 
 ### 成为正式成员后的权益
 
@@ -85,19 +85,19 @@ graph TD
 提交前至少运行一次 Markdown 检查：
 
 ```powershell
-.\scripts\check-markdown.ps1
+.\maintain-rules\check-markdown.ps1
 ```
 
 Linux / macOS 用户可以运行：
 
 ```shell
-sh scripts/check-markdown.sh
+sh maintain-rules/check-markdown.sh
 ```
 
 也可以直接使用跨平台 Node.js 入口：
 
 ```shell
-node scripts/check-markdown.mjs
+node maintain-rules/check-markdown.mjs
 ```
 
 新增或修改任务文档时，请优先保持“学习目的 - 学习内容 - 作业 - 推荐教程与参考资料”的结构，并遵守中英文空格、中文数字空格、数字单位和中文标点规范。
