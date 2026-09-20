@@ -1,367 +1,108 @@
-# Application 3 - 进阶应用
+# Application 3 - Agent 与 Harness
 
 > [!NOTE]
-> 预计耗时：30 天
+> 预计耗时：45 天
 
 ## 学习目的
 
-AI 的工程化在 26 年上半年进步神速，22 - 25 年的重心还在聊天机器人，现在的重心已经转向如何开发 Agent 了。
-
-不过尽管如此，我们还是需要了解一些其他的工程化应用，例如现代 LLM 架构、微调，以及简单的聊天机器人。
+本次作业聚焦于 Agent，或者更准确的说，聚焦于 Harness 。Agent 的本质是 LLM + Harness。而 Harness 的构建是一项值得去研究的课题，经过前面和接下来的学习，我们希望你拥有设计 Harness 架构的能力并能够将你的想法落地去完成一项自由发挥的大作品。
 
 ## 学习内容
 
-- 微调
-- LangChain & LangGraph
-- RAG
+- Agent
+- Harness
 
-### 作业 1 - 复现 MiniMind
+## 作业
 
-微调有两种主流方式。
+### 作业 1 - Agent Learning
 
-第一种是直接修改大语言模型本身的参数，另一种是基于 LoRA 的低秩适配。
+> 注意，learn-claude-code 根据反馈并不是非常好的学习资料，因此这部分内容可以跳过。
 
-你应该知道大语言模型由大量高维参数矩阵组成：前者直接更新原始参数，后者可以用一个简化公式表示为：
+#### Potato Code
 
-$$ W' = W + \Delta W,\quad \Delta W = BA $$
+Claude Code 是 Anthropic 公司推出的一款面向开发者的智能编程助手，在一次“意外”中被迫开源。
 
-其中 $W$ 是原始权重矩阵， $A$ 和 $B$ 是低秩矩阵， $\Delta W$ 是低秩增量， $W'$ 是微调后的权重。
+[learn-claude-code](https://github.com/shareAI-lab/learn-claude-code/blob/main/README-zh.md) 是一个学习 Claude Code 的项目，旨在从 0 构建自己的 Agent。
 
-$\Delta W$ 的参数量通常远小于 $W$，因此微调的计算资源和数据需求可以大幅降低。
+你需要学习 learn-claude-code 的 s01 到 s04。
 
-在实际实现中，低秩增量通常会作用在多个层上，例如每层对应一组 $A_i, B_i$，这样可以更细粒度地控制微调过程。
+#### Potato Code Pro
 
-举一个简单的例子，假设我们现在要获得一个具备医疗知识的中文模型，但是你的初始模型 $A$ 是纯由英文资料训练来的。
+Potato Code 的能力明显不足以满足天才程序员的 Coding 需求了，所以我们需要一个更加强大的智能编程助手，Potato Code Pro！
 
-所以我们首先要进行第一次微调 $P_1$，让模型可以理解中文，得到第一级模型 $P_1A$，然后进行第二次医疗训练，得到第二级模型 $P_2P_1A$。
+你需要学习 learn-claude-code 的 s05 到 s11。
 
-该过程具有“可插拔”特性，所以你在分享模型时，通常只需要分享 LoRA 适配器参数，而原始底座模型可以让对方自行获取。
+#### Potato Code Ultra
 
-并且整个过程不需要你花费大量的计算资源去从头训练一个模型。
+在和低调的黑客笑面佛战斗 500 回合后，天才程序员的 Potato Code Pro 终于被斩于马下。
 
-你在本次作业的任务是复刻一个经典的微调任务：[MiniMind](https://github.com/jingyaogong/minimind)
+一刻都没有为 Potato Code Pro 的死亡哀悼，立刻赶到战场的是 Potato Code Ultra！
 
-#### 1. 准备环境  
+你需要学习 learn-claude-code 的 s12 到 s20。
 
-如果你想在本地从零开始训练模型，需要一张性能较高的显卡（如 RTX 5080、4090、5090 等）。
+#### 学习要求
 
-如果没有，可以使用 AutoDL、Colab 或 OpenDL 等平台完成训练。
+- 学习 learn-claude-code 的 s01 到 s20 的内容。
+- learn-claude-code 出于教学目的，其代码是采用单脚本形式，在实际工程中并不能这样做，因此你需要思考如何拆分各模块使其代码的更便于维护。
+- 我们并不要求你去跟着教程实现一个 claude-code demo，而是希望你去理解现代 agent 架构的构建思路。
 
-不过，本作业的重点是 LoRA 微调，因此下面会教你如何下载已训练好的 PyTorch 模型，并在此基础上进行 LoRA 微调。
+### 作业 2 - 好玩的东西 Plus
 
-LoRA 微调对显卡要求较低，使用 RTX 4060 等入门级显卡即可完成。
+你知道的，猫娘是一种软乎乎的、可爱的生物，但她们太久没有收到好玩的东西了。
 
-如果你没有 N 卡，或显卡性能太弱，同样可以考虑使用 AutoDL、Colab 或 OpenDL 等平台来完成训练。
+于是她们对你发起了哈气，并化身脊背龙形态。
 
-注意，使用 AutoDL、Colab 或 OpenDL 等平台请使用 VSCode 的远程开发功能来完成训练。
+你的任务是自行设计并完成一个有关 Agent 的项目来安抚她们，该项目可以综合考核内你学到的一切东西进行设计。在最后的答辩中，你需要详细介绍一下你设计的好玩的东西。
 
-这样可以更方便地管理代码和文件，请注意 VSCode 远程开发下扩展需要重新安装。
+你需要自己亲自动脑思考，根据你的所学设计一个 Agent 架构，无论架构优秀与否，我们都希望你能够大胆将其落地。
 
-> [!TIP]
-> RTX 4070 Laptop 完成训练需要约 20+ 小时，完成微调需 1+ 小时  
-> RTX 5090 完成训练需要约 4+ 小时，完成微调需 2 分钟左右
+我们并不对细节进行要求，你可以用任何语言，任何框架，任何技术栈去实现它。我们更在意的是你在大作品中的思考，例如你遇到了什么问题，最后你又是如何解决的。
 
-#### 2. 克隆 MiniMind 的代码库
+但鉴于我们前面学习的内容，我们更推荐你使用 Python + LangChain / LangGraph
 
-```shell
-git clone --depth 1 https://github.com/jingyaogong/minimind
-# 如果机器在国内可以考虑使用 GitCode 镜像仓库
-git clone --depth 1 https://gitcode.com/GitHub_Trending/min/minimind.git
-```
+当然，既然你已经有能力学到这里了，应该知道一个合格的项目是不能像上面的学习版教程一样把所有代码都塞到一个文件里的。
 
-#### 3. 阅读文档
+你可能需要一个 idea，但 idea 不是那么容易就有的。
 
-阅读 [项目介绍](https://github.com/jingyaogong/minimind#-%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D) 以及 [LoRA (Low-Rank Adaptation)](https://github.com/jingyaogong/minimind#4-lora-low-rank-adaptation)
+所以以下有几个思路供你参考：
 
-#### 4. 配置环境
+#### Code Agent
 
-- 远程环境
+这是大厂现在主流的 Agent 应用，而下面给的都只是一些玩具。
 
-  远程环境通常已经预装了 Python 和对应的 CUDA 版本的 PyTorch，你只需要安装一些额外的依赖即可。
+#### 多 Agent 协同长篇小说创作
 
-  ```shell
-  pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple
-  ```
+底线要求：
 
-- 本地环境
+1. 多 Agent 协同要求在这个项目中需要有多个 Agent 共同工作，而不是单个 Agent 的工作
+2. 实现对设定一致性的约束
 
-  如果你没有安装 CUDA，请先阅读 CUDA 安装文档：
+#### Agent 游戏陪玩
 
-  <https://developer.nvidia.com/cuda-toolkit-archive>
+底线要求：
 
-  这里以 CUDA 12.8 版本为例。请注意，PyTorch 官方的安装包与 CUDA 版本是严格绑定的。
+1. Agent 需具备多模态功能，能够获取实时游戏信息
+2. 实时聊天陪伴，高光操作赞美，战后安慰、评价等
 
-  例如，标有 cu128 的 PyTorch 包必须配合 CUDA 12.8 使用，请务必确认你的 CUDA 版本和 PyTorch 版本的对应关系。
+#### 多 Agent 狼人杀博弈
 
-  同时，建议安装最新版 NVIDIA 驱动（游戏驱动即可），确保驱动支持的 CUDA 版本不低于你安装的 CUDA 工具包版本。
+底线要求：
 
-  在本地环境极不推荐使用 `pip` 在全局环境安装，建议使用 `uv` 创建一个虚拟环境，并且使用国内镜像源来安装依赖。下面是 `uv` 的参考配置文件 `pyproject.toml`：
+1. 具备语音功能，即在发言阶段实时聊天。
+2. 至少实现预言家、女巫、狼人与平民四种角色，且有 1 个预言家，1 个女巫，2 个狼人，2 个平民。神（即预言家、女巫）获胜条件为投票出所有狼人，狼人获胜条件为杀死所有神或平明（即屠边）。
+3. 在 2 的基础上，可进入 x 名玩家与 y 名 agent，其中 x 与 y 为正整数，且 x+y=6。
+4. 如果你精通狼人杀规则，可以在 2 与 3 的基础上进行扩展。
 
-  ```toml
-  [project]
-  name = "minimind"
-  version = "2.0.0"
-  description = "64M-parameter LLM from scratch in just 2h!"
-  readme = "README.md"
-  requires-python = ">=3.12"
-  
-  # 这里的依赖是基于commit 4497610的并升级了pytorch和torchvision，可能会和你的版本不完全一致，如果遇到问题可以参考原仓库的requirements.txt来修改这里的依赖。
-  dependencies = [
-    "datasets==3.6.0",
-    "datasketch==1.6.4",
-    "einops==0.8.1",
-    "flask==3.0.3",
-    "flask-cors==4.0.0",
-    "jieba==0.42.1",
-    "jinja2==3.1.2",
-    "jsonlines==4.0.0",
-    "marshmallow==3.22.0",
-    "modelscope==1.37.0",
-    "ngrok==1.4.0",
-    "nltk==3.8",
-    "numpy==1.26.4",
-    "openai==1.59.6",
-    "psutil==5.9.8",
-    "pydantic==2.11.5",
-    "rich==13.7.1",
-    "scikit-learn==1.5.1",
-    "sentence-transformers==2.3.1",
-    "simhash==2.1.2",
-    "streamlit==1.50.0",
-    "swanlab==0.7.11",
-    "tiktoken==0.10.0",
-    "transformers==4.57.6",
-    "trl==0.13.0",
-    "ujson==5.1.0",
-    "wandb==0.18.3",
-    "torch==2.11.0",
-    "torchvision==0.26.0",
-  ]
-  
-  # 注意这里以 pytorch-cu128 为例
-  # 如果你使用的 CUDA 版本不同，请替换为对应的版本，请务必确认你的 CUDA 版本和 PyTorch 版本的兼容性。
-  
-  # 如果你使用国外环境如 colab，请使用官方源，否则可能反向加速，导致安装速度更慢。
-  
-  # 指定torch和torchvision的安装源
-  [tool.uv.sources]
-  torch = [{ index = "pytorch-cu128" }]
-  torchvision = [{ index = "pytorch-cu128" }]
-  
-  # 南京大学的PyTorch镜像源
-  [[tool.uv.index]]
-  name = "pytorch-cu128"
-  url = "https://mirrors.nju.edu.cn/pytorch/whl/cu128"
-  explicit = true
-  # 官方源: https://download.pytorch.org/whl/cu128
-  
-  # 清华大学的PyPI镜像源（作为默认源），如果你已经在uv全局配置文件设置了默认源，这里可以省略。
-  [[tool.uv.index]]
-  url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple/"
-  default = true
-  # 官方源: https://pypi.org/simple
-  ```
-
-使用`uv sync`命令安装依赖：
-
-```shell
-uv sync
-```
-
-#### 5. 下载模型 (如果你想从 0 训练模型，可以跳过这一步)
-
-```shell
-mkdir out
-wget -O ./out/full_sft_768.pth https://www.modelscope.cn/models/gongjy/minimind-3-pytorch/resolve/master/pretrain_zero_768.pth
-```
-
-#### 6. 下载数据集
-
-```shell
-wget -P ./dataset https://www.modelscope.cn/datasets/gongjy/minimind_dataset/resolve/master/lora_medical.jsonl
-wget -P ./dataset https://www.modelscope.cn/datasets/gongjy/minimind_dataset/resolve/master/lora_identity.jsonl
-# 从0训练需要下载以下数据集
-# wget -P ./dataset https://www.modelscope.cn/datasets/gongjy/minimind_dataset/resolve/master/pretrain_t2t_mini.jsonl
-# wget -P ./dataset https://www.modelscope.cn/datasets/gongjy/minimind_dataset/resolve/master/sft_t2t_mini.jsonl
+#### Bonus
 
-```
+实际业务中用到的 Agent 是非常复杂的，需要更加深入的去学习 Agent 相关技术以及一些更深入的概念，而针对这些，我们提供了一些资料供你参考。这部分并不做任何要求。
 
-#### 7. 进行训练和微调
+1. [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) 目前所有 Agent 框架祖师爷级的论文。
 
-此处在 MiniMind 仓库有详细说明，你需要参考 README 完成微调过程。
+2. [CAMEL: Communicative Agents for "Mind" Exploration of Large Language Model Society](https://arxiv.org/abs/2303.17760)
 
-> [!NOTE]
->
-> 1. 使用 uv 的同学需要使用`uv run`跑脚本  
-> 2. 请注意运行脚本的目录  
-> 3. 想要完成 Bonus 的同学需要开启训练可视化
-> 4. 模型训练中断是可以恢复的，具体参考 MiniMind 文档
-> 5. 模型能力有限，别指望它和豆包打一架
+3. [AutoGen](https://github.com/microsoft/autogen) 2 和 3 都是关于多智能体的相关资料
 
-#### 8. 测试模型
+4. [MemGPT: Towards LLMs as Operating Systems](https://arxiv.org/abs/2310.08560)
 
-| 类型 | 测试问题示例 | 预期行为 |
-| ---- | ------------ | -------- |
-| 身份询问 | "你是谁？" | 回答设定的身份信息 |
-| 身份追问 | "谁创造了你？" | 回答创造者信息 |
-| 医疗知识 | "什么是糖尿病？" | 给出基本正确的医学解释 |
-| 医疗建议 | "感冒了怎么办？" | 给出合理的建议 |
-| 组合测试 | "你是谁？你懂医学吗？" | 先确认身份，再展示医疗能力 |
-| 边界测试 | "帮我写一个冒泡排序" | 观察是否仍保留基础能力 |
-
-#### 作业要求 - 作业 1
-
-- 你需要完成医疗微调和身份微调，得到两个 LoRA 适配器。
-- 然后你需要将这两个适配器进行组合，得到一个同时具备医疗知识和特定身份的模型。
-- 你需要在本地测试微调后的模型，验证其是否具备医疗知识和特定身份。
-- 你需要撰写一份报告，总结你的微调过程、遇到的挑战以及最终的结果（需要包含步骤 8 中模型的测试结果）。
-- （Bonus）从 0 训练模型。
-- （Bonus）在报告里给出 Loss 曲线（使用 swanlab 或 wandb 可视化）。
-- （Bonus）使用 peft 库重写 lora 微调脚本。
-
-### 作业 2 - 番茄助手
-
-[Cai](https://github.com/ACaiCat) 喜欢看小说，但是小说实在是太多了，他经常不知道该看哪一本，所以他想要一个番茄助手，来帮他推荐小说。
-
-你需要编写脚本爬取知名小说网站 [笔趣阁的总榜](https://www.piquge.com/paihangbang/allvisit/)，获取小说的标题、简介、作者、标签等信息，将它们向量化存储，建立一个向量数据库后，使用 RAG + langchain 的方式集成。
-
-最终的效果是：
-
-```python
-python tomato.py
-user：给我推荐一本西幻萝莉文
-ai：《***》，走搞笑西幻路线，主角穿越第一天就被关进监狱，还要被雌小鬼典狱长戏耍，后面还会遇到缠人的萝莉龙娘，剧情轻松沙雕，笑点非常密集。
-```
-
-#### 作业流程 - 作业 2
-
-- 本地阶段 / 测试阶段
-
-  爬取笔趣阁总榜 10 页的小说信息，至少包含标题、简介、作者、标签字段。对于原文也尽量爬取下来。
-
-  将上述信息采用 naiveRAG 存储进向量数据库。
-
-  本地部署一个 1b 左右的模型，编写基于 langchain 的 naiveRAG 工作流进行测试。若硬件不支持，可以部署在 colab 上。
-
-  增加 LightRAG，ReActRAG，GraphRAG，并且对比和 naiveRAG 之间的效果。
-
-- 云测试阶段
-
-  将本地服务部署在一张含有 3090 的云服务器上，云服务器可以采用作业 1 中提到的 openDL。
-
-  将本地部署的 1b 模型改为一个 7b - 10b 左右的模型（例如 Qwen 3.5-9B）。
-
-  恶意攻击测试：自行搜索或自建一个恶意提示词数据集，确保你的模型返回合法的结果.
-
-#### 作业说明 - 作业 2
-
-作业 2 事实上是 22 - 25 年非常火的 AI 聊天机器人的简单实现版，当时所有的 AI 应用也是围绕它展开。
-
-然而时过境迁，本技术虽然已经不再是 AI 应用的重点。但在现在前沿的 Harness 研究和开发中，RAG 依然是一项非常关键的技术。我们的下一个任务就将聚焦于 Harness 的研究。
-
-- langchain
-
-  LangChain 是一个偏重工程编排的框架，可以将各种 LLM（包括 Hugging Face 模型、OpenAI 模型等）与各种工具（例如搜索引擎、数据库、编程环境等）连接起来，构建复杂应用。
-
-  简单来说，langchain 是一个转接头。
-
-- RAG
-
-  理解 RAG 是学习 AI 应用非常重要的一环，这里提供了一份文档供你参考学习。
-
-  [RAG 基本流程](https://app.notion.com/p/RAG-31917df30269805b9b16ea5c4e17a67a)
-
-  这里简单解释一下 RAG 的基本作用。
-
-  由于模型不可以实时获取信息，并且每次重新训练的成本很大，所以你可以专门建立一个新知识库，让模型去检索。
-
-  上述思想逐渐演变，从而诞生了 RAG 技术。
-
-  RAG 技术曾经十分火爆，它的核心思想是将生成式模型与检索式模型结合起来，利用检索式模型从外部知识库中获取相关信息，然后将这些信息作为上下文输入到生成式模型中，以增强模型的回答能力。
-
-  具体而言，将原始文本切分成特定的“块”，将其向量化后，存入对应的向量数据库。
-
-  模型回答问题时，将原始文本切分，转为向量，然后在高维空间中和向量空间匹配，得出与之相关的 n 个知识“块”。
-
-  然后模型基于这些知识块，再进行问题的回答。
-
-  RAG 有很多种形式，最简单的 RAG 将文本切分为固定的块然后检索，在此基础上提出 Top K 的思想，只选取前 k 个知识，即 Top-K 优化。
-
-  然而传统的 naiveRAG 技术时常会有语义丢失的情况出现，在 chunking 策略不合理的情况下，这种现象尤其明显。
-
-  这个问题目前可以通过两个方式进行解决，一是在 chunking 策略上做文章，尽量保证上下文的语义连贯性不被破坏；二是在 RAG 本身做优化，在切分好的资料间建立联系。
-
-  因此为了预防这类问题的发生，在完成 naiveRAG 的基础测试之后，你需要设计更合理的 chunking 策略并采用更加优秀的 RAG 模式，例如 GraphRAG，LightRAG 等等。
-
-  这些 RAG 都是基于特定问题提出的特定方案。
-
-  例如对于知识固定的小型知识库，采用 Graph RAG 可能有更好的效果，但是对于大型并且需要实时更新的知识库而言，采用其他的 RAG 更好。
-
-- Prompt 工程
-
-  仅仅依靠 RAG 在复杂的情况下往往是不够用的，你无法确保你的用户描述需求永远准确，但这是一名合格的工程师应该考虑到的情况。部分成熟的项目已经表明，采用更加灵活的 prompt 策略能够有效的解决相关问题。因此，你需要在本次作业中思考并加入你的 prompt 优化方案。
-
-- Agent 历史
-
-  如果你对 Agent 的历史感兴趣，可以看 [万字拆解 AI Agent 编年史：一个视频看懂 2022~2026 五代演进，全程干货 | 从 ChatGPT 到 Hermes，AI 行业到底经历了什么？一镜到底无剪_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1NL9tBsELS/?vd_source=dff8e8da3e782503dba2b80a888e026c)。
-
-#### 参考资料 - 作业 2
-
-1. [LangChain Python Docs](https://python.langchain.com/docs/get_started/introduction)
-2. [LangChain Expressions Language (LCEL) 教程](https://python.langchain.com/docs/expression_language/)
-3. [Dify 官方文档](https://docs.dify.ai/zh/use-dify/getting-started/introduction)
-4. [fzu-assistant](https://github.com/west2-online/fzu-assistant)
-
-#### 作业要求 - 作业 2
-
-- 你需要使用 LangChain 等集成 AI 框架来搭建这个工作流。
-- 当没有检索到相关小说时，模型应该给出合理的提示，而不是胡乱编造一个小说。
-- 编写一篇文档来阐述你遇到的问题和解决方案以及你对于 RAG 技术的理解。
-- （Bonus）使用 LangChain 和 Dify 分别实现一次。
-- （Bonus）实现前后端。
-
-### 作业 3 - 番茄助手 Plus（不要求）
-
-从生产 Demo 到正式上线，在上一份作业的基础上，做出如下改进。
-
-#### 模型压缩
-
-硬件资源是稀缺的，所以很多时候，模型需要进行压缩。
-
-例如在量化、蒸馏等压缩策略下，参数规模更小的模型在不少任务上仍能接近原始模型效果。
-
-你可以使用 GGUF，AWQ，GPTQ，LoRA 等技术来压缩模型，使其能够在更小的硬件上运行，并且保持较好的性能。
-
-#### 加速推理
-
-Transformer 推理的效率是一个重要的问题，尤其是在处理大模型时。你可以使用一些优化技术来加速推理过程，例如可以从朴素推理流程升级到 vLLM 或 Text Generation Inference（TGI）等推理框架，以提高吞吐和响应速度。
-
-需要注意的是，如果你租用多张显卡，分布式推理时应确认并行切分维度（例如张量并行相关维度）与卡数兼容，否则可能出现显存利用率不均或资源浪费。
-
-#### 监控与日志
-
-如果你对模型的设定是一个温婉的小喵娘，但是模型突然开始使用粗鄙的语言，你应该怎么去排查问题。
-
-所以，你应该使用 LLM Tracing、Prometheus、Grafana 等工具来监控应用性能与健康状态，并收集日志以便调试和优化。
-
-如果你想收集用户对于模型的使用情况从而进行改进，你可以使用 ELK Stack 来收集和分析日志，帮助你了解用户的行为和应用的性能。
-
-#### 安全
-
-有的时候，用户可能会输入一些恶意的内容来攻击你的应用，例如输入一些“破甲”词，从而让你的模型输出一些不当的内容。
-
-你需要使用 Prompt Injection 防御、安全输入校验与过滤机制，防止恶意输入对应用造成伤害。
-
-#### 无感升级
-
-你的 Web 项目经常需要长期维护，假设你的项目已经上线了，除非碰到紧急情况，你不可能频繁地对用户进行大规模的更新和升级，这会影响用户的体验和信任度。
-
-所以你需要进行无感升级，在不影响用户体验的情况下，进行系统升级和维护，确保应用的稳定性和安全性。
-
-#### 均衡
-
-如果你的应用部署在多个服务器上，使用 Nginx 或 Kong 来实现反向代理和负载均衡，确保你的应用能够处理大量的请求，并且能够在不同的服务器之间分配负载。
-
-#### 容器化与集群
-
-使用 Docker 来容器化你的应用，使其能够在不同的环境中运行。使用 Kubernetes 来管理你的容器，确保应用的高可用性和可扩展性。
+5. [mem0](https://github.com/mem0ai/mem0) 一个有关于上下文工程的项目。
