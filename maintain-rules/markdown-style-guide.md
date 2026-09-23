@@ -16,29 +16,29 @@
 Windows PowerShell 5：
 
 ```powershell
-.\scripts\check-markdown.ps1
+.\maintain-rules\check-markdown.ps1
 ```
 
 跨平台 Node.js：
 
 ```shell
-node scripts/check-markdown.mjs
+node maintain-rules/check-markdown.mjs
 ```
 
 macOS / Linux shell：
 
 ```shell
-sh scripts/check-markdown.sh
+sh maintain-rules/check-markdown.sh
 ```
 
 检查指定文件或目录：
 
 ```powershell
-.\scripts\check-markdown.ps1 README.md "tasks(2026)\application"
+.\maintain-rules\check-markdown.ps1 README.md "tasks(2026)\application"
 ```
 
 ```shell
-node scripts/check-markdown.mjs README.md 'tasks(2026)/application'
+node maintain-rules/check-markdown.mjs README.md 'tasks(2026)/application'
 ```
 
 脚本会执行两类检查：
@@ -129,19 +129,19 @@ x 打开你的 iPhone, 然后点击“设置”.
 4. 运行 Markdown 检查。
 
    ```powershell
-   .\scripts\check-markdown.ps1
+   .\maintain-rules\check-markdown.ps1
    ```
 
 5. 查看差异，确认没有误改无关文件。
 
    ```powershell
-   git diff -- README.md "tasks(2026)" docs scripts .markdownlint.json
+   git diff -- README.md "tasks(2026)" docs maintain-rules .markdownlint.json
    ```
 
 6. 暂存并提交。
 
    ```powershell
-   git add README.md "tasks(2026)" docs scripts .markdownlint.json
+   git add README.md "tasks(2026)" docs maintain-rules .markdownlint.json
    git commit -m "docs: update markdown style checks"
    ```
 
@@ -153,7 +153,7 @@ x 打开你的 iPhone, 然后点击“设置”.
 
 ## 维护者自查清单
 
-- 已运行 `.\scripts\check-markdown.ps1` 或 `node scripts/check-markdown.mjs` 且结果通过。
+- 已运行 `.\maintain-rules\check-markdown.ps1` 或 `node maintain-rules/check-markdown.mjs` 且结果通过。
 - 没有把密钥、Token、个人配置提交进仓库。
 - 没有误改 `pre-tasks` 等历史归档内容。
 - 中文、英文、数字和标点符合本文档规范。
