@@ -111,9 +111,9 @@ Hello, World!
 
 #### 时间与空间限制
 
-时间限制 (Time Limit): 1000 ms
+时间限制 (Time Limit): 1000ms
 
-内存限制 (Memory Limit): 256 MB
+内存限制 (Memory Limit): 256MB
 
 #### 说明与提示
 
