@@ -16,29 +16,29 @@ CRITICAL_HIT_THRESHOLD = 18
 
 # 任务一：显示角色状态
 def display_status(character_name, current_hp, max_hp):
-    """打印格式: 【角色名】HP: 当前血量 / 最大血量"""
-    # 使用f-string可以很方便地将变量嵌入到字符串中
-    print(f"【{character_name}】HP: {current_hp} / {max_hp}")
+    """打印格式：【角色名】HP: 当前血量 / 最大血量"""
+    # 使用 f-string 可以很方便地将变量嵌入到字符串中
+    print(f"[{character_name}] HP: {current_hp} / {max_hp}")
 
 
 # 任务二：掷骰子
 def roll_dice(num_dice):
-    """用while循环，模拟掷N个骰子，返回总点数"""
+    """用 while 循环，模拟掷 N 个骰子，返回总点数"""
     total_points = 0
     count = 0
-    # 当count小于需要掷的次数时，循环就会继续
+    # 当 count 小于需要掷的次数时，循环就会继续
     while count < num_dice:
         # 模拟掷一次骰子，并将点数加到总和上
         roll = random.randint(1, 6)
         total_points = total_points + roll
-        # 记得要增加count的值，否则循环不会停止哦！
+        # 记得要增加 count 的值，否则循环不会停止哦！
         count = count + 1
     return total_points
 
 
 # 任务三：选择长门的行动
 def choose_nagato_action(nagato_hp, nabiya_hp):
-    """用if/elif/else，根据血量返回 'attack', 'defend', 或 'special'"""
+    """用 if/elif/else，根据血量返回 'attack', 'defend', 或 'special'"""
     # if/elif/else的顺序很重要，程序会从上到下检查第一个满足的条件
     if nagato_hp < 30:
         return 'defend'
@@ -70,10 +70,10 @@ def check_critical_hit(base_damage):
         return False
 
 
-# 任务七：娜比娅的AI行动
+# 任务七：娜比娅的 AI 行动
 def nabiya_ai_action(nabiya_hp):
-    """如果娜比娅HP <= 40，返回 'defend'，否则返回 'attack'"""
-    # 对于简单的二选一逻辑，一个if/else就足够了
+    """如果娜比娅 HP <= 40，返回 'defend'，否则返回 'attack'"""
+    # 对于简单的二选一逻辑，一个 if/else 就足够了
     if nabiya_hp <= 40:
         return 'defend'
     else:
@@ -85,7 +85,7 @@ def main_battle_loop():
     """
     这是最重要的部分，将所有零件组装成起来。
     """
-    # 1. 初始化长门和娜比娅的HP，以及双方的防御值
+    # 1. 初始化长门和娜比娅的 HP，以及双方的防御值
     nagato_hp = NAGATO_MAX_HP
     nabiya_hp = NABIYA_MAX_HP
     nagato_defense_bonus = 0
@@ -105,7 +105,7 @@ def main_battle_loop():
         action = choose_nagato_action(nagato_hp, nabiya_hp)
         
         if action == 'attack':
-            print("长门：「感受BIG SEVEN的威力吧！」")
+            print("长门：「感受 BIG SEVEN 的威力吧！」")
             base_damage = calculate_attack_damage(NAGATO_ATTACK_DICE)
             if check_critical_hit(base_damage):
                 print("💥「BIG SEVEN」触发！伤害翻倍！")
@@ -127,7 +127,7 @@ def main_battle_loop():
             
         else: # 'special'
             print("长门：「「四万神的守护」！」")
-            if random.random() < 0.5: # 50%的成功率
+            if random.random() < 0.5: # 50% 的成功率
                 print("守护之力成功降临！")
                 final_damage = SPECIAL_ATTACK_DAMAGE - nabiya_defense_bonus
                 if final_damage < 0:
@@ -140,7 +140,7 @@ def main_battle_loop():
         
         # 4. 检查娜比娅是否被击败
         if nabiya_hp <= 0:
-            print("\n娜比娅的HP归零！")
+            print("\n娜比娅的 HP 归零！")
             display_status("娜比娅", 0, NABIYA_MAX_HP)
             print("\n长门获得了胜利！成功守护了港区的军粮！")
             break
@@ -169,7 +169,7 @@ def main_battle_loop():
         
         # 6. 检查长门是否被击败
         if nagato_hp <= 0:
-            print("\n长门的HP归零！")
+            print("\n长门的 HP 归零！")
             display_status("长门", 0, NAGATO_MAX_HP)
             print("\n战斗失败…看来娜比娅把偷吃的力气都用上了…")
             break

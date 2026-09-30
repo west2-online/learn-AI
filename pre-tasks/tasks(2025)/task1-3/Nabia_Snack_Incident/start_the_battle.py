@@ -13,5 +13,5 @@ if __name__ == "__main__":
     except Exception as e:
         # 如果程序因为任何原因崩溃了，给出友好的提示
         print(f"\n程序出现了一点小问题... T_T")
-        print(f"错误信息: {e}")
+        print(f"错误信息：{e}")
         print("请检查一下 longmen_vs_nabiya.py 里的代码逻辑是不是哪里写错啦~")

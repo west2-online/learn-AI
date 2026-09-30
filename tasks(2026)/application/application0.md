@@ -33,7 +33,7 @@
 
 [Schariac125](https://github.com/Schariac125) 喜欢看番剧，她的家长认为这是 Japan 文化入侵的表征，于是把她手机里的 AcFun 卸载了。
 
-为了让 Schariac125 可以快乐看片，请你写一个基于 “三层架构” 的 Python 视频网站（使用 FastAPI / FLASK），让 Schariac125 能够享受到番剧的快乐！
+为了让 Schariac125 可以快乐看片，请你写一个基于“三层架构”的 Python 视频网站（使用 FastAPI / FLASK），让 Schariac125 能够享受到番剧的快乐！
 
 请按照以下接口文档完成功能：
 

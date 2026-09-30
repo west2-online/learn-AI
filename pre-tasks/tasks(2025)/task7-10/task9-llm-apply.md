@@ -1,4 +1,4 @@
-# Task 9：LLM Apply
+# Task 9: LLM Apply
 
 ## 学习内容
 
@@ -25,7 +25,7 @@
     - 学习 `prometheus-fastapi-instrumentator` 库，让你的 FastAPI 应用自动暴露丰富的指标（如 QPS、延迟）
   - 模型安全基础（Model Security）：
     - OWASP Top 10 for LLM：通读并理解 LLM 面临的十大安全风险（尤其是 `LLM01: Prompt Injection`）
-    - 防御策略：学习并实现基础的输入-输出防御层
+    - 防御策略：学习并实现基础的输入 - 输出防御层
       - 输入检测：实现简单的关键词过滤、或（选学）使用一个小型 LLM（如 `Mistral-7B`）作为守卫，判断用户输入是否为恶意注入
       - 输出过滤：在 `yield` 结果给用户前，检查模型输出是否包含黑名单词汇或拒绝服务的标志
 - 前端原型工具
@@ -53,7 +53,7 @@
   - [prometheus-fastapi-instrumentator 库文档](https://github.com/trallnag/prometheus-fastapi-instrumentator)
 - 模型安全
   - [OWASP Top 10 for LLM Applications（必读）](https://owasp.org/www-project-top-10-for-large-language-model-applications/)（了解所有风险，重点参考 `LLM01`）
-  - [Prompt Injection 防御策略（B站/知乎搜索）](https://www.google.com/search?q=prompt+injection+defense+tutorial)（学习一些简单的防御技巧，如 `Sandwich Defense`）
+  - [Prompt Injection 防御策略（B 站/知乎搜索）](https://www.google.com/search?q=prompt+injection+defense+tutorial)（学习一些简单的防御技巧，如 `Sandwich Defense`）
 - 前端与容器化
   - [Streamlit 官方文档](https://docs.streamlit.io/en/stable/)（重点参考 `Get Started` 和 `Chat elements` 章节）
   - [Docker 官方 Get Started 教程](https://docs.docker.com/get-started/)

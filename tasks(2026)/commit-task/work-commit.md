@@ -10,8 +10,8 @@
 
 ## 作业提交方式
 
-1. 你需要学习 GitHub 的使用，创建一个你自己的仓库用来存放你的代码实现（代码审查使用的是该仓库）
-2. 接着你需要学习如何使用 Git 进行 PR 操作，在 [solutions](https://github.com/west2-online-reserve/collection-ai) 仓库中提交（仅作为留档）
+1. 你需要阅读 [git 学习](./git-study.md)，在 foundation0 work2（即 crazy-day）创建的仓库中提交此后所有的作业。除了 task0 之外，其他代码审查使用的是该仓库
+2. 然后你需要阅读在 Git [使用与西二作业提交教程](https://github.com/west2-online-reserve/collection-ai)，在 [solutions](https://github.com/west2-online-reserve/collection-ai) 仓库中提交（仅作为留档以及 task0 审查）
 3. 对于每一份作业，你需要按照 Git 推荐的提交方式，提交最小可运行子集
 
 ## 答辩形式

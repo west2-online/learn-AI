@@ -13,7 +13,7 @@
 
 ## 检查方式
 
-Windows PowerShell 5：
+Windows PowerShell 5:
 
 ```powershell
 .\maintain-rules\check-markdown.ps1
@@ -25,7 +25,7 @@ Windows PowerShell 5：
 node maintain-rules/check-markdown.mjs
 ```
 
-macOS / Linux shell：
+macOS / Linux shell:
 
 ```shell
 sh maintain-rules/check-markdown.sh
@@ -61,15 +61,15 @@ node maintain-rules/check-markdown.mjs README.md 'tasks(2026)/application'
 ### 中英文之间增加空格
 
 ```txt
-√ 小红书 App 在苹果 iOS 应用商店将官方英文名称统一改写为全小写的 “rednote”。
-x 小红书App在苹果iOS应用商店将官方英文名称统一改为全小写的“rednote”
+√ 小红书 App 在苹果 iOS 应用商店将官方英文名称统一改写为全小写的“rednote”。
+x 小红书 App 在苹果 iOS 应用商店将官方英文名称统一改为全小写的“rednote”
 ```
 
 ### 中文与数字之间增加空格
 
 ```txt
 √ 可预约开启 6 小时后，苹果 iPhone 17 系列新品预约总量突破 200 万。
-x 可预约开启6小时后，苹果 iPhone 17 系列新品预约总量突破200万。
+x 可预约开启 6 小时后，苹果 iPhone 17 系列新品预约总量突破 200 万。
 ```
 
 ### 数字与单位之间无需增加空格

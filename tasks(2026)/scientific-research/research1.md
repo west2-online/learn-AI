@@ -223,7 +223,7 @@ Stanford CS231n: Convolutional Neural Networks for Visual Recognition
 
   这里直接给出这个视频的链接：[CS231N Google Colab Assignment Workflow Tutorial](https://www.youtube.com/watch?v=DsGd2e9JNH4&source_ve_path=MjM4NTE&embeds_referring_euri=https%3A%2F%2Fcs231n.github.io%2F)
 
-  如果你使用 2025 版 CS231n ，你可能会遇到如下问题：
+  如果你使用 2025 版 CS231n，你可能会遇到如下问题：
 
   使用 Colab 运行 ipynb 文件带有以下两行的代码块，这两行代码在所有 ipynb 文件里面都存在
 
@@ -240,7 +240,7 @@ Stanford CS231n: Convolutional Neural Networks for Visual Recognition
   ModuleNotFoundError: No module named 'cs231n'
   ```
   
-  解决方法：点击右下角的 `Python 3` 选项，选择 “更改运行时类型” 将 “运行时版本” 修改为 “2025.07”，然后一定要重启 Colab 。重启后再次按顺序运行即可
+  解决方法：点击右下角的 `Python 3` 选项，选择“更改运行时类型”将“运行时版本”修改为“2025.07”，然后一定要重启 Colab。重启后再次按顺序运行即可
   
 - 本地配置环境
 

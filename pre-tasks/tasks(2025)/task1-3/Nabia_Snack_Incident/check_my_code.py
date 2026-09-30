@@ -21,7 +21,7 @@ try:
     )
 except (ImportError, SyntaxError) as e:
     print("❌ 严重错误：无法导入 longmen_vs_nabiya.py！")
-    print_info(f"这通常意味着你的代码里有语法错误。请检查一下。错误提示: {e}")
+    print_info(f"这通常意味着你的代码里有语法错误。请检查一下。错误提示：{e}")
     sys.exit()
 
 passed_checks = 0
@@ -39,16 +39,16 @@ try:
     print("\n--- 正在测试 任务二：roll_dice ---")
     result = roll_dice(3)
     success = (3 <= result <= 18) and isinstance(result, int)
-    if print_check("roll_dice(3) 的返回值在3-18之间", success): passed_checks += 1
-    else: print_info("提示：请检查while循环次数是否正确，以及是否返回了整数总和。")
+    if print_check("roll_dice(3) 的返回值在 3-18 之间", success): passed_checks += 1
+    else: print_info("提示：请检查 while 循环次数是否正确，以及是否返回了整数总和。")
 except Exception: print_skip("roll_dice")
 
 # --- 任务三 ---
 try:
     print("\n--- 正在测试 任务三：choose_nagato_action ---")
-    s1 = print_check("长门HP<30时('defend')", choose_nagato_action(29, 100) == 'defend')
-    s2 = print_check("娜比娅HP<20时('special')", choose_nagato_action(50, 19) == 'special')
-    s3 = print_check("一般情况('attack')", choose_nagato_action(80, 80) == 'attack')
+    s1 = print_check("长门 HP<30 时 ('defend')", choose_nagato_action(29, 100) == 'defend')
+    s2 = print_check("娜比娅 HP<20 时 ('special')", choose_nagato_action(50, 19) == 'special')
+    s3 = print_check("一般情况 ('attack')", choose_nagato_action(80, 80) == 'attack')
     if s1 and s2 and s3: passed_checks += 1
 except Exception: print_skip("choose_nagato_action")
 
@@ -63,22 +63,22 @@ except Exception: print_skip("计算函数")
 # --- 任务六 ---
 try:
     print("\n--- 正在测试 任务六：check_critical_hit ---")
-    s6_1 = print_check("伤害为18时暴击(True)", check_critical_hit(18) is True)
-    s6_2 = print_check("伤害为17时不暴击(False)", check_critical_hit(17) is False)
+    s6_1 = print_check("伤害为 18 时暴击 (True)", check_critical_hit(18) is True)
+    s6_2 = print_check("伤害为 17 时不暴击 (False)", check_critical_hit(17) is False)
     if s6_1 and s6_2: passed_checks += 1
 except Exception: print_skip("check_critical_hit")
 
 # --- 任务七 ---
 try:
     print("\n--- 正在测试 任务七：nabiya_ai_action ---")
-    s7_1 = print_check("娜比娅HP为40时('defend')", nabiya_ai_action(40) == 'defend')
-    s7_2 = print_check("娜比娅HP为41时('attack')", nabiya_ai_action(41) == 'attack')
+    s7_1 = print_check("娜比娅 HP 为 40 时 ('defend')", nabiya_ai_action(40) == 'defend')
+    s7_2 = print_check("娜比娅 HP 为 41 时 ('attack')", nabiya_ai_action(41) == 'attack')
     if s7_1 and s7_2: passed_checks += 1
 except Exception: print_skip("nabiya_ai_action")
 
 # --- 总结 ---
 print("\n--- 检查完毕 ---")
-total_checks = 6 # 基础函数共6组测试
+total_checks = 6 # 基础函数共 6 组测试
 print(f"基础函数检查结果：{passed_checks} / {total_checks} 项通过。")
 if passed_checks == total_checks:
     print("\n🎉 恭喜！所有基础函数都通过了！现在去挑战最后的 main_battle_loop 吧！")

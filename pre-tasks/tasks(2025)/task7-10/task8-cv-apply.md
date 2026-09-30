@@ -1,4 +1,4 @@
-# Task 8：CV-Apply
+# Task 8: CV-Apply
 
 ## 学习内容
 

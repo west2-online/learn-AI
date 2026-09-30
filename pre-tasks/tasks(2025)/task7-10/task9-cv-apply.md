@@ -1,4 +1,4 @@
-# Task 9：CV Apply
+# Task 9: CV Apply
 
 ## 学习内容
 
@@ -46,7 +46,7 @@
 - 高性能推理
   - [PyTorch to ONNX 官方教程](https://pytorch.org/tutorials/advanced/super_resolution_with_onnxruntime.html)
   - [TensorRT 官方文档（Python API）](https://docs.nvidia.com/deeplearning/tensorrt/developer-guide/index.html#python_api)
-  - [B站/知乎搜索 PyTorch 转 TensorRT 实战](https://www.google.com/search?q=pytorch+tensorrt+tutorial)
+  - [B 站/知乎搜索 PyTorch 转 TensorRT 实战](https://www.google.com/search?q=pytorch+tensorrt+tutorial)
 - 运维与监控
   - [Prometheus 官方文档](https://prometheus.io/docs/introduction/overview/)
   - [Grafana 官方文档](https://grafana.com/docs/grafana/latest/getting-started/)

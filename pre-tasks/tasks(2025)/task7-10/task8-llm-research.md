@@ -1,10 +1,10 @@
-# Task 8：LLM-Research
+# Task 8: LLM-Research
 
 ## 学习内容
 
 本阶段将通过研读现代大语言模型领域的核心论文，理解技术演进的内在逻辑。
 
-### 预训练-微调范式
+### 预训练 - 微调范式
 
 BERT：理解双向 Transformer、Masked Language Model（MLM）以及其如何定义了 Pre-train、Fine-tune 这个范式。这是所有微调思想的起点。
 
