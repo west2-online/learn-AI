@@ -22,7 +22,7 @@
     * 核心实践：学习如何不写训练代码，仅通过修改配置文件，来实现一个最先进的图像分类模型（如在 CIFAR-10 或 ImageNet 上的 ResNet）。
     * 学习 `tools/train.py` 和 `tools/test.py` 脚本的使用。
   * `MMDetection`（目标检测）：
-    * （初步了解）了解 `MMDetection` 的配置结构，知道如何配置一个数据-模型-训练策略的检测任务。
+    * （初步了解）了解 `MMDetection` 的配置结构，知道如何配置一个数据 - 模型 - 训练策略的检测任务。
   * `MMSegmentation`（图像分割）：
     * （初步了解）了解 `MMSegmentation` 的配置结构，知道如何配置一个分割任务。
 
@@ -31,7 +31,7 @@
 * OpenCV 官方文档与教程
 
   * [OpenCV-Python 教程（官方）](https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html)
-  * [B站 搜索 OpenCV Python](https://www.bilibili.com/search?keyword=OpenCV+Python)（有大量的入门和实战教程）
+  * [B 站 搜索 OpenCV Python](https://www.bilibili.com/search?keyword=OpenCV+Python)（有大量的入门和实战教程）
 * Albumentations 官方文档（实例丰富）
 
   * [Albumentations 官方文档](https://albumentations.ai/docs/)（重点看 `Examples` 和 `API Reference`）
@@ -42,7 +42,7 @@
 * OpenMMLab 官方文档与教程
   * [OpenMMLab 2.0 官方文档](https://openmmlab.com/docs/zh_cn/)（必读，从 MMEngine: OpenMMLab 2.0 核心开始）
   * [MMPretrain（MMClassification）官方教程](https://mmpretrain.readthedocs.io/zh-CN/latest/user_guides/basics.html)（重点看配置文件和训练与测试）
-  * [OpenMMLab B站官方账号](https://space.bilibili.com/1275924838)（有大量的入门和实战视频）
+  * [OpenMMLab B 站官方账号](https://space.bilibili.com/1275924838)（有大量的入门和实战视频）
 * 实战平台 Kaggle
   * 关注 Kaggle 上的 CV 竞赛，查看 Top 选手的 Notebooks，学习他们是如何组合使用 `Albumentations` 和 `timm` 的。
 

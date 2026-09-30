@@ -1,4 +1,4 @@
-# Task 8：LLM-Apply
+# Task 8: LLM-Apply
 
 ## 学习内容
 

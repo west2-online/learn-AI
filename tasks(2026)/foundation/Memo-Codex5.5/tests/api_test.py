@@ -37,8 +37,8 @@ def main() -> None:
     assert first["state"] == "todo"
     assert_ok(requests.patch(f"{BASE_URL}/api/todos/{first['id']}/complete"))
     assert_ok(requests.patch(f"{BASE_URL}/api/todos/{first['id']}/reopen"))
-    tagged = assert_ok(requests.patch(f"{BASE_URL}/api/todos/{second['id']}/tag", json={"tag": "生活-采购"}))
-    assert tagged["tag"] == "生活-采购"
+    tagged = assert_ok(requests.patch(f"{BASE_URL}/api/todos/{second['id']}/tag", json={"tag": "生活 - 采购"}))
+    assert tagged["tag"] == "生活 - 采购"
 
     all_page = assert_ok(requests.get(f"{BASE_URL}/api/todos", params={"page": 1, "page_size": 10}))
     assert all_page["total"] >= 3

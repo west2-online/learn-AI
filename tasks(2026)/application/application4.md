@@ -1,7 +1,7 @@
 # Application 4 - AI 应用算法、Infra、后训练与预训练
 
 > [!NOTE]
-> 预计耗时：？ 天
+> 预计耗时：？天
 
 ## 学习目的
 
@@ -11,11 +11,11 @@
 
 这部分内容还相当的粗糙，待施工。
 
-## 作业
+## 作业 - AI 应用算法
 
 ### 作业 1 - 复现 MiniMind
 
-微调是 AI 应用算法的一种，另一种是训练一个小型专用模型。
+微调是 AI 应用算法的一种，另一类是训练一个小型专用模型。
 
 微调有两种主流方式。
 
@@ -105,7 +105,7 @@ git clone --depth 1 https://gitcode.com/GitHub_Trending/min/minimind.git
   readme = "README.md"
   requires-python = ">=3.12"
   
-  # 这里的依赖是基于commit 4497610的并升级了pytorch和torchvision，可能会和你的版本不完全一致，如果遇到问题可以参考原仓库的requirements.txt来修改这里的依赖。
+  # 这里的依赖是基于 commit 4497610 的并升级了 pytorch 和 torchvision，可能会和你的版本不完全一致，如果遇到问题可以参考原仓库的 requirements.txt 来修改这里的依赖。
   dependencies = [
     "datasets==3.6.0",
     "datasketch==1.6.4",
@@ -143,23 +143,23 @@ git clone --depth 1 https://gitcode.com/GitHub_Trending/min/minimind.git
   
   # 如果你使用国外环境如 colab，请使用官方源，否则可能反向加速，导致安装速度更慢。
   
-  # 指定torch和torchvision的安装源
+  # 指定 torch 和 torchvision 的安装源
   [tool.uv.sources]
   torch = [{ index = "pytorch-cu128" }]
   torchvision = [{ index = "pytorch-cu128" }]
   
-  # 南京大学的PyTorch镜像源
+  # 南京大学的 PyTorch 镜像源
   [[tool.uv.index]]
   name = "pytorch-cu128"
   url = "https://mirrors.nju.edu.cn/pytorch/whl/cu128"
   explicit = true
-  # 官方源: https://download.pytorch.org/whl/cu128
+  # 官方源：https://download.pytorch.org/whl/cu128
   
-  # 清华大学的PyPI镜像源（作为默认源），如果你已经在uv全局配置文件设置了默认源，这里可以省略。
+  # 清华大学的 PyPI 镜像源（作为默认源），如果你已经在 uv 全局配置文件设置了默认源，这里可以省略。
   [[tool.uv.index]]
   url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple/"
   default = true
-  # 官方源: https://pypi.org/simple
+  # 官方源：https://pypi.org/simple
   ```
 
 使用`uv sync`命令安装依赖：
@@ -180,7 +180,7 @@ wget -O ./out/full_sft_768.pth https://www.modelscope.cn/models/gongjy/minimind-
 ```shell
 wget -P ./dataset https://www.modelscope.cn/datasets/gongjy/minimind_dataset/resolve/master/lora_medical.jsonl
 wget -P ./dataset https://www.modelscope.cn/datasets/gongjy/minimind_dataset/resolve/master/lora_identity.jsonl
-# 从0训练需要下载以下数据集
+# 从 0 训练需要下载以下数据集
 # wget -P ./dataset https://www.modelscope.cn/datasets/gongjy/minimind_dataset/resolve/master/pretrain_t2t_mini.jsonl
 # wget -P ./dataset https://www.modelscope.cn/datasets/gongjy/minimind_dataset/resolve/master/sft_t2t_mini.jsonl
 
@@ -218,3 +218,43 @@ wget -P ./dataset https://www.modelscope.cn/datasets/gongjy/minimind_dataset/res
 - （Bonus）从 0 训练模型。
 - （Bonus）在报告里给出 Loss 曲线（使用 swanlab 或 wandb 可视化）。
 - （Bonus）使用 peft 库重写 lora 微调脚本。
+
+### 作业 2 - lora 微调
+
+### 作业 3 - 对模型本身进行微调
+
+### 作业 4 - 从零开始训练一个小模型
+
+ShaddockNH3 对不规范的文档格式生物痛觉，柠檬味氨水和 nnieie 也是，可惜后两只猫猫只喜欢看，不喜欢写。
+
+## 作业 - Infra
+
+### 作业 1
+
+### 作业 2 - VLLM
+
+### 作业 3 - 算子优化
+
+## 作业 - 后训练
+
+### 作业 1 - SFT
+
+### 作业 2 - RLHF
+
+### 作业 3
+
+前两份作业比较理论，
+
+## 作业 - 预训练
+
+你是否想过模型是怎么
+
+基模团队。
+
+门槛是博士 + 至少 5 篇的对口 A 会。进去了也是 20% 的人写算法，80% 的人洗数据。
+
+基座模型的数据十分重要，所以
+
+不过知识就在那里，如果感兴趣的话可以学一学理论知识，。
+
+### 作业 1 - 预训练数据清洗管道

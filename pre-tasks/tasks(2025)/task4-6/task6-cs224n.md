@@ -39,11 +39,11 @@
 #### 作业参考资料
 
 0. [cs224n](https://www.bilibili.com/video/BV1vQMBz6EvP/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3)，能够理解 ppt 和论文的可以不用看视频
-1. [跟李沐学AI 词向量（word2vec）【动手学深度学习v2】](https://www.bilibili.com/video/BV1sY4y1572C/)
-2. [跟李沐学AI 注意力机制【动手学深度学习v2】](https://www.bilibili.com/video/BV1ui4y1j783/)
-3. [跟李沐学AI Transformer论文逐段精读【论文精读】](https://www.bilibili.com/video/BV1pu411o7BE/)
-4. [【Transformer 其实是个简单到令人困惑的模型【白话DeepSeek-06】】](https://www.bilibili.com/video/BV1C3dqYxE3q/)
-5. [台大李宏毅老师 机器学习2021（Self-Attention和Transformer部分）](https://www.bilibili.com/video/BV1JA411X76s?p=65)
+1. [跟李沐学 AI 词向量（word2vec）【动手学深度学习 v2】](https://www.bilibili.com/video/BV1sY4y1572C/)
+2. [跟李沐学 AI 注意力机制【动手学深度学习 v2】](https://www.bilibili.com/video/BV1ui4y1j783/)
+3. [跟李沐学 AI Transformer 论文逐段精读【论文精读】](https://www.bilibili.com/video/BV1pu411o7BE/)
+4. [【Transformer 其实是个简单到令人困惑的模型【白话 DeepSeek-06】】](https://www.bilibili.com/video/BV1C3dqYxE3q/)
+5. [台大李宏毅老师 机器学习 2021（Self-Attention 和 Transformer 部分）](https://www.bilibili.com/video/BV1JA411X76s?p=65)
 
 ### 作业 2：情感分类器与注意力可视化
 
@@ -80,7 +80,7 @@
 进阶一些：
 
 1. 情感不只有正面和负面，你可以尝试实现多分类情感分类器（如 5 分类）。
-2. 你可以尝试使用不同的网络结构，如 LSTM、 GRU，甚至是简单的全连接网络，比较它们在情感分类任务上的表现。
+2. 你可以尝试使用不同的网络结构，如 LSTM、GRU，甚至是简单的全连接网络，比较它们在情感分类任务上的表现。
 3. 你可以尝试使用不同的优化器（如 Adam、RMSprop）和学习率调度器，观察它们对模型训练的影响。
 
 提示：

@@ -10,7 +10,7 @@ class Character:
     def talk(self):
         print(f"你正在和{self.name}对话...")
         # TODO: 补充具体对话，对话内容可以从剧本里面截取 根据主人公的不同，使用不同的对话（你也可以根据好感度的不同/对话次数的不同 改变对话和选项）
-        # 聊天默认+5（保留原设计）并加入选项影响（A 更友好，B 中性/负面）
+        # 聊天默认 +5（保留原设计）并加入选项影响（A 更友好，B 中性/负面）
         # 下面实现：随机挑选一条对话并给出 A/B 两个玩家选项，选 A 额外 +5，选 B 额外 -5（因此合计 A:+10, B:0）
         dialogue_pool = DIALOGUES.get(self.name, [])
         if dialogue_pool:
@@ -32,7 +32,7 @@ class Character:
 
     def give_gift(self, gift):
         print(f"你送给 {self.name} 一份 {gift}。")
-        # TODO: 完成礼物好感度逻辑（送出不同礼物加不同的好感度） 并调用change_affinity（）函数 传入此次好感度变化的数值value
+        # TODO: 完成礼物好感度逻辑（送出不同礼物加不同的好感度）并调用 change_affinity（）函数 传入此次好感度变化的数值 value
         # 礼物效果表（基于剧本）
         effects = GIFT_EFFECTS.get(gift)
         if effects is None:
@@ -80,7 +80,7 @@ class Game:
         if not self.scene_senpai():  # 学姐场景
             if not self.scene_xiaobai():  # 小白场景
                 if not self.scene_jiejie():  # 姐姐场景
-                    print("\n啥，眼前三妹子都不要？？死现充别玩galgame")
+                    print("\n啥，眼前三妹子都不要？？死现充别玩 galgame")
 
     def scene_senpai(self):
         print("\n【场景一：社团学姐】")
@@ -104,9 +104,9 @@ class Game:
         print("小白：『呜呜……这题到底该怎么写呀？』")
 
         choice = input("1. 主动帮她解题\n2. 敷衍几句，转身离开\n请选择：")
-        # TODO 两种选择 如果选择了1 则进入该位角色的故事线 并返回 True 如果选择了 2 则进入下一位角色的选择 并且返回False
+        # TODO 两种选择 如果选择了 1 则进入该位角色的故事线 并返回 True 如果选择了 2 则进入下一位角色的选择 并且返回 False
         #注意 除了判断外 你可以同时输出角色的反应 
-        #比如在上一位角色的判断中 选择了1时 输出了print("\n你随手挑起一只笔，在纸上几笔勾勒出惊艳的图案，引得周围阵阵惊呼。")
+        #比如在上一位角色的判断中 选择了 1 时 输出了 print("\n你随手挑起一只笔，在纸上几笔勾勒出惊艳的图案，引得周围阵阵惊呼。")
         #写法可以借鉴学姐线
         if choice == "1":
             print("\n你耐心地给她讲解思路，并在纸上写出正确的伪代码。小白的眼睛瞬间亮了起来。")
@@ -120,11 +120,11 @@ class Game:
 
     def scene_jiejie(self):
         print("\n【场景三：姐姐】")
-        print("你偶然在校外的咖啡店敲代码,一位看起来成熟知性的姐姐似乎对你感兴趣，缓缓朝你走了过来...")
+        print("你偶然在校外的咖啡店敲代码，一位看起来成熟知性的姐姐似乎对你感兴趣，缓缓朝你走了过来...")
         print("姐姐：『你的代码思路很有趣呢，能给我讲讲你的实现方法吗？』")
 
         choice = input("1. 缓缓低眉，毫不在意的开始解释\n2. 头也不抬，保持敲代码的状态\n请选择：")
-        # TODO 两种选择 如果选择了1 则进入该位角色的故事线 并返回 True 如果选择了 2 则进入下一位角色的选择 并且返回False
+        # TODO 两种选择 如果选择了 1 则进入该位角色的故事线 并返回 True 如果选择了 2 则进入下一位角色的选择 并且返回 False
         #要求同上
         if choice == "1":
             print("\n你慢条斯理地解释了关键点。姐姐微微一笑，邀请你一起坐下讨论。")
@@ -148,18 +148,18 @@ class Game:
 
             # TODO 完成输入不同选项时 进行的操作 
 
-            #输入1---关于聊天的内容可以自己构思 也可以从剧本中截取
+            #输入 1---关于聊天的内容可以自己构思 也可以从剧本中截取
             if choice == "1":
-                # 调用角色的talk方法（内部包含对话选择与好感变化）
+                # 调用角色的 talk 方法（内部包含对话选择与好感变化）
                 self.current_target.talk()
 
-            #输入2----
+            #输入 2----
             elif choice == "2":
                 print("可选礼物：鲜花 / 编程笔记 / 奶茶 / 奇怪的石头 / 精致的钢笔 / 可爱玩偶 / 夜宵外卖")
                 gift = input("请输入礼物名称：").strip()
                 self.current_target.give_gift(gift)
 
-            #输入3----
+            #输入 3----
             elif choice == "3":
                 print(f"{self.current_target.name} 当前好感度：{self.current_target.affinity}")
 

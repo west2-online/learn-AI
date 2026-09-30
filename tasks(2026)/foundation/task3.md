@@ -99,8 +99,8 @@ candidate_labels = ["开心", "生气", "凡尔赛", "悲伤"]
 # 让 AI 进行打分
 result = classifier(text, candidate_labels)
 
-print(f"被分析的句子: '{result['sequence']}'\n")
-print("AI 认为各标签的概率如下:")
+print(f"被分析的句子：'{result['sequence']}'\n")
+print("AI 认为各标签的概率如下：")
 for label, score in zip(result['labels'], result['scores']):
     print(f"- {label}: {score:.4f} ({score*100:.2f}%)")
 ```
@@ -118,7 +118,7 @@ for label, score in zip(result['labels'], result['scores']):
 ```python
 from transformers import pipeline
 
-# 加载专门用于填空的语言模型 (BERT家族)
+# 加载专门用于填空的语言模型 (BERT 家族)
 unmasker = pipeline("fill-mask", model="bert-base-chinese")
 
 # [MASK] 是留给 AI 填空的位置
@@ -128,7 +128,7 @@ print("AI 正在思考 [MASK] 处最可能填写的字...\n")
 results = unmasker(text)
 
 for res in results:
-    print(f"填入字: '{res['token_str']}' | 预测概率: {res['score']*100:.2f}% | 完整句子: {res['sequence']}")
+    print(f"填入字：'{res['token_str']}' | 预测概率：{res['score']*100:.2f}% | 完整句子：{res['sequence']}")
 ```
 
 任务：
@@ -159,7 +159,7 @@ messages = [
 print("正在生成回复，请稍候...\n")
 # 生成回复
 output = generator(messages, max_new_tokens=100)
-print("AI 回复:", output[0]['generated_text'][-1]['content'])
+print("AI 回复：", output[0]['generated_text'][-1]['content'])
 ```
 
 注意：这里我们加载的是阿里巴巴开源的极其轻量的 Qwen2.5-0.5B 模型，哪怕是 Colab 的免费 CPU 也能运行它。
@@ -193,7 +193,7 @@ print("AI 回复:", output[0]['generated_text'][-1]['content'])
 
 文科生 72 小时杀入 Github 全球榜：我没写一行代码，但指挥了一支 AI 军队。
 
-现在你将扮演这个文科生，只能使用 AI （以及提示词）来完成下面这个任务：
+现在你将扮演这个文科生，只能使用 AI（以及提示词）来完成下面这个任务：
 
 编写一个 TODO LIST，使用 fastapi 完成以下 API，执行操作数据表的操作，并编写接口文档。
 

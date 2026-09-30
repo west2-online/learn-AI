@@ -21,7 +21,7 @@ class Play:
         self.turn = 0
 
     def player_choose_pokemon_team(self, pokemon_to_choose: list, num=1):
-        # 玩家选择队伍中的Pokemon
+        # 玩家选择队伍中的 Pokemon
         print(f"Choose {num} pokemon for your team:")
         pokemon_to_choose = copy.copy(pokemon_to_choose)
         index = 0
@@ -44,12 +44,12 @@ class Play:
         self.print_pokemon_list(self.computer_team)
 
     def print_pokemon_list(self, pokemon_list):
-        # 打印Pokemon列表
+        # 打印 Pokemon 列表
         for i, p in enumerate(pokemon_list, 1):
             print(f"{i}: {p}")
 
     def player_choose_pokemon(self):
-        # 玩家选择当前战斗的Pokemon
+        # 玩家选择当前战斗的 Pokemon
         print("Your Team:")
         self.print_pokemon_list(self.player_team)
         while True:
@@ -59,19 +59,19 @@ class Play:
                 if chosen_pokemon.alive is True:
                     print(f"You choosed {chosen_pokemon.name}")
                     self.current_player_pokemon = chosen_pokemon
-                    return chosen_pokemon  # 返回选择的Pokemon
+                    return chosen_pokemon  # 返回选择的 Pokemon
                 else:
                     print(f"{chosen_pokemon.name} has fainted! Choose another Pokemon!")
             else:
                 print("Invalid choice, please select a valid Pokemon")
 
     def computer_choose_pokemon(self):
-        # 电脑随机选择一个存活的Pokemon
+        # 电脑随机选择一个存活的 Pokemon
         available_pokemon = [p for p in self.computer_team if p.alive is True]
         chosen_pokemon = random.choice(available_pokemon)
         print(f"Your opponent choosed {chosen_pokemon}")
         self.current_computer_pokemon = chosen_pokemon
-        return chosen_pokemon  # 返回选择的Pokemon
+        return chosen_pokemon  # 返回选择的 Pokemon
 
     def game_finished(self):
         # 游戏结束

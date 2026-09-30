@@ -8,7 +8,7 @@
 
 需要注意的是，不建议将主要精力投入到 [Python 后端](https://github.com/west2-online/learn-python)开发上。Python 后端虽然开发效率高，适合快速原型验证和中小型项目，但在高并发场景下性能表现不如 [Golang](https://github.com/west2-online/learn-go) 和 [Java](https://github.com/west2-online/learn-java)，且在企业级应用和就业市场中竞争力相对较弱。
 
-Python 也有前端框架(如 Streamlit)，适合快速搭建数据展示和 AI 演示应用，但功能和生态远不如 JavaScript 生态系统完善。因此，若要从事专业的 [前端开发](https://github.com/west2-online/learn-frontend)，建议学习主流前端技术栈。
+Python 也有前端框架 (如 Streamlit)，适合快速搭建数据展示和 AI 演示应用，但功能和生态远不如 JavaScript 生态系统完善。因此，若要从事专业的 [前端开发](https://github.com/west2-online/learn-frontend)，建议学习主流前端技术栈。
 
 ## 学习内容
 
@@ -164,7 +164,7 @@ python your_script.py
 
 #### Git 相关教程
 
-Git入门：<https://west2-online.feishu.cn/wiki/Lsz9w3CiGinXzgkevtmceHZknrf>
+Git 入门：<https://west2-online.feishu.cn/wiki/Lsz9w3CiGinXzgkevtmceHZknrf>
 
 Github 如何 fork 以及 pr（如何交作业）：<https://west2-online.feishu.cn/wiki/Zvqow0CUxig3iWkWQgBcHp4AnHe>
 
@@ -243,7 +243,7 @@ git commit -m "chore: update xxx config"
 > 2. 监督式学习（Supervised Fine-tuning）
 > 3. 人类反馈强化学习（RLHF）
 
-### 作业 0： OI
+### 作业 0：OI
 
 请使用 Python 完成下列任务
 
@@ -267,17 +267,17 @@ git commit -m "chore: update xxx config"
 
 你的任务，就是为长门大人编写战斗的核心逻辑，帮助她赶跑偷吃的娜比娅！
 
-请阅读 [Nabia_Snack_Incident](./Nabia_Snack_Incident)，根据指引完成8个函数的编写。
+请阅读 [Nabia_Snack_Incident](./Nabia_Snack_Incident)，根据指引完成 8 个函数的编写。
 
 这份作业并不难，只涉及到 `if`、`else`、`while`，所以请不要看 `Nabia_Snack_Incident` 下的 `answer.py`。
 
 > 在写这份作业的时候，请思考 pass 的作用并且删除之。
 
-### 作业 2：校园·if恋
+### 作业 2：校园·if 恋
 
 [Tomori Nao](https://github.com/TomoriNaoiy) 是一个死宅，他憎恨所有的现充，但是弱小的他无法改变一切。但是，偶然一天他发现了一个名为 Python 的东西，于是，一个神奇的想法在他脑海里面浮现......
 
-**他要在Python的世界里面，掌控一切！**
+**他要在 Python 的世界里面，掌控一切！**
 
 你需要完成一个由他臆想出来的 gal 世界，通过阅读 [Campus_IF_Love_Story.md](Campus_IF_Love/Campus_IF_Love_Story.md)，完成 [Campus_IF_Love.py](Campus_IF_Love/Campus_IF_Love.py) 文件里面的待完成函数。其中包括：对话函数、好感度函数、玩家操作等等。
 
@@ -287,7 +287,7 @@ git commit -m "chore: update xxx config"
 
 那么你可以点开 [Campus_IF_Love/README](Campus_IF_Love/README.md) 来窥视他梦境的一角...
 
-### 作业3：宝可梦对战
+### 作业 3：宝可梦对战
 
 [JadeMelody](https://github.com/JadeMelody) 是一个 cool guy，他最近沉迷上了宝可梦游戏。可是有一天他的 Switch 坏掉了，为了在等待维修的过程中还能玩宝可梦游戏，他向你提出了以下的程序设计要求——
 
@@ -302,9 +302,9 @@ git commit -m "chore: update xxx config"
 | 属性 | 克制 | 被克制 | 属性被动                                 |
 | ---- | ---- | ------ | ---------------------------------------- |
 | 草   | 水   | 火     | 每回合回复 10% 最大 HP 值                |
-| 火   | 草   | 水     | 每次造成伤害,叠加 10% 攻击力,最多 4 层   |
-| 水   | 火   | 电     | 受到伤害时,有 50% 的几率减免 30% 的伤害  |
-| 电   | 水   | 草     | 当成功躲闪时,可以立即使用一次技能        |
+| 火   | 草   | 水     | 每次造成伤害，叠加 10% 攻击力，最多 4 层   |
+| 水   | 火   | 电     | 受到伤害时，有 50% 的几率减免 30% 的伤害  |
+| 电   | 水   | 草     | 当成功躲闪时，可以立即使用一次技能        |
 | ···  | ···  | ···    | ···                                      |
 
 被克制的宝可梦受到来自克制的宝可梦的伤害翻倍，被克制的宝可梦对克制的宝可梦造成的伤害减半。
@@ -387,7 +387,7 @@ git commit -m "chore: update xxx config"
 >
 > 可参考 ShaddockNH3 考核写的[完整代码](https://github.com/ShaddockNH3/west2-online-ai-2024-test/blob/master/pokemon_impact.py)，但是他的代码显然有很大的优化空间，比如说没有分包（其实是因为当时分包了会报错）、大量的代码复用，以及一些取巧的实践方式。
 
-### 作业4：好玩的东西
+### 作业 4：好玩的东西
 
 猫娘是一种软乎乎的、可爱的生物，美中不足的是，她们有的时候会哈气。这个时候只有一种办法安抚她们，那就是奉上一个完整的 py 项目。
 
@@ -402,7 +402,7 @@ CS61A 是一门大学级别的计算机科学导论课，它将带你深入探�
 ## 作业要求
 
 1. 不要抄袭
-2. 遇到不会可以多使用搜索引擎，实在没有找到解决方法可以来群里提问，作为一个CSer学习提问的方式也非常重要，强烈建议阅读[Stop-Ask-Questions-The-Stupid-Ways](https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways/blob/master/README.md)这篇文章
+2. 遇到不会可以多使用搜索引擎，实在没有找到解决方法可以来群里提问，作为一个 CSer 学习提问的方式也非常重要，强烈建议阅读[Stop-Ask-Questions-The-Stupid-Ways](https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways/blob/master/README.md)这篇文章
 3. 不限制使用 ChatGPT 等大语言模型工具，但你需要确保你了解模型生成的内容的每一个细节，最好你可以在使用大语言模型生成的代码部分注释上「reference from ChatGPT」这样的内容
 4. 你还需要学习基本的 Git 的使用，所有考核都采用 Git 的方式进行上传
 5. 作业内容可能会进行更新，请保持关注

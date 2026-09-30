@@ -1,4 +1,4 @@
-# Task 8：CV-Research
+# Task 8: CV-Research
 
 ## 学习内容
 

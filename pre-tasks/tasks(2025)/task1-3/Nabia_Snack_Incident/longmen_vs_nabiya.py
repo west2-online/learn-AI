@@ -1,5 +1,5 @@
 # longmen_vs_nabiya.py
-# 请根据引导文档(README.md)的要求，完成下面的8个函数。
+# 请根据引导文档 (README.md) 的要求，完成下面的 8 个函数。
 
 import random
 import time
@@ -16,14 +16,14 @@ CRITICAL_HIT_THRESHOLD = 18
 
 # 任务一：显示角色状态
 def display_status(character_name, current_hp, max_hp):
-    """打印格式: 【角色名】HP: 当前血量 / 最大血量"""
-    # 在这里写你的代码，用print()函数
+    """打印格式：【角色名】HP: 当前血量 / 最大血量"""
+    # 在这里写你的代码，用 print() 函数
     pass
 
 
 # 任务二：掷骰子
 def roll_dice(num_dice):
-    """用while循环，模拟掷N个骰子，返回总点数"""
+    """用 while 循环，模拟掷 N 个骰子，返回总点数"""
     total_points = 0
     count = 0
     # 在这里写你的代码
@@ -32,7 +32,7 @@ def roll_dice(num_dice):
 
 # 任务三：选择长门的行动
 def choose_nagato_action(nagato_hp, nabiya_hp):
-    """用if/elif/else，根据血量返回 'attack', 'defend', 或 'special'"""
+    """用 if/elif/else，根据血量返回 'attack', 'defend', 或 'special'"""
     # 在这里写你的代码
     pass
 
@@ -58,9 +58,9 @@ def check_critical_hit(base_damage):
     pass
 
 
-# 任务七：娜比娅的AI行动
+# 任务七：娜比娅的 AI 行动
 def nabiya_ai_action(nabiya_hp):
-    """如果娜比娅HP <= 40，返回 'defend'，否则返回 'attack'"""
+    """如果娜比娅 HP <= 40，返回 'defend'，否则返回 'attack'"""
     # 在这里写你的代码
     pass
 
@@ -71,10 +71,10 @@ def main_battle_loop():
     这是最重要的部分，请根据下面的注释步骤来完成。
     
     适当的编写输出来说明战斗发生了什么，比如：
-    print("长门：「感受BIG SEVEN的威力吧！」")
+    print("长门：「感受 BIG SEVEN 的威力吧！」")
     print("💥「BIG SEVEN」触发！伤害翻倍！")
     """
-    # 1. 初始化长门和娜比娅的HP，以及双方的防御值
+    # 1. 初始化长门和娜比娅的 HP，以及双方的防御值
     nagato_hp = NAGATO_MAX_HP
     nabiya_hp = NABIYA_MAX_HP
     nagato_defense_bonus = 0
