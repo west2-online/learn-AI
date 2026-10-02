@@ -11,12 +11,14 @@
 ## 作业提交方式
 
 1. 你需要阅读 [git 学习](./git-study.md)，在 foundation0 work2（即 crazy-day）创建的仓库中提交此后所有的作业。除了 task0 之外，其他代码审查使用的是该仓库
-2. 然后你需要阅读在 Git [使用与西二作业提交教程](https://github.com/west2-online-reserve/collection-ai)，在 [solutions](https://github.com/west2-online-reserve/collection-ai) 仓库中提交（仅作为留档以及 task0 审查）
+2. 然后你需要阅读 [Git 使用与西二作业提交教程](https://github.com/west2-online-reserve/collection-ai)，在 [solutions](https://github.com/west2-online-reserve/collection-ai) 仓库中提交（仅作为留档以及 task0 审查）
 3. 对于每一份作业，你需要按照 Git 推荐的提交方式，提交最小可运行子集
 
 ## 答辩形式
 
-Task 0 没有答辩，形式是 reviewer 在 collection-ai 仓库指出问题后，你根据 comment 进行修改。
+Task 0 没有答辩，你需要在完成作业后，主动在 commet 里 @ 当年的负责人，请他/她来评审，形式是 reviewer 在 collection-ai 仓库指出问题后，你根据 comment 进行修改。
+
+需要注意的是，你需要仔细阅读以上作业提交方式，如果你的提交方式错误（例如拖拽上传 github），会被 reviewer 直接 close。
 
 Task 1 - Task 3 的答辩预计在 1 月初（元旦）至 1 月中进行（但如果你的作业过于猎奇，reviewer 也会留下 comment）。
 
