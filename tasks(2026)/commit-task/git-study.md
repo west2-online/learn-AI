@@ -6,8 +6,6 @@ Git 入门：<https://west2-online.feishu.cn/wiki/Lsz9w3CiGinXzgkevtmceHZknrf>
 
 GitHub 如何 Fork 与 PR（如何交作业）：<https://west2-online.feishu.cn/wiki/Zvqow0CUxig3iWkWQgBcHp4AnHe>
 
-Git 使用与西二作业提交教程：<https://github.com/west2-online-reserve/collection-ai>
-
 Git 工作流和核心原理 | GitHub 基本操作 | VS Code 里使用 Git 和关联 GitHub：<https://www.bilibili.com/video/BV1r3411F7kn/?share_source=copy_web&vd_source=31019e44b62a4369d4eab7afea0fcfdf>
 
 Git 工作流：<https://www.bilibili.com/video/BV19e4y1q7JJ/?spm_id_from=333.337.search-card.all.click&vd_source=0272bb7dd0d8d9302c55fc082442b9e3>
