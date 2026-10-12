@@ -356,6 +356,25 @@ Markdown 语法并不复杂，建议初学者只需掌握基本语法即可，�
 >
 > 需要注意的是，GitHub 并不完全遵循 Markdown 标准，建议下载 GitHub Markdown Preview 插件以获得更好的兼容性。
 
+### 苹果文档规范
+
+文档规范在作业 2 已经大体讲过，这里不再列举具体的例子。
+
+- 中英文之间需要增加空格
+- 中文与数字之间需要增加空格
+- 数字与单位之间无需增加空格
+- 全角与半角不能混用
+
+你可以下载并使用 [微信输入法](https://z.weixin.qq.com/)，借助其自动在中英文与数字之间添加空格的功能来辅助排版。
+
+此外，也可以直接在项目根目录下运行：
+
+```zsh
+autocorrect --fix **/*.md
+```
+
+批量修正所有 Markdown 文件的格式为 Apple 格式。
+
 ### Python 基础
 
 1. Crossin 编程教室 [Python 入门指南](https://python666.cn/cls/lesson/list/)
