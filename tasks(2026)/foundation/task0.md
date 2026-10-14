@@ -41,43 +41,7 @@
 
 你的 Markdown 文档需要通过 Markdown Lint 的基本检查，且需要至少保证如下 Apple 规范：
 
-- 中英文之间需要增加空格
-
-  例如：
-  
-  ```txt
-  √ 小红书 App 在苹果 iOS 应用商店将官方英文名称统一改写为全小写的“rednote”。
-  x 小红书 App 在苹果 iOS 应用商店将官方英文名称统一改为全小写的“rednote”
-  ```
-
-- 中文与数字之间需要增加空格
-
-  例如：
-
-  ```txt
-  √ 可预约开启 6 小时后，苹果 iPhone 17 系列新品预约总量突破 200 万。
-  x 可预约开启 6 小时后，苹果 iPhone 17 系列新品预约总量突破 200 万。
-  ```
-
-- 数字与单位之间无需增加空格
-
-  例如：
-
-  ```txt
-  √ iPhone 17 标准版起步内存为 8GB，存储容量均从 256GB 起步。
-  x iPhone 17 标准版起步内存为 8 GB，存储容量均从 256 GB 起步。
-  ```
-
-- 全角与半角不能混用
-
-  中文语境下绝对使用全角标点（，。！？），英文 / 代码语境下使用半角标点。当一段中文被英文词汇打断时，跟在英文词汇后面的标点如果是句子的停顿，仍必须使用中文全角标点。
-
-  例如：
-
-  ```txt
-  √ 打开你的 iPhone，然后点击“设置”。
-  x 打开你的 iPhone, 然后点击“设置”.
-  ```
+![苹果文档规范示例](https://img.attilio.cc/api/cfile/BQACAgUAAyEGAAMBBU78tQACBBJqzHxac6QWDtmDGE40qcbM4o42wgAC3hsAAsy1YVYQa1fHcvQmQD0E)
 
 ### 作业 3 - Hello World
 
@@ -395,15 +359,11 @@ autocorrect --fix **/*.md
 
 现代编辑器提供了多种代码辅助工具来提升开发效率，其中 VS Code 中的 Pylance 就是一个典型代表。
 
-• VS Code 用户：安装 Python 扩展时会自动附带 Pylance，无需额外安装或配置，开箱即用。
-
-• PyCharm 用户：PyCharm 已内置了与 Pylance 功能相当的代码智能支持，同样开箱即用，无需额外插件。
-
-• 其他编辑器用户（如 Cursor 等）：推荐使用 basedpyright + Ruff 的组合进行平替，兼顾类型检查与代码质量。
-
-[basedpyright](https://github.com/DetachHead/basedpyright)
-
-[ruff](https://github.com/astral-sh/ruff)
+- VS Code 用户：安装 Python 扩展时会自动附带 Pylance，无需额外安装或配置，开箱即用。
+- PyCharm 用户：PyCharm 已内置了与 Pylance 功能相当的代码智能支持，同样开箱即用，无需额外插件。
+- 其他编辑器用户（如 Cursor 等）：推荐使用 basedpyright + Ruff 的组合进行平替，兼顾类型检查与代码质量。
+  - [basedpyright](https://github.com/DetachHead/basedpyright)
+  - [ruff](https://github.com/astral-sh/ruff)
 
 #### PEP 8 规范
 
