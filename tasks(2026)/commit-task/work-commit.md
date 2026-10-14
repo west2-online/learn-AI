@@ -20,15 +20,15 @@ Task 0 没有答辩，你需要在完成作业后，主动在 commet 里 @ 当�
 
 需要注意的是，你需要仔细阅读以上作业提交方式，如果你的提交方式错误（例如拖拽上传 github），会被 reviewer 直接 close。
 
-Task 1 - Task 3 的答辩预计在 1 月初（元旦）至 1 月中进行（但如果你的作业过于猎奇，reviewer 也会留下 comment）。
+Task 1 - Task 3 的答辩预计在 12 月中进行（但如果你的作业过于猎奇，reviewer 也会留下 comment）。
 
 答辩形式是直接问原码相关问题并拷打，无需准备 PPT 等材料。如果你认为你对你的某份作业有独到的理解，可以在拷打之前自己讲一下。
 
-如果你选择了 Scientific Research 路线，那么 Research 1 的答辩预计在 5 月初（五一节），Research 2 的的答辩预计在 6 月中末进行。
+如果你选择了 Scientific Research 路线，那么 Research 1 的答辩预计在 4 月中末，Research 2 的的答辩预计在 6 月中末进行。
 
 答辩形式是做一份 PPT（推荐）或者写一份文档，讲 10 - 15 分钟，再进行拷打。
 
-如果你选择了 Application 路线，那么 Application 0 - Application 1 的答辩预计在 3 月中旬，Application 2 的答辩预计在 5 月初（五一节），Application 3 的答辩预计在 6 月中末进行。
+如果你选择了 Application 路线，那么 Application 0 - Application 1 的答辩预计在 2 月中旬（寒假结束），Application 2 的答辩预计在 4 月中末，Application 3 的答辩预计在 6 月中末进行。
 
 答辩形式是做一份 PPT 或者写一份文档，介绍自己开发过程中碰到的问题、设计思路等，讲 10 - 15 分钟，再进行拷打。
 
