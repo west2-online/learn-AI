@@ -41,7 +41,7 @@
 
 你的 Markdown 文档需要通过 Markdown Lint 的基本检查，且需要至少保证如下 Apple 规范：
 
-![苹果文档规范示例](https://img.attilio.cc/api/cfile/BQACAgUAAyEGAAMBBU78tQACBBJqzHxac6QWDtmDGE40qcbM4o42wgAC3hsAAsy1YVYQa1fHcvQmQD0E)
+![苹果文档规范示例](https://img.attilio.cc/api/cfile/AgACAgUAAyEGAAMBBU78tQACBI1qzskT_-29tCay3eylyN6xnlrFIQACGxFrG7fmeVaOGNMMj6LJ9QEAAwIAA3cAAz0E)
 
 ### 作业 3 - Hello World
 
