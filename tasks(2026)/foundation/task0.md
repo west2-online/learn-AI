@@ -168,7 +168,7 @@ Hello, World!
 
 1. 输入三个整数 x、y、z，请尝试用多种方式把这三个数由大到小输出
 2. 输出九九乘法表
-3. 输入一个字符串，判断字符串中是否含有 "ol" 这个⼦串，若有把所有的 "ol" 替换为 "fzu"，最后把字符串倒序输出
+3. 输入一个字符串，判断字符串中是否含有 "ol" 这个子串，若有把所有的 "ol" 替换为 "fzu"，最后把字符串倒序输出
 4. 输入一个列表（list），列表中含有字符串和整数，删除其中的字符串元素，然后把剩下的整数升序排序，输出列表
 5. 创建一个字典（dict），为字典添加几个键为学号，值为姓名元素，删除学号尾号为偶数的元素，输出字典
 6. 创建一个函数，这个函数可以统计一个只有数字的列表中各个数字出现的次数，通过字典方式返回
@@ -260,7 +260,7 @@ Windows 用户可以通过「控制面板」中的「程序和功能」来卸载
 > [!TIP]
 > 对于 Python 的版本，我的建议是固定使用 Python 3.12.3 版本，这是目前很多主流 AI 框架支持的比较新的版本，也是 Ubuntu 24.04 LTS 默认支持的版本。
 >
-> 对于 Python 3.13 乃至 Python 3.14，很多 AI 框架还不支持。
+> 对于 Python 3.13 / 3.14 等较新版本，部分 AI 框架的支持可能还不够完善。
 >
 > Python 属于是一个对版本变化非常敏感的语言，很多东西你只要改了一个小版本号，然后代码就全炸了。
 >
@@ -279,7 +279,7 @@ Windows 用户可以通过「控制面板」中的「程序和功能」来卸载
 
 ### 清华源
 
-在中国大陆访问 Python 官方的 PyPI 镜像可能会比较慢，因此建议使用清华大学提供的 PyPI 镜像源来加速包的下载。你可以通过以下命令临时使用清华源：
+在中国大陆访问 PyPI 官方源可能会比较慢，因此建议使用清华大学提供的 PyPI 镜像源来加速包的下载。你可以通过以下命令临时使用清华源：
 
 ```bash
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
@@ -312,7 +312,7 @@ myenv\Scripts\activate  # Windows
 
 ### Markdown 基础
 
-Markdown 是一种轻量级标记语言，排版语法简洁。它使用易读易写的纯文本格式编写文档，可与 HTML 混编，也可导出 HTML、PDF 以及 .md 文件。因简洁、高效、易读、易写，Markdown 被大量使用，如 GitHub、Wikipedia 等。
+Markdown 是一种轻量级标记语言，排版语法简洁。它使用易读易写的纯文本格式编写文档，可与 HTML 混编，也可导出 HTML、PDF 等文件。因简洁、高效、易读、易写，Markdown 被大量使用，如 GitHub、Wikipedia 等。
 
 在线体验一下 [Markdown 在线编辑器](https://markdown.com.cn/editor/)。
 
@@ -327,7 +327,7 @@ Markdown 语法并不复杂，建议初学者只需掌握基本语法即可，�
 > [!TIP]
 > 你可以直接在 VS Code 里编写 Markdown 文件，然后使用快捷键 `Ctrl+Shift+V` 进行预览。
 >
-> 需要注意的是，GitHub 并不完全遵循 Markdown 标准，建议下载 GitHub Markdown Preview 插件以获得更好的兼容性。
+> 需要注意的是，VS Code 自带预览与 GitHub（GFM）的渲染效果存在差异，建议下载 GitHub Markdown Preview 插件以获得更好的兼容性。
 
 ### 苹果文档规范
 
@@ -358,7 +358,7 @@ autocorrect --fix **/*.md
 
 1. Crossin 编程教室 [Python 入门指南](https://python666.cn/cls/lesson/list/)
 2. Python - 100 天从新手到大师的前 10 节课 [jackfrued/Python-100-Days](https://github.com/jackfrued/Python-100-Days)
-3. Python 官方文档 [3.12.12 Documentation](https://docs.python.org/zh-cn/3.12/)
+3. Python 官方文档 [3.12 Documentation](https://docs.python.org/zh-cn/3.12/)
 4. 菜鸟教程 [Python3 教程](https://www.runoob.com/python3/python3-tutorial.html)
 5. 廖雪峰的官方教程 [Python 教程](https://www.liaoxuefeng.com/wiki/1016959663602400)
 6. B 站上有大量的入门基础课程，大家可以自行探索，找到适合自己的是最好的。
@@ -402,9 +402,7 @@ python your_script.py
 
 手写的代码经常黏黏糊糊一大坨，写起来方便，但是阅读起来就很痛苦，而好的代码风格能大大提升代码的可读性和可维护性。
 
-推荐使用 black formatter(vs code) <https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter>
-
-链接：<vscode://settings/editor.formatOnSave>
+VS Code 推荐使用 black formatter(vs code) <https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter>，然后在设置中打开 <vscode://settings/editor.formatOnSave> 自动格式化。
 
 Pycharm 建议直接使用内置的代码格式化功能，其他编辑器可使用上面推荐的 ruff 进行代码格式化。
 
