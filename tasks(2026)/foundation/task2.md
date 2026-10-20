@@ -80,7 +80,7 @@ Matplotlib 是 Python 生态中比较经典的可视化工具。
 
 1. 获取教务通知及其具体内容（至少 500 条，我们要进行数据分析所以越多越好 :smirk:）
 2. 提取通知信息中的「通知人」（如：质量办、计划科）、标题、日期、详情链接
-3. 爬取通知详情的 HTML，可能存在「附件」，提取附件名、附件下载次数、附件链接码
+3. 爬取通知详情的 HTML，可能存在「附件」，提取附件名、附件下载次数、附件链接
 4. （bonus）将附件爬取下来
 5. 上述内容一律要去除回车、括号等无用符号
 6. 将爬取内容存储到 CSV 文件中
@@ -130,7 +130,7 @@ Matplotlib 是 Python 生态中比较经典的可视化工具。
 > 阅读 [免费额度秒变 40 万债务？学生误泄 Gemini API 密钥背上巨额账单](https://news.qq.com/rain/a/20250928A049ZA00) 思考 cookie 泄露的后果。
 > 阅读 [git-study](../commit-task/git-study.md) ，思考你的 cookie 应该放在哪。
 
-### 作业 3 - 通过抓取接口爬取开源之夏 2025 项目列表
+### 作业 3 - 通过抓取接口爬取开源之夏 2026 项目列表
 
 网址：[https://summer-ospp.ac.cn/org/projectlist](https://summer-ospp.ac.cn/org/projectlist)
 
@@ -214,7 +214,7 @@ API_URL = "https://wiki.biligame.com/blhx/api.php"
 OUTPUT_DIR = "name_you_like"
 
 HEADERS = {
-    'User-Agent': '',
+    'User-Agent': 'MyCrawler/1.0 (contact: your_email@example.com)',
     'Accept-Encoding': 'gzip',
 }
 
@@ -391,7 +391,7 @@ $f(x) = \frac{L}{1 + e^{-k(x-x_0)}}$
 
 爬虫推荐的教程包含内容较多，根据考核需求自行选择。
 
-1. [B 站视频](https://www.bilibili.com/video/BV1Yh411o7Sz) 看到药企实战前，注意阿贾克斯
+1. [B 站视频](https://www.bilibili.com/video/BV1Yh411o7Sz)（观看到「药企实战」实战之前即可，注意其中 Ajax 相关的讲解）
 2. [50 分钟超快速入门 Python 爬虫](https://www.bilibili.com/video/BV1EHdUYEEEj)
 3. [Python3 网络爬虫开发实战教程](https://cuiqingcai.com/5052.html)
 4. [XPath 教程](https://www.runoob.com/xpath/xpath-syntax.html)

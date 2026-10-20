@@ -10,13 +10,13 @@
 
 ## 作业提交方式
 
-1. 你需要阅读 [Git 学习](./git-study.md)，在 foundation0 work2（即 crazy-day）创建的仓库中提交此后所有的作业。除了 task0 之外，其他代码审查使用的是该仓库
+1. 你需要阅读 [Git 学习](./git-study.md)，在 Task 0 作业 2（即 crazy-day）创建的仓库中提交此后所有的作业。除了 task0 之外，其他代码审查使用的是该仓库
 2. 然后你需要阅读 [西二作业提交教程](https://west2-online.feishu.cn/wiki/Zvqow0CUxig3iWkWQgBcHp4AnHe)，在 [solutions](https://github.com/west2-online-reserve/collection-ai) 仓库中提交（仅作为留档以及 task0 审查）
 3. 对于每一份作业，你需要按照 Git 推荐的提交方式，提交最小可运行子集
 
 ## 答辩形式
 
-Task 0 没有答辩，你需要在完成作业后，主动在 commet 里 @ 当年的负责人，请他/她来评审，形式是 reviewer 在 collection-ai 仓库指出问题后，你根据 comment 进行修改。
+Task 0 没有答辩，你需要在完成作业后，主动在 comment 里 @ 当年的负责人，请他/她来评审，形式是 reviewer 在 collection-ai 仓库指出问题后，你根据 comment 进行修改。
 
 需要注意的是，你需要仔细阅读以上作业提交方式，如果你的提交方式错误（例如拖拽上传 github），会被 reviewer 直接 close。
 
@@ -24,7 +24,7 @@ Task 1 - Task 3 的答辩预计在 12 月中进行（但如果你的作业过于
 
 答辩形式是直接问原码相关问题并拷打，无需准备 PPT 等材料。如果你认为你对你的某份作业有独到的理解，可以在拷打之前自己讲一下。
 
-如果你选择了 Scientific Research 路线，那么 Research 1 的答辩预计在 4 月中末，Research 2 的的答辩预计在 6 月中末进行。
+如果你选择了 Scientific Research 路线，那么 Research 1 的答辩预计在 4 月中末，Research 2 的答辩预计在 6 月中末进行。
 
 答辩形式是做一份 PPT（推荐）或者写一份文档，讲 10 - 15 分钟，再进行拷打。
 

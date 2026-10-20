@@ -2,7 +2,7 @@
 
 ## 学习目的
 
-尽管 Python 后端已经不再推荐，但是仍然可以用于快速验证原型机、个人小项目以及应付大作业。
+尽管 Python 后端已经不再推荐，但是仍然可以用于快速验证原型、个人小项目以及应付大作业。
 
 ## 学习内容
 
@@ -98,7 +98,7 @@ Flask / FastAPI
 10. FastAPI 可使用 Pydantic 做参数校验；Flask 可结合 Flask-RESTful 或 Marshmallow 进行参数与序列化校验 [Flask-RESTful](http://www.pythondoc.com/Flask-RESTful/index.html)
 11. 在框架中接入 Redis 等进行缓存，读写很快，可以用于缓存验证码，以及一些经常读写的信息
 12. 部署项目环境弄起来非常难受，建议大家学习 Docker，使用 Docker 将项目部署到服务器
-13. 各种 ID 可以使用雪花算法生成，防止数据库自增 ID 过程出错
+13. 各种 ID 可以使用雪花算法生成，避免依赖数据库自增 ID
 
 ### 偏进阶阶段的文档
 
@@ -107,7 +107,7 @@ Flask / FastAPI
 3. [Socket.IO](https://socket.io/zh-CN/)：较完善的 Socket.IO 文档，不过服务端示例以 Node.js 为主，不是 Python；客户端 API 在写前端时可能会用到
 4. 建议使用 `logging` 打印运行日志
 5. 使用 pytest 编写单元测试，并用 pytest-cov 查看覆盖率（不强求固定数值，但应覆盖核心业务逻辑）
-6. 建议准备一台云服务器用于部署实践，部署时建议使用 `gunicorn`（Flask/FastAPI）等生产级启动方式
+6. 建议准备一台云服务器用于部署实践，部署时建议使用 `gunicorn`（Flask）/ `uvicorn`（FastAPI）等生产级启动方式
 7. 建议学习 Docker，将项目容器化后再部署
 8. 建议使用 Type Hint 与必要注释，增强可读性和可维护性
 9. 继续扩展学习可参考：[awesome-flask](https://github.com/humiaozuzu/awesome-flask) 与 [awesome-fastapi](https://github.com/mjhea0/awesome-fastapi)
