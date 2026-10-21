@@ -1,4 +1,4 @@
-# Task 0 - 环境搭建
+# Foundation 0 - 环境搭建
 
 > [!NOTE]
 > 预计耗时：10 天
@@ -23,8 +23,8 @@
 
 在开始作业之前，请阅读：
 
-- [交作业指南](../commit-task/work-commit.md)
-- [Git 学习](../commit-task/git-study.md)
+- [交作业指南](../../commit/work-commit.md)
+- [Git 学习](../../commit/git-study.md)
 
 以获得更好的支持。
 

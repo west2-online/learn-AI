@@ -1,4 +1,4 @@
-# Task 3 - 简单 AI 认识
+# Foundation 3 - 简单 AI 认识
 
 > [!NOTE]
 > 预计耗时：15 天

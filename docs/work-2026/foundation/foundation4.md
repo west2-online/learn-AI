@@ -1,4 +1,4 @@
-# Task 4 - 后续
+# Foundation 4 - 后续
 
 ## 学习目的
 
@@ -42,5 +42,5 @@
 
 如果有时间，都可以学。
 
-- [科研方向](../scientific-research/)
+- [科研方向](../research/)
 - [应用方向](../application/)

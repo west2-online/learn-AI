@@ -7,7 +7,7 @@
 
 用户要求：
 
-- 在 `tasks(2026)/foundation` 下创建 `Memo-Codex5.5`
+- 在 `docs/work-2026/foundation` 下创建 `Memo-Codex5.5`
 - 完成作业 3：Vibe Coding TODO LIST
 - 后端使用 FastAPI，操作数据表
 - 前端使用 Vue3
@@ -26,7 +26,7 @@
 AI 使用 Codex CLI Agent 形式完成任务，主要步骤：
 
 1. 检查仓库结构和 `.gitignore`
-2. 在 `tasks(2026)/foundation/Memo-Codex5.5` 创建独立项目
+2. 在 `docs/work-2026/foundation/Memo-Codex5.5` 创建独立项目
 3. 编写 `.gitignore`，避免上传 `.venv/`、数据库、缓存、`node_modules/` 等文件
 4. 编写 `requirements.txt`
 5. 编写 `backend/main.py`
