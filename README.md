@@ -26,42 +26,7 @@
 
 所以请时刻关注本仓库。
 
-## 文档结构
-
-所有考核相关文档均按学习目的 - 学习内容 - 学习要求（可能没有） - 作业 - 推荐教程与参考资料的目录结构编写。
-
-> [!TIP]
-> 从往年的经验来看，无人在意“推荐教程与参考资料”这部分内容，因此将其移到作业之后。但我希望你能认真看完这部分内容，因为这部分不只是推荐教程，还有更多有用的信息。
-
-除此之外，我们还会提供各种补充资料。这部分并非考核内容，但如果你想学得更好，可以参考这些资料。
-
-## AI 学习路线总览
-
-```mermaid
-graph TD
-    %% AI 学习路线总览
-    A[环境搭建] --> B[语法基础与简单面向对象]
-    B --> C[网络爬虫]
-    B --> E[简单数据分析与可视化]
-    C --> D[简单 AI 认知]
-    E --> D[简单 AI 认知]
-
-    %% AI 相关技能树
-    D --> J((Python 前 / 后端))
-    D --> F((底层 AI 学习))
-    D --> G((顶层 AI 应用))
-    D --> H((数据科学分析))
-```
-
-考核大致分为两个阶段：[Foundation](./docs/work-2026/foundation) 与分流阶段（[Scientific Research](./docs/work-2026/research) / [Application](./docs/work-2026/application)）。[Foundation](./docs/work-2026/foundation) 是共通路线，完成后你需要在 Scientific Research 与 Application 两条路线中选择其一。
-
-如果你想保研，未来想进实验室，那么建议选前者。
-
-如果你未来想找工作，那么可以选择后者。但单纯的 AI 应用意义不大，因此我们设置了 [Application 0](./docs/work-2026/application/application0.md) 任务，只有完成了此项任务才能继续 Application 方向的学习，请根据自身现有水平量力而行。
-
-关于更具体的建议，以及为什么会有 [Python Backend](./docs/work-2026/others/backend-routine.md)、[Python Frontend](./docs/work-2026/others/frontend-routine.md) 和 [Statistics](./docs/work-2026/others/statistic-routine.md)，可见 [Foundation](./docs/work-2026/foundation) 中的 [Foundation 4（foundation4.md）](./docs/work-2026/foundation/foundation4.md)，这是后续方向导引。
-
-### 成为正式成员后的权益
+## 成为正式成员后的权益
 
 通过所有考核后，你将成为西二在线网络工作室的正式成员，并获得以下权益：
 
@@ -74,33 +39,9 @@ graph TD
 
 ## 详细说明
 
-更多关于考核设计的思考，请参考 [ShaddockNH3 的博客](https://blog.attilio.cc/posts/post-9/)。
+更多关于考核设计的思考，请参考 [ShaddockNH3 的博客](https://blog.attilio.cc/posts/ai/thoughts-2026/)。
 
 这篇博客还有一部分没有更新完，待 ShaddockNH3 有时间再维护。
-
-## 维护指南
-
-维护者在修改文档前，请先阅读 [Markdown 维护规范](./maintain-rules/markdown-style-guide.md)。
-
-提交前至少运行一次 Markdown 检查：
-
-```powershell
-.\maintain-rules\check-markdown.ps1
-```
-
-Linux / macOS 用户可以运行：
-
-```shell
-sh maintain-rules/check-markdown.sh
-```
-
-也可以直接使用跨平台 Node.js 入口：
-
-```shell
-node maintain-rules/check-markdown.mjs
-```
-
-新增或修改任务文档时，请优先保持“学习目的 - 学习内容 - 作业 - 推荐教程与参考资料”的结构，并遵守中英文空格、中文数字空格、数字单位和中文标点规范。
 
 ## 致谢
 

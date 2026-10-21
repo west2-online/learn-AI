@@ -8,6 +8,14 @@
 
 如果你在往年纳新已经通过了部分考核，那么直接从之后的考核开始做。
 
+考核大致分为两个阶段：[Foundation](../work-2026/foundation) 与分流阶段（[Scientific Research](../work-2026/research) / [Application](../work-2026/application)）。[Foundation](../work-2026/foundation) 是共通路线，完成后你需要在 Scientific Research 与 Application 两条路线中选择其一。
+
+如果你想保研，未来想进实验室，那么建议选前者。
+
+如果你未来想找工作，那么可以选择后者。但单纯的 AI 应用意义不大，因此我们设置了 [Application 0](../work-2026/application/application0.md) 任务，只有完成了此项任务才能继续 Application 方向的学习，请根据自身现有水平量力而行。
+
+关于更具体的建议，以及为什么会有 [Python Backend](../work-2026/others/backend-routine.md)、[Python Frontend](../work-2026/others/frontend-routine.md) 和 [Statistics](../work-2026/others/statistic-routine.md)，可见 [Foundation](../work-2026/foundation) 中的 [Foundation 4（foundation4.md）](../work-2026/foundation/foundation4.md)，这是后续方向导引。
+
 ## 作业提交方式
 
 1. 你需要阅读 [Git 学习](./git-study.md)，在 Foundation 0 作业 2（即 crazy-day）创建的仓库中提交此后所有的作业。除了 foundation0 之外，其他代码审查使用的是该仓库
@@ -15,6 +23,21 @@
 3. 对于每一份作业，你需要按照 Git 推荐的提交方式，提交最小可运行子集
 
 ## 答辩形式
+
+答辩安排总览如下：
+
+| 阶段 | 预期答辩时间 | 答辩形式 | 是否需要答辩 |
+| --- | --- | --- | --- |
+| Foundation 0 | 无 | 完成作业后主动在 comment 里 @ 当年的负责人评审，reviewer 在 collection-ai 仓库指出问题后根据 comment 修改 | x |
+| Foundation 1 - Foundation 3 | 12 月中 | 直接问原码相关问题并拷打，无需准备 PPT 等材料 | ✓ |
+| Research 1 | 4 月中末 | 做一份 PPT（推荐）或者写一份文档，讲 10 - 15 分钟，再进行拷打 | ✓ |
+| Research 2 | 6 月中末 | 做一份 PPT（推荐）或者写一份文档，讲 10 - 15 分钟，再进行拷打 | ✓ |
+| Application 0 - Application 1 | 2 月中旬（寒假结束） | 做一份 PPT 或者写一份文档，介绍开发过程中碰到的问题、设计思路等，讲 10 - 15 分钟，再进行拷打 | ✓ |
+| Application 2 | 4 月中末 | 做一份 PPT 或者写一份文档，介绍开发过程中碰到的问题、设计思路等，讲 10 - 15 分钟，再进行拷打 | ✓ |
+| Application 3 | 6 月中末 | 做一份 PPT 或者写一份文档，介绍开发过程中碰到的问题、设计思路等，讲 10 - 15 分钟，再进行拷打 | ✓ |
+| 兜底答辩 | 8 月 | 一次至数次，解决此前未答辩或漏答辩的内容 | ✓ |
+
+具体说明如下：
 
 Foundation 0 没有答辩，你需要在完成作业后，主动在 comment 里 @ 当年的负责人，请他/她来评审，形式是 reviewer 在 collection-ai 仓库指出问题后，你根据 comment 进行修改。
 
