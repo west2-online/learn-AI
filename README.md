@@ -1,10 +1,30 @@
 # west2-online AI 考核指南
 
-欢迎来到西二在线工作室人工智能方向的考核指南。本指南旨在为初学者提供一条循序渐进的人工智能学习路线，帮助你系统性地掌握人工智能的核心知识与技能。
+这里是西二在线工作室 AI 方向的考核指南，旨在为初学者提供一个循序渐进的 AI 学习路线。
 
 ## 版权声明
 
-本项目遵循 GPL-3.0 License。如需转载，请注明本项目仓库地址。
+本项目遵循 GPL-3.0 License，如需转载，请注明本项目仓库地址。
+
+## 如何开始
+
+请进入 [work-2026](./docs/work-2026) 文件夹，从 [Foundation](./docs/work-2026/foundation) 中的 [Foundation 0](./docs/work-2026/foundation/foundation0.md) 开始学习。
+
+我们希望学习方式是“文档引导 + 个人自学”。我们会告诉你应当如何快速上手，但你想要学好、学懂，除了我们的引导外，还需要主动进行个人提升。
+
+从功利的角度出发，如果你想进入 west2-online 工作室，在完成基础内容后，还需要适当完成一定量的 Bonus 内容。
+
+我们的答辩会考察你一定的知识储备。
+
+## 作业提交方式
+
+你需要阅读 [作业提交指南](./docs/commit/work-commit.md) 来了解作业提交的具体要求和流程。
+
+你还需要阅读 [Git 使用指南](./docs/commit/git-study.md) 来了解 Git 的使用方法。
+
+此外，由于 AI 在不断发展，作业内容在不断变化，可能你做着做着作业内容就全变了。
+
+所以请时刻关注本仓库。
 
 ## 文档结构
 
@@ -33,13 +53,13 @@ graph TD
     D --> H((数据科学分析))
 ```
 
-考核大致分为两个阶段：[Foundation](./tasks(2026)/foundation) 与分流阶段（[Scientific Research](./tasks(2026)/research) / [Application](./tasks(2026)/application)）。[Foundation](./tasks(2026)/foundation) 是共通路线，完成后你需要在 Scientific Research 与 Application 两条路线中选择其一。
+考核大致分为两个阶段：[Foundation](./docs/work-2026/foundation) 与分流阶段（[Scientific Research](./docs/work-2026/research) / [Application](./docs/work-2026/application)）。[Foundation](./docs/work-2026/foundation) 是共通路线，完成后你需要在 Scientific Research 与 Application 两条路线中选择其一。
 
 如果你想保研，未来想进实验室，那么建议选前者。
 
-如果你未来想找工作，那么可以选择后者。但单纯的 AI 应用意义不大，因此我们设置了 [Application 0](./tasks(2026)/application/application0.md) 任务，只有完成了此项任务才能继续 Application 方向的学习，请根据自身现有水平量力而行。
+如果你未来想找工作，那么可以选择后者。但单纯的 AI 应用意义不大，因此我们设置了 [Application 0](./docs/work-2026/application/application0.md) 任务，只有完成了此项任务才能继续 Application 方向的学习，请根据自身现有水平量力而行。
 
-关于更具体的建议，以及为什么会有 [Python Backend](./tasks(2026)/others/backend-routine.md)、[Python Frontend](./tasks(2026)/others/frontend-routine.md) 和 [Statistics](./tasks(2026)/others/statistic-routine.md)，可见 [Foundation](./tasks(2026)/foundation) 中的 [Foundation 4（foundation4.md）](./tasks(2026)/foundation/foundation4.md)，这是后续方向导引。
+关于更具体的建议，以及为什么会有 [Python Backend](./docs/work-2026/others/backend-routine.md)、[Python Frontend](./docs/work-2026/others/frontend-routine.md) 和 [Statistics](./docs/work-2026/others/statistic-routine.md)，可见 [Foundation](./docs/work-2026/foundation) 中的 [Foundation 4（foundation4.md）](./docs/work-2026/foundation/foundation4.md)，这是后续方向导引。
 
 ### 成为正式成员后的权益
 
@@ -52,26 +72,6 @@ graph TD
 - 参与科研合作项目
 - ~~玩无人机~~
 
-## 如何开始
-
-请进入 [tasks(2026)](./tasks(2026)) 文件夹，从 [Foundation](./tasks(2026)/foundation) 中的 [Foundation 0](./tasks(2026)/foundation/foundation0.md) 开始学习。
-
-我们希望学习方式是“文档引导 + 个人自学”。我们会告诉你应当如何快速上手，但你想要学好、学懂，除了我们的引导外，还需要主动进行个人提升。
-
-从功利的角度出发，如果你想进入 west2-online 工作室，在完成基础内容后，还需要适当完成一定量的 Bonus 内容。
-
-我们的答辩会考察你一定的知识储备。
-
-## 作业提交方式
-
-你需要阅读 [作业提交指南](./tasks(2026)/commit-task/work-commit.md) 来了解作业提交的具体要求和流程。
-
-你还需要阅读 [Git 使用指南](./tasks(2026)/commit-task/git-study.md) 来了解 Git 的使用方法。
-
-此外，由于 AI 在不断发展，作业内容在不断变化，可能你做着做着作业内容就全变了。
-
-所以请时刻关注本仓库。
-
 ## 详细说明
 
 更多关于考核设计的思考，请参考 [ShaddockNH3 的博客](https://blog.attilio.cc/posts/post-9/)。
@@ -80,7 +80,7 @@ graph TD
 
 ## 维护指南
 
-维护者在修改文档前，请先阅读 [Markdown 维护规范](./docs/markdown-style-guide.md)。
+维护者在修改文档前，请先阅读 [Markdown 维护规范](./maintain-rules/markdown-style-guide.md)。
 
 提交前至少运行一次 Markdown 检查：
 
@@ -110,4 +110,4 @@ node maintain-rules/check-markdown.mjs
 
 欢迎扫码加入 AI 方向学习交流群，与其他学习者共同进步。
 
-![west2-AI-qrcode-2025](./README.assets/west2-AI-qrcode-2026.png)
+![west2-AI-qrcode-2025](./assets/west2-AI-qrcode-2026.png)

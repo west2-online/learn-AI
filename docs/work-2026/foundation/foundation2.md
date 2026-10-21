@@ -128,7 +128,7 @@ Matplotlib 是 Python 生态中比较经典的可视化工具。
 > [!TIP]
 > 登录知乎可以采用扫码的方式，将拿到的 cookie 保存为 json 复用。
 > 阅读 [免费额度秒变 40 万债务？学生误泄 Gemini API 密钥背上巨额账单](https://news.qq.com/rain/a/20250928A049ZA00) 思考 cookie 泄露的后果。
-> 阅读 [git-study](../commit-task/git-study.md) ，思考你的 cookie 应该放在哪。
+> 阅读 [git-study](../../commit/git-study.md) ，思考你的 cookie 应该放在哪。
 
 ### 作业 3 - 通过抓取接口爬取开源之夏 2026 项目列表
 

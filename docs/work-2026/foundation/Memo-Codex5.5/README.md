@@ -38,7 +38,7 @@ Memo-Codex5.5/
 请在 PowerShell 中进入本项目目录：
 
 ```powershell
-cd "tasks(2026)\foundation\Memo-Codex5.5"
+cd "docs\work-2026\foundation\Memo-Codex5.5"
 ```
 
 创建只属于当前文件夹的 Python 虚拟环境：
@@ -79,7 +79,7 @@ uvicorn backend.main:app --reload
 保持后端服务正在运行，另开一个 PowerShell 窗口进入项目目录并激活虚拟环境：
 
 ```powershell
-cd "tasks(2026)\foundation\Memo-Codex5.5"
+cd "docs\work-2026\foundation\Memo-Codex5.5"
 .\.venv\Scripts\Activate.ps1
 python tests\api_test.py
 ```
