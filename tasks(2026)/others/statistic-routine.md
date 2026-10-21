@@ -14,11 +14,11 @@
 
 ## 学习内容
 
-### 爬虫（详见 Foundation Task 2）
+### 爬虫（详见 Foundation 2）
 
 - 爬虫（主要使用 API、Selenium）
 
-### 基本表格和绘图（详见 Foundation Task 2）
+### 基本表格和绘图（详见 Foundation 2）
 
 - Pandas
 - Matplotlib
@@ -134,7 +134,7 @@
 
 - 配环境
 
-  详见 Foundation Task 0。
+  详见 Foundation 0。
 
 - 数学建模基本方法
 

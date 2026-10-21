@@ -4,23 +4,23 @@
 
 考核需要完成 Foundation 和分流阶段的作业，完成后需要提交到 GitHub 上。
 
-如果你有一定的基础，那么可以跳过 Foundation 的 Task 0、1、3（需面谈），完成 Foundation 的 Task 2 和分流阶段的作业。
+如果你有一定的基础，那么可以跳过 Foundation 0、1、3（需面谈），完成 Foundation 2 和分流阶段的作业。
 
 如果你在往年纳新已经通过了部分考核，那么直接从之后的考核开始做。
 
 ## 作业提交方式
 
-1. 你需要阅读 [Git 学习](./git-study.md)，在 Task 0 作业 2（即 crazy-day）创建的仓库中提交此后所有的作业。除了 task0 之外，其他代码审查使用的是该仓库
-2. 然后你需要阅读 [西二作业提交教程](https://west2-online.feishu.cn/wiki/Zvqow0CUxig3iWkWQgBcHp4AnHe)，在 [solutions](https://github.com/west2-online-reserve/collection-ai) 仓库中提交（仅作为留档以及 task0 审查）
+1. 你需要阅读 [Git 学习](./git-study.md)，在 Foundation 0 作业 2（即 crazy-day）创建的仓库中提交此后所有的作业。除了 foundation0 之外，其他代码审查使用的是该仓库
+2. 然后你需要阅读 [西二作业提交教程](https://west2-online.feishu.cn/wiki/Zvqow0CUxig3iWkWQgBcHp4AnHe)，在 [solutions](https://github.com/west2-online-reserve/collection-ai) 仓库中提交（仅作为留档以及 foundation0 审查）
 3. 对于每一份作业，你需要按照 Git 推荐的提交方式，提交最小可运行子集
 
 ## 答辩形式
 
-Task 0 没有答辩，你需要在完成作业后，主动在 comment 里 @ 当年的负责人，请他/她来评审，形式是 reviewer 在 collection-ai 仓库指出问题后，你根据 comment 进行修改。
+Foundation 0 没有答辩，你需要在完成作业后，主动在 comment 里 @ 当年的负责人，请他/她来评审，形式是 reviewer 在 collection-ai 仓库指出问题后，你根据 comment 进行修改。
 
 需要注意的是，你需要仔细阅读以上作业提交方式，如果你的提交方式错误（例如拖拽上传 github），会被 reviewer 直接 close。
 
-Task 1 - Task 3 的答辩预计在 12 月中进行（但如果你的作业过于猎奇，reviewer 也会留下 comment）。
+Foundation 1 - Foundation 3 的答辩预计在 12 月中进行（但如果你的作业过于猎奇，reviewer 也会留下 comment）。
 
 答辩形式是直接问原码相关问题并拷打，无需准备 PPT 等材料。如果你认为你对你的某份作业有独到的理解，可以在拷打之前自己讲一下。
 

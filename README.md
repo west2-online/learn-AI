@@ -33,13 +33,13 @@ graph TD
     D --> H((数据科学分析))
 ```
 
-考核大致分为两个阶段：[Foundation](./tasks(2026)/foundation) 与分流阶段（[Scientific Research](./tasks(2026)/scientific-research) / [Application](./tasks(2026)/application)）。[Foundation](./tasks(2026)/foundation) 是共通路线，完成后你需要在 Scientific Research 与 Application 两条路线中选择其一。
+考核大致分为两个阶段：[Foundation](./tasks(2026)/foundation) 与分流阶段（[Scientific Research](./tasks(2026)/research) / [Application](./tasks(2026)/application)）。[Foundation](./tasks(2026)/foundation) 是共通路线，完成后你需要在 Scientific Research 与 Application 两条路线中选择其一。
 
 如果你想保研，未来想进实验室，那么建议选前者。
 
 如果你未来想找工作，那么可以选择后者。但单纯的 AI 应用意义不大，因此我们设置了 [Application 0](./tasks(2026)/application/application0.md) 任务，只有完成了此项任务才能继续 Application 方向的学习，请根据自身现有水平量力而行。
 
-关于更具体的建议，以及为什么会有 [Python Backend](./tasks(2026)/others/backend-routine.md)、[Python Frontend](./tasks(2026)/others/frontend-routine.md) 和 [Statistics](./tasks(2026)/others/statistic-routine.md)，可见 [Foundation](./tasks(2026)/foundation) 中的 [Task 4（task4.md）](./tasks(2026)/foundation/task4.md)，这是后续方向导引。
+关于更具体的建议，以及为什么会有 [Python Backend](./tasks(2026)/others/backend-routine.md)、[Python Frontend](./tasks(2026)/others/frontend-routine.md) 和 [Statistics](./tasks(2026)/others/statistic-routine.md)，可见 [Foundation](./tasks(2026)/foundation) 中的 [Foundation 4（foundation4.md）](./tasks(2026)/foundation/foundation4.md)，这是后续方向导引。
 
 ### 成为正式成员后的权益
 
@@ -54,7 +54,7 @@ graph TD
 
 ## 如何开始
 
-请进入 [tasks(2026)](./tasks(2026)) 文件夹，从 [Foundation](./tasks(2026)/foundation) 中的 [Task 0](./tasks(2026)/foundation/task0.md) 开始学习。
+请进入 [tasks(2026)](./tasks(2026)) 文件夹，从 [Foundation](./tasks(2026)/foundation) 中的 [Foundation 0](./tasks(2026)/foundation/foundation0.md) 开始学习。
 
 我们希望学习方式是“文档引导 + 个人自学”。我们会告诉你应当如何快速上手，但你想要学好、学懂，除了我们的引导外，还需要主动进行个人提升。
 
