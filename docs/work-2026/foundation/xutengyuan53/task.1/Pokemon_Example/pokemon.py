@@ -121,3 +121,26 @@ class Bulbasaur(GlassPokemon):
     def initialize_skills(self):
         # 初始化技能，具体技能是 SeedBomb 和 ParasiticSeeds
         return [skills.SeedBomb(damage=50), skills.ParasiticSeeds(amount=10)]
+
+class FirePokemon(Pokemon):
+    type = "Fire"
+
+    def type_effectiveness(self, opponent: Pokemon) -> float:
+        effectiveness = 1.0
+        if opponent.type == "Glass":
+            effectiveness = 2.0
+        elif opponent.type == "Water":
+            effectiveness = 0.5
+        return effectiveness
+
+    def begin(self) -> None:
+        pass
+
+class Charmander(FirePokemon):
+    name = "Charmander"
+
+    def __init__(self, hp=80, attack=35, defense=15) -> None:
+        super().__init__(hp, attack, defense)
+
+    def initialize_skills(self) -> list:
+        return [skills.SeedBomb(damage=40), skills.ParasiticSeeds(amount=15)]
